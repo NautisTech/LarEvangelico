@@ -1,0 +1,31 @@
+/* Add spacing between title content and button */
+.framer-cs2fea {
+    margin-bottom: 20px;
+}
+
+/* Add spacing inside main content container */
+.framer-1jip428 {
+    padding-top: 24px;
+}
+
+/* Fix button background - should be white/transparent with dark border */
+.framer-DB2m2.framer-v-ifgymi .framer-ptdzar {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease;
+}
+
+/* Fix button text color - should be dark */
+.framer-DB2m2.framer-v-ifgymi .framer-uhgsoe p {
+    color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)) !important;
+    transition: color 0.3s ease;
+}
+
+/* Button hover effect - fill background */
+.framer-DB2m2.framer-v-ifgymi:hover .framer-ptdzar {
+    opacity: 1 !important;
+}
+
+/* Button hover effect - change text to white */
+.framer-DB2m2.framer-v-ifgymi:hover .framer-uhgsoe p {
+    color: rgb(255, 255, 255) !important;
+}

@@ -1,0 +1,31 @@
+/* Estilos de hover para o botão do banner */
+.framer-EomdA:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(187, 60, 13, 0.3);
+    transition: all 0.3s ease;
+}
+
+.framer-EomdA:hover .framer-v2z3h {
+    opacity: 0.9 !important;
+    transition: opacity 0.3s ease;
+}
+
+.framer-EomdA:hover .framer-101fbqw svg {
+    transform: translateX(4px);
+    transition: transform 0.3s ease;
+}
+
+.framer-EomdA {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.framer-101fbqw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.framer-101fbqw svg {
+    transition: transform 0.3s ease;
+}

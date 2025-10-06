@@ -1,0 +1,7 @@
+@import "./admin.css";
+@import "./modal.css";
+@import "./login.css";
+
+button, a, select, input, textarea {
+    @apply transition-colors duration-150 cursor-pointer;
+}

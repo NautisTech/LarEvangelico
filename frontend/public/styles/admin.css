@@ -1,0 +1,105 @@
+/* Seccao */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.rules-container {
+    margin: 0 auto;
+    padding: 2rem 0;
+    background: var(--background-light);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.section-header .rules-icon {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* Tabela */
+.table-base {
+    @apply bg-white rounded-xl shadow-md border border-gray-200 p-6;
+}
+
+.table-header {
+    @apply flex items-center justify-between mb-4;
+}
+
+.table-title {
+    @apply text-xl font-semibold;
+}
+
+.table-row {
+    @apply transition-colors even:bg-white odd:bg-gray-50;
+}
+
+/* Botao de Ação */
+
+.button-base {
+    @apply px-4 py-2 rounded-lg text-sm font-medium transition;
+}
+
+.export-button {
+    @apply bg-pink-100 text-pink-700 hover:bg-pink-200 transition;
+}
+
+.refresh-button {
+    @apply bg-purple-100 text-purple-700 hover:bg-purple-200 transition;
+}
+
+.clear-filters-button {
+    @apply bg-blue-100 text-blue-700 hover:bg-blue-200 transition;
+}
+
+.delete-button {
+    @apply bg-red-100 text-red-700 hover:bg-red-200 transition;
+}
+
+.create-button {
+    @apply bg-green-100 text-green-700 hover:bg-green-200 transition;
+}
+
+.edit-button {
+    @apply bg-orange-100 text-orange-700 hover:bg-orange-200 transition;
+}
+
+/* Botão Inline */
+
+.button-inline {
+    @apply px-2 py-1 text-xs font-medium rounded-md transition;
+}
+
+.edit-button-inline {
+    @apply text-orange-700 hover:bg-orange-200 transition;
+}
+
+.delete-button-inline {
+    @apply text-red-700 hover:bg-red-200 transition;
+}
+
+.create-button-inline {
+    @apply text-green-700 hover:bg-green-200 transition;
+}
