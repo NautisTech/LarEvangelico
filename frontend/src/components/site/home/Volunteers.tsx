@@ -1,4 +1,8 @@
+"use client";
+import { useRouter } from "next/navigation";
+
 export function Volunteers() {
+    const router = useRouter();
     return (
         <>
             <section className="framer-t2pskh" data-framer-name="Volunteer">
@@ -79,7 +83,7 @@ export function Volunteers() {
                                         </div>
                                     </div>
                                     <div className="framer-ojbv2i-container"><a className="framer-EomdA framer-2Vypl framer-rvcmdt framer-v-rvcmdt framer-1d5tuq9"
-                                        data-border="true" data-framer-name="Primary" href="contact.html" style={{
+                                        data-border="true" data-framer-name="Primary" onClick={() => router.push("/contactos")} style={{
                                             borderBottomWidth: "1px", borderColor:
                                                 "var(--token-b48c5b23-5851-4ed2-9bdd-7e6ab154d227, rgb(187, 60, 13))", borderLeftWidth: "1px", borderRightWidth: "1px",
                                             borderStyle: "solid", borderTopWidth: "1px", backgroundColor:
@@ -162,7 +166,7 @@ export function Volunteers() {
                                             esperança e mudança.</p>
                                     </div>
                                     <div className="framer-ojbv2i-container"><a className="framer-EomdA framer-2Vypl framer-rvcmdt framer-v-1cm66cn framer-1d5tuq9"
-                                        data-border="true" data-framer-name="Mobile banner" href="contact.html"
+                                        data-border="true" data-framer-name="Mobile banner" onClick={() => router.push("/contactos")}
                                         style={{
                                             borderBottomWidth: "1px", borderColor:
                                                 "var(--token-b48c5b23-5851-4ed2-9bdd-7e6ab154d227, rgb(187, 60, 13))", borderLeftWidth: "1px", borderRightWidth: "1px",

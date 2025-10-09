@@ -1,4 +1,10 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+import { MapPin, Mail, PhoneIncoming } from "lucide-react";
+
 const Footer: React.FC = () => {
+    const router = useRouter();
     return (
         <>
             <div>
@@ -18,7 +24,7 @@ const Footer: React.FC = () => {
                                                     "willChange": "transform", "opacity": "1",
                                                     "transform": "none"
                                                 }}>
-                                                <div className="framer-17x6cdo" data-framer-name="Title Content"><a className="framer-12okkkc framer-97k56s" data-framer-name="Logo" href="index.htm"
+                                                <div className="framer-17x6cdo" data-framer-name="Title Content"><a className="framer-12okkkc framer-97k56s" data-framer-name="Logo" onClick={() => router.push("/")}
                                                 >
                                                     <div className="framer-5ynymd" data-framer-name="Logo w">
                                                         <div style={{ "position": "absolute", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }} data-framer-background-image-wrapper="true"><img decoding="async" loading="lazy" width="715" height="715" sizes="(min-width: 1200px) 55px, (min-width: 810px) and (max-width: 1199.98px) 55px, (max-width: 809.98px) 55px" srcSet="images/R4KQykLHAnUMi4bCMb0sZog1Wg-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png 715w?width=715&amp;height=715 715w" src="images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png?width=715&amp;height=715" alt="" style={{ "display": "block", "width": "100%", "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "objectPosition": "center center", "objectFit": "cover" }} data-framer-original-sizes="55px" /></div>
@@ -69,7 +75,7 @@ const Footer: React.FC = () => {
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
                                                                 }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
-                                                                    href="index.htm">Home</a>
+                                                                    onClick={() => router.push("/")}>Home</a>
 
                                                             </p>
                                                         </div>
@@ -82,7 +88,8 @@ const Footer: React.FC = () => {
                                                                 style={{
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                }}>Sobre Nós</p>
+                                                                }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
+                                                                    onClick={() => router.push("/sobre-nos")}>Sobre Nós</a></p>
                                                         </div>
                                                         <div className="framer-14ffvbk" data-framer-name="Home" data-framer-component-type="RichTextContainer"
                                                             style={{
@@ -93,7 +100,8 @@ const Footer: React.FC = () => {
                                                                 style={{
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                }}>As nossas Causas</p>
+                                                                }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
+                                                                    onClick={() => router.push("/causas")}>As nossas Causas</a></p>
                                                         </div>
                                                         <div className="framer-ass7we" data-framer-name="Home" data-framer-component-type="RichTextContainer"
                                                             style={{
@@ -104,7 +112,8 @@ const Footer: React.FC = () => {
                                                                 style={{
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                }}>Parceiros</p>
+                                                                }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
+                                                                    onClick={() => router.push("/parceiros")}>Parceiros</a></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -130,7 +139,7 @@ const Footer: React.FC = () => {
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
                                                                 }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
-                                                                    href="blog.html">Blog</a>
+                                                                    onClick={() => router.push("/blog")}>Blog</a>
 
                                                             </p>
                                                         </div>
@@ -143,7 +152,8 @@ const Footer: React.FC = () => {
                                                                 style={{
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                }}>Contactos</p>
+                                                                }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
+                                                                    onClick={() => router.push("/contactos")}>Contactos</a></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -164,7 +174,7 @@ const Footer: React.FC = () => {
                                                         }}>
                                                             <div className="framer-1h2ughd" data-framer-name="Icon">
                                                                 <div className="framer-254b1g-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                    <div style={{ "display": "contents" }}><MapPin color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-1bgkkku" data-framer-name="123 Charity Street, City, Country"
@@ -175,7 +185,9 @@ const Footer: React.FC = () => {
                                                                     style={{
                                                                         color:
                                                                             "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                    }}>Rua Dom Afonso Henriques, 2689 - 4425-057 Maia</p>
+                                                                    }}>
+                                                                    Rua Dom Afonso Henriques, 2689 - 4425-057 Maia
+                                                                </p>
                                                             </div>
                                                         </li>
                                                         <li className="framer-x33u3j" data-framer-name="List" style={{
@@ -183,7 +195,7 @@ const Footer: React.FC = () => {
                                                         }}>
                                                             <div className="framer-1c09i54" data-framer-name="Icon">
                                                                 <div className="framer-9nz7vn-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                    <div style={{ "display": "contents" }}><Mail color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-1gn9rsg" data-framer-name="123 Charity Street, City, Country"
@@ -194,15 +206,16 @@ const Footer: React.FC = () => {
                                                                     style={{
                                                                         color:
                                                                             "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                    }}>contacto@larevangelico.pt</p>
+                                                                    }}>
+                                                                    contacto@larevangelico.pt</p>
                                                             </div>
                                                         </li>
                                                         <li className="framer-1i9gs4q" data-framer-name="List" style={{
                                                             "opacity": "0.8"
                                                         }}>
                                                             <div className="framer-1160tj8" data-framer-name="Icon">
-                                                                <div className="framer-1wmlocr-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                <div className="framer-1wmlocr-container text-white">
+                                                                    <div style={{ "display": "contents" }}><PhoneIncoming color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-bvk75w" data-framer-name="123 Charity Street, City, Country"
@@ -213,7 +226,9 @@ const Footer: React.FC = () => {
                                                                     style={{
                                                                         color:
                                                                             "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                    }}>+351 229 710 243</p>
+                                                                    }}>
+                                                                    +351 229 710 243
+                                                                </p>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -293,7 +308,7 @@ const Footer: React.FC = () => {
                                                     "willChange": "transform", "opacity": "1",
                                                     "transform": "none"
                                                 }}>
-                                                <div className="framer-17x6cdo" data-framer-name="Title Content"><a className="framer-12okkkc framer-97k56s" data-framer-name="Logo" href="index.htm"
+                                                <div className="framer-17x6cdo" data-framer-name="Title Content"><a className="framer-12okkkc framer-97k56s" data-framer-name="Logo" onClick={() => router.push("/")}
                                                 >
                                                     <div className="framer-5ynymd" data-framer-name="Logo w">
                                                         <div style={{ "position": "absolute", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }} data-framer-background-image-wrapper="true"><img decoding="async" width="715" height="715" sizes="(min-width: 1200px) 55px, (min-width: 810px) and (max-width: 1199.98px) 55px, (max-width: 809.98px) 55px" srcSet="images/R4KQykLHAnUMi4bCMb0sZog1Wg-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png 715w?width=715&amp;height=715 715w" src="images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png?width=715&amp;height=715" alt="" style={{ "display": "block", "width": "100%", "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "objectPosition": "center center", "objectFit": "cover" }} data-framer-original-sizes="55px" /></div>
@@ -345,7 +360,7 @@ const Footer: React.FC = () => {
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
                                                                 }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
-                                                                    href="index.htm">Home</a>
+                                                                    onClick={() => router.push("/")}>Home</a>
 
                                                             </p>
                                                         </div>
@@ -358,7 +373,8 @@ const Footer: React.FC = () => {
                                                                 style={{
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                }}>Sobre Nós</p>
+                                                                }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
+                                                                    onClick={() => router.push("/sobre-nos")}>Sobre Nós</a></p>
                                                         </div>
                                                         <div className="framer-14ffvbk" data-framer-name="Home" data-framer-component-type="RichTextContainer"
                                                             style={{
@@ -369,7 +385,8 @@ const Footer: React.FC = () => {
                                                                 style={{
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                }}>As nossas Causas</p>
+                                                                }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
+                                                                    onClick={() => router.push("/causas")}>As nossas Causas</a></p>
                                                         </div>
                                                         <div className="framer-ass7we" data-framer-name="Home" data-framer-component-type="RichTextContainer"
                                                             style={{
@@ -406,7 +423,7 @@ const Footer: React.FC = () => {
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
                                                                 }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
-                                                                    href="blog.html">Blog</a>
+                                                                    onClick={() => router.push("/blog")}>Blog</a>
 
                                                             </p>
                                                         </div>
@@ -440,7 +457,7 @@ const Footer: React.FC = () => {
                                                         }}>
                                                             <div className="framer-1h2ughd" data-framer-name="Icon">
                                                                 <div className="framer-254b1g-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                    <div style={{ "display": "contents" }}><MapPin color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-1bgkkku" data-framer-name="123 Charity Street, City, Country"
@@ -459,7 +476,7 @@ const Footer: React.FC = () => {
                                                         }}>
                                                             <div className="framer-1c09i54" data-framer-name="Icon">
                                                                 <div className="framer-9nz7vn-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                    <div style={{ "display": "contents" }}><Mail color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-1gn9rsg" data-framer-name="123 Charity Street, City, Country"
@@ -478,7 +495,7 @@ const Footer: React.FC = () => {
                                                         }}>
                                                             <div className="framer-1160tj8" data-framer-name="Icon">
                                                                 <div className="framer-1wmlocr-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                    <div style={{ "display": "contents" }}><PhoneIncoming color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-bvk75w" data-framer-name="123 Charity Street, City, Country"
@@ -570,7 +587,7 @@ const Footer: React.FC = () => {
                                                     "willChange": "transform", "opacity": "1",
                                                     "transform": "none"
                                                 }}>
-                                                <div className="framer-17x6cdo" data-framer-name="Title Content"><a className="framer-12okkkc framer-97k56s" data-framer-name="Logo" href="index.htm"
+                                                <div className="framer-17x6cdo" data-framer-name="Title Content"><a className="framer-12okkkc framer-97k56s" data-framer-name="Logo" onClick={() => router.push("/")}
                                                 >
                                                     <div className="framer-5ynymd" data-framer-name="Logo w">
                                                         <div style={{ "position": "absolute", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }} data-framer-background-image-wrapper="true"><img decoding="async" width="715" height="715" sizes="(min-width: 1200px) 55px, (min-width: 810px) and (max-width: 1199.98px) 55px, (max-width: 809.98px) 55px" srcSet="images/R4KQykLHAnUMi4bCMb0sZog1Wg-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png 715w?width=715&amp;height=715 715w" src="images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png?width=715&amp;height=715" alt="" style={{ "display": "block", "width": "100%", "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "objectPosition": "center center", "objectFit": "cover" }} data-framer-original-sizes="55px" /></div>
@@ -622,7 +639,7 @@ const Footer: React.FC = () => {
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
                                                                 }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
-                                                                    href="index.htm">Home</a>
+                                                                    onClick={() => router.push("/")}>Home</a>
 
                                                             </p>
                                                         </div>
@@ -635,7 +652,8 @@ const Footer: React.FC = () => {
                                                                 style={{
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                }}>Sobre Nós</p>
+                                                                }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
+                                                                    onClick={() => router.push("/sobre-nos")}>Sobre Nós</a></p>
                                                         </div>
                                                         <div className="framer-14ffvbk" data-framer-name="Home" data-framer-component-type="RichTextContainer"
                                                             style={{
@@ -646,7 +664,8 @@ const Footer: React.FC = () => {
                                                                 style={{
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
-                                                                }}>As nossas Causas</p>
+                                                                }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
+                                                                    onClick={() => router.push("/causas")}>As nossas Causas</a></p>
                                                         </div>
                                                         <div className="framer-ass7we" data-framer-name="Home" data-framer-component-type="RichTextContainer"
                                                             style={{
@@ -683,7 +702,7 @@ const Footer: React.FC = () => {
                                                                     color:
                                                                         "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))"
                                                                 }}><a className="framer-text framer-styles-preset-n2slvd" data-styles-preset="K2SfgM11V"
-                                                                    href="blog.html">Blog</a>
+                                                                    onClick={() => router.push("/blog")}>Blog</a>
 
                                                             </p>
                                                         </div>
@@ -717,7 +736,7 @@ const Footer: React.FC = () => {
                                                         }}>
                                                             <div className="framer-1h2ughd" data-framer-name="Icon">
                                                                 <div className="framer-254b1g-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                    <div style={{ "display": "contents" }}><MapPin color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-1bgkkku" data-framer-name="123 Charity Street, City, Country"
@@ -736,7 +755,7 @@ const Footer: React.FC = () => {
                                                         }}>
                                                             <div className="framer-1c09i54" data-framer-name="Icon">
                                                                 <div className="framer-9nz7vn-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                    <div style={{ "display": "contents" }}><Mail color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-1gn9rsg" data-framer-name="123 Charity Street, City, Country"
@@ -755,7 +774,7 @@ const Footer: React.FC = () => {
                                                         }}>
                                                             <div className="framer-1160tj8" data-framer-name="Icon">
                                                                 <div className="framer-1wmlocr-container">
-                                                                    <div style={{ "display": "contents" }}></div>
+                                                                    <div style={{ "display": "contents" }}><PhoneIncoming color="var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))" /></div>
                                                                 </div>
                                                             </div>
                                                             <div className="framer-bvk75w" data-framer-name="123 Charity Street, City, Country"

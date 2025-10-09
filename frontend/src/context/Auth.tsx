@@ -3,7 +3,7 @@
 
 import React, { createContext, useContext, useMemo, useCallback, useState, useEffect } from "react";
 import { AuthService } from "@/services";
-import { type Grupo, Utilizador } from "@/models";
+import { Utilizador } from "@/models";
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from "react-toastify";
 
@@ -15,7 +15,6 @@ export interface AuthContextProps {
     logout: () => void;
     isAuthenticated: boolean;
     loading: boolean;
-    isAdmin?: boolean;
     error: string | null;
     handleAuthError: (error: any) => void;  // Função para gerir erros
     loadFullProfile: () => Promise<Utilizador | null>; // Método para carregar perfil completo quando necessário
@@ -145,7 +144,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             logout,
             isAuthenticated: !!utilizador && isTokenLoaded,
             loading: !isTokenLoaded || loading || loginLoading,
-            isAdmin: utilizador?.grupos?.some((g: Grupo) => g.nome === "Administradores") || false,
             error,
             handleAuthError,
             loadFullProfile,

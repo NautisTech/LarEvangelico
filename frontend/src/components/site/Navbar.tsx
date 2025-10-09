@@ -1,4 +1,20 @@
+"use client";
+
+import React from "react";
+import { useRouter } from "next/navigation";
+import DonationModal from "./DonationModal";
+
 const Navbar: React.FC = () => {
+    const router = useRouter();
+
+    const [isModalOpen, setModalOpen] = React.useState(false);
+    const handleModalOpen = () => {
+        setModalOpen(true);
+    };
+    const handleModalClose = () => {
+        setModalOpen(false);
+    };
+
     return (
         <>
             <div>
@@ -8,7 +24,7 @@ const Navbar: React.FC = () => {
                             "backgroundColor": "var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))",
                             "width": "100%"
                         }}>
-                        <div className="framer-1xzi696" data-framer-name="Container"><a className="framer-tobys2 framer-xku9a4" data-framer-name="Logo" href="/"
+                        <div className="framer-1xzi696" data-framer-name="Container"><a className="framer-tobys2 framer-xku9a4" data-framer-name="Logo" onClick={() => router.push("/")}
                             data-framer-page-link-current="true">
                             <div className="framer-3er1zc" data-framer-name="Logo w">
                                 <div style={{ "position": "absolute", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }} data-framer-background-image-wrapper="true"><img decoding="async" width="715" height="715" sizes="(min-width: 1200px) 55px, (min-width: 810px) and (max-width: 1199.98px) 55px, (max-width: 809.98px) 55px" srcSet="images/R4KQykLHAnUMi4bCMb0sZog1Wg-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png 715w?width=715&amp;height=715 715w" src="images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png?width=715&amp;height=715" alt="" style={{ "display": "block", "width": "100%", "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "objectPosition": "center center", "objectFit": "cover" }} data-framer-original-sizes="55px" /></div>
@@ -22,7 +38,7 @@ const Navbar: React.FC = () => {
                             <nav className="framer-1njmcb7" data-framer-name="Navigation"
                                 style={{ "backgroundColor": "rgba(0, 0, 0, 0)", "opacity": "1" }}>
                                 <div className="framer-1ybkjth-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="/" data-framer-page-link-current="true"
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/")} data-framer-page-link-current="true"
                                     tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
@@ -41,7 +57,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-1yymbq0-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="about-us.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/sobre-nos")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -59,7 +75,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-1b2lqqf-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="partners.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/parceiros")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -77,7 +93,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-bi8d9z-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="causes.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/causas")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -95,7 +111,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-8xeo3x-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="blog.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/blog")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -113,7 +129,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-97ixt7-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="contact.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/contactos")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -130,8 +146,26 @@ const Navbar: React.FC = () => {
                                     </div>
                                 </a>
                                 </div>
+                                <div className="framer-97ixt7-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/admin")} tabIndex={0}>
+                                    <div className="framer-xuhs7p" data-framer-name="Text">
+                                        <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
+                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
+                                                Área Reservada</p>
+                                        </div>
+                                        <div className="framer-nljtjc" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
+                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
+                                                Área Reservada</p>
+                                        </div>
+                                        <div className="framer-jt3kas" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "opacity": "0", "transform": "none" }}>
+                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
+                                                Área Reservada</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
                             </nav>
-                            <div className="framer-1s57x13-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-1lcj20u framer-57amc9"
+                            <div className="framer-1s57x13-container"><a role="button" onClick={handleModalOpen} className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-1lcj20u framer-57amc9"
                                 data-border="true" data-framer-name="Header" data-highlight="true" tabIndex={0}
                                 style={{
                                     borderBottomWidth: "1px", borderColor:
@@ -156,7 +190,7 @@ const Navbar: React.FC = () => {
                             "backgroundColor": "var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))",
                             "width": "100%"
                         }}>
-                        <div className="framer-1xzi696" data-framer-name="Container"><a className="framer-tobys2 framer-xku9a4" data-framer-name="Logo" href="/"
+                        <div className="framer-1xzi696" data-framer-name="Container"><a className="framer-tobys2 framer-xku9a4" data-framer-name="Logo" onClick={() => router.push("/")}
                             data-framer-page-link-current="true">
                             <div className="framer-3er1zc" data-framer-name="Logo w">
                                 <div style={{ "position": "absolute", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }} data-framer-background-image-wrapper="true"><img decoding="async" width="715" height="715" sizes="(min-width: 1200px) 55px, (min-width: 810px) and (max-width: 1199.98px) 55px, (max-width: 809.98px) 55px" srcSet="images/R4KQykLHAnUMi4bCMb0sZog1Wg-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png 715w?width=715&amp;height=715 715w" src="images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png?width=715&amp;height=715" alt="" style={{ "display": "block", "width": "100%", "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "objectPosition": "center center", "objectFit": "cover" }} data-framer-original-sizes="55px" /></div>
@@ -173,7 +207,7 @@ const Navbar: React.FC = () => {
                                         "var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))", "opacity": "0"
                                 }}>
                                 <div className="framer-1ybkjth-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="/" data-framer-page-link-current="true"
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/")} data-framer-page-link-current="true"
                                     tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
@@ -192,7 +226,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-1yymbq0-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="about-us.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/sobre-nos")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -210,7 +244,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-1b2lqqf-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="partners.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/parceiros")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -228,7 +262,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-bi8d9z-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="causes.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/causas")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -246,7 +280,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-8xeo3x-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="blog.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/blog")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -264,7 +298,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-97ixt7-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="contact.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/contactos")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -277,65 +311,29 @@ const Navbar: React.FC = () => {
                                         <div className="framer-jt3kas" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "opacity": "0", "transform": "none" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
                                                 Contactos</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                </div>
-                                <div className="framer-1g64gf2-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="donation.html" tabIndex={0}>
-                                    <div className="framer-xuhs7p" data-framer-name="Text">
-                                        <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Donation</p>
-                                        </div>
-                                        <div className="framer-nljtjc" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Donation</p>
-                                        </div>
-                                        <div className="framer-jt3kas" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "opacity": "0", "transform": "none" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Donation</p>
                                         </div>
                                     </div>
                                 </a>
                                 </div>
                                 <div className="framer-qlf56d-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="contact.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/admin")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Contact</p>
+                                                Área Reservada</p>
                                         </div>
                                         <div className="framer-nljtjc" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Contact</p>
+                                                Área Reservada</p>
                                         </div>
                                         <div className="framer-jt3kas" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "opacity": "0", "transform": "none" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Contact</p>
+                                                Área Reservada</p>
                                         </div>
                                     </div>
                                 </a>
                                 </div>
-                                <div className="framer-154dfs5-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="./404" tabIndex={0}>
-                                    <div className="framer-xuhs7p" data-framer-name="Text">
-                                        <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                404</p>
-                                        </div>
-                                        <div className="framer-nljtjc" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                404</p>
-                                        </div>
-                                        <div className="framer-jt3kas" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "opacity": "0", "transform": "none" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                404</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                </div>
-                                <div className="framer-1xsf7pd-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-1lcj20u framer-57amc9"
+                                <div className="framer-1xsf7pd-container"><a role="button" onClick={handleModalOpen} className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-1lcj20u framer-57amc9"
                                     data-border="true" data-framer-name="Header" data-highlight="true" tabIndex={0}
                                     style={{
                                         borderBottomWidth: "1px", borderColor:
@@ -347,7 +345,7 @@ const Navbar: React.FC = () => {
                                     </div>
                                     <div className="framer-uhgsoe" data-framer-name="Join us Today" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw" style={{ color: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))" }}>
-                                            Donate Now</p>
+                                            Doar Agora</p>
                                     </div>
                                 </a>
                                 </div>
@@ -378,7 +376,7 @@ const Navbar: React.FC = () => {
                             "backgroundColor": "var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))",
                             "width": "100%"
                         }}>
-                        <div className="framer-1xzi696" data-framer-name="Container"><a className="framer-tobys2 framer-xku9a4" data-framer-name="Logo" href="/"
+                        <div className="framer-1xzi696" data-framer-name="Container"><a className="framer-tobys2 framer-xku9a4" data-framer-name="Logo" onClick={() => router.push("/")}
                             data-framer-page-link-current="true">
                             <div className="framer-3er1zc" data-framer-name="Logo w">
                                 <div style={{ "position": "absolute", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }} data-framer-background-image-wrapper="true"><img decoding="async" width="715" height="715" sizes="(min-width: 1200px) 55px, (min-width: 810px) and (max-width: 1199.98px) 55px, (max-width: 809.98px) 55px" srcSet="images/R4KQykLHAnUMi4bCMb0sZog1Wg-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png 715w?width=715&amp;height=715 715w" src="images/R4KQykLHAnUMi4bCMb0sZog1Wg-1.png?width=715&amp;height=715" alt="" style={{ "display": "block", "width": "100%", "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "objectPosition": "center center", "objectFit": "cover" }} data-framer-original-sizes="55px" /></div>
@@ -395,7 +393,7 @@ const Navbar: React.FC = () => {
                                         "var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))", "opacity": "0"
                                 }}>
                                 <div className="framer-1ybkjth-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="/" data-framer-page-link-current="true"
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/")} data-framer-page-link-current="true"
                                     tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
@@ -414,7 +412,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-1yymbq0-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="about-us.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/sobre-nos")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -432,7 +430,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-1b2lqqf-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="partners.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/parceiros")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -450,7 +448,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-bi8d9z-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="causes.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/causas")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -468,7 +466,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-8xeo3x-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="blog.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/blog")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -486,7 +484,7 @@ const Navbar: React.FC = () => {
                                 </a>
                                 </div>
                                 <div className="framer-97ixt7-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="contact.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/contactos")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -499,48 +497,30 @@ const Navbar: React.FC = () => {
                                         <div className="framer-jt3kas" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "opacity": "0", "transform": "none" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
                                                 Contactos</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                </div>
-                                <div className="framer-1g64gf2-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="donation.html" tabIndex={0}>
-                                    <div className="framer-xuhs7p" data-framer-name="Text">
-                                        <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Donation</p>
-                                        </div>
-                                        <div className="framer-nljtjc" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Donation</p>
-                                        </div>
-                                        <div className="framer-jt3kas" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "opacity": "0", "transform": "none" }}>
-                                            <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Donation</p>
                                         </div>
                                     </div>
                                 </a>
                                 </div>
                                 <div className="framer-qlf56d-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="contact.html" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/admin")} tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Contact</p>
+                                                Área Reservada</p>
                                         </div>
                                         <div className="framer-nljtjc" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Contact</p>
+                                                Área Reservada</p>
                                         </div>
                                         <div className="framer-jt3kas" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "opacity": "0", "transform": "none" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
-                                                Contact</p>
+                                                Área Reservada</p>
                                         </div>
                                     </div>
                                 </a>
                                 </div>
                                 <div className="framer-154dfs5-container"><a className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-                                    data-framer-name="Primary" data-highlight="true" href="./404" tabIndex={0}>
+                                    data-framer-name="Primary" data-highlight="true" tabIndex={0}>
                                     <div className="framer-xuhs7p" data-framer-name="Text">
                                         <div className="framer-fbp6jx" data-framer-name="Home" data-framer-component-type="RichTextContainer" style={{ "transform": "translate(-50%, -50%)" }}>
                                             <p className="framer-text framer-styles-preset-1ub8ls7" data-styles-preset="W0NKkqQDf" style={{ color: "white" }}>
@@ -557,21 +537,22 @@ const Navbar: React.FC = () => {
                                     </div>
                                 </a>
                                 </div>
-                                <div className="framer-1xsf7pd-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-1lcj20u framer-57amc9"
-                                    data-border="true" data-framer-name="Header" data-highlight="true" tabIndex={0}
-                                    style={{
-                                        borderBottomWidth: "1px", borderColor:
-                                            "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", borderLeftWidth: "1px", borderRightWidth: "1px",
-                                        borderStyle: "solid", borderTopWidth: "1px", borderBottomLeftRadius: "4px",
-                                        borderBottomRightRadius: "4px", borderTopLeftRadius: "4px", borderTopRightRadius: "4px"
-                                    }}>
-                                    <div className="framer-ptdzar" data-framer-name="Background" style={{ "backgroundColor": "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "opacity": "1" }}>
-                                    </div>
-                                    <div className="framer-uhgsoe" data-framer-name="Join us Today" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
-                                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw" style={{ color: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))" }}>
-                                            Donate Now</p>
-                                    </div>
-                                </a>
+                                <div className="framer-1xsf7pd-container" onClick={handleModalOpen}>
+                                    <a role="button" onClick={(e) => { e.preventDefault(); handleModalOpen(); }} className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-1lcj20u framer-57amc9"
+                                        data-border="true" data-framer-name="Header" data-highlight="true" tabIndex={0}
+                                        style={{
+                                            borderBottomWidth: "1px", borderColor:
+                                                "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", borderLeftWidth: "1px", borderRightWidth: "1px",
+                                            borderStyle: "solid", borderTopWidth: "1px", borderBottomLeftRadius: "4px",
+                                            borderBottomRightRadius: "4px", borderTopLeftRadius: "4px", borderTopRightRadius: "4px"
+                                        }}>
+                                        <div className="framer-ptdzar" data-framer-name="Background" style={{ "backgroundColor": "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "opacity": "1" }}>
+                                        </div>
+                                        <div className="framer-uhgsoe" data-framer-name="Join us Today" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
+                                            <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw" style={{ color: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))" }}>
+                                                Doar Agora</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </nav>
                             <div className="framer-yuac5n-container">
@@ -595,6 +576,7 @@ const Navbar: React.FC = () => {
                     </header>
                 </div>
             </div>
+            {isModalOpen && <DonationModal open={isModalOpen} onClose={handleModalClose} />}
         </>
     );
 };

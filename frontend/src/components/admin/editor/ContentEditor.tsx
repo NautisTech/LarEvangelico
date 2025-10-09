@@ -23,10 +23,9 @@ import CodeBlock from '@tiptap/extension-code-block';
 import { TextAlign } from '@tiptap/extension-text-align';
 import { useDropzone } from 'react-dropzone';
 
-import { Anexo, Conteudo, Etiqueta, Entidade } from '@/models';
+import { Anexo, Conteudo, Etiqueta } from '@/models';
 import { TipoAnexo, TipoConteudo } from '@/utils';
 import { useEtiquetaHook } from '@/hooks';
-import { useEntidadeHook } from '@/hooks';
 import { toast } from 'react-toastify';
 
 
@@ -58,7 +57,6 @@ export function ContentEditor<T>({
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [etiquetasSelecionadas, setEtiquetasSelecionadas] = useState<string[]>([]);
     const [novaEtiqueta, setNovaEtiqueta] = useState('');
-    const [entidadesSelecionadas, setEntidadesSelecionadas] = useState<string[]>([]);
     const [corpoShowEmoji, setCorpoShowEmoji] = useState(false);
     const [corpoTextColor, setCorpoTextColor] = useState('#000000');
     const [corpoBgColor, setCorpoBgColor] = useState('#ffffff');
@@ -112,12 +110,11 @@ export function ContentEditor<T>({
     const getVisibleFields = (tipo: TipoConteudo) => {
         return {
             showAnexoPrincipal: true, // Todos os tipos têm anexo principal
-            showAnexos: tipo !== TipoConteudo.Banner,
-            showEtiquetas: tipo !== TipoConteudo.Banner,
+            showAnexos: true,
+            showEtiquetas: true,
             showSubtitulo: true, // Todos os tipos têm subtítulo
-            showCorpo: tipo !== TipoConteudo.Banner,
+            showCorpo: true,
             showDataInicioFim: tipo === TipoConteudo.Evento,
-            showEntidades: true, // Todas as entidades podem ter entidades associadas
         };
     };
 
@@ -127,10 +124,6 @@ export function ContentEditor<T>({
     const { data: etiquetasData = [] } = useEtiquetaHook();
     const etiquetasExistentes = etiquetasData.map(etiqueta => etiqueta.nome);
 
-    // Entidades existentes (vem da API)
-    const { data: entidadesData = [] } = useEntidadeHook();
-    const entidadesExistentes = entidadesData.map(entidade => entidade.nome);
-
     const adicionarEtiqueta = (etiqueta: string) => {
         if (etiqueta.trim() && !etiquetasSelecionadas.includes(etiqueta.trim())) {
             setEtiquetasSelecionadas([...etiquetasSelecionadas, etiqueta.trim()]);
@@ -139,16 +132,6 @@ export function ContentEditor<T>({
 
     const removerEtiqueta = (etiqueta: string) => {
         setEtiquetasSelecionadas(etiquetasSelecionadas.filter(e => e !== etiqueta));
-    };
-
-    const adicionarEntidade = (entidade: string) => {
-        if (entidade.trim() && !entidadesSelecionadas.includes(entidade.trim())) {
-            setEntidadesSelecionadas([...entidadesSelecionadas, entidade.trim()]);
-        }
-    };
-
-    const removerEntidade = (entidade: string) => {
-        setEntidadesSelecionadas(entidadesSelecionadas.filter(e => e !== entidade));
     };
 
     const handleNovaEtiqueta = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -163,19 +146,14 @@ export function ContentEditor<T>({
         const titulo = tituloEditor?.getText().trim() || '';
         const corpo = corpoEditor?.getText().trim() || '';
         const subtitulo = subtituloEditor?.getText().trim() || '';
-        
-        const totalAnexos = (imagemPrincipal ? 1 : 0) + 
-                           (imagemPrincipalExistente && !imagemPrincipal ? 1 : 0) + 
-                           anexos.length + 
-                           anexosExistentes.length;
-        
+
+        const totalAnexos = (imagemPrincipal ? 1 : 0) +
+            (imagemPrincipalExistente && !imagemPrincipal ? 1 : 0) +
+            anexos.length +
+            anexosExistentes.length;
+
         if (!titulo) {
             toast.warning('Por favor, preencha o título.');
-            return false;
-        }
-
-        if (entidadesSelecionadas.length === 0) {
-            toast.warning('Por favor, selecione pelo menos uma entidade.');
             return false;
         }
 
@@ -204,18 +182,6 @@ export function ContentEditor<T>({
                 const dataInicioInput = document.getElementById('data-inicio') as HTMLInputElement;
                 if (!dataInicioInput?.value) {
                     toast.warning('Por favor, defina a data de início do evento.');
-                    return false;
-                }
-                break;
-
-            case TipoConteudo.Banner:
-                if (!subtitulo) {
-                    toast.warning('Por favor, preencha o subtítulo do banner.');
-                    return false;
-                }
-                const bannerAnexo = imagemPrincipal || imagemPrincipalExistente;
-                if (!bannerAnexo) {
-                    toast.warning('Por favor, adicione a imagem principal do banner.');
                     return false;
                 }
                 break;
@@ -375,11 +341,6 @@ export function ContentEditor<T>({
                 setEtiquetasSelecionadas(currentContent.etiquetas.map((e: Etiqueta) => e.nome));
             }
 
-            // Inicializar entidades
-            if (currentContent.entidades) {
-                setEntidadesSelecionadas(currentContent.entidades.map((e: Entidade) => e.nome));
-            }
-
             // Inicializar anexos existentes
             if (currentContent.anexos) {
                 const principal = currentContent.anexos.find(anexo => anexo.principal);
@@ -424,12 +385,6 @@ export function ContentEditor<T>({
                 return etiquetaExistente || new Etiqueta({ nome });
             }) : [];
 
-            // Preparar entidades - usar entidades existentes ou criar novas
-            const entidades = entidadesSelecionadas.map(nome => {
-                const entidadeExistente = entidadesData.find(e => e.nome === nome);
-                return entidadeExistente || new Entidade({ nome });
-            });
-
             // Preparar anexos existentes
             const anexosList: Anexo[] = [];
 
@@ -456,7 +411,6 @@ export function ContentEditor<T>({
                 data_fim: dataFim,
                 publico: false, // Default
                 etiquetas,
-                entidades,
                 anexos: anexosList, // Apenas anexos existentes
                 publicado_em: null,
                 visualizacoes: 0,
@@ -1010,57 +964,6 @@ export function ContentEditor<T>({
                                                     <X size={14} />
                                                 </button>
                                             </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    </section>
-                )}
-
-                {/* Entities Section */}
-                {visibleFields.showEntidades && (
-                    <section className="mb-8 bg-white rounded-xl shadow-md border border-gray-200 p-8">
-                        <h2 className="text-2xl font-semibold text-gray-900 mb-6">Entidades</h2>
-                        <div className="space-y-6">
-                            {/* Entidades existentes */}
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-3">Selecionar Entidades</label>
-                                <div className="flex flex-wrap gap-2">
-                                    {entidadesExistentes.map((entidade) => (
-                                        <button
-                                            key={entidade}
-                                            onClick={() => adicionarEntidade(entidade)}
-                                            disabled={entidadesSelecionadas.includes(entidade)}
-                                            className={`px-3 py-1 rounded-full text-sm font-medium transition ${entidadesSelecionadas.includes(entidade)
-                                                ? 'bg-red-100 text-red-800 cursor-not-allowed'
-                                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-gray-900'
-                                                }`}
-                                        >
-                                            + {entidade}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Entidades selecionadas */}
-                            {entidadesSelecionadas.length > 0 && (
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-3">Entidades Selecionadas</label>
-                                    <div className="flex flex-wrap gap-2">
-                                        {entidadesSelecionadas.map((entidade) => (
-                                            <div
-                                                key={entidade}
-                                                className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium"
-                                            >
-                                                {entidade}
-                                                <button
-                                                    onClick={() => removerEntidade(entidade)}
-                                                    className="hover:bg-red-200 rounded-full p-0.5 transition"
-                                                >
-                                                    <X size={12} />
-                                                </button>
-                                            </div>
                                         ))}
                                     </div>
                                 </div>

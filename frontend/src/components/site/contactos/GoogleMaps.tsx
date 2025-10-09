@@ -1,4 +1,3 @@
-
 export function GoogleMaps() {
     return (
         <>
@@ -8,7 +7,7 @@ export function GoogleMaps() {
                         <div className="framer-fibnrb" data-framer-name="Visit Our Locations"
                             data-framer-component-type="RichTextContainer" style={{
                                 "willChange":
-                                    "transform", "opacity": "0", "transform": "none"
+                                    "transform", "opacity": "1", "transform": "none"
                             }}>
                             <h2 className="framer-text framer-styles-preset-13lkd54" data-styles-preset="SE0dvQEiW"
                                 style={{ textAlign: "center" }}>Visita-nos</h2>
@@ -30,7 +29,7 @@ export function GoogleMaps() {
                 <div className="ssr-variant hidden-1fspqvl">
                     <div className="framer-13kqzzs-container" style={{
                         "willChange":
-                            "transform", "opacity": "0", "transform": "none"
+                            "transform", "opacity": "1", "transform": "none"
                     }}>
                         <div id="DAJTe95Tt" style={{
                             borderRadius: "0", borderBottomLeftRadius: "0", borderBottomRightRadius: "0", height: "100%", borderTopLeftRadius: "0", borderTopRightRadius: "0", width: "100%",

@@ -60,12 +60,18 @@ export function Newsletter() {
                                                 }}>Subscrever</p>
                                         </div>
                                         <div className="framer-1aemgzb" data-framer-name="Icon">
-                                            <div className="framer-1e2jdbx-container">
-                                                <div style={{ "display": "contents" }}></div>
-                                            </div>
-                                            <div className="framer-8sufgn-container">
-                                                <div style={{ "display": "contents" }}></div>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                                                color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))"
+                                                style={{
+                                                    "userSelect": "none", "width": "100%", "height": "100%",
+                                                    "display": "inline-block", "fill":
+                                                        "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "color":
+                                                        "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "flexShrink": "0"
+                                                }}>
+                                                <g color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))">
+                                                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                                                </g>
+                                            </svg>
                                         </div>
                                     </button>
                                 </div>
@@ -130,12 +136,18 @@ export function Newsletter() {
                                                 }}>Subscrever</p>
                                         </div>
                                         <div className="framer-1aemgzb" data-framer-name="Icon">
-                                            <div className="framer-1e2jdbx-container">
-                                                <div style={{ "display": "contents" }}></div>
-                                            </div>
-                                            <div className="framer-8sufgn-container">
-                                                <div style={{ "display": "contents" }}></div>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                                                color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))"
+                                                style={{
+                                                    "userSelect": "none", "width": "100%", "height": "100%",
+                                                    "display": "inline-block", "fill":
+                                                        "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "color":
+                                                        "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "flexShrink": "0"
+                                                }}>
+                                                <g color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))">
+                                                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                                                </g>
+                                            </svg>
                                         </div>
                                     </button>
                                 </div>

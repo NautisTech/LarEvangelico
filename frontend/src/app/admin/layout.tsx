@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { ProtectedRoute, ModuleTabsProvider, TipoTab } from '@/context';
+import { ModuleTabsProvider, TipoTab } from '@/context';
 import { Topbar } from '@/components/admin/topbar';
 // @ts-expect-error
 import "./global.css";
@@ -27,10 +27,8 @@ export default function AdminLayout({
   );
 
   return (
-    <ProtectedRoute>
-      <ModuleTabsProvider defaultTab={TipoTab.tabela}>
-        {content}
-      </ModuleTabsProvider>
-    </ProtectedRoute>
+    <ModuleTabsProvider defaultTab={TipoTab.tabela}>
+      {content}
+    </ModuleTabsProvider>
   );
 }

@@ -10,7 +10,7 @@ import {
     ManyToMany,
     JoinTable
 } from 'typeorm';
-import { Anexo, Entidade, Grupo, Permissao } from '.';
+import { Anexo } from '.';
 import { Copy } from '@nestjs/common';
 
 @Entity('utilizadores')
@@ -54,23 +54,6 @@ export class Utilizador {
 
     @Column({ type: 'bit', default: true })
     ativo: boolean; // Indica se o utilizador está ativo
-
-    // Relacionamento com Entidade_Utilizador (Muitos para Muitos)
-    @ManyToMany(() => Entidade, (entidade) => entidade.utilizadores)
-    entidades: Entidade[];
-
-    // Relacionamento com Grupo_Utilizador (Muitos para Muitos)
-    @ManyToMany(() => Grupo, (grupo) => grupo.utilizadores)
-    grupos: Grupo[];
-
-    // Relacionamento com Utilizador_Permissao (Muitos para Muitos)
-    @ManyToMany(() => Permissao, (permissao) => permissao.utilizadores)
-    @JoinTable({
-        name: 'utilizador_permissao',
-        joinColumn: { name: 'utilizador_id', referencedColumnName: 'id' },
-        inverseJoinColumn: { name: 'permissao_id', referencedColumnName: 'id' },
-    })
-    permissoes: Permissao[];
 
     @Column({ type: 'datetime2', nullable: true })
     ultimo_login: Date | null; // Data do último login

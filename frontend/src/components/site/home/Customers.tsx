@@ -1,4 +1,8 @@
+"use client";
+import { useRouter } from 'next/navigation';
+
 export function Customers() {
+    const router = useRouter();
     return (
         <>
             <section className="framer-1fv6z0v" data-framer-name="Customers">
@@ -117,7 +121,7 @@ export function Customers() {
                                 </div>
                                 <div className="framer-1wydo3t" data-framer-name="Info Wrap">
                                     <div className="framer-4zv60h-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
-                                        data-border="true" data-framer-name="Primary" data-highlight="true" href="donation.html"
+                                        data-border="true" data-framer-name="Primary" data-highlight="true"
                                         tabIndex={0} style={{
                                             borderBottomWidth: "1px", borderColor:
                                                 "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))", borderLeftWidth: "1px", borderRightWidth: "1px",
@@ -131,12 +135,18 @@ export function Customers() {
                                                 Ajudar Alguém</p>
                                         </div>
                                         <div className="framer-mzpyxu" data-framer-name="Icon">
-                                            <div className="framer-vmczfr-container">
-                                                <div style={{ "display": "contents" }}></div>
-                                            </div>
-                                            <div className="framer-1kowoh0-container">
-                                                <div style={{ "display": "contents" }}></div>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                                                color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))"
+                                                style={{
+                                                    "userSelect": "none", "width": "100%", "height": "100%",
+                                                    "display": "inline-block", "fill":
+                                                        "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "color":
+                                                        "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "flexShrink": "0"
+                                                }}>
+                                                <g color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))">
+                                                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                                                </g>
+                                            </svg>
                                         </div>
                                     </a>
                                     </div>
@@ -259,7 +269,7 @@ export function Customers() {
                                 </div>
                                 <div className="framer-1wydo3t" data-framer-name="Info Wrap">
                                     <div className="framer-4zv60h-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
-                                        data-border="true" data-framer-name="Primary" data-highlight="true" href="donation.html"
+                                        data-border="true" data-framer-name="Primary" data-highlight="true"
                                         tabIndex={0} style={{
                                             borderBottomWidth: "1px", borderColor:
                                                 "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))", borderLeftWidth: "1px", borderRightWidth: "1px",
@@ -273,12 +283,18 @@ export function Customers() {
                                                 Ajudar Alguém</p>
                                         </div>
                                         <div className="framer-mzpyxu" data-framer-name="Icon">
-                                            <div className="framer-vmczfr-container">
-                                                <div style={{ "display": "contents" }}></div>
-                                            </div>
-                                            <div className="framer-1kowoh0-container">
-                                                <div style={{ "display": "contents" }}></div>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                                                color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))"
+                                                style={{
+                                                    "userSelect": "none", "width": "100%", "height": "100%",
+                                                    "display": "inline-block", "fill":
+                                                        "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "color":
+                                                        "var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))", "flexShrink": "0"
+                                                }}>
+                                                <g color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))">
+                                                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                                                </g>
+                                            </svg>
                                         </div>
                                     </a>
                                     </div>
@@ -374,7 +390,7 @@ export function Customers() {
                                         </figure>
                                     </div>
                                     <div className="framer-ucpkie-container"><a className="framer-h0BuT framer-jRQOc framer-RIsvM framer-cdvq63 framer-v-1egn2xx framer-nwk3ei"
-                                        data-framer-name="Small" href="causes.html">
+                                        data-framer-name="Small" onClick={() => router.push('/causas')}>
                                         <div className="framer-uxa79c" data-framer-name="Line" style={{ "backgroundColor": "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))" }}>
                                         </div>
                                         <div className="framer-bumizy" data-framer-name="View All Causes" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
@@ -451,7 +467,7 @@ export function Customers() {
                                         </figure>
                                     </div>
                                     <div className="framer-ucpkie-container"><a className="framer-h0BuT framer-jRQOc framer-RIsvM framer-cdvq63 framer-v-1egn2xx framer-nwk3ei"
-                                        data-framer-name="Small" href="causes.html">
+                                        data-framer-name="Small" onClick={() => router.push('/causas')}>
                                         <div className="framer-uxa79c" data-framer-name="Line" style={{ "backgroundColor": "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))" }}>
                                         </div>
                                         <div className="framer-bumizy" data-framer-name="View All Causes" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>

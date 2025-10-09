@@ -2,8 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { Modulo, TipoFiltro } from "@/utils";
-import { Loading } from "@/components";
-import { Comentario } from "@/models";
+import { Loading } from "@/components/common";
 import { Header, StackCard, FilterLineBase } from ".";
 import { TableProperties } from "lucide-react";
 

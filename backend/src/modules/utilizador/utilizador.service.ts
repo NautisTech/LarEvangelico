@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, Like, In } from 'typeorm';
-import { Utilizador, Entidade, Grupo, Permissao, Anexo } from '@/entities';
+import { Utilizador, Anexo } from '@/entities';
 
 import { CreateUtilizadorDto } from './dto/create-utilizador.dto';
 import { UpdateUtilizadorDto } from './dto/update-utilizador.dto';
@@ -13,37 +13,18 @@ export class UtilizadorService {
   constructor(
     @InjectRepository(Utilizador)
     private readonly utilizadorRepository: Repository<Utilizador>,
-    @InjectRepository(Entidade)
-    private readonly entidadeRepository: Repository<Entidade>,
-    @InjectRepository(Grupo)
-    private readonly grupoRepository: Repository<Grupo>,
-    @InjectRepository(Permissao)
-    private readonly permissaoRepository: Repository<Permissao>,
     @InjectRepository(Anexo)
     private readonly anexoRepository: Repository<Anexo>,
   ) { }
 
-  readonly baseRelations = [
-    'grupos',
-    'entidades',
+  readonly relations = [
     'anexo',
-  ];
-
-  readonly fullRelations = [
-    'grupos',
-    'entidades',
-    'anexo',
-    'permissoes',
-    'grupos.permissoes',
   ];
 
   async create(createUtilizadorDto: CreateUtilizadorDto) {
-    const { entidades, grupos, anexo, permissoes, ...utilizadorBase } = createUtilizadorDto;
+    const { anexo, ...utilizadorBase } = createUtilizadorDto;
     const utilizador = this.utilizadorRepository.create(utilizadorBase);
 
-    if (entidades) utilizador.entidades = await this.entidadeRepository.findBy({ id: In(entidades?.map(e => e.id)) });
-    if (grupos) utilizador.grupos = await this.grupoRepository.findBy({ id: In(grupos?.map(g => g.id)) });
-    if (permissoes) utilizador.permissoes = await this.permissaoRepository.findBy({ id: In(permissoes?.map(p => p.id)) });
     if (anexo) utilizador.anexo = await this.anexoRepository.findOneBy({ id: anexo.id });
 
     utilizador.criado_em = new Date();
@@ -55,21 +36,21 @@ export class UtilizadorService {
   async findAll(): Promise<Utilizador[]> {
     return await this.utilizadorRepository.find({
       where: { pbc: true },
-      relations: this.fullRelations,
+      relations: this.relations,
     });
   }
 
   async findAllBase(): Promise<Utilizador[]> {
     return await this.utilizadorRepository.find({
       where: { pbc: true },
-      relations: this.baseRelations,
+      relations: this.relations,
     });
   }
 
   async findById(id: number) {
     const utilizador = await this.utilizadorRepository.findOne({
       where: { id },
-      relations: this.fullRelations,
+      relations: this.relations,
     });
     if (!utilizador) throw new NotFoundException(`Utilizador com ID ${id} não encontrado`);
     return utilizador;
@@ -78,36 +59,16 @@ export class UtilizadorService {
   async findByIdBase(id: number) {
     const utilizador = await this.utilizadorRepository.findOne({
       where: { id },
-      relations: this.baseRelations,
+      relations: this.relations,
     });
     if (!utilizador) throw new NotFoundException(`Utilizador com ID ${id} não encontrado`);
     return utilizador;
   }
 
-  async findByEntidade(entidadeId: number): Promise<Utilizador[]> {
-    const utilizadores = await this.utilizadorRepository.find({
-      where: {
-        entidades: { id: entidadeId },
-      },
-      relations: this.fullRelations,
-    });
-    return utilizadores;
-  }
-
-  async findByEntidadeBase(entidadeId: number): Promise<Utilizador[]> {
-    const utilizadores = await this.utilizadorRepository.find({
-      where: {
-        entidades: { id: entidadeId },
-      },
-      relations: this.baseRelations,
-    });
-    return utilizadores;
-  }
-
   async findByEmail(email: string) {
     const utilizador = await this.utilizadorRepository.findOne({
       where: { email },
-      relations: this.baseRelations,
+      relations: this.relations,
     });
     if (!utilizador) throw new NotFoundException(`Utilizador com email ${email} não encontrado`);
     return utilizador;
@@ -124,7 +85,7 @@ export class UtilizadorService {
   async findByUsername(username: string) {
     const utilizador = await this.utilizadorRepository.findOne({
       where: { username },
-      relations: this.baseRelations,
+      relations: this.relations,
     });
     if (!utilizador) throw new NotFoundException(`Utilizador com nome de utilizador ${username} não encontrado`);
     return utilizador;
@@ -138,46 +99,14 @@ export class UtilizadorService {
     return utilizador;
   }
 
-  async getUserPermissoes(userId: number) {
-    const utilizador = await this.utilizadorRepository.findOne({
-      where: { id: userId },
-      relations: ['permissoes', 'grupos.permissoes'],
-      select: {
-        id: true,
-        permissoes: true,
-        grupos: {
-          id: true,
-          permissoes: true
-        }
-      }
-    });
-
-    if (!utilizador) {
-      throw new NotFoundException(`Utilizador com ID ${userId} não encontrado`);
-    }
-
-    const permissoesUtilizador = new Map();
-
-    utilizador.permissoes?.forEach(p => permissoesUtilizador.set(p.id, p));
-
-    utilizador.grupos?.forEach(grupo => {
-      grupo.permissoes?.forEach(p => permissoesUtilizador.set(p.id, p));
-    });
-
-    return Array.from(permissoesUtilizador.values());
-  }
-
   async update(id: number, updateUtilizadorDto: UpdateUtilizadorDto) {
     const utilizador = await this.findById(id);
     if (!utilizador) throw new NotFoundException(`Utilizador com ID ${id} não encontrado`);
 
-    const { entidades, grupos, anexo, permissoes, ...utilizadorBase } = updateUtilizadorDto;
+    const { anexo, ...utilizadorBase } = updateUtilizadorDto;
 
     Object.assign(utilizador, utilizadorBase);
 
-    if (entidades) utilizador.entidades = await this.entidadeRepository.findBy({ id: In(entidades?.map(e => e.id) || []) });
-    if (grupos) utilizador.grupos = await this.grupoRepository.findBy({ id: In(grupos?.map(g => g.id) || []) });
-    if (permissoes) utilizador.permissoes = await this.permissaoRepository.findBy({ id: In(permissoes?.map(p => p.id) || []) });
     if (anexo) utilizador.anexo = await this.anexoRepository.findOneBy({ id: anexo.id });
 
     utilizador.atualizado_em = new Date();

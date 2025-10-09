@@ -39,38 +39,6 @@ export const fetchUtilizadoresBase = async (): Promise<Utilizador[]> => {
   }
 };
 
-export const fetchUtilizadoresByEntidade = async (
-  entidadeId: number
-): Promise<Utilizador[]> => {
-  try {
-    const response = await axiosPrivate.get<Utilizador[]>(
-      `/utilizador/entidade/${entidadeId}`
-    );
-    if (Array.isArray(response.data)) {
-      return response.data;
-    }
-    throw new Error("Dados inválidos recebidos do servidor");
-  } catch (error) {
-    throw new Error(`Erro ao obter utilizadores por entidade: ${error}`);
-  }
-};
-
-export const fetchUtilizadoresByEntidadeBase = async (
-  entidadeId: number
-): Promise<Utilizador[]> => {
-  try {
-    const response = await axiosPrivate.get<Utilizador[]>(
-      `/utilizador/entidade/${entidadeId}/base`
-    );
-    if (Array.isArray(response.data)) {
-      return response.data;
-    }
-    throw new Error("Dados inválidos recebidos do servidor");
-  } catch (error) {
-    throw new Error(`Erro ao obter utilizadores por entidade: ${error}`);
-  }
-};
-
 export const createUtilizador = async (
   utilizador: CreateUtilizadorData
 ): Promise<Utilizador> => {

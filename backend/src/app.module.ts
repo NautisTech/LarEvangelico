@@ -41,24 +41,14 @@ const parseBoolean = (v?: string) => v === 'true';
       migrations: ['dist/migrations/*.js'],
       migrationsTableName: 'migration',
 
-      // ⚠️ Usa OU lista de entities OU autoLoadEntities. Evita duplicar.
+      // Usa OU lista de entities OU autoLoadEntities. Evita duplicar.
       // Se manténs autoLoadEntities=true, podes remover a lista abaixo.
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       // entities: [
-      //   e.Permissao,
       //   e.Anexo,
       //   e.Utilizador,
-      //   e.Grupo,
-      //   e.Modelo,
-      //   e.Marca,
-      //   e.Equipamento,
-      //   e.Ticket,
-      //   e.Reporte,
-      //   e.Intervencao,
-      //   e.Entidade,
       //   e.Etiqueta,
       //   e.Conteudo,
-      //   e.Comentario,
       // ],
 
 
@@ -84,18 +74,8 @@ const parseBoolean = (v?: string) => v === 'true';
 
     UtilizadorModule,
     AuthModule,
-    PermissaoModule,
-    GrupoModule,
-    ReporteModule,
-    EntidadeModule,
-    ModeloModule,
-    MarcaModule,
-    EquipamentoModule,
-    TicketModule,
-    IntervencaoModule,
     EtiquetaModule,
     ConteudoModule,
-    ComentarioModule,
     AnexoModule,
   ],
   controllers: [AppController],

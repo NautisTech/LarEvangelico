@@ -1,7 +1,7 @@
 "use client";
 
-import { GridBase } from "@/components";
-import { Functions } from "@/components/admin/conteudos/noticias";
+import { GridBase } from "@/components/admin";
+import { Functions } from "@/components/admin/noticias";
 import { Image, NewspaperIcon, Users } from "lucide-react";
 
 export function Grid() {

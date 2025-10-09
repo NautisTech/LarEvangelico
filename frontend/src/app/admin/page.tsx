@@ -4,7 +4,7 @@ import React from "react";
 import { Grid as NoticiasGrid } from "@/components/admin/noticias";
 import { Grid as ProjetosGrid } from "@/components/admin/projetos";
 import { Grid as EventosGrid } from "@/components/admin/eventos";
-import { ProtectedRoute, useModuleTabs, TipoTab } from "@/context";
+import { useModuleTabs, TipoTab } from "@/context";
 import { BarChart3, FileText } from "lucide-react";
 import { Modulo, TipoConteudo } from "@/utils";
 import { Loading } from "@/components/common";
@@ -18,29 +18,28 @@ export default function ConteudosPage() {
 
     const isLoadingConteudos = isLoadingConteudosData;
     return (
-        <ProtectedRoute moduloNecessario={Modulo.Conteudos}>
-            <div className="space-y-6">
-                {activeTab === TipoTab.tabela && (
-                    <div>
-                        <NoticiasGrid />
-                    </div>
-                )}
+        <div className="space-y-6">
+            {activeTab === TipoTab.tabela && (
+                <div>
+                    <NoticiasGrid />
+                </div>
+            )}
 
-                {activeTab === TipoTab.causas && (
-                    <div>
-                        <ProjetosGrid />
-                    </div>
-                )}
+            {activeTab === TipoTab.causas && (
+                <div>
+                    <ProjetosGrid />
+                </div>
+            )}
 
-                {activeTab === TipoTab.eventos && (
-                    <div>
-                        <EventosGrid />
-                    </div>
-                )}
+            {activeTab === TipoTab.eventos && (
+                <div>
+                    <EventosGrid />
+                </div>
+            )}
 
-                {activeTab === TipoTab.dashboard && (
-                    <div>
-                        {/* {isLoadingConteudos ? (
+            {activeTab === TipoTab.dashboard && (
+                <div>
+                    {/* {isLoadingConteudos ? (
                             <div className="flex items-center justify-center h-64 bg-white rounded-lg shadow">
                                 <div className="text-center">
                                     <Loading />
@@ -59,9 +58,8 @@ export default function ConteudosPage() {
                         ) : (
                             <ConteudoDashboard conteudos={conteudosData} comentarios={comentariosData} />
                         )} */}
-                    </div>
-                )}
-            </div>
-        </ProtectedRoute>
+                </div>
+            )}
+        </div>
     );
 }

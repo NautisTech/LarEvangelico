@@ -10,7 +10,7 @@ export function OurProjects() {
                                     "transform", "opacity": "1", "transform": "none"
                             }}>
                             <h2 className="framer-text framer-styles-preset-s0nzzz" data-styles-preset="N1eiVmsrJ"
-                                style={{ textAlign: "center" }}>Os nosso Projetos</h2>
+                                style={{ textAlign: "center" }}>Os nossos Projetos</h2>
 
                         </div>
                     </div>
@@ -21,7 +21,7 @@ export function OurProjects() {
                                 "transform": "none"
                             }}>
                             <h2 className="framer-text framer-styles-preset-s0nzzz" data-styles-preset="N1eiVmsrJ"
-                                style={{ textAlign: "center" }}>Os nosso Projetos</h2>
+                                style={{ textAlign: "center" }}>Os nossos Projetos</h2>
 
                         </div>
                     </div>

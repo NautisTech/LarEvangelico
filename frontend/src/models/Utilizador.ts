@@ -1,5 +1,5 @@
 import { Modulo } from '@/utils';
-import { Anexo, Entidade, Grupo, Permissao } from '.';
+import { Anexo } from '.';
 
 export class Utilizador {
   id: number | null;  // Identificador único (chave primária)
@@ -26,12 +26,6 @@ export class Utilizador {
 
   ativo: boolean;  // Indica se o utilizador está ativo
 
-  entidades: Entidade[] | null;  // Relacionamento com Entidade_Utilizador (Muitos para Muitos)
-
-  grupos: Grupo[] | null;  // Relacionamento com Grupo_Utilizador (Muitos para Muitos)
-
-  permissoes: Permissao[] | null;  // Relacionamento com Utilizador_Permissao (Muitos para Muitos)
-
   ultimo_login: Date | null;  // Data do último login
 
   ultimo_ip: string | null;  // Último endereço IP usado no login
@@ -53,9 +47,6 @@ export class Utilizador {
     this.senha_alterada_em = data.senha_alterada_em ?? null;
     this.token_recordar = data.token_recordar ?? null;
     this.ativo = data.ativo ?? true;
-    this.entidades = data.entidades ?? [];
-    this.grupos = data.grupos ?? null;
-    this.permissoes = data.permissoes ?? null;
     this.ultimo_login = data.ultimo_login ?? null;
     this.ultimo_ip = data.ultimo_ip ?? null;
     this.criado_em = data.criado_em ?? new Date();
@@ -72,23 +63,5 @@ export class Utilizador {
 
   getUsername(): string {
     return this.username ?? this.nome ?? 'utilizador';
-  }
-
-  pertenceAoGrupo(nomeGrupo: string): boolean {
-    return this.grupos?.some(grupo => grupo.nome === nomeGrupo) ?? false;
-  }
-
-  getUtilizadorModulos(): Modulo[] {
-    const modulosSet = new Set<Modulo>();
-    this.permissoes?.forEach(permissao => {
-      modulosSet.add(permissao.modulo);
-    });
-
-    this.grupos?.forEach(grupo => {
-      grupo.permissoes?.forEach(permissao => {
-        modulosSet.add(permissao.modulo);
-      });
-    });
-    return Array.from(modulosSet);
   }
 }

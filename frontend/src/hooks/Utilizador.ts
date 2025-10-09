@@ -3,8 +3,6 @@ import { type Utilizador } from "@/models";
 import {
     fetchUtilizadores,
     fetchUtilizadoresBase,
-    fetchUtilizadoresByEntidade,
-    fetchUtilizadoresByEntidadeBase,
     createUtilizador,
     updateUtilizador,
     changeUtilizadorPassword,
@@ -31,24 +29,6 @@ export const useUtilizadorBaseHook = () => {
     return useQuery<Utilizador[]>({
         queryKey: ["utilizadores", "base"],
         queryFn: () => fetchUtilizadoresBase(),
-        staleTime: refreshInterval,
-        retry: 1,
-    });
-};
-
-export const useUtilizadorByEntidadeHook = (entidadeId: number) => {
-    return useQuery<Utilizador[]>({
-        queryKey: ["utilizadores", entidadeId],
-        queryFn: () => fetchUtilizadoresByEntidade(entidadeId),
-        staleTime: refreshInterval,
-        retry: 1,
-    });
-};
-
-export const useUtilizadorByEntidadeBaseHook = (entidadeId: number) => {
-    return useQuery<Utilizador[]>({
-        queryKey: ["utilizadores", "base", entidadeId],
-        queryFn: () => fetchUtilizadoresByEntidadeBase(entidadeId),
         staleTime: refreshInterval,
         retry: 1,
     });

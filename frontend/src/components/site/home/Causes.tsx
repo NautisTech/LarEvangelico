@@ -1,7 +1,12 @@
+"use client";
+
 // @ts-nocheck
 import './Causes.module.css';
 
+import { useRouter } from 'next/navigation';
+
 export function Causes() {
+    const router = useRouter();
     return (
         <>
             <section className="framer-1ho1v04" data-framer-name="Causes">
@@ -693,7 +698,7 @@ export function Causes() {
                                 "willChange":
                                     "transform", "opacity": "1", "transform": "none"
                             }}> <a className="framer-h0BuT framer-jRQOc framer-RIsvM framer-cdvq63 framer-v-cdvq63 framer-nwk3ei"
-                                data-framer-name="Primary" href="causes.html">
+                                data-framer-name="Primary" onClick={() => router.push('/causas')}>
                                     <div className="framer-uxa79c" data-framer-name="Line" style={{ "backgroundColor": "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))" }}>
                                     </div>
                                     <div className="framer-bumizy" data-framer-name="View All Causes" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>
@@ -709,7 +714,7 @@ export function Causes() {
                                 "opacity": "1",
                                 "transform": "none"
                             }}><a className="framer-h0BuT framer-jRQOc framer-RIsvM framer-cdvq63 framer-v-cdvq63 framer-nwk3ei"
-                                data-framer-name="Primary" href="causes.html">
+                                data-framer-name="Primary" onClick={() => router.push('/causas')}>
                                     <div className="framer-uxa79c" data-framer-name="Line" style={{ "backgroundColor": "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))" }}>
                                     </div>
                                     <div className="framer-bumizy" data-framer-name="View All Causes" data-framer-component-type="RichTextContainer" style={{ "transform": "none" }}>

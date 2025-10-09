@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, Index, JoinTable, UpdateDateColumn, CreateDateColumn, ManyToOne, JoinColumn, OneToMany } from 'typeorm';
-import { Etiqueta, Utilizador, Anexo, Comentario, Entidade } from '.';
+import { Etiqueta, Utilizador, Anexo } from '.';
 import { TipoConteudo } from '@/utils';
 
 @Entity('conteudos')
@@ -53,10 +53,6 @@ export class Conteudo {
     @UpdateDateColumn({ type: 'datetime2', nullable: true, onUpdate: 'CURRENT_TIMESTAMP' })
     atualizado_em: Date | null; // Data da última atualização
 
-    // Relacionamento com Entidade_Entidade (Muitos para Muitos)
-    @ManyToMany(() => Entidade, (entidade) => entidade.conteudos)
-    entidades: Entidade[];
-
     // Relacionamento com Conteudo_Etiqueta (Muitos para Muitos)
     @ManyToMany(() => Etiqueta, (etiqueta) => etiqueta.conteudos)
     @JoinTable({
@@ -68,7 +64,4 @@ export class Conteudo {
 
     @OneToMany(() => Anexo, (anexo) => anexo.conteudo, { cascade: true, onDelete: 'CASCADE' })
     anexos: Anexo[] | null; // Relacionamento com a tabela 'anexos'
-
-    @OneToMany(() => Comentario, (comentario) => comentario.conteudo, { nullable: true })
-    comentarios: Comentario[] | null; // Relacionamento com a tabela 'comentarios'
 }

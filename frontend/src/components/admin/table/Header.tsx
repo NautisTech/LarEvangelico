@@ -15,8 +15,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { useAuthContext } from "@/context";
-import { Modulo, TipoPermissao, TipoExportacao, handleExportar } from "@/utils";
-import { usePermissoesHelpers } from "@/hooks";
+import { Modulo } from "@/utils";
 
 interface HeaderProps {
   modulo: Modulo;
@@ -74,25 +73,6 @@ export function Header({
   customActions,
 }: HeaderProps) {
   const [exportOpen, setExportOpen] = useState(false);
-  const { utilizador, isAdmin } = useAuthContext();
-  const { temPermissaoEspecifica } = usePermissoesHelpers();
-
-  let temPermissaoCriar,
-    temPermissaoApagar,
-    temPermissaoEditar,
-    temPermissaoDesativar,
-    temPermissaoConcluir,
-    temPermissaoAprovar;
-  if (temAcoes && utilizador) {
-    if (utilizador) {
-      temPermissaoCriar = isAdmin || temPermissaoEspecifica(`${modulo}_${TipoPermissao.Criar}`) || false;
-      temPermissaoApagar = isAdmin || temPermissaoEspecifica(`${modulo}_${TipoPermissao.Apagar}`) || false;
-      temPermissaoEditar = isAdmin || temPermissaoEspecifica(`${modulo}_${TipoPermissao.Editar}`) || false;
-      temPermissaoDesativar = isAdmin || temPermissaoEspecifica(`${modulo}_${TipoPermissao.Desativar}`) || false;
-      temPermissaoConcluir = isAdmin || temPermissaoEspecifica(`${modulo}_${TipoPermissao.Concluir}`) || false;
-      temPermissaoAprovar = isAdmin || temPermissaoEspecifica(`${modulo}_${TipoPermissao.Aprovar}`) || false;
-    }
-  }
 
   return (
     <>
@@ -146,83 +126,68 @@ export function Header({
           {temAcoes && (
             <>
               <div className="flex justify-end mt-1 gap-2">
-                {temPermissaoConcluir && (
-                  <>
-                    {onConclude && (
-                      <button
-                        className="button-base create-button"
-                        onClick={onConclude}
-                      >
-                        <Check size={16} className="inline! mr-2!" />
-                        {"Concluir Selecionados"}
-                      </button>
-                    )}
-
-                    {onReopen && (
-                      <button
-                        className="button-base delete-button"
-                        onClick={onReopen}
-                      >
-                        <X size={16} className="inline! mr-2!" />
-                        {"Reabrir Selecionados"}
-                      </button>
-                    )}
-                  </>
+                {onConclude && (
+                  <button
+                    className="button-base create-button"
+                    onClick={onConclude}
+                  >
+                    <Check size={16} className="inline! mr-2!" />
+                    {"Concluir Selecionados"}
+                  </button>
                 )}
 
-                {temPermissaoAprovar && (
-                  <>
-                    {onApprove && (
-                      <button
-                        className="button-base create-button"
-                        onClick={onApprove}
-                      >
-                        <Check size={16} className="inline! mr-2!" />
-                        {modulo === Modulo.Comentarios && ("Aprovar Selecionados")}
-                        {modulo === Modulo.Conteudos && ("Publicar Selecionados")}
-                      </button>
-                    )}
-
-                    {onDisapprove && (
-                      <button
-                        className="button-base delete-button"
-                        onClick={onDisapprove}
-                      >
-                        <X size={16} className="inline! mr-2!" />
-                        {modulo === Modulo.Comentarios && ("Reprovar Selecionados")}
-                        {modulo === Modulo.Conteudos && ("Ocultar Selecionados")}
-                      </button>
-                    )}
-                  </>
+                {onReopen && (
+                  <button
+                    className="button-base delete-button"
+                    onClick={onReopen}
+                  >
+                    <X size={16} className="inline! mr-2!" />
+                    {"Reabrir Selecionados"}
+                  </button>
+                )}
+                {onApprove && (
+                  <button
+                    className="button-base create-button"
+                    onClick={onApprove}
+                  >
+                    <Check size={16} className="inline! mr-2!" />
+                    {modulo === Modulo.Conteudos && ("Publicar Selecionados")}
+                  </button>
                 )}
 
-                {temPermissaoDesativar && (
-                  <>
-                    {onActivate && (
-                      <button
-                        className="button-base create-button"
-                        onClick={onActivate}
-                      >
-                        <PlusIcon size={16} className="inline! mr-2!" />
-                        {"Ativar Selecionados"}
-                      </button>
-                    )}
+                {onDisapprove && (
+                  <button
+                    className="button-base delete-button"
+                    onClick={onDisapprove}
+                  >
+                    <X size={16} className="inline! mr-2!" />
+                    {modulo === Modulo.Conteudos && ("Ocultar Selecionados")}
+                  </button>
+                )}
 
-                    {onDeactivate && (
-                      <button
-                        className="button-base delete-button"
-                        onClick={onDeactivate}
-                      >
-                        <MinusIcon size={16} className="inline! mr-2!" />
-                        {"Desativar Selecionados"}
-                      </button>
-                    )}
-                  </>
+                {onActivate && (
+                  <button
+                    className="button-base create-button"
+                    onClick={onActivate}
+                  >
+                    <PlusIcon size={16} className="inline! mr-2!" />
+                    {"Ativar Selecionados"}
+                  </button>
+                )}
+
+                {onDeactivate && (
+                  <button
+                    className="button-base delete-button"
+                    onClick={onDeactivate}
+                  >
+                    <MinusIcon size={16} className="inline! mr-2!" />
+                    {"Desativar Selecionados"}
+                  </button>
                 )}
               </div>
 
               <div className="flex justify-end gap-2">
-                {temPermissaoCriar && onCreate && (
+                {onCreate && (
                   <button
                     className="button-base create-button"
                     onClick={onCreate}
@@ -231,7 +196,7 @@ export function Header({
                     {"Criar"}
                   </button>
                 )}
-                {temPermissaoApagar && onDelete && (
+                {onDelete && (
                   <button
                     className="button-base delete-button"
                     onClick={onDelete}
@@ -240,7 +205,7 @@ export function Header({
                     {"Apagar Selecionados"}
                   </button>
                 )}
-                {temPermissaoEditar && onEdit && (
+                {onEdit && (
                   <button className="button-base edit-button" onClick={onEdit}>
                     <PencilIcon size={16} className="inline! mr-2!" />
                     {"Editar Selecionados"}
@@ -270,73 +235,6 @@ export function Header({
               <RefreshCwIcon size={16} />
               Recarregar Dados
             </button>
-            {!hideExport && (
-              <div className="relative">
-                <button
-                  className="button-base export-button flex items-center gap-2"
-                  type="button"
-                  onClick={() => setExportOpen((v) => !v)}
-                >
-                  <CloudDownloadIcon size={16} />
-                  Exportar
-                  <ChevronDownIcon size={16} />
-                </button>
-                {exportOpen && (
-                  <>
-                    {/* Backdrop para fechar ao clicar fora */}
-                    <div
-                      className="fixed inset-0 z-40"
-                      onClick={() => setExportOpen(false)}
-                    />
-                    <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-xl z-50 animate-in fade-in-0 zoom-in-95 duration-200">
-                      <div className="py-2">
-                        <button
-                          className="w-full px-4 py-2.5 text-sm text-left text-gray-700 hover:bg-red-50 hover:text-red-700 transition-colors duration-200 flex items-center gap-3"
-                          onClick={() =>
-                            handleExportar(TipoExportacao.CSV, onExportData, setExportOpen)
-                          }
-                        >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                          </svg>
-                          Exportar CSV
-                        </button>
-                        <button
-                          className="w-full px-4 py-2.5 text-sm text-left text-gray-700 hover:bg-red-50 hover:text-red-700 transition-colors duration-200 flex items-center gap-3"
-                          onClick={() =>
-                            handleExportar(
-                              TipoExportacao.Excel,
-                              onExportData,
-                              setExportOpen
-                            )
-                          }
-                        >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                          </svg>
-                          Exportar Excel
-                        </button>
-                        <button
-                          className="w-full px-4 py-2.5 text-sm text-left text-gray-700 hover:bg-red-50 hover:text-red-700 transition-colors duration-200 flex items-center gap-3"
-                          onClick={() =>
-                            handleExportar(
-                              TipoExportacao.Markdown,
-                              onExportData,
-                              setExportOpen
-                            )
-                          }
-                        >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                          </svg>
-                          Exportar Markdown
-                        </button>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
-            )}
             {customActions}
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Entidade, Utilizador, Etiqueta, Anexo, Comentario } from '@/models';
+import { Utilizador, Etiqueta, Anexo } from '@/models';
 import { TipoConteudo } from '@/utils';
 
 export class Conteudo {
@@ -30,13 +30,9 @@ export class Conteudo {
 
     atualizado_em: Date | null; // Data da última atualização
 
-    entidades: Entidade[]; // Relacionamento com Entidade_Entidade (Muitos para Muitos)
-
     etiquetas: Etiqueta[]; // Relacionamento com Conteudo_Etiqueta (Muitos para Muitos)
 
     anexos: Anexo[] | null;
-
-    comentarios: Comentario[] | null;
 
     constructor(data: Partial<Conteudo> = {}) {
         this.id = data.id ?? null;
@@ -53,9 +49,7 @@ export class Conteudo {
         this.atualizado_por = data.atualizado_por ?? null;
         this.criado_em = data.criado_em ?? new Date();
         this.atualizado_em = data.atualizado_em ?? null;
-        this.entidades = data.entidades ?? [];
         this.etiquetas = data.etiquetas ?? [];
         this.anexos = data.anexos ?? [];
-        this.comentarios = data.comentarios ?? [];
     }
 }

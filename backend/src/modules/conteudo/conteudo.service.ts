@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, Like, In } from 'typeorm';
-import { Conteudo, Entidade, Equipamento, Etiqueta, Utilizador, Anexo } from '@/entities';
-import { Estado, TipoConteudo } from '@/utils';
+import { Conteudo, Etiqueta, Utilizador, Anexo } from '@/entities';
+import { TipoConteudo } from '@/utils';
 import { CreateConteudoDto } from './dto/create-conteudo.dto';
 import { UpdateConteudoDto } from './dto/update-conteudo.dto';
 import { BulkUpdateConteudoDto } from './dto/bulk-update-conteudo.dto';
@@ -15,8 +15,6 @@ export class ConteudoService {
     constructor(
         @InjectRepository(Conteudo)
         private readonly conteudoRepository: Repository<Conteudo>,
-        @InjectRepository(Entidade)
-        private readonly entidadeRepository: Repository<Entidade>,
         @InjectRepository(Etiqueta)
         private readonly etiquetaRepository: Repository<Etiqueta>,
         @InjectRepository(Utilizador)
@@ -25,9 +23,9 @@ export class ConteudoService {
         private readonly anexoRepository: Repository<Anexo>,
     ) { }
 
-    readonly relations = ['entidades', 'criado_por', 'atualizado_por', 'etiquetas', 'anexos', 'comentarios', 'comentarios.utilizador', 'comentarios.utilizador.anexo', 'comentarios.moderado_por', 'comentarios.moderado_por.anexo'];
+    readonly relations = ['criado_por', 'atualizado_por', 'etiquetas', 'anexos'];
 
-    // Helper: garante que todas as etiquetas existem e retorna as entidades.
+    // Helper: garante que todas as etiquetas existems.
     // Comportamento:
     // - entradas com `id` são carregadas por id
     // - entradas sem `id` (ou com id == null) são criadas pelo nome
@@ -104,23 +102,11 @@ export class ConteudoService {
         }
     }
 
-    async findByEntidade(entidadeId: number, tipo: string, isPublic: boolean = false): Promise<Conteudo[]> {
-        const tipoConteudo = TipoConteudo[tipo as keyof typeof TipoConteudo];
-
-        if (isPublic) return await this.conteudoRepository.find({
-            where: { entidades: { id: entidadeId }, tipo: tipoConteudo, publico: true }, relations: this.relations,
-        });
-        else return await this.conteudoRepository.find({
-            where: { entidades: { id: entidadeId }, tipo: tipoConteudo }, relations: this.relations,
-        });
-    }
-
     async create(createConteudoDto: CreateConteudoDto, userId: number): Promise<Conteudo> {
-        const { entidades, etiquetas, comentarios, ...conteudoBase } = createConteudoDto;
+        const { etiquetas, ...conteudoBase } = createConteudoDto;
         const conteudo = this.conteudoRepository.create(conteudoBase);
 
         // usar o nome porque vem do editor em nomes e para os que traz objeto completo nao faz diferença
-        if (entidades) conteudo.entidades = await this.entidadeRepository.findBy({ nome: In(entidades?.map(e => e.nome)) });
         if (etiquetas) conteudo.etiquetas = await this.ensureEtiquetas(etiquetas);
 
         conteudo.criado_em = new Date();
@@ -132,7 +118,7 @@ export class ConteudoService {
 
     async update(id: number, updateConteudoDto: UpdateConteudoDto, userId: number): Promise<Conteudo> {
         // Extrair `anexos` e `comentarios` do DTO para que não sejam reatribuídos diretamente via Object.assign
-        const { entidades, etiquetas, anexos, comentarios, ...conteudoBase } = updateConteudoDto as any;
+        const { etiquetas, anexos, ...conteudoBase } = updateConteudoDto as any;
 
         const conteudo = await this.findById(id);
         if (!conteudo) throw new NotFoundException(`Conteudo com ID ${id} não encontrado`);
@@ -140,7 +126,6 @@ export class ConteudoService {
         Object.assign(conteudo, conteudoBase);
 
         // usar o nome porque vem do editor em nomes e para os que traz objeto completo nao faz diferença
-        if (entidades) conteudo.entidades = await this.entidadeRepository.findBy({ nome: In(entidades?.map(e => e.nome)) });
         if (etiquetas) conteudo.etiquetas = await this.ensureEtiquetas(etiquetas);
 
         const existingAnexos = await this.anexoRepository.find({ where: { conteudo: { id: conteudo.id } } });

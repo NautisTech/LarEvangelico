@@ -1,21 +1,11 @@
 import { Repository } from 'typeorm';
-import { Utilizador, Entidade, Permissao, Grupo } from '@/entities';
+import { Utilizador } from '@/entities';
 import * as bcrypt from 'bcrypt';
 
 export class UtilizadorSeeder {
     static async run(
         utilizadorRepository: Repository<Utilizador>,
-        entidadeRepository: Repository<Entidade>,
-        permissaoRepository: Repository<Permissao>,
-        grupoRepository: Repository<Grupo>,
     ) {
-        const entidades = await entidadeRepository.find();
-        const permissoes = await permissaoRepository.find();
-        const grupos = await grupoRepository.find();
-
-        const adminGroup = await grupoRepository.findOne({
-            where: { nome: 'Administradores' },
-        });
 
         const senhaHash = await bcrypt.hash('123456', 10);
 
@@ -30,11 +20,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades: entidades,
                 ativo: true,
                 pbc: false,
-                grupos: adminGroup ? [adminGroup] : [],
-                permissoes,
             }),
             utilizadorRepository.create({
                 nome: 'MicroLopes',
@@ -46,11 +33,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades: [entidades[0]],
                 ativo: true,
                 pbc: false,
-                grupos: adminGroup ? [adminGroup] : [],
-                permissoes,
             }),
             utilizadorRepository.create({
                 nome: 'Nautis',
@@ -62,11 +46,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades: [entidades[0]],
                 ativo: true,
                 pbc: false,
-                permissoes,
-                grupos: adminGroup ? [adminGroup] : [],
             }),
             utilizadorRepository.create({
                 nome: 'Guest',
@@ -79,11 +60,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades,
                 pbc: false,
                 ativo: true,
-                permissoes,
-                grupos: [],
             }),
             utilizadorRepository.create({
                 nome: 'David Lopes',
@@ -95,11 +73,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades: [entidades[1]],
                 ativo: true,
                 pbc: true,
-                permissoes,
-                grupos: adminGroup ? [adminGroup] : [],
             }),
             utilizadorRepository.create({
                 nome: 'Ana Silva',
@@ -111,11 +86,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades: [entidades[1]],
                 ativo: true,
                 pbc: true,
-                permissoes,
-                grupos: grupos[2] ? [grupos[2]] : [],
             }),
             utilizadorRepository.create({
                 nome: 'João Pereira',
@@ -127,11 +99,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades: [entidades[2]],
                 ativo: true,
                 pbc: true,
-                permissoes,
-                grupos: grupos[2] ? [grupos[2]] : [],
             }),
             utilizadorRepository.create({
                 nome: 'Maria Fernandes',
@@ -143,11 +112,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades: [entidades[2]],
                 ativo: true,
                 pbc: true,
-                permissoes,
-                grupos: grupos[3] ? [grupos[3]] : [],
             }),
             utilizadorRepository.create({
                 nome: 'Carlos Sousa',
@@ -159,11 +125,8 @@ export class UtilizadorSeeder {
                 telefone_verificado_em: null,
                 senha_alterada_em: null,
                 token_recordar: null,
-                entidades: [entidades[0], entidades[2]],
                 ativo: true,
                 pbc: true,
-                permissoes,
-                grupos: grupos[4] ? [grupos[4]] : [],
             })
         ];
 

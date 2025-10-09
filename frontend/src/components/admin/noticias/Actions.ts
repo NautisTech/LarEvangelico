@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { useConfirm } from '@/hooks';
 import { TipoConteudo } from "@/utils";
 
-export const Actions = (canApprove: boolean) => {
+export const Actions = () => {
     const mutations = useConteudoMutations();
     const anexoMutations = useAnexoMutations();
     const { confirm } = useConfirm();
@@ -12,7 +12,7 @@ export const Actions = (canApprove: boolean) => {
     const createNoticia = async (noticia: CreateConteudoData) => {
         try {
             const noticiaData = { ...noticia, tipo: TipoConteudo.Noticia };
-            await mutations.create.mutateAsync({ data: noticiaData, canApprove });
+            await mutations.create.mutateAsync({ data: noticiaData });
             toast.success("Noticia criado com sucesso!");
         } catch (error) {
             toast.error("Erro ao criar noticia.");
@@ -137,7 +137,7 @@ export const Actions = (canApprove: boolean) => {
     const createAnexo = async (anexos: CreateConteudoData) => {
         try {
             const anexosData = { ...anexos };
-            await mutations.create.mutateAsync({ data: anexosData, canApprove });
+            await mutations.create.mutateAsync({ data: anexosData });
             toast.success("Anexos criado com sucesso!");
         } catch (error) {
             toast.error("Erro ao criar anexos.");

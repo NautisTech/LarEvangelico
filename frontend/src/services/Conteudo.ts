@@ -1,4 +1,4 @@
-import { axiosPrivate, axiosPublic, Modulo, TipoConteudo, TipoPermissao } from "@/utils";
+import { axiosPrivate, axiosPublic, Modulo, TipoConteudo } from "@/utils";
 import { type Conteudo } from '@/models'
 
 export type CreateConteudoData = Omit<Conteudo, 'id' | 'criado_em' | 'criado_por' | 'atualizado_por' | 'atualizado_em' | 'visualizacoes'>;
@@ -19,22 +19,6 @@ export const fetchConteudos = async (tipo: TipoConteudo, isPublic: boolean = fal
         const client = isPublic ? axiosPublic : axiosPrivate;
         const base = isPublic ? "/conteudo/public" : "/conteudo";
         const response = await client.get<Conteudo[]>(`${base}/${tipo.toString()}`);
-
-        if (Array.isArray(response.data)) {
-            return response.data;
-        }
-        throw new Error("Dados inválidos recebidos do servidor");
-    } catch (error) {
-        throw new Error("Erro ao obter conteudos.");
-    }
-};
-
-export const fetchConteudosByEntidade = async (entidadeId: number, tipo: TipoConteudo, isPublic: boolean = false): Promise<Conteudo[]> => {
-    try {
-
-        const client = isPublic ? axiosPublic : axiosPrivate;
-        const base = isPublic ? "/conteudo/public" : "/conteudo";
-        const response = await client.get<Conteudo[]>(`${base}/${tipo.toString()}/entidade/${entidadeId}`);
 
         if (Array.isArray(response.data)) {
             return response.data;

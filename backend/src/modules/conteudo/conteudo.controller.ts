@@ -27,17 +27,6 @@ export class ConteudoController {
   }
 
   @UseGuards(JwtAuthGuard)
-  @Get(':tipo/entidade/:entidadeId')
-  findByEntidade(@Param('entidadeId') entidadeId: string, @Param('tipo') tipo: string) {
-    return this.conteudoService.findByEntidade(+entidadeId, tipo);
-  }
-
-  @Get('/public/:tipo/entidade/:entidadeId')
-  findByEntidadePublic(@Param('entidadeId') entidadeId: string, @Param('tipo') tipo: string) {
-    return this.conteudoService.findByEntidade(+entidadeId, tipo, true);
-  }
-
-  @UseGuards(JwtAuthGuard)
   @Get('id/:id')
   findById(@Param('id') id: string) {
     return this.conteudoService.findById(+id, false);

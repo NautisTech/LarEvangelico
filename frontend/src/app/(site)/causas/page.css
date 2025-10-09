@@ -1,0 +1,3920 @@
+@media(min-width: 1200px) {
+    .hidden-i8u7wv {
+    display: none !important
+    }
+}
+
+@media(min-width: 810px) and (max-width: 1199.98px) {
+    .hidden-44iexs {
+    display: none !important
+    }
+}
+
+@media(max-width: 809.98px) {
+    .hidden-s0rxjy {
+    display: none !important
+    }
+}
+
+@media(min-width: 1200px) {
+    .hidden-1abs8j6 {
+    display: none !important
+    }
+}
+
+@media(min-width: 810px) and (max-width: 1199.98px) {
+    .hidden-zd6a81 {
+    display: none !important
+    }
+}
+
+@media(max-width: 809.98px) {
+    .hidden-11f5tl6 {
+    display: none !important
+    }
+}
+html,
+body,
+#main {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+:root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+    margin: 0
+}
+
+body,
+input,
+textarea,
+select,
+button {
+    font-family: sans-serif;
+    font-size: 12px
+}
+
+body {
+    --token-39994faa-240b-446c-8aa7-a268b7374093: #521807;
+    --token-f1712222-c010-4358-b082-9f76dbcbd998: #71220b;
+    --token-b48c5b23-5851-4ed2-9bdd-7e6ab154d227: #bb3c0d;
+    --token-065bffec-4ac7-4625-aced-acd0f0a75d90: #fece66;
+    --token-5ec6aeea-8c6d-40c2-8c84-9ad65ab55283: #9b7450;
+    --token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1: #1d0f02;
+    --token-348e6ce1-e584-4f78-bf23-eb92d4651c91: #55524f;
+    --token-9ca26da9-caa1-4ebe-9c52-4666be5c548a: #f9ead8;
+    --token-135f6f43-e57a-44a4-82f0-b3aebfe564cb: #f9f4f1;
+    --token-4e132b7a-8408-4224-bc97-7e71f267842c: #d7c9b7;
+    --token-3a43d70e-9044-4fcc-943f-bb35b36ef731: #fff;
+    --token-bc8dc2e2-1f96-4797-af83-03ec8898f42f: #fff0;
+    --token-a233ba6a-164a-4c7e-b212-0ff3cb34e744: #000
+}
+
+@supports (z-index:calc(infinity)) {
+    #__framer-badge-container {
+    --infinity: infinity
+    }
+}
+
+#__framer-badge-container {
+    pointer-events: none;
+    width: 100%;
+    z-index: calc(var(--infinity, 2147480000));
+    justify-content: flex-end;
+    padding: 20px;
+    display: flex;
+    position: fixed;
+    bottom: 0
+}
+
+body {
+    --framer-will-change-override: none
+}
+
+@supports (background:-webkit-named-image(i)) and (not (grid-template-rows:subgrid)) {
+    body {
+    --framer-will-change-override: transform
+    }
+}
+
+[data-framer-component-type] {
+    position: absolute
+}
+
+[data-framer-component-type=Text] {
+    cursor: inherit
+}
+
+[data-framer-component-text-autosized] * {
+    white-space: pre
+}
+
+[data-framer-component-type=Text]>* {
+    text-align: var(--framer-text-alignment, start)
+}
+
+[data-framer-component-type=Text] span span,
+[data-framer-component-type=Text] p span,
+[data-framer-component-type=Text] h1 span,
+[data-framer-component-type=Text] h2 span,
+[data-framer-component-type=Text] h3 span,
+[data-framer-component-type=Text] h4 span,
+[data-framer-component-type=Text] h5 span,
+[data-framer-component-type=Text] h6 span {
+    display: block
+}
+
+[data-framer-component-type=Text] span span span,
+[data-framer-component-type=Text] p span span,
+[data-framer-component-type=Text] h1 span span,
+[data-framer-component-type=Text] h2 span span,
+[data-framer-component-type=Text] h3 span span,
+[data-framer-component-type=Text] h4 span span,
+[data-framer-component-type=Text] h5 span span,
+[data-framer-component-type=Text] h6 span span {
+    display: unset
+}
+
+[data-framer-component-type=Text] div div span,
+[data-framer-component-type=Text] a div span,
+[data-framer-component-type=Text] span span span,
+[data-framer-component-type=Text] p span span,
+[data-framer-component-type=Text] h1 span span,
+[data-framer-component-type=Text] h2 span span,
+[data-framer-component-type=Text] h3 span span,
+[data-framer-component-type=Text] h4 span span,
+[data-framer-component-type=Text] h5 span span,
+[data-framer-component-type=Text] h6 span span,
+[data-framer-component-type=Text] a {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: min(calc(var(--framer-font-weight-increase, 0) + var(--font-weight, 400)), 900);
+    color: var(--text-color);
+    letter-spacing: var(--letter-spacing);
+    font-size: var(--font-size);
+    text-transform: var(--text-transform);
+    --text-decoration: var(--framer-text-decoration-style, solid)var(--framer-text-decoration, none)var(--framer-text-decoration-color, currentcolor)var(--framer-text-decoration-thickness, auto);
+    --text-decoration-skip-ink: var(--framer-text-decoration-skip-ink);
+    --text-underline-offset: var(--framer-text-decoration-offset);
+    line-height: var(--line-height);
+    --font-family: var(--framer-font-family);
+    --font-style: var(--framer-font-style);
+    --font-weight: var(--framer-font-weight);
+    --text-color: var(--framer-text-color);
+    --letter-spacing: var(--framer-letter-spacing);
+    --font-size: var(--framer-font-size);
+    --text-transform: var(--framer-text-transform);
+    --line-height: var(--framer-line-height)
+}
+
+[data-framer-component-type=Text] a,
+[data-framer-component-type=Text] a div span,
+[data-framer-component-type=Text] a span span span,
+[data-framer-component-type=Text] a p span span,
+[data-framer-component-type=Text] a h1 span span,
+[data-framer-component-type=Text] a h2 span span,
+[data-framer-component-type=Text] a h3 span span,
+[data-framer-component-type=Text] a h4 span span,
+[data-framer-component-type=Text] a h5 span span,
+[data-framer-component-type=Text] a h6 span span {
+    --font-family: var(--framer-link-font-family, var(--framer-font-family));
+    --font-style: var(--framer-link-font-style, var(--framer-font-style));
+    --font-weight: var(--framer-link-font-weight, var(--framer-font-weight));
+    --text-color: var(--framer-link-text-color, var(--framer-text-color));
+    --font-size: var(--framer-link-font-size, var(--framer-font-size));
+    --text-transform: var(--framer-link-text-transform, var(--framer-text-transform));
+    --text-decoration: var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, solid))var(--framer-link-text-decoration, var(--framer-text-decoration, none))var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, currentcolor))var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, auto));
+    --text-decoration-skip-ink: var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink));
+    --text-underline-offset: var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset))
+}
+
+[data-framer-component-type=Text] a:hover,
+[data-framer-component-type=Text] a div span:hover,
+[data-framer-component-type=Text] a span span span:hover,
+[data-framer-component-type=Text] a p span span:hover,
+[data-framer-component-type=Text] a h1 span span:hover,
+[data-framer-component-type=Text] a h2 span span:hover,
+[data-framer-component-type=Text] a h3 span span:hover,
+[data-framer-component-type=Text] a h4 span span:hover,
+[data-framer-component-type=Text] a h5 span span:hover,
+[data-framer-component-type=Text] a h6 span span:hover {
+    --font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family)));
+    --font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style)));
+    --font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight)));
+    --text-color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color)));
+    --font-size: var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size)));
+    --text-transform: var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform)));
+    --text-decoration: var(--framer-link-hover-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, solid)))var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))var(--framer-link-hover-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, currentcolor)))var(--framer-link-hover-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, auto)));
+    --text-decoration-skip-ink: var(--framer-link-hover-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink)));
+    --text-underline-offset: var(--framer-link-hover-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset)))
+}
+
+[data-framer-component-type=Text].isCurrent a,
+[data-framer-component-type=Text].isCurrent a div span,
+[data-framer-component-type=Text].isCurrent a span span span,
+[data-framer-component-type=Text].isCurrent a p span span,
+[data-framer-component-type=Text].isCurrent a h1 span span,
+[data-framer-component-type=Text].isCurrent a h2 span span,
+[data-framer-component-type=Text].isCurrent a h3 span span,
+[data-framer-component-type=Text].isCurrent a h4 span span,
+[data-framer-component-type=Text].isCurrent a h5 span span,
+[data-framer-component-type=Text].isCurrent a h6 span span {
+    --font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family)));
+    --font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style)));
+    --font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight)));
+    --text-color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color)));
+    --font-size: var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size)));
+    --text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform)));
+    --text-decoration: var(--framer-link-current-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, solid)))var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, currentcolor)))var(--framer-link-current-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, auto)));
+    --text-decoration-skip-ink: var(--framer-link-current-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink)));
+    --text-underline-offset: var(--framer-link-current-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset)))
+}
+
+[data-framer-component-type=RichTextContainer] {
+    outline: none;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    display: flex
+}
+
+p.framer-text,
+div.framer-text,
+figure.framer-text,
+h1.framer-text,
+h2.framer-text,
+h3.framer-text,
+h4.framer-text,
+h5.framer-text,
+h6.framer-text,
+ol.framer-text,
+ul.framer-text {
+    margin: 0;
+    padding: 0
+}
+
+p.framer-text,
+div.framer-text,
+h1.framer-text,
+h2.framer-text,
+h3.framer-text,
+h4.framer-text,
+h5.framer-text,
+h6.framer-text,
+li.framer-text,
+ol.framer-text,
+ul.framer-text,
+mark.framer-text,
+span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-blockquote-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-style: var(--framer-blockquote-font-style, var(--framer-font-style, normal));
+    font-weight: var(--framer-blockquote-font-weight, var(--framer-font-weight, 400));
+    color: var(--framer-blockquote-text-color, var(--framer-text-color, #000));
+    font-size: calc(var(--framer-blockquote-font-size, var(--framer-font-size, 16px))*var(--framer-font-size-scale, 1));
+    letter-spacing: var(--framer-blockquote-letter-spacing, var(--framer-letter-spacing, 0));
+    text-transform: var(--framer-blockquote-text-transform, var(--framer-text-transform, none));
+    -webkit-text-decoration-line: var(--framer-blockquote-text-decoration, var(--framer-text-decoration, initial));
+    text-decoration-line: var(--framer-blockquote-text-decoration, var(--framer-text-decoration, initial));
+    -webkit-text-decoration-style: var(--framer-blockquote-text-decoration-style, var(--framer-text-decoration-style, initial));
+    text-decoration-style: var(--framer-blockquote-text-decoration-style, var(--framer-text-decoration-style, initial));
+    -webkit-text-decoration-color: var(--framer-blockquote-text-decoration-color, var(--framer-text-decoration-color, initial));
+    text-decoration-color: var(--framer-blockquote-text-decoration-color, var(--framer-text-decoration-color, initial));
+    text-decoration-thickness: var(--framer-blockquote-text-decoration-thickness, var(--framer-text-decoration-thickness, initial));
+    text-decoration-skip-ink: var(--framer-blockquote-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial));
+    text-underline-offset: var(--framer-blockquote-text-decoration-offset, var(--framer-text-decoration-offset, initial));
+    line-height: var(--framer-blockquote-line-height, var(--framer-line-height, 1.2em));
+    text-align: var(--framer-blockquote-text-alignment, var(--framer-text-alignment, start));
+    -webkit-text-stroke-width: var(--framer-text-stroke-width, initial);
+    -webkit-text-stroke-color: var(--framer-text-stroke-color, initial);
+    -moz-font-feature-settings: var(--framer-font-open-type-features, initial);
+    -webkit-font-feature-settings: var(--framer-font-open-type-features, initial);
+    font-feature-settings: var(--framer-font-open-type-features, initial);
+    font-variation-settings: var(--framer-font-variation-axes, normal);
+    text-wrap: var(--framer-text-wrap-override, var(--framer-text-wrap))
+}
+
+mark.framer-text,
+p.framer-text,
+div.framer-text,
+h1.framer-text,
+h2.framer-text,
+h3.framer-text,
+h4.framer-text,
+h5.framer-text,
+h6.framer-text,
+li.framer-text,
+ol.framer-text,
+ul.framer-text {
+    background-color: var(--framer-blockquote-text-background-color, var(--framer-text-background-color, initial));
+    border-radius: var(--framer-blockquote-text-background-radius, var(--framer-text-background-radius, initial));
+    padding: var(--framer-blockquote-text-background-padding, var(--framer-text-background-padding, initial))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    p.framer-text,
+    div.framer-text,
+    h1.framer-text,
+    h2.framer-text,
+    h3.framer-text,
+    h4.framer-text,
+    h5.framer-text,
+    h6.framer-text,
+    li.framer-text,
+    ol.framer-text,
+    ul.framer-text,
+    span.framer-text:not([data-text-fill]) {
+    color: var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))));
+    -webkit-text-stroke-color: var(--framer-text-stroke-color-rgb, var(--framer-text-stroke-color, initial))
+    }
+
+    mark.framer-text {
+    background-color: var(--framer-blockquote-text-background-color-rgb, var(--framer-blockquote-text-background-color, var(--framer-text-background-color-rgb, var(--framer-text-background-color, initial))))
+    }
+}
+
+.framer-fit-text .framer-text {
+    white-space: nowrap;
+    white-space-collapse: preserve
+}
+
+strong.framer-text {
+    font-family: var(--framer-blockquote-font-family-bold, var(--framer-font-family-bold));
+    font-style: var(--framer-blockquote-font-style-bold, var(--framer-font-style-bold));
+    font-weight: var(--framer-blockquote-font-weight-bold, var(--framer-font-weight-bold, bolder));
+    font-variation-settings: var(--framer-blockquote-font-variation-axes-bold, var(--framer-font-variation-axes-bold))
+}
+
+em.framer-text {
+    font-family: var(--framer-blockquote-font-family-italic, var(--framer-font-family-italic));
+    font-style: var(--framer-blockquote-font-style-italic, var(--framer-font-style-italic, italic));
+    font-weight: var(--framer-blockquote-font-weight-italic, var(--framer-font-weight-italic));
+    font-variation-settings: var(--framer-blockquote-font-variation-axes-italic, var(--framer-font-variation-axes-italic))
+}
+
+em.framer-text>strong.framer-text {
+    font-family: var(--framer-blockquote-font-family-bold-italic, var(--framer-font-family-bold-italic));
+    font-style: var(--framer-blockquote-font-style-bold-italic, var(--framer-font-style-bold-italic, italic));
+    font-weight: var(--framer-blockquote-font-weight-bold-italic, var(--framer-font-weight-bold-italic, bolder));
+    font-variation-settings: var(--framer-blockquote-font-variation-axes-bold-italic, var(--framer-font-variation-axes-bold-italic))
+}
+
+p.framer-text:not(:first-child),
+div.framer-text:not(:first-child),
+h1.framer-text:not(:first-child),
+h2.framer-text:not(:first-child),
+h3.framer-text:not(:first-child),
+h4.framer-text:not(:first-child),
+h5.framer-text:not(:first-child),
+h6.framer-text:not(:first-child),
+ol.framer-text:not(:first-child),
+ul.framer-text:not(:first-child),
+blockquote.framer-text:not(:first-child),
+table.framer-text:not(:first-child),
+figure.framer-text:not(:first-child),
+.framer-image.framer-text:not(:first-child) {
+    margin-top: var(--framer-blockquote-paragraph-spacing, var(--framer-paragraph-spacing, 0))
+}
+
+li.framer-text>ul.framer-text:nth-child(2),
+li.framer-text>ol.framer-text:nth-child(2) {
+    margin-top: 0
+}
+
+.framer-text[data-text-fill] {
+    -webkit-text-fill-color: transparent;
+    padding: max(0em, calc(calc(1.3em - var(--framer-blockquote-line-height, var(--framer-line-height, 1.3em)))/2));
+    margin: min(0em, calc(calc(1.3em - var(--framer-blockquote-line-height, var(--framer-line-height, 1.3em)))/-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block
+}
+
+code.framer-text,
+code.framer-text span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-style: var(--framer-blockquote-font-style, var(--framer-code-font-style, var(--framer-font-style, normal)));
+    font-weight: var(--framer-blockquote-font-weight, var(--framer-code-font-weight, var(--framer-font-weight, 400)));
+    color: var(--framer-blockquote-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)));
+    font-size: calc(var(--framer-blockquote-font-size, var(--framer-font-size, 16px))*var(--framer-font-size-scale, 1));
+    letter-spacing: var(--framer-blockquote-letter-spacing, var(--framer-letter-spacing, 0));
+    line-height: var(--framer-blockquote-line-height, var(--framer-line-height, 1.2em))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    code.framer-text,
+    code.framer-text span.framer-text:not([data-text-fill]) {
+    color: var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-code-text-color-rgb, var(--framer-code-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))
+    }
+}
+
+blockquote.framer-text {
+    unicode-bidi: initial;
+    margin-block-start: initial;
+    margin-block-end: initial;
+    margin-inline-start: initial;
+    margin-inline-end: initial
+}
+
+a.framer-text,
+a.framer-text span.framer-text:not([data-text-fill]),
+span.framer-text[data-nested-link],
+span.framer-text[data-nested-link] span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-blockquote-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+    font-style: var(--framer-blockquote-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+    font-weight: var(--framer-blockquote-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+    color: var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+    font-size: calc(var(--framer-blockquote-font-size, var(--framer-font-size, 16px))*var(--framer-font-size-scale, 1));
+    text-transform: var(--framer-blockquote-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+    cursor: var(--framer-custom-cursors, pointer);
+    background-color: var(--framer-link-text-background-color, initial);
+    border-radius: var(--framer-link-text-background-radius, initial);
+    padding: var(--framer-link-text-background-padding, initial)
+}
+
+a.framer-text,
+span.framer-text[data-nested-link] {
+    -webkit-text-decoration-line: var(--framer-blockquote-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial)));
+    text-decoration-line: var(--framer-blockquote-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial)));
+    -webkit-text-decoration-style: var(--framer-blockquote-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial)));
+    text-decoration-style: var(--framer-blockquote-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial)));
+    -webkit-text-decoration-color: var(--framer-blockquote-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial)));
+    text-decoration-color: var(--framer-blockquote-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial)));
+    text-decoration-thickness: var(--framer-blockquote-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, initial)));
+    text-decoration-skip-ink: var(--framer-blockquote-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial)));
+    text-underline-offset: var(--framer-blockquote-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial)))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    a.framer-text,
+    a.framer-text span.framer-text:not([data-text-fill]),
+    span.framer-text[data-nested-link],
+    span.framer-text[data-nested-link] span.framer-text:not([data-text-fill]) {
+    color: var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))));
+    background-color: var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, initial))
+    }
+}
+
+code.framer-text a.framer-text,
+code.framer-text a.framer-text span.framer-text:not([data-text-fill]),
+code.framer-text span.framer-text[data-nested-link],
+code.framer-text span.framer-text[data-nested-link] span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-style: var(--framer-blockquote-font-style, var(--framer-code-font-style, var(--framer-font-style, normal)));
+    font-weight: var(--framer-blockquote-font-weight, var(--framer-code-font-weight, var(--framer-font-weight, 400)));
+    color: var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));
+    font-size: calc(var(--framer-blockquote-font-size, var(--framer-font-size, 16px))*var(--framer-font-size-scale, 1))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    code.framer-text a.framer-text,
+    code.framer-text a.framer-text span.framer-text:not([data-text-fill]),
+    code.framer-text span.framer-text[data-nested-link],
+    code.framer-text span.framer-text[data-nested-link] span.framer-text:not([data-text-fill]) {
+    color: var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-code-text-color-rgb, var(--framer-code-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))))
+    }
+}
+
+a.framer-text:hover,
+a.framer-text:hover span.framer-text:not([data-text-fill]),
+span.framer-text[data-nested-link]:hover,
+span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-link-hover-font-family, var(--framer-blockquote-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
+    font-style: var(--framer-link-hover-font-style, var(--framer-blockquote-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
+    font-weight: var(--framer-link-hover-font-weight, var(--framer-blockquote-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
+    color: var(--framer-link-hover-text-color, var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
+    font-size: calc(var(--framer-link-hover-font-size, var(--framer-blockquote-font-size, var(--framer-font-size, 16px)))*var(--framer-font-size-scale, 1));
+    text-transform: var(--framer-link-hover-text-transform, var(--framer-blockquote-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));
+    background-color: var(--framer-link-hover-text-background-color, var(--framer-link-text-background-color, var(--framer-text-background-color, initial)));
+    border-radius: var(--framer-link-hover-text-background-radius, var(--framer-link-text-background-radius, var(--framer-text-background-radius, initial)));
+    padding: var(--framer-link-hover-text-background-padding, var(--framer-link-text-background-padding, var(--framer-text-background-padding, initial)))
+}
+
+a.framer-text:hover,
+span.framer-text[data-nested-link]:hover {
+    -webkit-text-decoration-line: var(--framer-link-hover-text-decoration, var(--framer-blockquote-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial))));
+    text-decoration-line: var(--framer-link-hover-text-decoration, var(--framer-blockquote-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial))));
+    -webkit-text-decoration-style: var(--framer-link-hover-text-decoration-style, var(--framer-blockquote-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial))));
+    text-decoration-style: var(--framer-link-hover-text-decoration-style, var(--framer-blockquote-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial))));
+    -webkit-text-decoration-color: var(--framer-link-hover-text-decoration-color, var(--framer-blockquote-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial))));
+    text-decoration-color: var(--framer-link-hover-text-decoration-color, var(--framer-blockquote-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial))));
+    text-decoration-thickness: var(--framer-link-hover-text-decoration-thickness, var(--framer-blockquote-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, initial))));
+    text-decoration-skip-ink: var(--framer-link-hover-text-decoration-skip-ink, var(--framer-blockquote-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial))));
+    text-underline-offset: var(--framer-link-hover-text-decoration-offset, var(--framer-blockquote-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial))))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    a.framer-text:hover,
+    a.framer-text:hover span.framer-text:not([data-text-fill]),
+    span.framer-text[data-nested-link]:hover,
+    span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
+    color: var(--framer-link-hover-text-color-rgb, var(--framer-link-hover-text-color, var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))));
+    background-color: var(--framer-link-hover-text-background-color-rgb, var(--framer-link-hover-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, var(--framer-text-background-color-rgb, var(--framer-text-background-color, initial))))))
+    }
+}
+
+code.framer-text a.framer-text:hover,
+code.framer-text a.framer-text:hover span.framer-text:not([data-text-fill]),
+code.framer-text span.framer-text[data-nested-link]:hover,
+code.framer-text span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-style: var(--framer-blockquote-font-style, var(--framer-code-font-style, var(--framer-font-style, normal)));
+    font-weight: var(--framer-blockquote-font-weight, var(--framer-code-font-weight, var(--framer-font-weight, 400)));
+    color: var(--framer-link-hover-text-color, var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))));
+    font-size: calc(var(--framer-link-hover-font-size, var(--framer-blockquote-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))))*var(--framer-font-size-scale, 1))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    code.framer-text a.framer-text:hover,
+    code.framer-text a.framer-text:hover span.framer-text:not([data-text-fill]),
+    code.framer-text span.framer-text[data-nested-link]:hover,
+    code.framer-text span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
+    color: var(--framer-link-hover-text-color-rgb, var(--framer-link-hover-text-color, var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))))
+    }
+}
+
+a.framer-text[data-framer-page-link-current],
+a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]),
+span.framer-text[data-framer-page-link-current],
+span.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+    font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+    font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+    color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+    font-size: calc(var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)))*var(--framer-font-size-scale, 1));
+    text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+    background-color: var(--framer-link-current-text-background-color, var(--framer-link-text-background-color, initial));
+    border-radius: var(--framer-link-current-text-background-radius, var(--framer-link-text-background-radius, initial));
+    padding: var(--framer-link-current-text-background-padding, var(--framer-link-text-background-padding, initial))
+}
+
+a.framer-text[data-framer-page-link-current],
+span.framer-text[data-framer-page-link-current] {
+    -webkit-text-decoration-line: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial)));
+    text-decoration-line: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial)));
+    -webkit-text-decoration-style: var(--framer-link-current-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial)));
+    text-decoration-style: var(--framer-link-current-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial)));
+    -webkit-text-decoration-color: var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial)));
+    text-decoration-color: var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial)));
+    text-decoration-thickness: var(--framer-link-current-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, initial)));
+    text-decoration-skip-ink: var(--framer-link-current-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial)));
+    text-underline-offset: var(--framer-link-current-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial)))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    a.framer-text[data-framer-page-link-current],
+    a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]),
+    span.framer-text[data-framer-page-link-current],
+    span.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
+    color: var(--framer-link-current-text-color-rgb, var(--framer-link-current-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))));
+    background-color: var(--framer-link-current-text-background-color-rgb, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, var(--framer-text-background-color-rgb, var(--framer-text-background-color, initial))))))
+    }
+}
+
+code.framer-text a.framer-text[data-framer-page-link-current],
+code.framer-text a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]),
+code.framer-text span.framer-text[data-framer-page-link-current],
+code.framer-text span.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
+    font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
+    color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));
+    font-size: calc(var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)))*var(--framer-font-size-scale, 1))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    code.framer-text a.framer-text[data-framer-page-link-current],
+    code.framer-text a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]),
+    code.framer-text span.framer-text[data-framer-page-link-current],
+    code.framer-text span.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
+    color: var(--framer-link-current-text-color-rgb, var(--framer-link-current-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-code-text-color-rgb, var(--framer-code-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))));
+    background-color: var(--framer-link-current-text-background-color-rgb, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, var(--framer-text-background-color-rgb, var(--framer-text-background-color, initial))))))
+    }
+}
+
+a.framer-text[data-framer-page-link-current]:hover,
+a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
+span.framer-text[data-framer-page-link-current]:hover,
+span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
+    font-style: var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
+    font-weight: var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
+    color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
+    font-size: calc(var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))))*var(--framer-font-size-scale, 1));
+    text-transform: var(--framer-link-hover-text-transform, var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));
+    background-color: var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color, initial)));
+    border-radius: var(--framer-link-hover-text-background-radius, var(--framer-link-current-text-background-radius, var(--framer-link-text-background-radius, initial)));
+    padding: var(--framer-link-hover-text-background-padding, var(--framer-link-current-text-background-padding, var(--framer-link-text-background-padding, initial)))
+}
+
+a.framer-text[data-framer-page-link-current]:hover,
+span.framer-text[data-framer-page-link-current]:hover {
+    -webkit-text-decoration-line: var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial))));
+    text-decoration-line: var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial))));
+    -webkit-text-decoration-style: var(--framer-link-hover-text-decoration-style, var(--framer-link-current-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial))));
+    text-decoration-style: var(--framer-link-hover-text-decoration-style, var(--framer-link-current-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial))));
+    -webkit-text-decoration-color: var(--framer-link-hover-text-decoration-color, var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial))));
+    text-decoration-color: var(--framer-link-hover-text-decoration-color, var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial))));
+    text-decoration-thickness: var(--framer-link-hover-text-decoration-thickness, var(--framer-link-current-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, initial))));
+    text-decoration-skip-ink: var(--framer-link-hover-text-decoration-skip-ink, var(--framer-link-current-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial))));
+    text-underline-offset: var(--framer-link-hover-text-decoration-offset, var(--framer-link-current-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial))))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    a.framer-text[data-framer-page-link-current]:hover,
+    a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
+    span.framer-text[data-framer-page-link-current]:hover,
+    span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
+    color: var(--framer-link-hover-text-color-rgb, var(--framer-link-hover-text-color, var(--framer-link-current-text-color-rgb, var(--framer-link-current-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-code-text-color-rgb, var(--framer-code-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))))));
+    background-color: var(--framer-link-hover-text-background-color-rgb, var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color-rgb, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, initial))))))
+    }
+}
+
+code.framer-text a.framer-text[data-framer-page-link-current]:hover,
+code.framer-text a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
+code.framer-text span.framer-text[data-framer-page-link-current]:hover,
+code.framer-text span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
+    font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
+    color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))));
+    font-size: calc(var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))))*var(--framer-font-size-scale, 1));
+    background-color: var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color, var(--framer-text-background-color, initial))));
+    border-radius: var(--framer-link-hover-text-background-radius, var(--framer-link-current-text-background-radius, var(--framer-link-text-background-radius, var(--framer-text-background-radius, initial))));
+    padding: var(--framer-link-hover-text-background-padding, var(--framer-link-current-text-background-padding, var(--framer-link-text-background-padding, var(--framer-text-background-padding, initial))))
+}
+
+@supports not (color:color(display-p3 1 1 1)) {
+
+    code.framer-text a.framer-text[data-framer-page-link-current]:hover,
+    code.framer-text a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
+    code.framer-text span.framer-text[data-framer-page-link-current]:hover,
+    code.framer-text span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
+    color: var(--framer-link-hover-text-color-rgb, var(--framer-link-hover-text-color, var(--framer-link-current-text-color-rgb, var(--framer-link-current-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-code-text-color-rgb, var(--framer-code-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))))));
+    background-color: var(--framer-link-hover-text-background-color-rgb, var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color-rgb, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, initial))))))
+    }
+}
+
+.framer-image.framer-text {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+.text-styles-preset-reset.framer-text {
+    --framer-font-family: Inter, Inter Placeholder, sans-serif;
+    --framer-font-style: normal;
+    --framer-font-weight: 500;
+    --framer-text-color: #000;
+    --framer-font-size: 16px;
+    --framer-letter-spacing: 0;
+    --framer-text-transform: none;
+    --framer-text-decoration: none;
+    --framer-text-decoration-style: none;
+    --framer-text-decoration-color: none;
+    --framer-text-decoration-thickness: none;
+    --framer-text-decoration-skip-ink: none;
+    --framer-text-decoration-offset: none;
+    --framer-line-height: 1.2em;
+    --framer-text-alignment: start;
+    --framer-font-open-type-features: normal;
+    --framer-text-background-color: initial;
+    --framer-text-background-radius: initial;
+    --framer-text-background-padding: initial
+}
+
+ol.framer-text {
+    --list-style-type: decimal
+}
+
+ul.framer-text,
+ol.framer-text {
+    padding-left: 3ch;
+    position: relative
+}
+
+li.framer-text {
+    counter-increment: list-item;
+    list-style: none
+}
+
+ol.framer-text>li.framer-text:before {
+    content: counter(list-item, var(--list-style-type))".";
+    font-variant-numeric: tabular-nums;
+    position: absolute;
+    left: 0
+}
+
+ol.framer-text>li.framer-text:nth-last-child(n+100),
+ol.framer-text>li.framer-text:nth-last-child(n+100)~li {
+    padding-left: 1ch
+}
+
+ol.framer-text>li.framer-text:nth-last-child(n+1000),
+ol.framer-text>li.framer-text:nth-last-child(n+1000)~li {
+    padding-left: 2ch
+}
+
+ol.framer-text>li.framer-text:nth-last-child(n+10000),
+ol.framer-text>li.framer-text:nth-last-child(n+10000)~li {
+    padding-left: 3ch
+}
+
+ol.framer-text>li.framer-text:nth-last-child(n+100000),
+ol.framer-text>li.framer-text:nth-last-child(n+100000)~li {
+    padding-left: 4ch
+}
+
+ol.framer-text>li.framer-text:nth-last-child(n+1000000),
+ol.framer-text>li.framer-text:nth-last-child(n+1000000)~li {
+    padding-left: 5ch
+}
+
+ul.framer-text>li.framer-text:before {
+    content: "•";
+    position: absolute;
+    left: 0
+}
+
+.framer-table-wrapper {
+    overflow-x: auto
+}
+
+table.framer-text,
+.framer-table-wrapper table.framer-text {
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: auto;
+    word-break: normal;
+    width: 100%
+}
+
+td.framer-text,
+th.framer-text {
+    vertical-align: top;
+    min-width: 16ch
+}
+
+.framer-text-module[style*=aspect-ratio]>:first-child {
+    width: 100%
+}
+
+@supports not (aspect-ratio:1) {
+    .framer-text-module[style*=aspect-ratio] {
+    position: relative
+    }
+
+    .framer-text-module[style*=aspect-ratio]:before {
+    content: "";
+    padding-bottom: calc(100%/calc(var(--aspect-ratio)));
+    display: block
+    }
+
+    .framer-text-module[style*=aspect-ratio]>:first-child {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+    }
+}
+
+[data-framer-component-type=DeprecatedRichText] {
+    cursor: inherit
+}
+
+[data-framer-component-type=DeprecatedRichText] .text-styles-preset-reset {
+    --framer-font-family: Inter, Inter Placeholder, sans-serif;
+    --framer-font-style: normal;
+    --framer-font-weight: 500;
+    --framer-text-color: #000;
+    --framer-font-size: 16px;
+    --framer-letter-spacing: 0;
+    --framer-text-transform: none;
+    --framer-text-decoration: none;
+    --framer-line-height: 1.2em;
+    --framer-text-alignment: start;
+    --framer-font-open-type-features: normal;
+    --font-variation-settings: normal
+}
+
+[data-framer-component-type=DeprecatedRichText] p,
+[data-framer-component-type=DeprecatedRichText] div,
+[data-framer-component-type=DeprecatedRichText] h1,
+[data-framer-component-type=DeprecatedRichText] h2,
+[data-framer-component-type=DeprecatedRichText] h3,
+[data-framer-component-type=DeprecatedRichText] h4,
+[data-framer-component-type=DeprecatedRichText] h5,
+[data-framer-component-type=DeprecatedRichText] h6 {
+    margin: 0;
+    padding: 0
+}
+
+[data-framer-component-type=DeprecatedRichText] p,
+[data-framer-component-type=DeprecatedRichText] div,
+[data-framer-component-type=DeprecatedRichText] h1,
+[data-framer-component-type=DeprecatedRichText] h2,
+[data-framer-component-type=DeprecatedRichText] h3,
+[data-framer-component-type=DeprecatedRichText] h4,
+[data-framer-component-type=DeprecatedRichText] h5,
+[data-framer-component-type=DeprecatedRichText] h6,
+[data-framer-component-type=DeprecatedRichText] li,
+[data-framer-component-type=DeprecatedRichText] ol,
+[data-framer-component-type=DeprecatedRichText] ul,
+[data-framer-component-type=DeprecatedRichText] span:not([data-text-fill]) {
+    font-family: var(--framer-font-family, Inter, Inter Placeholder, sans-serif);
+    font-style: var(--framer-font-style, normal);
+    font-weight: var(--framer-font-weight, 400);
+    color: var(--framer-text-color, #000);
+    font-size: var(--framer-font-size, 16px);
+    letter-spacing: var(--framer-letter-spacing, 0);
+    text-transform: var(--framer-text-transform, none);
+    -webkit-text-decoration: var(--framer-text-decoration, none);
+    text-decoration: var(--framer-text-decoration, none);
+    line-height: var(--framer-line-height, 1.2em);
+    text-align: var(--framer-text-alignment, start)
+}
+
+[data-framer-component-type=DeprecatedRichText] p:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] div:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] h1:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] h2:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] h3:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] h4:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] h5:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] h6:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] ol:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] ul:not(:first-child),
+[data-framer-component-type=DeprecatedRichText] .framer-image:not(:first-child) {
+    margin-top: var(--framer-paragraph-spacing, 0)
+}
+
+[data-framer-component-type=DeprecatedRichText] span[data-text-fill] {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block
+}
+
+[data-framer-component-type=DeprecatedRichText] a,
+[data-framer-component-type=DeprecatedRichText] a span:not([data-text-fill]) {
+    font-family: var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-style: var(--framer-link-font-style, var(--framer-font-style, normal));
+    font-weight: var(--framer-link-font-weight, var(--framer-font-weight, 400));
+    color: var(--framer-link-text-color, var(--framer-text-color, #000));
+    font-size: var(--framer-link-font-size, var(--framer-font-size, 16px));
+    text-transform: var(--framer-link-text-transform, var(--framer-text-transform, none));
+    -webkit-text-decoration: var(--framer-link-text-decoration, var(--framer-text-decoration, none));
+    text-decoration: var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+}
+
+[data-framer-component-type=DeprecatedRichText] a:hover,
+[data-framer-component-type=DeprecatedRichText] a:hover span:not([data-text-fill]) {
+    font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+    font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+    font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+    color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+    font-size: var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)));
+    text-transform: var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+    -webkit-text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)));
+    text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))
+}
+
+[data-framer-component-type=DeprecatedRichText] a[data-framer-page-link-current],
+[data-framer-component-type=DeprecatedRichText] a[data-framer-page-link-current] span:not([data-text-fill]):not([data-nested-link]) {
+    font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+    font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+    font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+    color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+    font-size: var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)));
+    text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+    -webkit-text-decoration: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)));
+    text-decoration: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))
+}
+
+[data-framer-component-type=DeprecatedRichText] a[data-framer-page-link-current]:hover,
+[data-framer-component-type=DeprecatedRichText] a[data-framer-page-link-current]:hover span:not([data-text-fill]):not([data-nested-link]) {
+    font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
+    font-style: var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
+    font-weight: var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
+    color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
+    font-size: var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))));
+    text-transform: var(--framer-link-hover-text-transform, var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));
+    -webkit-text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none))));
+    text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none))))
+}
+
+[data-framer-component-type=DeprecatedRichText] strong {
+    font-weight: bolder
+}
+
+[data-framer-component-type=DeprecatedRichText] em {
+    font-style: italic
+}
+
+[data-framer-component-type=DeprecatedRichText] .framer-image {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+[data-framer-component-type=DeprecatedRichText] ul,
+[data-framer-component-type=DeprecatedRichText] ol {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    display: table
+}
+
+[data-framer-component-type=DeprecatedRichText] li {
+    counter-increment: list-item;
+    list-style: none;
+    display: table-row
+}
+
+[data-framer-component-type=DeprecatedRichText] ol>li:before {
+    box-sizing: border-box;
+    content: counter(list-item)".";
+    white-space: nowrap;
+    width: 2.25ch;
+    padding-right: .75ch;
+    display: table-cell
+}
+
+[data-framer-component-type=DeprecatedRichText] ul>li:before {
+    box-sizing: border-box;
+    content: "•";
+    width: 2.25ch;
+    padding-right: .75ch;
+    display: table-cell
+}
+
+:not([data-framer-generated])>[data-framer-stack-content-wrapper]>*,
+:not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-component-type],
+:not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-legacy-stack-gap-enabled]>*,
+:not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-legacy-stack-gap-enabled]>[data-framer-component-type] {
+    position: relative
+}
+
+.flexbox-gap-not-supported [data-framer-legacy-stack-gap-enabled=true]>*,
+[data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false] {
+    margin-top: calc(var(--stack-gap-y)/2);
+    margin-bottom: calc(var(--stack-gap-y)/2);
+    margin-right: calc(var(--stack-gap-x)/2);
+    margin-left: calc(var(--stack-gap-x)/2)
+}
+
+[data-framer-stack-content-wrapper][data-framer-stack-gap-enabled=true] {
+    row-gap: var(--stack-native-row-gap);
+    column-gap: var(--stack-native-column-gap)
+}
+
+.flexbox-gap-not-supported [data-framer-stack-content-wrapper][data-framer-stack-gap-enabled=true] {
+    row-gap: unset;
+    column-gap: unset
+}
+
+.flexbox-gap-not-supported [data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true]>:first-child,
+[data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>:first-child,
+.flexbox-gap-not-supported [data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true]>:last-child,
+[data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>:last-child {
+    margin-top: 0;
+    margin-left: 0
+}
+
+.flexbox-gap-not-supported [data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true]>:last-child,
+[data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>:last-child,
+.flexbox-gap-not-supported [data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true]>:first-child,
+[data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>:first-child {
+    margin-bottom: 0;
+    margin-right: 0
+}
+
+NavigationContainer [data-framer-component-type=NavigationContainer]>*,
+[data-framer-component-type=NavigationContainer]>[data-framer-component-type] {
+    position: relative
+}
+
+[data-framer-component-type=Scroll]::-webkit-scrollbar {
+    display: none
+}
+
+[data-framer-component-type=ScrollContentWrapper]>* {
+    position: relative
+}
+
+[data-framer-component-type=NativeScroll] {
+    -webkit-overflow-scrolling: touch
+}
+
+[data-framer-component-type=NativeScroll]>* {
+    position: relative
+}
+
+[data-framer-component-type=NativeScroll].direction-both {
+    overflow: auto
+}
+
+[data-framer-component-type=NativeScroll].direction-vertical {
+    overflow: hidden auto
+}
+
+[data-framer-component-type=NativeScroll].direction-horizontal {
+    overflow: auto hidden
+}
+
+[data-framer-component-type=NativeScroll].direction-vertical>* {
+    width: 100% !important
+}
+
+[data-framer-component-type=NativeScroll].direction-horizontal>* {
+    height: 100% !important
+}
+
+[data-framer-component-type=NativeScroll].scrollbar-hidden::-webkit-scrollbar {
+    display: none
+}
+
+[data-framer-component-type=PageContentWrapper]>*,
+[data-framer-component-type=PageContentWrapper]>[data-framer-component-type] {
+    position: relative
+}
+
+[data-framer-component-type=DeviceComponent].no-device>* {
+    width: 100% !important;
+    height: 100% !important
+}
+
+[data-is-present=false],
+[data-is-present=false] * {
+    pointer-events: none !important
+}
+
+[data-framer-cursor=pointer] {
+    cursor: pointer
+}
+
+[data-framer-cursor=grab] {
+    cursor: grab
+}
+
+[data-framer-cursor=grab]:active {
+    cursor: grabbing
+}
+
+[data-framer-component-type=Frame] *,
+[data-framer-component-type=Stack] * {
+    pointer-events: auto
+}
+
+[data-framer-generated] * {
+    pointer-events: unset
+}
+
+.svgContainer svg {
+    display: block
+}
+
+[data-reset=button] {
+    background: 0 0;
+    border-width: 0;
+    padding: 0
+}
+
+[data-hide-scrollbars=true]::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+[data-hide-scrollbars=true]::-webkit-scrollbar-thumb {
+    background: 0 0
+}
+
+[data-hide-scrollbars=true] {
+    scrollbar-width: none
+}
+
+@supports not (overflow:clip) {
+    :root {
+    --overflow-clip-fallback: hidden
+    }
+}
+
+.framer-lightbox-container {
+    opacity: 1 !important;
+    pointer-events: auto !important
+}
+
+@supports (background:-webkit-named-image(i)) and (not (contain-intrinsic-size:inherit)) {
+
+    div.framer-text,
+    p.framer-text,
+    h1.framer-text,
+    h2.framer-text,
+    h3.framer-text,
+    h4.framer-text,
+    h5.framer-text,
+    h6.framer-text,
+    ol.framer-text,
+    ul.framer-text,
+    li.framer-text,
+    blockquote.framer-text,
+    .framer-text.framer-image {
+    display: var(--text-truncation-display-inline-for-safari-16, revert)
+    }
+
+    div.framer-text:after,
+    p.framer-text:after,
+    h1.framer-text:after,
+    h2.framer-text:after,
+    h3.framer-text:after,
+    h4.framer-text:after,
+    h5.framer-text:after,
+    h6.framer-text:after,
+    ol.framer-text:after,
+    ul.framer-text:after,
+    li.framer-text:after,
+    blockquote.framer-text:after,
+    .framer-text.framer-image:after {
+    content: var(--text-truncation-line-break-for-safari-16);
+    white-space: pre
+    }
+
+    .framer-text.framer-text-module,
+    .framer-text.framer-table-wrapper {
+    display: var(--text-truncation-display-none-for-safari-16, revert)
+    }
+
+    p.framer-text[data-text-fill] {
+    display: var(--text-truncation-display-inline-for-safari-16, inline-block)
+    }
+}
+
+.framer-cursor-none,
+.framer-cursor-none * {
+    cursor: none !important
+}
+
+.framer-pointer-events-none,
+.framer-pointer-events-none * {
+    pointer-events: none !important
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-DRjpZ.framer-1yr0l5j,
+.framer-DRjpZ .framer-1yr0l5j {
+    display: block
+}
+
+.framer-DRjpZ.framer-1abs8j6 {
+    background-color: var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, #fff);
+    flex-flow: column;
+    place-content: center flex-start;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-DRjpZ .framer-1tmjbc4-container {
+    z-index: 6;
+    flex: none;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0
+}
+
+.framer-DRjpZ .framer-uwdf51 {
+    background: 0 0;
+    flex-grow: 1;
+    width: 0;
+    height: 0;
+    margin: 0;
+    position: relative
+}
+
+.framer-DRjpZ .framer-16mksf0-container {
+    flex: none;
+    order: 1002;
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+[data-layout-template=true]>#overlay {
+    margin-bottom: 0
+}
+
+@supports (background:-webkit-named-image(i)) and (not (scale:1)) {
+    .framer-DRjpZ.framer-1abs8j6 {
+    gap: 0
+    }
+
+    .framer-DRjpZ.framer-1abs8j6>* {
+    margin: 0
+    }
+
+    .framer-DRjpZ.framer-1abs8j6>:first-child {
+    margin-top: 0
+    }
+
+    .framer-DRjpZ.framer-1abs8j6>:last-child {
+    margin-bottom: 0
+    }
+}
+
+.ssr-variant {
+    display: contents
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-1qI4j.framer-xku9a4,
+.framer-1qI4j .framer-xku9a4 {
+    display: block
+}
+
+.framer-1qI4j.framer-1fbux2k {
+    cursor: pointer;
+    flex-flow: column;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 1200px;
+    height: min-content;
+    padding: 16px 40px;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-1qI4j .framer-1xzi696 {
+    flex-flow: row;
+    flex: none;
+    place-content: center space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-1qI4j .framer-tobys2 {
+    flex-flow: row;
+    flex: none;
+    place-content: center flex-start;
+    align-items: center;
+    gap: 12px;
+    width: min-content;
+    height: min-content;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-1qI4j .framer-3er1zc {
+    aspect-ratio: 1;
+    height: var(--framer-aspect-ratio-supported, 55px);
+    flex: none;
+    width: 55px;
+    position: relative;
+    overflow: visible
+}
+
+.framer-1qI4j .framer-14fesyn {
+    white-space: pre;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+.framer-1qI4j .framer-1njmcb7 {
+    flex-flow: row;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 55px;
+    width: min-content;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-1qI4j .framer-1ybkjth-container,
+.framer-1qI4j .framer-1yymbq0-container,
+.framer-1qI4j .framer-1b2lqqf-container,
+.framer-1qI4j .framer-bi8d9z-container,
+.framer-1qI4j .framer-8xeo3x-container,
+.framer-1qI4j .framer-97ixt7-container,
+.framer-1qI4j .framer-1g64gf2-container,
+.framer-1qI4j .framer-qlf56d-container,
+.framer-1qI4j .framer-154dfs5-container,
+.framer-1qI4j .framer-1xsf7pd-container,
+.framer-1qI4j .framer-1s57x13-container {
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+.framer-1qI4j .framer-yuac5n-container {
+    z-index: 2;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+.framer-1qI4j.framer-v-1to20s1.framer-1fbux2k,
+.framer-1qI4j.framer-v-1b39dj8.framer-1fbux2k {
+    width: 810px;
+    padding: 16px 0
+}
+
+.framer-1qI4j.framer-v-1to20s1 .framer-1xzi696,
+.framer-1qI4j.framer-v-1b39dj8 .framer-1xzi696 {
+    padding: 0 25px
+}
+
+.framer-1qI4j.framer-v-1to20s1 .framer-tobys2,
+.framer-1qI4j.framer-v-1b39dj8 .framer-tobys2 {
+    z-index: 2
+}
+
+.framer-1qI4j.framer-v-1to20s1 .framer-1njmcb7 {
+    height: calc(var(--framer-viewport-height, 100vh)*0);
+    max-height: calc(var(--framer-viewport-height, 100vh)*0);
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    overflow: hidden
+}
+
+.framer-1qI4j.framer-v-1b39dj8 .framer-1njmcb7 {
+    height: calc(var(--framer-viewport-height, 100vh)*1);
+    max-height: calc(var(--framer-viewport-height, 100vh)*1);
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding: 100px 0 0;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    overflow: hidden
+}
+
+.framer-1qI4j.framer-v-1b39dj8 .framer-1xsf7pd-container {
+    width: 100%;
+    max-width: 300px
+}
+
+.framer-u5oc0 .framer-styles-preset-9i5qw2:not(.rich-text-wrapper),
+.framer-u5oc0 .framer-styles-preset-9i5qw2.rich-text-wrapper h6 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 24px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.33em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-u5oc0 .framer-styles-preset-9i5qw2:not(.rich-text-wrapper),
+    .framer-u5oc0 .framer-styles-preset-9i5qw2.rich-text-wrapper h6 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 24px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.33em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-u5oc0 .framer-styles-preset-9i5qw2:not(.rich-text-wrapper),
+    .framer-u5oc0 .framer-styles-preset-9i5qw2.rich-text-wrapper h6 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 20px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.33em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-RcNjK .framer-styles-preset-1js54ic:not(.rich-text-wrapper),
+    .framer-RcNjK .framer-styles-preset-1js54ic.rich-text-wrapper h5 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 28px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.25em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-RcNjK .framer-styles-preset-1js54ic:not(.rich-text-wrapper),
+    .framer-RcNjK .framer-styles-preset-1js54ic.rich-text-wrapper h5 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 26px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.25em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-lSJgT.framer-16ueoun,
+.framer-lSJgT .framer-16ueoun {
+    display: block
+}
+
+.framer-lSJgT.framer-aze2zb {
+    cursor: pointer;
+    flex-flow: row;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: min-content;
+    height: min-content;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: hidden
+}
+
+.framer-lSJgT .framer-xuhs7p {
+    flex-flow: row;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: min-content;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-lSJgT .framer-fbp6jx {
+    white-space: pre;
+    z-index: 1;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 49%
+}
+
+.framer-lSJgT .framer-nljtjc {
+    white-space: pre;
+    z-index: 1;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 26px;
+    left: 0
+}
+
+.framer-lSJgT .framer-jt3kas {
+    white-space: pre;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+.framer-lSJgT .framer-hke66z {
+    flex: none;
+    width: 17px;
+    height: 16px;
+    position: relative
+}
+
+.framer-lSJgT.framer-v-1tv9igh.framer-aze2zb {
+    gap: 6px
+}
+
+.framer-lSJgT.framer-v-1tv9igh .framer-fbp6jx,
+.framer-lSJgT.framer-v-aze2zb.hover .framer-nljtjc,
+.framer-lSJgT.framer-v-1tv9igh.hover .framer-nljtjc {
+    top: 0
+}
+
+.framer-lSJgT.framer-v-aze2zb.hover .framer-fbp6jx,
+.framer-lSJgT.framer-v-1tv9igh.hover .framer-fbp6jx {
+    top: -26px
+}
+
+.framer-5JmXW .framer-styles-preset-1ub8ls7:not(.rich-text-wrapper),
+.framer-5JmXW .framer-styles-preset-1ub8ls7.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, #fff);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-5JmXW .framer-styles-preset-1ub8ls7:not(.rich-text-wrapper),
+    .framer-5JmXW .framer-styles-preset-1ub8ls7.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 20px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, #fff);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-5JmXW .framer-styles-preset-1ub8ls7:not(.rich-text-wrapper),
+    .framer-5JmXW .framer-styles-preset-1ub8ls7.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 20px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, #fff);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-DB2m2.framer-57amc9,
+.framer-DB2m2 .framer-57amc9 {
+    display: block
+}
+
+.framer-DB2m2.framer-hozlb9 {
+    cursor: pointer;
+    will-change: var(--framer-will-change-override, transform);
+    flex-flow: row;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: min-content;
+    height: min-content;
+    padding: 11px 23px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: hidden
+}
+
+.framer-DB2m2 .framer-ptdzar {
+    z-index: 1;
+    flex: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible
+}
+
+.framer-DB2m2 .framer-uhgsoe {
+    white-space: pre;
+    z-index: 2;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+.framer-DB2m2 .framer-mzpyxu {
+    z-index: 2;
+    flex-flow: row;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: hidden
+}
+
+.framer-DB2m2 .framer-vmczfr-container {
+    z-index: 1;
+    flex: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.framer-DB2m2 .framer-1kowoh0-container {
+    z-index: 1;
+    flex: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+@supports (background:-webkit-named-image(i)) and (not (font-palette:dark)) {
+
+    .framer-DB2m2.framer-hozlb9,
+    .framer-DB2m2 .framer-mzpyxu {
+    gap: 0
+    }
+
+    .framer-DB2m2.framer-hozlb9>*,
+    .framer-DB2m2 .framer-mzpyxu>* {
+    margin: 0 5px
+    }
+
+    .framer-DB2m2.framer-hozlb9>:first-child,
+    .framer-DB2m2 .framer-mzpyxu>:first-child {
+    margin-left: 0
+    }
+
+    .framer-DB2m2.framer-hozlb9>:last-child,
+    .framer-DB2m2 .framer-mzpyxu>:last-child {
+    margin-right: 0
+    }
+}
+
+.framer-DB2m2.framer-v-1lcj20u.framer-hozlb9 {
+    padding: 8px 23px
+}
+
+.framer-DB2m2.framer-v-hozlb9.hover .framer-vmczfr-container,
+.framer-DB2m2.framer-v-ifgymi.hover .framer-vmczfr-container {
+    top: -20px;
+    right: -20px
+}
+
+.framer-DB2m2.framer-v-hozlb9.hover .framer-1kowoh0-container,
+.framer-DB2m2.framer-v-ifgymi.hover .framer-1kowoh0-container {
+    top: 0;
+    right: 0
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.6em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+.framer-DB2m2[data-border=true]:after,
+.framer-DB2m2 [data-border=true]:after {
+    content: "";
+    border-width: var(--border-top-width, 0)var(--border-right-width, 0)var(--border-bottom-width, 0)var(--border-left-width, 0);
+    border-color: var(--border-color, none);
+    border-style: var(--border-style, none);
+    box-sizing: border-box;
+    border-radius: inherit;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-N9Jkz.framer-7laq3g,
+.framer-N9Jkz .framer-7laq3g {
+    display: block
+}
+
+.framer-N9Jkz.framer-5bcwir {
+    cursor: pointer;
+    flex-flow: column;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 25px;
+    height: 16px;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-N9Jkz .framer-e1ysir {
+    z-index: 1;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    overflow: visible
+}
+
+.framer-N9Jkz .framer-11i1jil {
+    z-index: 1;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0%;
+    overflow: visible
+}
+
+.framer-N9Jkz .framer-11tozv1 {
+    z-index: 1;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    overflow: visible
+}
+
+@supports (background:-webkit-named-image(i)) and (not (font-palette:dark)) {
+    .framer-N9Jkz.framer-5bcwir {
+    gap: 0
+    }
+
+    .framer-N9Jkz.framer-5bcwir>* {
+    margin: 5px 0
+    }
+
+    .framer-N9Jkz.framer-5bcwir>:first-child {
+    margin-top: 0
+    }
+
+    .framer-N9Jkz.framer-5bcwir>:last-child {
+    margin-bottom: 0
+    }
+}
+
+.framer-N9Jkz.framer-v-1f3yn6y .framer-e1ysir {
+    top: calc(50% - 1px)
+}
+
+.framer-N9Jkz.framer-v-1f3yn6y .framer-11i1jil {
+    left: 58.8235%
+}
+
+.framer-N9Jkz.framer-v-1f3yn6y .framer-11tozv1 {
+    bottom: unset;
+    top: calc(50% - 1px)
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-Oz8yq.framer-txvsn6,
+.framer-Oz8yq .framer-txvsn6 {
+    display: block
+}
+
+.framer-Oz8yq.framer-i8u7wv {
+    background-color: var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, #fff);
+    flex-flow: column;
+    place-content: center flex-start;
+    align-items: center;
+    gap: 160px;
+    width: 1200px;
+    height: min-content;
+    padding: 160px 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden
+}
+
+.framer-Oz8yq .framer-1s4s87b {
+    flex-flow: column;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: min-content;
+    padding: 140px 40px 0;
+    display: flex;
+    position: relative;
+    overflow: hidden
+}
+
+.framer-Oz8yq .framer-1n5o92b {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative
+}
+
+.framer-Oz8yq .framer-1p5gn7r {
+    flex-flow: row;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative
+}
+
+.framer-Oz8yq .framer-66d6xi {
+    flex-flow: row;
+    flex: 1 0 0;
+    place-content: center flex-start;
+    align-items: center;
+    gap: 50px;
+    width: 1px;
+    max-width: 1440px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-Oz8yq .framer-1evzkgj {
+    flex-flow: column;
+    flex: .8 0 0;
+    place-content: flex-end flex-start;
+    align-items: flex-end;
+    gap: 123px;
+    width: 1px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-Oz8yq .framer-1xpv40p {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-Oz8yq .framer-w8rro6 {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-Oz8yq .framer-jw1ch6,
+.framer-Oz8yq .framer-1kk7xm8,
+.framer-Oz8yq .framer-uy0g2m {
+    --framer-paragraph-spacing: 0px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    word-wrap: break-word;
+    flex: none;
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.framer-Oz8yq .framer-1ma2jyz {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 48px;
+    width: 100%;
+    max-width: 434px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-Oz8yq .framer-3l8w1t-container {
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+.framer-Oz8yq .framer-130v96t {
+    flex-flow: row;
+    flex: .7 0 0;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 1px;
+    height: min-content;
+    padding: 36px 0 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-Oz8yq .framer-fd6ibv {
+    aspect-ratio: .917808;
+    height: var(--framer-aspect-ratio-supported, 73px);
+    z-index: 1;
+    flex: none;
+    width: 67px;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    overflow: hidden
+}
+
+.framer-Oz8yq .framer-v3t0am {
+    aspect-ratio: 1.33272;
+    height: var(--framer-aspect-ratio-supported, 375px);
+    border-radius: 12px;
+    flex: none;
+    width: 100%;
+    position: relative
+}
+
+.framer-Oz8yq .framer-lxl4dw {
+    flex-flow: column;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: min-content;
+    padding: 140px 40px;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-Oz8yq .framer-1am8g5o {
+    flex-flow: column;
+    flex: none;
+    place-content: center flex-start;
+    align-items: center;
+    gap: 52px;
+    width: 100%;
+    max-width: 1440px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-Oz8yq .framer-1jg6xwi {
+    flex: none;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-auto-rows: minmax(0, 1fr);
+    justify-content: center;
+    gap: 42px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: grid;
+    position: relative
+}
+
+.framer-Oz8yq .framer-poj5s1 {
+    flex-flow: row;
+    flex: none;
+    place-content: center flex-start;
+    place-self: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative
+}
+
+.framer-Oz8yq .framer-wsjg83-container {
+    flex: 1 0 0;
+    width: 1px;
+    height: auto;
+    position: relative
+}
+
+.framer-Oz8yq .framer-zmb0wx-container {
+    flex: none;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.framer-q258S .framer-styles-preset-172snon:not(.rich-text-wrapper),
+.framer-q258S .framer-styles-preset-172snon.rich-text-wrapper h1 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 85px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1em;
+    --framer-paragraph-spacing: 0px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-q258S .framer-styles-preset-172snon:not(.rich-text-wrapper),
+    .framer-q258S .framer-styles-preset-172snon.rich-text-wrapper h1 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 70px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1em;
+    --framer-paragraph-spacing: 0px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-q258S .framer-styles-preset-172snon:not(.rich-text-wrapper),
+    .framer-q258S .framer-styles-preset-172snon.rich-text-wrapper h1 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 40px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.2em;
+    --framer-paragraph-spacing: 0px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.6em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+.framer-uhp5V .framer-styles-preset-s0nzzz:not(.rich-text-wrapper),
+.framer-uhp5V .framer-styles-preset-s0nzzz.rich-text-wrapper h2 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 62px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.04em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-uhp5V .framer-styles-preset-s0nzzz:not(.rich-text-wrapper),
+    .framer-uhp5V .framer-styles-preset-s0nzzz.rich-text-wrapper h2 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 50px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.04em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-uhp5V .framer-styles-preset-s0nzzz:not(.rich-text-wrapper),
+    .framer-uhp5V .framer-styles-preset-s0nzzz.rich-text-wrapper h2 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 38px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.04em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (min-width:810px) and (max-width:1199.98px) {
+    .framer-Oz8yq.framer-i8u7wv {
+    width: 810px
+    }
+
+    .framer-Oz8yq .framer-1s4s87b {
+    padding: 100px 25px 0
+    }
+
+    .framer-Oz8yq .framer-66d6xi {
+    align-content: flex-end;
+    align-items: flex-end;
+    gap: 40px
+    }
+
+    .framer-Oz8yq .framer-1evzkgj {
+    flex: 1 0 0;
+    order: 0
+    }
+
+    .framer-Oz8yq .framer-jw1ch6 {
+    width: 130%
+    }
+
+    .framer-Oz8yq .framer-130v96t {
+    flex: 1 0 0;
+    order: 1
+    }
+
+    .framer-Oz8yq .framer-v3t0am {
+    height: var(--framer-aspect-ratio-supported, 270px)
+    }
+
+    .framer-Oz8yq .framer-lxl4dw {
+    padding: 100px 25px
+    }
+
+    .framer-Oz8yq .framer-1jg6xwi {
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    gap: 25px
+    }
+
+    .framer-Oz8yq .framer-wsjg83-container {
+    order: 0
+    }
+}
+
+@media (max-width:809.98px) {
+    .framer-Oz8yq.framer-i8u7wv {
+    width: 390px
+    }
+
+    .framer-Oz8yq .framer-1s4s87b {
+    padding: 50px 25px 0
+    }
+
+    .framer-Oz8yq .framer-66d6xi {
+    flex-direction: column;
+    gap: 20px
+    }
+
+    .framer-Oz8yq .framer-1evzkgj {
+    flex: none;
+    order: 1;
+    width: 100%
+    }
+
+    .framer-Oz8yq .framer-1xpv40p {
+    gap: 14px
+    }
+
+    .framer-Oz8yq .framer-1ma2jyz,
+    .framer-Oz8yq .framer-1am8g5o {
+    gap: 20px
+    }
+
+    .framer-Oz8yq .framer-130v96t {
+    flex: none;
+    order: 0;
+    width: 100%;
+    padding: 0
+    }
+
+    .framer-Oz8yq .framer-v3t0am {
+    height: var(--framer-aspect-ratio-supported, 255px);
+    border-radius: 6px
+    }
+
+    .framer-Oz8yq .framer-lxl4dw {
+    padding: 50px 25px
+    }
+
+    .framer-Oz8yq .framer-1jg6xwi {
+    flex-flow: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    display: flex
+    }
+
+    .framer-Oz8yq .framer-poj5s1 {
+    align-self: unset
+    }
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-sB5oN.framer-97k56s,
+.framer-sB5oN .framer-97k56s {
+    display: block
+}
+
+.framer-sB5oN.framer-4j6lhm {
+    flex-flow: column;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 1200px;
+    height: min-content;
+    padding: 140px 40px 72px;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-wknury {
+    flex-flow: column;
+    flex: none;
+    place-content: center flex-start;
+    align-items: center;
+    gap: 72px;
+    width: 100%;
+    max-width: 1440px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-wd3lyg {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 72px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-4k1yob {
+    flex-flow: row;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-ueye9t {
+    cursor: pointer;
+    flex-flow: column;
+    flex: .7 0 0;
+    place-content: flex-start center;
+    align-items: flex-start;
+    gap: 42px;
+    width: 1px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-17x6cdo {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 309px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-12okkkc {
+    flex-flow: row;
+    flex: none;
+    place-content: center flex-start;
+    align-items: center;
+    gap: 14px;
+    width: min-content;
+    height: min-content;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-5ynymd {
+    aspect-ratio: 1;
+    height: var(--framer-aspect-ratio-supported, 55px);
+    flex: none;
+    width: 55px;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-1li6ocn,
+.framer-sB5oN .framer-mggemu,
+.framer-sB5oN .framer-9ppqwc,
+.framer-sB5oN .framer-tlogdo,
+.framer-sB5oN .framer-188jl6q {
+    white-space: pre;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+.framer-sB5oN .framer-1b8udyt,
+.framer-sB5oN .framer-1w1hebn,
+.framer-sB5oN .framer-j2pihb,
+.framer-sB5oN .framer-1rs6tlc {
+    white-space: pre-wrap;
+    word-break: break-word;
+    word-wrap: break-word;
+    flex: none;
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.framer-sB5oN .framer-1en81og {
+    flex-flow: row;
+    flex: .8 0 0;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    width: 1px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-t4sdav,
+.framer-sB5oN .framer-ifv4qq {
+    flex-flow: column;
+    flex: .7 0 0;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    width: 1px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-ywfib1,
+.framer-sB5oN .framer-14gges8 {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-1x40p2q,
+.framer-sB5oN .framer-10rjirg,
+.framer-sB5oN .framer-14ffvbk,
+.framer-sB5oN .framer-ass7we,
+.framer-sB5oN .framer-1xm9q1r,
+.framer-sB5oN .framer-inw82y {
+    white-space: pre;
+    will-change: var(--framer-will-change-effect-override, transform);
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+.framer-sB5oN .framer-15201js {
+    flex-flow: column;
+    flex: 1 0 0;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    width: 1px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-1i9flwi {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    height: min-content;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-12d0tuh {
+    flex-flow: row;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-1h2ughd,
+.framer-sB5oN .framer-1c09i54,
+.framer-sB5oN .framer-1160tj8 {
+    flex-flow: row;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: min-content;
+    height: min-content;
+    padding: 2px 0 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-254b1g-container,
+.framer-sB5oN .framer-9nz7vn-container,
+.framer-sB5oN .framer-1wmlocr-container {
+    flex: none;
+    width: 22px;
+    height: 22px;
+    position: relative
+}
+
+.framer-sB5oN .framer-1bgkkku,
+.framer-sB5oN .framer-1gn9rsg,
+.framer-sB5oN .framer-bvk75w {
+    white-space: pre-wrap;
+    word-break: break-word;
+    word-wrap: break-word;
+    flex: 1 0 0;
+    width: 1px;
+    height: auto;
+    position: relative
+}
+
+.framer-sB5oN .framer-x33u3j,
+.framer-sB5oN .framer-1i9gs4q {
+    will-change: var(--framer-will-change-effect-override, transform);
+    flex-flow: row;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-ndkljf {
+    flex-flow: column;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: min-content;
+    padding: 32px 10px 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN .framer-1pb21mk {
+    flex-flow: row;
+    flex: none;
+    place-content: center flex-start;
+    align-items: center;
+    gap: 8px;
+    width: min-content;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-sB5oN.framer-v-ntcp51.framer-4j6lhm {
+    width: 810px;
+    padding: 100px 25px 70px
+}
+
+.framer-sB5oN.framer-v-ntcp51 .framer-4k1yob,
+.framer-sB5oN.framer-v-1em7prz .framer-4k1yob {
+    flex-direction: column;
+    gap: 40px
+}
+
+.framer-sB5oN.framer-v-ntcp51 .framer-ueye9t {
+    flex: none;
+    gap: 40px;
+    width: 70%
+}
+
+.framer-sB5oN.framer-v-ntcp51 .framer-1en81og {
+    flex: none;
+    width: 100%
+}
+
+.framer-sB5oN.framer-v-1em7prz.framer-4j6lhm {
+    width: 370px;
+    padding: 50px 25px 40px
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-wd3lyg {
+    gap: 80px
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-ueye9t {
+    flex: none;
+    gap: 30px;
+    width: 70%
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-1en81og {
+    flex-direction: column;
+    flex: none;
+    gap: 40px;
+    width: 100%
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-t4sdav,
+.framer-sB5oN.framer-v-1em7prz .framer-ifv4qq {
+    flex: none;
+    gap: 20px;
+    width: 70%
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-ywfib1,
+.framer-sB5oN.framer-v-1em7prz .framer-14gges8,
+.framer-sB5oN.framer-v-1em7prz .framer-1i9flwi {
+    gap: 12px
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-15201js {
+    flex: none;
+    gap: 20px;
+    width: 100%
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-ndkljf {
+    padding: 25px 0 0
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-1pb21mk {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%
+}
+
+.framer-sB5oN.framer-v-1em7prz .framer-mggemu {
+    white-space: pre-wrap;
+    word-break: break-word;
+    word-wrap: break-word;
+    flex: 1 0 0;
+    width: 1px
+}
+
+.framer-oGK70 .framer-styles-preset-13lkd54:not(.rich-text-wrapper),
+.framer-oGK70 .framer-styles-preset-13lkd54.rich-text-wrapper h4 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 42px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.09em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-oGK70 .framer-styles-preset-13lkd54:not(.rich-text-wrapper),
+    .framer-oGK70 .framer-styles-preset-13lkd54.rich-text-wrapper h4 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 32px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.09em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-oGK70 .framer-styles-preset-13lkd54:not(.rich-text-wrapper),
+    .framer-oGK70 .framer-styles-preset-13lkd54.rich-text-wrapper h4 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 30px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.09em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-RcNjK .framer-styles-preset-1js54ic:not(.rich-text-wrapper),
+    .framer-RcNjK .framer-styles-preset-1js54ic.rich-text-wrapper h5 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 28px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.25em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-RcNjK .framer-styles-preset-1js54ic:not(.rich-text-wrapper),
+    .framer-RcNjK .framer-styles-preset-1js54ic.rich-text-wrapper h5 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 26px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.25em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.6em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-2Vypl .framer-styles-preset-myx315:not(.rich-text-wrapper),
+    .framer-2Vypl .framer-styles-preset-myx315.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 18px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-font-weight-bold: 900;
+    --framer-font-weight-bold-italic: 900;
+    --framer-font-weight-italic: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.444em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-2Vypl .framer-styles-preset-myx315:not(.rich-text-wrapper),
+    .framer-2Vypl .framer-styles-preset-myx315.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-font-weight-bold: 900;
+    --framer-font-weight-bold-italic: 900;
+    --framer-font-weight-italic: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.444em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+.framer-4n4vX .framer-styles-preset-n2slvd:not(.rich-text-wrapper),
+.framer-4n4vX .framer-styles-preset-n2slvd.rich-text-wrapper a {
+    --framer-link-current-text-color: var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, #fff);
+    --framer-link-current-text-decoration: none;
+    --framer-link-hover-text-color: var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, #fff);
+    --framer-link-hover-text-decoration: none;
+    --framer-link-text-color: var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, #fff);
+    --framer-link-text-decoration: none
+}
+
+.framer-PtaQb .framer-styles-preset-1y3d4zp:not(.rich-text-wrapper),
+.framer-PtaQb .framer-styles-preset-1y3d4zp.rich-text-wrapper a {
+    --framer-link-current-text-color: var(--token-065bffec-4ac7-4625-aced-acd0f0a75d90, #fece66);
+    --framer-link-current-text-decoration: underline;
+    --framer-link-hover-text-color: var(--token-065bffec-4ac7-4625-aced-acd0f0a75d90, #fece66);
+    --framer-link-hover-text-decoration: underline;
+    --framer-link-text-color: var(--token-065bffec-4ac7-4625-aced-acd0f0a75d90, #fece66);
+    --framer-link-text-decoration: none
+}
+
+.framer-sB5oN[data-border=true]:after,
+.framer-sB5oN [data-border=true]:after {
+    content: "";
+    border-width: var(--border-top-width, 0)var(--border-right-width, 0)var(--border-bottom-width, 0)var(--border-left-width, 0);
+    border-color: var(--border-color, none);
+    border-style: var(--border-style, none);
+    box-sizing: border-box;
+    border-radius: inherit;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-d7En5.framer-yk3d88,
+.framer-d7En5 .framer-yk3d88 {
+    display: block
+}
+
+.framer-d7En5.framer-1ex0le0 {
+    cursor: default;
+    height: min-content;
+    min-height: 588px;
+    padding: var(--1an90bp);
+    flex-flow: row;
+    place-content: flex-start center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 345px;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-d7En5 .framer-fjc7qo {
+    flex-flow: column;
+    flex: 1 0 0;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    width: 1px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-d7En5 .framer-nah7t3 {
+    aspect-ratio: 1.1281;
+    height: var(--framer-aspect-ratio-supported, 242px);
+    will-change: var(--framer-will-change-override, transform);
+    flex-flow: column;
+    flex: none;
+    place-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: hidden
+}
+
+.framer-d7En5 .framer-wk3qfq {
+    z-index: 1;
+    flex: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible
+}
+
+.framer-d7En5 .framer-1rewzo1 {
+    flex: none;
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.framer-d7En5 .framer-1lcshmx-container {
+    z-index: 1;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 18px;
+    right: 18px
+}
+
+.framer-d7En5 .framer-1jip428 {
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: calc(max(0, var(--mtzcmr))*1px);
+    flex-flow: column;
+    flex: none;
+    justify-content: flex-start;
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-d7En5 .framer-cs2fea {
+    flex-flow: column;
+    flex: none;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    max-width: 411px;
+    height: min-content;
+    padding: 0;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-d7En5 .framer-t0iiul,
+.framer-d7En5 .framer-1cl0vg4 {
+    white-space: pre-wrap;
+    word-break: break-word;
+    word-wrap: break-word;
+    flex: none;
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.framer-d7En5 .framer-71cqzm-container {
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+@supports (background:-webkit-named-image(i)) and (not (font-palette:dark)) {
+
+    .framer-d7En5.framer-1ex0le0,
+    .framer-d7En5 .framer-fjc7qo,
+    .framer-d7En5 .framer-nah7t3,
+    .framer-d7En5 .framer-1jip428,
+    .framer-d7En5 .framer-cs2fea {
+    gap: 0
+    }
+
+    .framer-d7En5.framer-1ex0le0>* {
+    margin: 0 5px
+    }
+
+    .framer-d7En5.framer-1ex0le0>:first-child {
+    margin-left: 0
+    }
+
+    .framer-d7En5.framer-1ex0le0>:last-child {
+    margin-right: 0
+    }
+
+    .framer-d7En5 .framer-fjc7qo>* {
+    margin: 12px 0
+    }
+
+    .framer-d7En5 .framer-fjc7qo>:first-child,
+    .framer-d7En5 .framer-nah7t3>:first-child,
+    .framer-d7En5 .framer-1jip428>:first-child,
+    .framer-d7En5 .framer-cs2fea>:first-child {
+    margin-top: 0
+    }
+
+    .framer-d7En5 .framer-fjc7qo>:last-child,
+    .framer-d7En5 .framer-nah7t3>:last-child,
+    .framer-d7En5 .framer-1jip428>:last-child,
+    .framer-d7En5 .framer-cs2fea>:last-child {
+    margin-bottom: 0
+    }
+
+    .framer-d7En5 .framer-nah7t3>* {
+    margin: 0
+    }
+
+    .framer-d7En5 .framer-1jip428>* {
+    margin: 0;
+    margin-bottom: calc(calc(max(0, var(--mtzcmr))*1px)/2);
+    margin-top: calc(calc(max(0, var(--mtzcmr))*1px)/2)
+    }
+
+    .framer-d7En5 .framer-cs2fea>* {
+    margin: 6px 0
+    }
+}
+
+.framer-d7En5.framer-v-lfs6ys.framer-1ex0le0 {
+    min-height: unset
+}
+
+.framer-d7En5.framer-v-lfs6ys .framer-fjc7qo {
+    gap: 16px
+}
+
+.framer-d7En5.framer-v-lfs6ys .framer-cs2fea {
+    order: 0;
+    gap: 8px
+}
+
+.framer-d7En5.framer-v-lfs6ys .framer-71cqzm-container {
+    order: 1
+}
+
+@supports (background:-webkit-named-image(i)) and (not (font-palette:dark)) {
+
+    .framer-d7En5.framer-v-lfs6ys .framer-fjc7qo,
+    .framer-d7En5.framer-v-lfs6ys .framer-cs2fea {
+    gap: 0
+    }
+
+    .framer-d7En5.framer-v-lfs6ys .framer-fjc7qo>* {
+    margin: 8px 0
+    }
+
+    .framer-d7En5.framer-v-lfs6ys .framer-fjc7qo>:first-child,
+    .framer-d7En5.framer-v-lfs6ys .framer-cs2fea>:first-child {
+    margin-top: 0
+    }
+
+    .framer-d7En5.framer-v-lfs6ys .framer-fjc7qo>:last-child,
+    .framer-d7En5.framer-v-lfs6ys .framer-cs2fea>:last-child {
+    margin-bottom: 0
+    }
+
+    .framer-d7En5.framer-v-lfs6ys .framer-cs2fea>* {
+    margin: 4px 0
+    }
+}
+
+.framer-d7En5.framer-v-1ex0le0.hover .framer-1rewzo1 {
+    width: 110%;
+    height: 110%
+}
+
+.framer-RcNjK .framer-styles-preset-1js54ic:not(.rich-text-wrapper),
+.framer-RcNjK .framer-styles-preset-1js54ic.rich-text-wrapper h5 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 32px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.25em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-RcNjK .framer-styles-preset-1js54ic:not(.rich-text-wrapper),
+    .framer-RcNjK .framer-styles-preset-1js54ic.rich-text-wrapper h5 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 28px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.25em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-RcNjK .framer-styles-preset-1js54ic:not(.rich-text-wrapper),
+    .framer-RcNjK .framer-styles-preset-1js54ic.rich-text-wrapper h5 {
+    --framer-font-family: "Rufina", "Rufina Placeholder", serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 26px;
+    --framer-font-style: normal;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.25em;
+    --framer-paragraph-spacing: 40px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+.framer-Yo47e .framer-styles-preset-ixgrlg:not(.rich-text-wrapper),
+.framer-Yo47e .framer-styles-preset-ixgrlg.rich-text-wrapper a {
+    --framer-link-current-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-link-current-text-decoration: none;
+    --framer-link-hover-text-color: var(--token-f1712222-c010-4358-b082-9f76dbcbd998, #71220b);
+    --framer-link-hover-text-decoration: none;
+    --framer-link-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-link-text-decoration: none;
+    transition: color .4s cubic-bezier(.44, 0, .56, 1)
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.6em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+.framer-d7En5[data-border=true]:after,
+.framer-d7En5 [data-border=true]:after {
+    content: "";
+    border-width: var(--border-top-width, 0)var(--border-right-width, 0)var(--border-bottom-width, 0)var(--border-left-width, 0);
+    border-color: var(--border-color, none);
+    border-style: var(--border-style, none);
+    box-sizing: border-box;
+    border-radius: inherit;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-aE08l.framer-1jl1uai,
+.framer-aE08l .framer-1jl1uai {
+    display: block
+}
+
+.framer-aE08l.framer-1bdcnzx {
+    flex-flow: row;
+    place-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    width: min-content;
+    height: min-content;
+    padding: 4px 12px;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+
+.framer-aE08l .framer-1xva6ob,
+.framer-aE08l .framer-1y22eeh {
+    white-space: pre;
+    flex: none;
+    width: auto;
+    height: auto;
+    position: relative
+}
+
+@supports (background:-webkit-named-image(i)) and (not (font-palette:dark)) {
+    .framer-aE08l.framer-1bdcnzx {
+    gap: 0
+    }
+
+    .framer-aE08l.framer-1bdcnzx>* {
+    margin: 0 2.5px
+    }
+
+    .framer-aE08l.framer-1bdcnzx>:first-child {
+    margin-left: 0
+    }
+
+    .framer-aE08l.framer-1bdcnzx>:last-child {
+    margin-right: 0
+    }
+}
+
+.framer-2Vypl .framer-styles-preset-myx315:not(.rich-text-wrapper),
+.framer-2Vypl .framer-styles-preset-myx315.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 18px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-font-weight-bold: 900;
+    --framer-font-weight-bold-italic: 900;
+    --framer-font-weight-italic: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.444em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-2Vypl .framer-styles-preset-myx315:not(.rich-text-wrapper),
+    .framer-2Vypl .framer-styles-preset-myx315.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 18px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-font-weight-bold: 900;
+    --framer-font-weight-bold-italic: 900;
+    --framer-font-weight-italic: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.444em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-2Vypl .framer-styles-preset-myx315:not(.rich-text-wrapper),
+    .framer-2Vypl .framer-styles-preset-myx315.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-font-weight-bold: 900;
+    --framer-font-weight-bold-italic: 900;
+    --framer-font-weight-italic: 700;
+    --framer-letter-spacing: 0em;
+    --framer-line-height: 1.444em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: start;
+    --framer-text-color: var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, #1d0f02);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+.framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+.framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+}
+
+@media (max-width:1199px) and (min-width:810px) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.625em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@media (max-width:809px) and (min-width:0) {
+
+    .framer-jRQOc .framer-styles-preset-18rceng:not(.rich-text-wrapper),
+    .framer-jRQOc .framer-styles-preset-18rceng.rich-text-wrapper p {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: normal;
+    --framer-font-size: 16px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 500;
+    --framer-font-weight-bold: 700;
+    --framer-font-weight-bold-italic: 700;
+    --framer-font-weight-italic: 500;
+    --framer-letter-spacing: .04em;
+    --framer-line-height: 1.6em;
+    --framer-paragraph-spacing: 20px;
+    --framer-text-alignment: left;
+    --framer-text-color: var(--token-348e6ce1-e584-4f78-bf23-eb92d4651c91, #55524f);
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none
+    }
+}
+
+@supports (aspect-ratio:1) {
+    body {
+    --framer-aspect-ratio-supported: auto
+    }
+}
+
+.framer-8EaGQ.framer-xuzmjz,
+.framer-8EaGQ .framer-xuzmjz {
+    display: block
+}
+
+.framer-8EaGQ.framer-1hbo82m {
+    flex-flow: row;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    position: relative
+}
+
+.framer-8EaGQ .framer-1qrc6yg {
+    aspect-ratio: 1;
+    height: var(--framer-aspect-ratio-supported, 20px);
+    flex: none;
+    width: 20px;
+    position: relative;
+    overflow: visible
+}
+
+.framer-8EaGQ .framer-1jivlv8 {
+    flex: none;
+    position: absolute;
+    inset: 0;
+    overflow: visible
+}
+
+.framer-8EaGQ .framer-m7b4s7 {
+    flex: none;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    overflow: visible
+}
+
+@supports (background:-webkit-named-image(i)) and (not (font-palette:dark)) {
+    .framer-8EaGQ.framer-1hbo82m {
+    gap: 0
+    }
+
+    .framer-8EaGQ.framer-1hbo82m>* {
+    margin: 0 5px
+    }
+
+    .framer-8EaGQ.framer-1hbo82m>:first-child {
+    margin-left: 0
+    }
+
+    .framer-8EaGQ.framer-1hbo82m>:last-child {
+    margin-right: 0
+    }
+}

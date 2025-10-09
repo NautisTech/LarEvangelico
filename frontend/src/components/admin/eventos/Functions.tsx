@@ -4,18 +4,15 @@ import { useMemo, useState } from "react";
 import { createColumnHelper } from "@tanstack/react-table";
 import { PencilIcon, Trash2Icon } from "lucide-react";
 import { useAuthContext } from "@/context";
-import { Entidade, Conteudo, Utilizador, Permissao } from "@/models";
-import { useUtilizadorBaseHook, useConteudoHook, useConteudoByEntidadeHook, usePermissaoHook, usePermissoesHelpers, useEntidadeHook, useUtilizadorByEntidadeBaseHook, useConfirm } from "@/hooks";
-import { DropdownList, FilterHeader } from "@/components";
-import { TipoFiltro, Modulo, TipoPermissao, TipoConteudo } from "@/utils";
+import { Conteudo, Utilizador } from "@/models";
+import { useUtilizadorBaseHook, useConteudoHook, useConfirm } from "@/hooks";
+import { DropdownList, FilterHeader } from "@/components/admin";
+import { TipoFiltro, Modulo, TipoConteudo } from "@/utils";
 import { Actions } from "./Actions";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 
 export function Functions() {
-    const { data: entidadesData } = useEntidadeHook();
-    const { isAdmin, utilizador } = useAuthContext();
-    const { temPermissaoEspecifica } = usePermissoesHelpers();
     const { confirm } = useConfirm();
     const router = useRouter();
 
@@ -28,43 +25,24 @@ export function Functions() {
         bulkDeleteEventos,
         bulkEditEventos,
         isLoading: EventoActionsLoading,
-    } = Actions(temPermissaoEspecifica(`${Modulo.Conteudos}_${TipoPermissao.Aprovar}`));
+    } = Actions();
 
     const {
-        data: utilizadoresGeral = [],
+        data: utilizadoresData = [],
         isLoading: isLoadingUtilizadoresAdmin,
         refetch: refetchUtilizadoresAdmin,
     } = useUtilizadorBaseHook();
     const {
-        data: eventosGeral = [],
+        data: eventosData = [],
         isLoading: isLoadingEventosAdmin,
         refetch: refetchEventosAdmin,
     } = useConteudoHook(TipoConteudo.Evento);
-    const {
-        data: utilizadoresEntidade = [],
-        isLoading: isLoadingUtilizadoresByEntidade,
-        refetch: refetchUtilizadoresEntidade,
-    } = useUtilizadorByEntidadeBaseHook(entidadesData?.[0]?.id ?? 0);
-    const {
-        data: eventosEntidade = [],
-        isLoading: isLoadingEventosEntidade,
-        refetch: refetchEventosEntidade,
-    } = useConteudoByEntidadeHook(entidadesData?.[0]?.id ?? 0, TipoConteudo.Evento);
 
-    const utilizadoresData = isAdmin ? utilizadoresGeral : utilizadoresEntidade;
-    const eventosData = isAdmin ? eventosGeral : eventosEntidade;
-    const isLoading = isAdmin
-        ? isLoadingUtilizadoresAdmin || isLoadingEventosAdmin
-        : isLoadingUtilizadoresByEntidade || isLoadingEventosEntidade;
+    const isLoading = isLoadingUtilizadoresAdmin || isLoadingEventosAdmin;
 
     const refetch = () => {
-        if (isAdmin) {
-            refetchUtilizadoresAdmin?.();
-            refetchEventosAdmin?.();
-        } else {
-            refetchUtilizadoresEntidade?.();
-            refetchEventosEntidade?.();
-        }
+        refetchUtilizadoresAdmin?.();
+        refetchEventosAdmin?.();
     };
 
     // acoes inline 

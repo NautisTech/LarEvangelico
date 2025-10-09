@@ -5,11 +5,11 @@ import { TipoConteudo } from "@/utils";
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
-import { Loading } from "@/components";
-import { useConteudoMutations, useConteudoByIdHook, usePermissoesHelpers, useAnexoMutations } from "@/hooks";
+import { Loading } from "@/components/common";
+import { useConteudoMutations, useConteudoByIdHook, useAnexoMutations } from "@/hooks";
 import { toast } from "react-toastify";
 import { useAuthContext } from "@/context";
-import { Modulo, TipoPermissao, TipoAnexo } from "@/utils";
+import { Modulo, TipoAnexo } from "@/utils";
 import { CreateAnexoData } from "@/services";
 
 function EditorContent() {
@@ -17,14 +17,12 @@ function EditorContent() {
     const router = useRouter();
     const { create, update } = useConteudoMutations();
     const { create: createAnexo } = useAnexoMutations();
-    const { temPermissaoEspecifica } = usePermissoesHelpers();
 
     const conteudoId = searchParams.get('id');
     const isEditing = conteudoId !== null;
     const { data: conteudo, isLoading: isLoadingConteudo } = useConteudoByIdHook(conteudoId!, false);
 
-    const tipoConteudo: TipoConteudo = conteudo && conteudo.tipo ? conteudo.tipo : searchParams.get('tipo') as TipoConteudo || TipoConteudo.Banner;
-    const canApprove = temPermissaoEspecifica(`${Modulo.Conteudos}_${TipoPermissao.Aprovar}`);
+    const tipoConteudo: TipoConteudo = conteudo && conteudo.tipo ? conteudo.tipo : searchParams.get('tipo') as TipoConteudo;
 
     const handleSave = async (conteudo: any, filesData: { imagemPrincipal: File | null, anexos: File[] }) => {
         try {
@@ -46,8 +44,7 @@ function EditorContent() {
                     data: {
                         ...conteudo,
                         tipo: tipoConteudo
-                    },
-                    canApprove
+                    }
                 });
                 toast.success("Conteúdo criado com sucesso!");
             }

@@ -21,7 +21,7 @@ export function Testimonial() {
                                         <path id="curve-wnxkz4" d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50"
                                             strokeWidth="none" fill="transparent"></path>
                                         <text>
-                                            <textPath href="#curve-wnxkz4" startOffset="0" dominant-baseline="Hanging"
+                                            <textPath href="#curve-wnxkz4" startOffset="0" dominantBaseline="hanging"
                                                 style={{
                                                     "letterSpacing": "0.08em", "fontFamily": "Urbanist, \"Urbanist\", sans-serif", "fontSize": "12px", "fontStyle": "normal",
                                                     "fontWeight": "600", "lineHeight": "1em", "fill":
@@ -69,7 +69,7 @@ export function Testimonial() {
                             <div className="framer-1ehknrp" data-framer-name="Arc Wrap">
                                 <div className="framer-13ain9g-container" style={{ "opacity": "1", "transform": "none" }}><svg className="transform-origin-center-center" style={{ "width": "100%", "height": "100%", "transformOrigin": "center center" }} viewBox="0 0 100 100" overflow="visible">
                                     <path id="curve-wnxkz4" d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50" strokeWidth="none" fill="transparent"></path><text>
-                                        <textPath href="#curve-wnxkz4" startOffset="0" dominant-baseline="Hanging" style={{ "letterSpacing": "0.08em", "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif", "fontSize": "12px", "fontStyle": "normal", "fontWeight": "600", "lineHeight": "1em", "fill": "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))" }}>
+                                        <textPath href="#curve-wnxkz4" startOffset="0" dominantBaseline="hanging" style={{ "letterSpacing": "0.08em", "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif", "fontSize": "12px", "fontStyle": "normal", "fontWeight": "600", "lineHeight": "1em", "fill": "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))" }}>
                                             Partilha Esperança · Vive o Amor · Faz Diferença .</textPath>
                                     </text>
                                 </svg></div>

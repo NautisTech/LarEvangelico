@@ -13,12 +13,8 @@ import {
 } from "@tanstack/react-table";
 import { TableProperties } from "lucide-react";
 import { useState } from "react";
-import {
-  Header,
-  Pagination,
-  RowCheckBox,
-  Loading,
-} from "@/components";
+import { Loading } from "@/components/common";
+import { Header, Pagination, RowCheckBox } from "@/components/admin/table";
 
 import { Modulo } from "@/utils";
 

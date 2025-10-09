@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from "next/navigation";
 import { motion, useMotionValue, useTransform, animate, useInView } from 'motion/react';
 import { useEffect, useRef } from 'react';
 
@@ -36,6 +37,8 @@ function Counter({ value, suffix = '' }: { value: number; suffix?: string }) {
 }
 
 export function AboutSection() {
+    const router = useRouter();
+
     return (
         <>
             <section className="framer-1oj0usa" data-framer-name="About Section">
@@ -306,7 +309,7 @@ export function AboutSection() {
                                     "willChange":
                                         "transform", "opacity": "1", "transform": "none"
                                 }}> <a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
-                                    data-border="true" data-framer-name="Primary" data-highlight="true" href="about-us.html"
+                                    data-border="true" data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/sobre-nos")}
                                     tabIndex={0} style={{
                                         borderBottomWidth: "1px", borderColor:
                                             "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))", borderLeftWidth: "1px", borderRightWidth: "1px",
@@ -331,7 +334,7 @@ export function AboutSection() {
                                     "opacity": "1",
                                     "transform": "none"
                                 }}><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
-                                    data-border="true" data-framer-name="Primary" data-highlight="true" href="about-us.html"
+                                    data-border="true" data-framer-name="Primary" data-highlight="true" onClick={() => router.push("/sobre-nos")}
                                     tabIndex={0} style={{
                                         borderBottomWidth: "1px", borderColor:
                                             "var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))", borderLeftWidth: "1px", borderRightWidth: "1px",

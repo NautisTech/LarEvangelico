@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, Like, In } from 'typeorm';
-import { Etiqueta, Modelo, Permissao, Utilizador } from '@/entities';
+import { Etiqueta, Utilizador } from '@/entities';
 import { CreateEtiquetaDto } from './dto/create-etiqueta.dto';
 import { UpdateEtiquetaDto } from './dto/update-etiqueta.dto';
 import { BulkUpdateEtiquetaDto } from './dto/bulk-update-etiqueta.dto';

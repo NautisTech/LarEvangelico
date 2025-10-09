@@ -2,7 +2,6 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
     fetchConteudos,
     fetchAllConteudos,
-    fetchConteudosByEntidade,
     fetchConteudoById,
     createConteudo,
     updateConteudo,
@@ -25,15 +24,6 @@ export const useConteudoHook = (tipo: TipoConteudo, isPublic: boolean = false) =
     return useQuery<Conteudo[]>({
         queryKey: ["conteudos", tipo],
         queryFn: () => fetchConteudos(tipo, isPublic || false),
-        staleTime: refreshInterval,
-        retry: 1,
-    });
-};
-
-export const useConteudoByEntidadeHook = (entidadeId: number, tipo: TipoConteudo, isPublic: boolean = false) => {
-    return useQuery<Conteudo[]>({
-        queryKey: ["conteudos", entidadeId, tipo],
-        queryFn: () => fetchConteudosByEntidade(entidadeId, tipo, isPublic || false),
         staleTime: refreshInterval,
         retry: 1,
     });
@@ -69,8 +59,8 @@ export const useConteudoMutations = () => {
     };
 
     const create = useMutation({
-        mutationFn: ({ data, canApprove }: { data: CreateConteudoData; canApprove: boolean }) =>
-            createConteudo(data, canApprove),
+        mutationFn: ({ data }: { data: CreateConteudoData }) =>
+            createConteudo(data),
         onSuccess: () => {
             invalidateQueries();
         },

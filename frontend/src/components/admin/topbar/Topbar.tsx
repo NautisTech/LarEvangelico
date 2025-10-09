@@ -29,40 +29,6 @@ export function Topbar() {
 
     // Configuração dos módulos e suas tabs
     const moduleConfigs: Record<string, ModuleConfig> = {
-        acessos: {
-            name: "Acessos",
-            hasInternalTabs: true,
-            tabs: [
-                { id: 'tabela', label: 'Utilizadores', icon: UserIcon },
-                { id: 'grupos', label: 'Grupos', icon: BarChart3 },
-                { id: 'permissoes', label: 'Permissões', icon: LockIcon },
-                { id: 'dashboardUtilizadores', label: 'Dashboard Utilizadores', icon: BarChart3 },
-                { id: 'dashboardGrupos', label: 'Dashboard Grupos', icon: BarChart3 },
-                { id: 'dashboardPermissoes', label: 'Dashboard Permissões', icon: BarChart3 },
-            ]
-        },
-        suporte: {
-            name: "Suporte",
-            hasInternalTabs: true,
-            tabs: [
-                { id: 'tabela', label: 'Equipamentos', icon: ComputerIcon },
-                { id: 'modelos', label: 'Modelos', icon: Package },
-                { id: 'marcas', label: 'Marcas', icon: TagIcon },
-                { id: 'tickets', label: 'Tickets', icon: TicketIcon },
-                { id: 'intervencoes', label: 'Intervenções', icon: Wrench },
-                { id: 'dashboardEquipamentos', label: 'Dashboard Equipamentos', icon: BarChart3 },
-                { id: 'dashboardTickets', label: 'Dashboard Tickets', icon: BarChart3 },
-            ]
-        },
-        reportes: {
-            name: "Reportes",
-            hasInternalTabs: true,
-            tabs: [
-                { id: 'tabela', label: 'Reportes', icon: BugIcon },
-                { id: 'dashboard', label: 'Dashboard', icon: BarChart3 },
-                { id: 'documentacao', label: 'Documentação', icon: FileText },
-            ]
-        },
         conteudos: {
             name: "Conteúdos",
             hasInternalTabs: true,
@@ -74,20 +40,7 @@ export function Topbar() {
                 { id: 'moderacao', label: 'Moderação', icon: MessageSquare },
                 { id: 'dashboard', label: 'Dashboard', icon: BarChart3 },
             ]
-        },
-        informacoes: {
-            name: "Informações",
-            hasInternalTabs: true,
-            tabs: [
-                { id: 'tabela', label: 'Regulamentos', icon: Sheet },
-                { id: 'exames', label: 'Exames', icon: Calendar1Icon },
-                { id: 'manuais', label: 'Manuais', icon: Book },
-                { id: 'regulamentos', label: 'Regulamentos', icon: Building2Icon },
-                { id: 'legislacao', label: 'Legislação', icon: Building },
-                { id: 'informacoes', label: 'Informações', icon: InfoIcon },
-                { id: 'faqs', label: 'FAQs', icon: HelpCircle },
-            ]
-        },
+        }
     };
 
     // Detectar o módulo atual baseado na URL

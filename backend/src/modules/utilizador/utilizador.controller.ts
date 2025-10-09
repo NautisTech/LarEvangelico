@@ -40,13 +40,6 @@ export class UtilizadorController {
   }
 
   @UseGuards(JwtAuthGuard)
-  @Get('permissoes')
-  async getUserPermissoes(@Request() req: any) {
-    return this.utilizadorService.getUserPermissoes(req.user.id);
-  }
-
-
-  @UseGuards(JwtAuthGuard)
   @Get('id/:id')
   findById(@Param('id') id: string) {
     return this.utilizadorService.findById(+id);
@@ -56,18 +49,6 @@ export class UtilizadorController {
   @Get('id/:id/base')
   findByIdBase(@Param('id') id: string) {
     return this.utilizadorService.findByIdBase(+id);
-  }
-
-  @UseGuards(JwtAuthGuard)
-  @Get('entidade/:entidadeId')
-  findByEntidade(@Param('entidadeId') entidadeId: string) {
-    return this.utilizadorService.findByEntidade(+entidadeId);
-  }
-
-  @UseGuards(JwtAuthGuard)
-  @Get('entidade/:entidadeId/base')
-  findByEntidadeBase(@Param('entidadeId') entidadeId: string) {
-    return this.utilizadorService.findByEntidadeBase(+entidadeId);
   }
 
   @UseGuards(JwtAuthGuard)

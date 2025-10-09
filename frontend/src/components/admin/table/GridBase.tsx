@@ -4,7 +4,7 @@ import React, { useMemo } from "react";
 import { SortingState, ColumnFiltersState } from "@tanstack/react-table";
 import { useState } from "react";
 import { Header } from ".";
-import { Loading } from "@/components";
+import { Loading } from "@/components/common";
 import { Conteudo } from "@/models";
 import { Modulo } from "@/utils";
 import { ContentCard } from "./ContentCard";
