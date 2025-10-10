@@ -2,11 +2,11 @@
 
 import React, { useEffect, useState } from 'react';
 import { ModuleTabsProvider, TipoTab, useAuthContext } from '@/context';
+import { usePathname } from 'next/navigation';
 import { Topbar } from '@/components/admin/topbar';
 import { ChangePasswordModal } from '@/components/admin/topbar/ChangePasswordModal';
 import { changeUtilizadorPassword } from '@/services/Utilizador';
 import { toast } from 'react-toastify';
-// @ts-expect-error
 import "./global.css";
 import { Loading } from '@/components/common/Loading';
 import { useRouter } from 'next/navigation';
@@ -19,15 +19,20 @@ export default function AdminLayout({
   const [isChangePasswordOpen, setIsChangePasswordOpen] = useState(false);
   const [changePasswordUserId, setChangePasswordUserId] = useState<number | undefined>(undefined);
 
+  const pathname = usePathname();
+  const showTopbar = !(pathname?.startsWith('/admin/editor'));
+
   const content = (
     <div className="min-w-full min-h-screen w-full h-full bg-white">
       <div className="flex flex-row w-full h-full">
         {/* Conteúdo principal */}
         <div className="flex-1 flex flex-col h-full px-4 lg:px-8 w-full max-w-full">
-          <Topbar openChangePassword={(utilizadorId?: number) => {
-            setChangePasswordUserId(utilizadorId);
-            setIsChangePasswordOpen(true);
-          }} />
+          {showTopbar && (
+            <Topbar openChangePassword={(utilizadorId?: number) => {
+              setChangePasswordUserId(utilizadorId);
+              setIsChangePasswordOpen(true);
+            }} />
+          )}
           <ChangePasswordModal
             isOpen={isChangePasswordOpen}
             utilizador={undefined}

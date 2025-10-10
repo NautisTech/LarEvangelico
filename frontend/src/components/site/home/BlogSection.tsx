@@ -1,5 +1,5 @@
-"use client";
 // @ts-nocheck
+"use client";
 
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -42,7 +42,6 @@ export function BlogSection() {
                 criado_em: new Date(),
                 atualizado_em: null,
                 atualizado_por: null,
-                etiquetas: [],
                 visualizacoes: 0,
                 data_inicio: null,
                 data_fim: null
@@ -73,7 +72,6 @@ export function BlogSection() {
                 criado_em: new Date(),
                 atualizado_em: null,
                 atualizado_por: null,
-                etiquetas: [],
                 visualizacoes: 0,
                 data_inicio: null,
                 data_fim: null
@@ -104,7 +102,6 @@ export function BlogSection() {
                 criado_em: new Date(),
                 atualizado_em: null,
                 atualizado_por: null,
-                etiquetas: [],
                 visualizacoes: 0,
                 data_inicio: null,
                 data_fim: null

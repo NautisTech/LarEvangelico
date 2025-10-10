@@ -1,4 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
+import * as bcrypt from 'bcryptjs';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, Like, In } from 'typeorm';
 import { Utilizador, Anexo } from '@/entities';
@@ -143,7 +144,8 @@ export class UtilizadorService {
     const utilizador = await this.findById(id);
     if (!utilizador) throw new NotFoundException(`Utilizador com ID ${id} não encontrado`);
 
-    utilizador.senha = newPassword;
+    const hashed = await bcrypt.hash(newPassword, 10);
+    utilizador.senha = hashed;
     utilizador.atualizado_em = new Date();
 
     return await this.utilizadorRepository.save(utilizador);

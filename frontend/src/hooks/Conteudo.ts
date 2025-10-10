@@ -54,7 +54,6 @@ export const useConteudoMutations = () => {
     const invalidateQueries = () => {
         queryClient.invalidateQueries({ queryKey: ["conteudos"] });
         queryClient.invalidateQueries({ queryKey: ["anexos"] });
-        queryClient.invalidateQueries({ queryKey: ["etiquetas"] });
 
     };
 

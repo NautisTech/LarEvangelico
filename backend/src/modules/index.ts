@@ -10,8 +10,6 @@ export * from './utilizador/utilizador.service';
 
 export * from './conteudo/conteudo.module';
 export * from './conteudo/conteudo.service';
-export * from './etiqueta/etiqueta.module';
-export * from './etiqueta/etiqueta.service';
 
 export * from './anexo/anexo.module';
 export * from './anexo/anexo.service';

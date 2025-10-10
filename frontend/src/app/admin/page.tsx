@@ -2,8 +2,7 @@
 
 import React from "react";
 import { Grid as NoticiasGrid } from "@/components/admin/noticias";
-import { Grid as ProjetosGrid } from "@/components/admin/projetos";
-import { Grid as EventosGrid } from "@/components/admin/eventos";
+import { Grid as CausasGrid } from "@/components/admin/causas";
 import { useModuleTabs, TipoTab } from "@/context";
 import { BarChart3, FileText } from "lucide-react";
 import { Modulo, TipoConteudo } from "@/utils";
@@ -27,13 +26,7 @@ export default function ConteudosPage() {
 
             {activeTab === TipoTab.causas && (
                 <div>
-                    <ProjetosGrid />
-                </div>
-            )}
-
-            {activeTab === TipoTab.eventos && (
-                <div>
-                    <EventosGrid />
+                    <CausasGrid />
                 </div>
             )}
 

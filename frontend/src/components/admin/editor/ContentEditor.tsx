@@ -23,9 +23,8 @@ import CodeBlock from '@tiptap/extension-code-block';
 import { TextAlign } from '@tiptap/extension-text-align';
 import { useDropzone } from 'react-dropzone';
 
-import { Anexo, Conteudo, Etiqueta } from '@/models';
+import { Anexo, Conteudo } from '@/models';
 import { TipoAnexo, TipoConteudo } from '@/utils';
-import { useEtiquetaHook } from '@/hooks';
 import { toast } from 'react-toastify';
 
 
@@ -55,8 +54,6 @@ export function ContentEditor<T>({
     const [anexosExistentes, setAnexosExistentes] = useState<Anexo[]>([]);
     const [imagemPrincipalExistente, setImagemPrincipalExistente] = useState<Anexo | null>(null);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
-    const [etiquetasSelecionadas, setEtiquetasSelecionadas] = useState<string[]>([]);
-    const [novaEtiqueta, setNovaEtiqueta] = useState('');
     const [corpoShowEmoji, setCorpoShowEmoji] = useState(false);
     const [corpoTextColor, setCorpoTextColor] = useState('#000000');
     const [corpoBgColor, setCorpoBgColor] = useState('#ffffff');
@@ -64,6 +61,8 @@ export function ContentEditor<T>({
     const [tituloBgColor, setTituloBgColor] = useState('#ffffff');
     const [subtituloTextColor, setSubtituloTextColor] = useState('#000000');
     const [subtituloBgColor, setSubtituloBgColor] = useState('#ffffff');
+    const [objetivo, setObjetivo] = useState<number | null>(null);
+    const [angariado, setAngariado] = useState<number | null>(null);
 
     // Estado para múltiplos conteúdos
     const [isCreatingNew, setIsCreatingNew] = useState(conteudo ? false : true);
@@ -110,37 +109,15 @@ export function ContentEditor<T>({
     const getVisibleFields = (tipo: TipoConteudo) => {
         return {
             showAnexoPrincipal: true, // Todos os tipos têm anexo principal
-            showAnexos: true,
-            showEtiquetas: true,
+            showAnexos: tipo !== TipoConteudo.Causa, // Causas não têm anexos adicionais
             showSubtitulo: true, // Todos os tipos têm subtítulo
             showCorpo: true,
-            showDataInicioFim: tipo === TipoConteudo.Evento,
+            showDataInicioFim: false,
+            showDonations: tipo === TipoConteudo.Causa,
         };
     };
 
     const visibleFields = getVisibleFields(tipoConteudo);
-
-    // Etiquetas existentes (vem da API)
-    const { data: etiquetasData = [] } = useEtiquetaHook();
-    const etiquetasExistentes = etiquetasData.map(etiqueta => etiqueta.nome);
-
-    const adicionarEtiqueta = (etiqueta: string) => {
-        if (etiqueta.trim() && !etiquetasSelecionadas.includes(etiqueta.trim())) {
-            setEtiquetasSelecionadas([...etiquetasSelecionadas, etiqueta.trim()]);
-        }
-    };
-
-    const removerEtiqueta = (etiqueta: string) => {
-        setEtiquetasSelecionadas(etiquetasSelecionadas.filter(e => e !== etiqueta));
-    };
-
-    const handleNovaEtiqueta = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            adicionarEtiqueta(novaEtiqueta);
-            setNovaEtiqueta('');
-        }
-    };
 
     const validateConteudo = (): boolean => {
         const titulo = tituloEditor?.getText().trim() || '';
@@ -158,7 +135,6 @@ export function ContentEditor<T>({
         }
 
         switch (tipoConteudo) {
-            case TipoConteudo.Projeto:
             case TipoConteudo.Noticia:
                 if (!corpo) {
                     toast.warning('Por favor, preencha o corpo do conteúdo.');
@@ -170,18 +146,14 @@ export function ContentEditor<T>({
                 }
                 break;
 
-            case TipoConteudo.Evento:
-                if (!corpo) {
-                    toast.warning('Por favor, preencha o corpo do evento.');
+            case TipoConteudo.Causa:
+                if (!subtitulo) {
+                    toast.warning('Por favor, preencha o subtítulo da causa.');
                     return false;
                 }
-                if (totalAnexos === 0) {
-                    toast.warning('Por favor, adicione pelo menos uma imagem/anexo.');
-                    return false;
-                }
-                const dataInicioInput = document.getElementById('data-inicio') as HTMLInputElement;
-                if (!dataInicioInput?.value) {
-                    toast.warning('Por favor, defina a data de início do evento.');
+                const causaAnexo = imagemPrincipal || imagemPrincipalExistente;
+                if (!causaAnexo) {
+                    toast.warning('Por favor, adicione a imagem principal da causa.');
                     return false;
                 }
                 break;
@@ -336,11 +308,6 @@ export function ContentEditor<T>({
                 }
             }
 
-            // Inicializar etiquetas
-            if (visibleFields.showEtiquetas && currentContent.etiquetas) {
-                setEtiquetasSelecionadas(currentContent.etiquetas.map((e: Etiqueta) => e.nome));
-            }
-
             // Inicializar anexos existentes
             if (currentContent.anexos) {
                 const principal = currentContent.anexos.find(anexo => anexo.principal);
@@ -353,8 +320,20 @@ export function ContentEditor<T>({
                     setAnexosExistentes(outros);
                 }
             }
+
+            if (typeof currentContent.objetivo !== 'undefined' && currentContent.objetivo !== null) {
+                setObjetivo(currentContent.objetivo as number);
+            } else {
+                setObjetivo(null);
+            }
+
+            if (typeof currentContent.angariado !== 'undefined' && currentContent.angariado !== null) {
+                setAngariado(currentContent.angariado as number);
+            } else {
+                setAngariado(null);
+            }
         }
-    }, [currentContent, tituloEditor, subtituloEditor, corpoEditor, visibleFields.showDataInicioFim, visibleFields.showEtiquetas, visibleFields.showCorpo, visibleFields.showSubtitulo, internalKey]);
+    }, [currentContent, tituloEditor, subtituloEditor, corpoEditor, visibleFields.showDataInicioFim, visibleFields.showCorpo, visibleFields.showSubtitulo, internalKey]);
 
     const handleSave = async () => {
         try {
@@ -377,13 +356,6 @@ export function ContentEditor<T>({
                 dataInicio = dataInicioInput?.value ? new Date(dataInicioInput.value) : null;
                 dataFim = dataFimInput?.value ? new Date(dataFimInput.value) : null;
             }
-
-            // Preparar etiquetas (só se estiverem visíveis)
-            const etiquetas = visibleFields.showEtiquetas ? etiquetasSelecionadas.map(nome => {
-                // Procurar se a etiqueta já existe
-                const etiquetaExistente = etiquetasData.find(e => e.nome === nome);
-                return etiquetaExistente || new Etiqueta({ nome });
-            }) : [];
 
             // Preparar anexos existentes
             const anexosList: Anexo[] = [];
@@ -410,8 +382,9 @@ export function ContentEditor<T>({
                 data_inicio: dataInicio,
                 data_fim: dataFim,
                 publico: false, // Default
-                etiquetas,
                 anexos: anexosList, // Apenas anexos existentes
+                objetivo: objetivo ?? null,
+                angariado: angariado ?? null,
                 publicado_em: null,
                 visualizacoes: 0,
                 criado_em: new Date(),
@@ -758,6 +731,44 @@ export function ContentEditor<T>({
                     </section>
                 )}
 
+                {/* Causa specific fields */}
+                {visibleFields.showDonations && (
+                    <section className="mb-8 bg-white rounded-xl shadow-md border border-gray-200 p-8">
+                        <h2 className="text-2xl font-semibold text-gray-900 mb-6">Doações</h2>
+                        <div className="space-y-6">
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-2">Objetivo (€)</label>
+                                <div className="w-full">
+                                    <input
+                                        type="number"
+                                        step="1"
+                                        min="0"
+                                        value={objetivo ?? ''}
+                                        onChange={(e) => setObjetivo(e.target.value === '' ? null : parseInt(e.target.value, 10))}
+                                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] transition"
+                                        placeholder="0"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-2">Angariado (€)</label>
+                                <div className="w-full">
+                                    <input
+                                        type="number"
+                                        step="1"
+                                        min="0"
+                                        value={angariado ?? ''}
+                                        onChange={(e) => setAngariado(e.target.value === '' ? null : parseInt(e.target.value, 10))}
+                                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] transition"
+                                        placeholder="0"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                )}
+
                 {/* Media Section */}
                 <section className="mb-8 bg-white rounded-xl shadow-md border border-gray-200 p-8">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-6">Mídia</h2>
@@ -907,70 +918,6 @@ export function ContentEditor<T>({
                         )}
                     </div>
                 </section>
-
-                {/* Tags Section - só mostra se não for Banner */}
-                {visibleFields.showEtiquetas && (
-                    <section className="mb-8 bg-white rounded-xl shadow-md border border-gray-200 p-8">
-                        <h2 className="text-2xl font-semibold text-gray-900 mb-6">Etiquetas</h2>
-                        <div className="space-y-6">
-                            {/* Criar nova etiqueta */}
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Criar Nova Etiqueta</label>
-                                <input
-                                    type="text"
-                                    value={novaEtiqueta}
-                                    onChange={(e) => setNovaEtiqueta(e.target.value)}
-                                    onKeyDown={handleNovaEtiqueta}
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] transition"
-                                    placeholder="Digite o nome da etiqueta e pressione Enter"
-                                />
-                            </div>
-
-                            {/* Etiquetas existentes */}
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-3">Etiquetas Existentes</label>
-                                <div className="flex flex-wrap gap-2">
-                                    {etiquetasExistentes.map((etiqueta) => (
-                                        <button
-                                            key={etiqueta}
-                                            onClick={() => adicionarEtiqueta(etiqueta)}
-                                            disabled={etiquetasSelecionadas.includes(etiqueta)}
-                                            className={`px-3 py-1 rounded-full text-sm font-medium transition ${etiquetasSelecionadas.includes(etiqueta)
-                                                ? 'bg-[var(--site-brown-100)] text-[var(--site-brown-dark)] cursor-not-allowed'
-                                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-gray-900'
-                                                }`}
-                                        >
-                                            + {etiqueta}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Etiquetas selecionadas */}
-                            {etiquetasSelecionadas.length > 0 && (
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-3">Etiquetas Selecionadas</label>
-                                    <div className="flex flex-wrap gap-2">
-                                        {etiquetasSelecionadas.map((etiqueta) => (
-                                            <span
-                                                key={etiqueta}
-                                                className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[var(--site-brown-100)] text-[var(--site-brown-dark)]"
-                                            >
-                                                {etiqueta}
-                                                <button
-                                                    onClick={() => removerEtiqueta(etiqueta)}
-                                                    className="ml-2 text-red-600 hover:text-red-800 transition"
-                                                >
-                                                    <X size={14} />
-                                                </button>
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    </section>
-                )}
 
                 {/* Action Buttons */}
                 <section className="mb-8 bg-white rounded-xl shadow-md border border-gray-200 p-8">
