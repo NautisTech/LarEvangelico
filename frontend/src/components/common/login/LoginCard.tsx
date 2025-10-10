@@ -27,9 +27,8 @@ export const LoginCard = ({ onLogin, loading, error }: LoginCardProps) => {
                 <div className="flex justify-start w-full mb-4">
                     <div>
                         <Link href="/" className="text-gray-600 hover:text-black">
-                            <span className="inline-flex items-center gap-2">
-                                <ArrowLeft size={18} />
-                                Voltar
+                            <span className="inline-flex items-center">
+                                <ArrowLeft size={24} />
                             </span>
                         </Link>
                     </div>

@@ -1,16 +1,15 @@
 import axios from 'axios';
-
-import 'dotenv/config';
 import { toast } from 'react-toastify';
 
 // Base URL do backend configurada via variável de ambiente
+// Use NEXT_PUBLIC_API_URL so the variable is available in the browser build.
 export const axiosPublic = axios.create({
-  baseURL: "/api",
+  baseURL: (process.env.NEXT_PUBLIC_API_URL as string) || 'http://localhost:9832',
 });
 
 // Instância privada que requer o token
 export const axiosPrivate = axios.create({
-  baseURL: "/api",
+  baseURL: (process.env.NEXT_PUBLIC_API_URL as string) || 'http://localhost:9832',
   withCredentials: true,
 });
 

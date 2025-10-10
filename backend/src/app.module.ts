@@ -32,11 +32,11 @@ const parseBoolean = (v?: string) => v === 'true';
       password: (process.env.DB_PASSWORD || '').trim(),         // MUITO importante o .trim()
       database: (process.env.DB_DATABASE || '').trim(),         // prod_as
 
-      synchronize: parseBoolean(process.env.DB_SYNCHRONIZE),
-      dropSchema: parseBoolean(process.env.DB_DROP_SCHEMA),
-      logging: parseBoolean(process.env.DB_LOGGING),
-      logger: parseBoolean(process.env.DB_LOGGING) ? 'advanced-console' : undefined,
-      migrationsRun: parseBoolean(process.env.DB_RUN_MIGRATIONS),
+      synchronize: parseBoolean(process.env.DB_SYNCHRONIZE || 'false'),
+      dropSchema: parseBoolean(process.env.DB_DROP_SCHEMA || 'false'),
+      logging: parseBoolean(process.env.DB_LOGGING || 'false'),
+      logger: parseBoolean(process.env.DB_LOGGING || 'false') ? 'advanced-console' : undefined,
+      migrationsRun: parseBoolean(process.env.DB_RUN_MIGRATIONS || 'false'),
       migrationsTransactionMode: 'each',
       migrations: ['dist/migrations/*.js'],
       migrationsTableName: 'migration',

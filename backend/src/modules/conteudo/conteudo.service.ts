@@ -65,11 +65,23 @@ export class ConteudoService {
         return results;
     }
 
-    async findTipo(tipo: string, isPublic: boolean = false): Promise<Conteudo[]> {
+    async findTipo(tipo: string, isPublic: boolean = false, conteudoLength = 0): Promise<Conteudo[]> {
         const tipoConteudo = TipoConteudo[tipo as keyof typeof TipoConteudo];
 
-        if (isPublic) return await this.conteudoRepository.find({ where: { tipo: tipoConteudo, publico: true }, relations: this.relations });
-        else return await this.conteudoRepository.find({ where: { tipo: tipoConteudo }, relations: this.relations });
+        if (conteudoLength && conteudoLength > 0) {
+            return await this.conteudoRepository.find({
+                where: { tipo: tipoConteudo, publico: true },
+                relations: this.relations,
+                order: { publicado_em: 'DESC' },
+                take: conteudoLength,
+            });
+        }
+
+        if (isPublic) {
+            return await this.conteudoRepository.find({ where: { tipo: tipoConteudo, publico: true }, relations: this.relations });
+        } else {
+            return await this.conteudoRepository.find({ where: { tipo: tipoConteudo }, relations: this.relations });
+        }
     }
 
     async findAll(): Promise<Conteudo[]> {

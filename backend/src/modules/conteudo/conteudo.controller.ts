@@ -26,6 +26,11 @@ export class ConteudoController {
     return this.conteudoService.findTipo(tipo, true);
   }
 
+  @Get('/public/:tipo/top')
+  findTopPublic(@Param('tipo') tipo: string) {
+    return this.conteudoService.findTipo(tipo, true, 3);
+  }
+
   @UseGuards(JwtAuthGuard)
   @Get('id/:id')
   findById(@Param('id') id: string) {

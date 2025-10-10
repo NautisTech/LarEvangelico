@@ -21,42 +21,43 @@ export default function DonationModal({ open, onClose }: Props) {
             style={{
                 position: "fixed",
                 inset: 0,
-                background: "rgba(0,0,0,0.45)",
+                background: "rgba(29, 15, 2, 0.75)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 zIndex: 1200,
+                backdropFilter: "blur(4px)",
             }}
             onClick={(e) => {
-                // only close when clicking the backdrop but not inside the modal content
                 if (e.target === e.currentTarget) {
-                    // intentionally do nothing — user requested only header X closes modal
+                    onClose();
                 }
             }}
         >
             <div
                 className="donation-modal"
                 style={{
-                    width: "min(740px, 92vw)",
+                    width: "min(800px, 92vw)",
                     maxHeight: "90vh",
                     overflowY: "auto",
-                    borderRadius: 16,
-                    background: "linear-gradient(180deg, #FFFFFF 0%, #FFF8F0 100%)",
-                    boxShadow: "0 20px 40px rgba(12, 12, 12, 0.25)",
-                    padding: 24,
+                    borderRadius: 24,
+                    background: "rgb(255, 255, 255)",
+                    boxShadow: "0 24px 48px rgba(29, 15, 2, 0.2)",
+                    padding: "40px",
                     position: "relative",
                 }}
                 onClick={(e) => e.stopPropagation()}
             >
-                <header style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
-                    <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-                        <div style={{ width: 48, height: 48, borderRadius: 12, background: "linear-gradient(135deg,#FFCE55,#FF6B6B)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: 700 }}>
-                            D
-                        </div>
-                        <div>
-                            <h3 style={{ margin: 0, fontSize: 18, color: "#1D0F02" }}>Doação</h3>
-                            <div style={{ fontSize: 12, color: "#6b5746" }}>Apoie esta causa</div>
-                        </div>
+                <header style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 32 }}>
+                    <div>
+                        <h2 className="framer-text framer-styles-preset-1l4ukjs" data-styles-preset="ebpY9F0Dz"
+                            style={{ margin: 0, marginBottom: 8, color: "rgb(29, 15, 2)" }}>
+                            Apoie a Nossa Causa
+                        </h2>
+                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
+                            style={{ margin: 0, color: "rgb(113, 34, 11)" }}>
+                            Cada contribuição faz a diferença
+                        </p>
                     </div>
 
                     <button
@@ -66,57 +67,96 @@ export default function DonationModal({ open, onClose }: Props) {
                             background: "transparent",
                             border: "none",
                             cursor: "pointer",
-                            padding: 6,
+                            padding: 8,
                             borderRadius: 8,
+                            transition: "background 0.2s",
                         }}
+                        onMouseEnter={(e) => e.currentTarget.style.background = "rgba(29, 15, 2, 0.05)"}
+                        onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
                     >
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18" stroke="#1D0F02" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M6 6L18 18" stroke="#1D0F02" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="rgb(29, 15, 2)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M6 6L18 18" stroke="rgb(29, 15, 2)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </button>
                 </header>
 
-                <div style={{ display: "grid", gap: 12 }}>
-                    <div style={{ fontSize: 16, color: "#1D0F02" }}>
-                        Muito obrigado pelo seu apoio!
-                        <p style={{ marginTop: 8, marginBottom: 0 }}>Qualquer ajuda é muito bem-vinda.</p>
-                        <p style={{ marginTop: 8, marginBottom: 0 }}>
-                            A Associação não tem fins lucrativos e, por ser uma IPSS, as contribuições podem ser deduzidas, nos termos da legislação aplicável, em sede de impostos.
+                <div style={{ display: "grid", gap: 24 }}>
+                    <div>
+                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
+                            style={{ margin: 0, color: "rgb(29, 15, 2)", marginBottom: 4 }}>
+                            Muito obrigado pelo seu apoio!
+                        </p>
+                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
+                            style={{ margin: 0, color: "rgb(29, 15, 2)", marginBottom: 4 }}>
+                            Qualquer ajuda é muito bem-vinda e permite-nos continuar a servir com compaixão e dedicação.
+                        </p>
+                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
+                            style={{ margin: 0, color: "rgb(29, 15, 2)", marginBottom: 4 }}>
+                            A Fundação não tem fins lucrativos e, por ser uma IPSS, as contribuições podem ser deduzidas, nos termos da legislação aplicável, em sede de impostos.
                         </p>
                     </div>
 
-                    <div style={{ padding: 12, borderRadius: 12, background: "#FFF6E6", border: "1px solid #F3DDBF" }}>
-                        <h4 style={{ margin: 0, fontSize: 14 }}>Informação para transferência</h4>
-                        <div style={{ marginTop: 8, fontSize: 14 }}>
+                    <div style={{
+                        padding: 24,
+                        borderRadius: 16,
+                        background: "rgb(255, 250, 242)",
+                        border: "1px solid rgb(238, 220, 190)",
+                        boxShadow: "0 2px 8px rgba(29, 15, 2, 0.04)"
+                    }}>
+                        <h4 className="framer-text framer-styles-preset-ehrduw" data-styles-preset="Pm0hsra8F"
+                            style={{ margin: 0, marginBottom: 16, fontSize: "24px", color: "rgb(113, 34, 11)" }}>
+                            Informação para Transferência
+                        </h4>
+                        <div className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
+                            style={{ display: "grid", gap: 8, color: "rgb(29, 15, 2)" }}>
                             <div><strong>Banco:</strong> BPI</div>
-                            <div><strong>IBAN:</strong> {randomIban}</div>
-                            <div><strong>BIC/SWIFT:</strong> {randomBic}</div>
+                            <div style={{ fontFamily: "monospace", fontSize: "15px" }}>
+                                <strong>IBAN:</strong> {randomIban}
+                            </div>
+                            <div style={{ fontFamily: "monospace", fontSize: "15px" }}>
+                                <strong>BIC/SWIFT:</strong> {randomBic}
+                            </div>
                         </div>
                     </div>
 
-                    <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
-                        <div style={{ width: 140, height: 140, background: "#F8F8F8", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", border: "1px dashed #E6E0D6" }}>
-                            {/* QR placeholder */}
-                            <div style={{ textAlign: "center", color: "#6b5746" }}>
-                                <div style={{ fontSize: 12 }}>QR Code</div>
-                                <div style={{ fontSize: 10, marginTop: 6 }}>[placeholder]</div>
+                    <div style={{ display: "flex", gap: 24, alignItems: "flex-start", flexWrap: "wrap" }}>
+                        <div style={{
+                            width: 160,
+                            height: 160,
+                            background: "rgb(248, 245, 240)",
+                            borderRadius: 16,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            border: "2px dashed rgb(238, 220, 190)",
+                            boxShadow: "0 2px 8px rgba(29, 15, 2, 0.04)"
+                        }}>
+                            <div style={{ textAlign: "center", color: "rgb(113, 34, 11)" }}>
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginBottom: 8 }}>
+                                    <rect x="3" y="3" width="7" height="7" stroke="rgb(113, 34, 11)" strokeWidth="1.5" fill="none" />
+                                    <rect x="14" y="3" width="7" height="7" stroke="rgb(113, 34, 11)" strokeWidth="1.5" fill="none" />
+                                    <rect x="3" y="14" width="7" height="7" stroke="rgb(113, 34, 11)" strokeWidth="1.5" fill="none" />
+                                    <rect x="14" y="14" width="3" height="3" fill="rgb(113, 34, 11)" />
+                                    <rect x="18" y="18" width="3" height="3" fill="rgb(113, 34, 11)" />
+                                </svg>
+                                <div className="framer-text" style={{ fontSize: 12, color: "rgb(113, 34, 11)" }}>QR Code</div>
                             </div>
                         </div>
 
-                        <div style={{ flex: 1, minWidth: 240 }}>
-                            <p style={{ margin: 0 }}>Por favor envie-nos um comprovativo da sua doação para: <a href="mailto:somosnos@somosnos.pt">somosnos@somosnos.pt</a></p>
-                            <p style={{ marginTop: 8 }}>
-                                Indique no email o seu nome (<em>joao.coutinho.seaders</em>), NIF e morada para emissão de recibo.
+                        <div style={{ flex: 1, minWidth: 280 }}>
+                            <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
+                                style={{ margin: 0, marginBottom: 12, color: "rgb(29, 15, 2)" }}>
+                                Por favor envie-nos um comprovativo da sua doação para:{" "}
+                                <a href="mailto:contacto@larevangelico.pt" style={{ color: "rgb(113, 34, 11)", textDecoration: "underline" }}>
+                                    contacto@larevangelico.pt
+                                </a>
+                            </p>
+                            <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
+                                style={{ margin: 0, color: "rgb(113, 34, 11)", fontSize: "14px" }}>
+                                Indique no email o seu <strong>nome</strong>, <strong>NIF</strong> e <strong>morada</strong> para emissão de recibo.
                             </p>
                         </div>
-                    </div>
-
-                    <div style={{ display: "flex", justifyContent: "flex-end", gap: 8 }}>
-                        <button onClick={onClose} style={{ background: "transparent", border: "1px solid #E6D6C1", padding: "8px 12px", borderRadius: 8, cursor: "pointer" }}>Fechar</button>
-                        <a href="#" onClick={(e) => { e.preventDefault(); alert('Obrigado pela intenção de doar! (simulação)'); }} style={{ background: "#FF8C42", color: "white", padding: "8px 12px", borderRadius: 8, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8 }}>
-                            Doar agora
-                        </a>
                     </div>
                 </div>
             </div>

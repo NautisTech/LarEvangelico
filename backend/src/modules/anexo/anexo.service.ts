@@ -13,8 +13,6 @@ import { UpdateAnexoDto } from './dto/update-anexo.dto';
 import { BulkCreateAnexoDto } from './dto/bulk-create-anexo.dto';
 
 import 'dotenv/config';
-import { get } from 'axios';
-import { getuid } from 'process';
 
 @Injectable()
 export class AnexoService {

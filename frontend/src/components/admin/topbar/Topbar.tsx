@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useAuthContext, useModuleTabsSafe } from "@/context";
-import { Sun, Maximize, Minimize, Bell, Settings, Table as TableIcon, Building2Icon, Book, BarChart3, Users, Layers3, LineChart, Image, TrendingUp, FileText, Bug, InfoIcon, Calendar1Icon, MapPin, Building, Building2, School2Icon, RouteIcon, LockIcon, UserIcon, ComputerIcon, Package, TagIcon, Wrench, TicketIcon, BugIcon, MessageSquare, Newspaper, CalendarDays, FolderKanban, HelpCircle, Sheet, PaperclipIcon } from "lucide-react";
+import { Sun, Maximize, Minimize, Bell, Settings, Table as TableIcon, Building2Icon, Book, LogOutIcon, Users, Layers3, LineChart, Image, TrendingUp, FileText, Bug, InfoIcon, Calendar1Icon, MapPin, Building, Building2, School2Icon, RouteIcon, LockIcon, UserIcon, ComputerIcon, Package, TagIcon, Wrench, TicketIcon, BugIcon, MessageSquare, Newspaper, CalendarDays, FolderKanban, HelpCircle, Sheet, PaperclipIcon } from "lucide-react";
 import { toast } from "react-toastify";
 import { Modulo } from "@/utils";
 
@@ -20,13 +20,12 @@ interface ModuleConfig {
     hasInternalTabs: boolean; // Indica se a página tem tabs internas
 }
 
-export function Topbar() {
-    const { utilizador } = useAuthContext();
+export function Topbar({ openChangePassword }: { openChangePassword?: (utilizadorId?: number) => void }) {
+    const { utilizador, logout } = useAuthContext();
     const pathname = usePathname();
     const [isFullscreen, setIsFullscreen] = useState(false);
 
     const moduleTabsContext = useModuleTabsSafe();
-
     // Configuração dos módulos e suas tabs
     const moduleConfigs: Record<string, ModuleConfig> = {
         conteudos: {
@@ -34,24 +33,13 @@ export function Topbar() {
             hasInternalTabs: true,
             tabs: [
                 { id: 'tabela', label: 'Notícias', icon: Newspaper },
-                { id: 'banners', label: 'Banners', icon: Image },
-                { id: 'projetos', label: 'Projetos', icon: FolderKanban },
-                { id: 'eventos', label: 'Eventos', icon: CalendarDays },
-                { id: 'moderacao', label: 'Moderação', icon: MessageSquare },
-                { id: 'dashboard', label: 'Dashboard', icon: BarChart3 },
+                { id: 'causas', label: 'Causas', icon: CalendarDays },
             ]
         }
     };
 
     // Detectar o módulo atual baseado na URL
-    const currentModule = React.useMemo(() => {
-        const pathSegments = pathname.split('/').filter(Boolean);
-        if (pathSegments.length >= 2 && pathSegments[0] === 'admin') {
-            const moduleName = pathSegments[1];
-            return moduleConfigs[moduleName] || null;
-        }
-        return null;
-    }, [pathname, moduleConfigs]);
+    const currentModule = moduleConfigs["conteudos"] || null;
 
     useEffect(() => {
         const handleFullscreenChange = () => {
@@ -85,18 +73,25 @@ export function Topbar() {
                     <h3 className="m-0 text-xl font-bold bg-gradient-to-r from-white to-zinc-200 bg-clip-text text-transparent">
                         Bem-vindo(a), {utilizador?.getNome()}!
                     </h3>
-                    {currentModule && (
-                        <div className="flex items-center space-x-3">
-                            <div className="h-6 w-px bg-white"></div>
-                            <span className="m-0 text-xl font-bold bg-gradient-to-r from-white to-zinc-200 bg-clip-text text-transparent">
-                                {currentModule.name}
-                            </span>
-                        </div>
-                    )}
                 </div>
 
                 {/* Icons + User Info */}
                 <div className="flex items-center space-x-4">
+                    <button
+                        onClick={() => logout()}
+                        className="p-3 rounded-xl hover:bg-zinc-700 transition-all duration-200"
+                        type="button"
+                    >
+                        <LogOutIcon className="w-5 h-5 text-zinc-300" />
+                    </button>
+                    <button
+                        onClick={() => openChangePassword ? openChangePassword(utilizador?.id ?? undefined) : undefined}
+                        className="p-3 rounded-xl hover:bg-zinc-700 transition-all duration-200"
+                        type="button"
+                    >
+                        <LockIcon className="w-5 h-5 text-zinc-300" />
+                    </button>
+
                     <button
                         onClick={toggleFullscreen}
                         className="p-3 rounded-xl hover:bg-zinc-700 transition-all duration-200"

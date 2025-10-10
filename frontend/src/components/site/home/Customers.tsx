@@ -1,8 +1,20 @@
 "use client";
-import { useRouter } from 'next/navigation';
+
+import React from "react";
+import { useRouter } from "next/navigation";
+import DonationModal from "../DonationModal";
 
 export function Customers() {
     const router = useRouter();
+
+    const [isModalOpen, setModalOpen] = React.useState(false);
+    const handleModalOpen = () => {
+        setModalOpen(true);
+    };
+    const handleModalClose = () => {
+        setModalOpen(false);
+    };
+
     return (
         <>
             <section className="framer-1fv6z0v" data-framer-name="Customers">
@@ -119,7 +131,7 @@ export function Customers() {
                                         ao próximo.</h5>
 
                                 </div>
-                                <div className="framer-1wydo3t" data-framer-name="Info Wrap">
+                                <div className="framer-1wydo3t" data-framer-name="Info Wrap" onClick={handleModalOpen}>
                                     <div className="framer-4zv60h-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
                                         data-border="true" data-framer-name="Primary" data-highlight="true"
                                         tabIndex={0} style={{
@@ -267,7 +279,7 @@ export function Customers() {
                                         ao próximo.</h5>
 
                                 </div>
-                                <div className="framer-1wydo3t" data-framer-name="Info Wrap">
+                                <div className="framer-1wydo3t" data-framer-name="Info Wrap" onClick={handleModalOpen}>
                                     <div className="framer-4zv60h-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
                                         data-border="true" data-framer-name="Primary" data-highlight="true"
                                         tabIndex={0} style={{
@@ -481,6 +493,7 @@ export function Customers() {
                         </div>
                     </div>
                 </div>
+                {isModalOpen && <DonationModal open={isModalOpen} onClose={handleModalClose} />}
             </section>
         </>
     );

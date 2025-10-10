@@ -1,6 +1,19 @@
+"use client";
+
+import React from "react";
+import DonationModal from "../DonationModal";
 import './MainBanner.module.css';
 
 export function MainBanner() {
+
+    const [isModalOpen, setModalOpen] = React.useState(false);
+    const handleModalOpen = () => {
+        setModalOpen(true);
+    };
+    const handleModalClose = () => {
+        setModalOpen(false);
+    };
+
     return (
         <>
             <section className="framer-1gttmjx" data-framer-name="Main Banner" id="home-banner">
@@ -91,7 +104,7 @@ export function MainBanner() {
 
                                 </div>
                             </div>
-                            <div className="framer-1ynk84e-container"><a className="framer-EomdA framer-2Vypl framer-rvcmdt framer-v-8usv35 framer-1d5tuq9"
+                            <div className="framer-1ynk84e-container" onClick={handleModalOpen}><a className="framer-EomdA framer-2Vypl framer-rvcmdt framer-v-8usv35 framer-1d5tuq9"
                                 data-border="true" data-framer-name="Banner Button" style={{
                                     borderBottomWidth: "1px", borderColor:
                                         "var(--token-b48c5b23-5851-4ed2-9bdd-7e6ab154d227, rgb(187, 60, 13))", borderLeftWidth: "1px", borderRightWidth: "1px",
@@ -345,7 +358,7 @@ export function MainBanner() {
 
                                 </div>
                             </div>
-                            <div className="framer-1ynk84e-container"><a className="framer-EomdA framer-2Vypl framer-rvcmdt framer-v-1cm66cn framer-1d5tuq9"
+                            <div className="framer-1ynk84e-container" onClick={handleModalOpen}><a className="framer-EomdA framer-2Vypl framer-rvcmdt framer-v-1cm66cn framer-1d5tuq9"
                                 data-border="true" data-framer-name="Mobile banner" style={{
                                     borderBottomWidth: "1px", borderColor:
                                         "var(--token-b48c5b23-5851-4ed2-9bdd-7e6ab154d227, rgb(187, 60, 13))", borderLeftWidth: "1px", borderRightWidth: "1px",
@@ -460,6 +473,7 @@ export function MainBanner() {
                     </div>
                 </div>
             </section>
+            {isModalOpen && <DonationModal open={isModalOpen} onClose={handleModalClose} />}
         </>
     );
 };

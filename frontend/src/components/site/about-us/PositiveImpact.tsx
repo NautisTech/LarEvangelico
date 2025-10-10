@@ -1,4 +1,18 @@
+"use client";
+
+import React from "react";
+import DonationModal from "../DonationModal";
+
 export function PositiveImpact() {
+
+    const [isModalOpen, setModalOpen] = React.useState(false);
+    const handleModalOpen = () => {
+        setModalOpen(true);
+    };
+    const handleModalClose = () => {
+        setModalOpen(false);
+    };
+
     return (
         <>
             <section className="framer-1m4rlcb" data-framer-name="Positive Impact">
@@ -179,7 +193,7 @@ export function PositiveImpact() {
                                                 integral e dignidade, segundo os princípios da fé cristã evangélica.</p>
                                         </div>
                                     </div>
-                                    <div className="ssr-variant hidden-bvam2o">
+                                    <div className="ssr-variant hidden-bvam2o" onClick={handleModalOpen}>
                                         <div className="framer-1p0yejy-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
                                             data-border="true" data-framer-name="Primary" data-highlight="true"
                                             tabIndex={0} style={{
@@ -211,7 +225,7 @@ export function PositiveImpact() {
                                         </a>
                                         </div>
                                     </div>
-                                    <div className="ssr-variant hidden-1cn8rbi">
+                                    <div className="ssr-variant hidden-1cn8rbi" onClick={handleModalOpen}>
                                         <div className="framer-1p0yejy-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
                                             data-border="true" data-framer-name="Primary" data-highlight="true"
                                             tabIndex={0} style={{
@@ -272,7 +286,7 @@ export function PositiveImpact() {
                                                 integral e dignidade, segundo os princípios da fé cristã evangélica.</p>
                                         </div>
                                     </div>
-                                    <div className="framer-1p0yejy-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
+                                    <div className="framer-1p0yejy-container" onClick={handleModalOpen}><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-hozlb9 framer-57amc9"
                                         data-border="true" data-framer-name="Primary" data-highlight="true"
                                         tabIndex={0} style={{
                                             borderBottomWidth: "1px", borderColor:
@@ -353,6 +367,7 @@ export function PositiveImpact() {
                     </div>
                 </div>
             </section>
+            {isModalOpen && <DonationModal open={isModalOpen} onClose={handleModalClose} />}
         </>
     )
 };

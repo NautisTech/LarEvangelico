@@ -6,7 +6,6 @@ import { Utilizador, Anexo } from '@/entities';
 import { CreateUtilizadorDto } from './dto/create-utilizador.dto';
 import { UpdateUtilizadorDto } from './dto/update-utilizador.dto';
 import { BulkUpdateUtilizadorDto } from './dto/bulk-update-utilizador.dto';
-import { tree } from 'next/dist/build/templates/app-page';
 
 @Injectable()
 export class UtilizadorService {
