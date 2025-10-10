@@ -1,11 +1,29 @@
+"use client";
+
 import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 import { AboutSection, BlogSection, Causes, Customers, Donate, MainBanner, Newsletter, OurProjects, Testimonial, Volunteers, WhyChooseUs } from "@/components/site/home";
 
 // @ts-ignore
 import './page.css'
+import { TipoConteudo } from "@/utils";
+import { useConteudoHook } from "@/hooks";
 
 export default function Home() {
+
+  const { data: causas, isLoading, error } = useConteudoHook(TipoConteudo.Causa, true);
+
+  // Ordenar por data de publicação (mais recente primeiro)
+  const causasOrdenadas = causas ? [...causas]
+    .sort((a, b) => {
+      const dataA = a.publicado_em ? new Date(a.publicado_em).getTime() : 0;
+      const dataB = b.publicado_em ? new Date(b.publicado_em).getTime() : 0;
+      return dataB - dataA;
+    }) : [];
+
+  // Primeira causa para o Main, resto para Insights
+  const causasTop = causasOrdenadas.length > 0 ? causasOrdenadas.slice(0, 3) : [];
+
   return (
     <>
       <Navbar />
@@ -15,7 +33,7 @@ export default function Home() {
         <div className="framer-hq0l56" data-framer-name="Page Main">
           <MainBanner />
           <AboutSection />
-          <Causes />
+          <Causes causas={causasTop} isLoading={isLoading} />
           <Volunteers />
           <WhyChooseUs />
           <Customers />

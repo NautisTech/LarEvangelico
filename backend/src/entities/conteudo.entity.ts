@@ -64,4 +64,16 @@ export class Conteudo {
 
     @OneToMany(() => Anexo, (anexo) => anexo.conteudo, { cascade: true, onDelete: 'CASCADE' })
     anexos: Anexo[] | null; // Relacionamento com a tabela 'anexos'
+
+    @Column({ type: 'text', nullable: true })
+    introducao: string; // Introdução da causa
+
+    @Column({ type: 'text', nullable: true })
+    desafio: string; // Desafio da causa
+
+    @Column({ type: 'text', nullable: true })
+    problema: string; // Problema da causa
+
+    @Column({ type: 'text', nullable: true })
+    solucao: string; // Solução da causa
 }

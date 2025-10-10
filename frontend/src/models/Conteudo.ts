@@ -38,6 +38,14 @@ export class Conteudo {
 
     anexos: Anexo[] | null;
 
+
+    // especifico da causa
+
+    introducao: string | null; // Introdução da causa
+    desafio: string | null; // Desafio da causa
+    problema: string | null; // Problema da causa
+    solucao: string | null; // Solução da causa
+
     constructor(data: Partial<Conteudo> = {}) {
         this.id = data.id ?? null;
         this.tipo = data.tipo ?? null;
@@ -57,5 +65,10 @@ export class Conteudo {
         this.criado_em = data.criado_em ?? new Date();
         this.atualizado_em = data.atualizado_em ?? null;
         this.anexos = data.anexos ?? [];
+
+        this.introducao = data.introducao ?? null;
+        this.desafio = data.desafio ?? null;
+        this.problema = data.problema ?? null;
+        this.solucao = data.solucao ?? null;
     }
 }
