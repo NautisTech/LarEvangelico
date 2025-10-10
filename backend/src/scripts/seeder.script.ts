@@ -1,8 +1,8 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
 import { InjectDataSource } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
-import { Utilizador, Etiqueta, Conteudo, Anexo } from '@/entities';
-import { UtilizadorSeeder, EtiquetaSeeder, NoticiaSeeder } from '@/seeders';
+import { Utilizador, Conteudo, Anexo } from '@/entities';
+import { UtilizadorSeeder, NoticiaSeeder } from '@/seeders';
 
 @Injectable()
 export class SeederService implements OnModuleInit {
@@ -34,14 +34,10 @@ export class SeederService implements OnModuleInit {
                 utilizadorRepo,
             );
 
-            console.log('A iniciar seeder de etiquetas...');
-            const etiquetaRepo = this.dataSource.getRepository(Etiqueta);
-            await EtiquetaSeeder.run(etiquetaRepo);
-
             const conteudoRepo = this.dataSource.getRepository(Conteudo);
 
             console.log('A iniciar seeder de notícias...');
-            await NoticiaSeeder.run(conteudoRepo, utilizadorRepo, etiquetaRepo);
+            await NoticiaSeeder.run(conteudoRepo, utilizadorRepo);
 
             console.log('Todos os seeders foram executados com sucesso!');
         } catch (error) {

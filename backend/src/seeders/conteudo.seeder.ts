@@ -1,10 +1,10 @@
 import { Repository } from "typeorm";
-import { Conteudo, Anexo, Etiqueta, Utilizador } from "@/entities";
+import { Conteudo, Anexo, Utilizador } from "@/entities";
 import { TipoAnexo, TipoConteudo } from "@/utils";
 import 'dotenv/config';
 
 export class NoticiaSeeder {
-    static async run(conteudoRepository: Repository<Conteudo>, utilizadorRepository: Repository<Utilizador>, etiquetaRepository: Repository<Etiqueta>) {
+    static async run(conteudoRepository: Repository<Conteudo>, utilizadorRepository: Repository<Utilizador>) {
 
         const utilizadores = await utilizadorRepository.find();
 
@@ -19,7 +19,6 @@ export class NoticiaSeeder {
                 data_inicio: null,
                 publico: false,
                 data_fim: null,
-                etiquetas: [],
                 criado_em: new Date(),
             }),
             conteudoRepository.create({
