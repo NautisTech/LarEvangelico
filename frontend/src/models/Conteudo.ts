@@ -22,6 +22,12 @@ export class Conteudo {
 
     visualizacoes: number | null; // Número de visualizações
 
+    objetivo: number | null; // Objetivo de doações (em moeda local)
+
+    angariado: number | null; // Total angariado (em moeda local)
+
+    afixado: boolean; // Indica se o conteúdo está afixado
+
     criado_por: Utilizador; // Relacionamento com a tabela 'utilizadores' (criador)
 
     atualizado_por: Utilizador | null; // Relacionamento com a tabela 'utilizadores' (criador)
@@ -45,6 +51,9 @@ export class Conteudo {
         this.data_fim = data.data_fim ?? null;
         this.publico = data.publico ?? false;
         this.visualizacoes = data.visualizacoes ?? null;
+        this.objetivo = data.objetivo ?? null;
+        this.angariado = data.angariado ?? null;
+        this.afixado = data.afixado ?? false;
         this.criado_por = data.criado_por!;
         this.atualizado_por = data.atualizado_por ?? null;
         this.criado_em = data.criado_em ?? new Date();

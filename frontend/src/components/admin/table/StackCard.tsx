@@ -18,7 +18,7 @@ export function StackCard({
 }: StackCardProps) {
     return (
         <div className={`w-full border border-gray-200 p-6 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-400 ${checked
-            ? "bg-red-50 border-l-4 border-l-red-300 shadow-sm"
+            ? "bg-[var(--site-brown-100)] border-l-4 border-l-[rgba(82,24,7,0.12)] shadow-sm"
             : "bg-white"
             }`}>
             <div className="mb-4 flex items-center justify-between">

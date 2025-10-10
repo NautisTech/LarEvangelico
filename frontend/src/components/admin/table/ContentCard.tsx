@@ -28,7 +28,7 @@ export function ContentCard({
         <div
             key={conteudo.id}
             className={`group relative w-full rounded-xl shadow-sm border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden ${checked
-                ? "bg-red-50 border-red-300 shadow-md ring-2 ring-red-200"
+                ? "bg-[var(--site-brown-100)] border-[rgba(82,24,7,0.12)] shadow-md ring-2 ring-[rgba(82,24,7,0.06)]"
                 : "bg-white hover:border-gray-300"
                 }`}
         >
@@ -55,7 +55,7 @@ export function ContentCard({
             <div className="p-6 space-y-4 pb-20">
                 {/* Author Info */}
                 <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white font-medium text-sm">
+                    <div className="w-8 h-8 rounded-full bg-[var(--site-brown)] flex items-center justify-center text-white font-medium text-sm">
                         {conteudo.criado_por?.nome?.charAt(0)?.toUpperCase() || "U"}
                     </div>
                     <div className="flex-1">

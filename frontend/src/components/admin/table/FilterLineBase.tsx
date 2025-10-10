@@ -45,7 +45,7 @@ export function FilterLineBase({
                             if (el) el.indeterminate = someSelected;
                         }}
                         onChange={(e) => onSelectAll(e.target.checked)}
-                        className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
+                        className="h-4 w-4 text-[var(--site-brown)] focus:ring-[var(--site-brown)] border-gray-300 rounded"
                     />
                 </div>
                 <div className="flex-1 grid gap-4" style={{ gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))` }}>

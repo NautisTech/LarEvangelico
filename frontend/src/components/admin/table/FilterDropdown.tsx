@@ -64,14 +64,14 @@ export function FilterDropdown({
   return (
     <div className="relative inline-block" ref={dropdownRef}>
       <div className="flex items-center gap-1">
-        {tipoFiltro !== TipoFiltro.Undefined  && (
+        {tipoFiltro !== TipoFiltro.Undefined && (
           <button
             ref={triggerRef}
             onClick={() => setOpenDropdown(isOpen ? null : column.id)}
             className={`
               p-1.5 rounded-md transition-all duration-200 hover:bg-gray-100
               ${column.getFilterValue()
-                ? "text-red-600 bg-red-50 shadow-sm"
+                ? "text-[var(--site-brown)] bg-[var(--site-brown-100)] shadow-sm"
                 : "text-gray-500 hover:text-gray-700"
               }
             `}
@@ -86,7 +86,7 @@ export function FilterDropdown({
             className={`
               p-1.5 rounded-md transition-all duration-200 hover:bg-gray-100
               ${column.getIsSorted()
-                ? "text-red-600 bg-red-50 shadow-sm"
+                ? "text-[var(--site-brown)] bg-[var(--site-brown-100)] shadow-sm"
                 : "text-gray-500 hover:text-gray-700"
               }
             `}
@@ -133,7 +133,7 @@ export function FilterDropdown({
                     );
                     column.setFilterValue(selected);
                   }}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm h-32 focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm h-32 focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] bg-white"
                   autoFocus
                 >
                   {options.map((opt) => (
@@ -157,7 +157,7 @@ export function FilterDropdown({
                 <select
                   value={column.getFilterValue() ?? ""}
                   onChange={(e) => column.setFilterValue(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] bg-white"
                   autoFocus
                 >
                   <option value="">Todos</option>
@@ -182,7 +182,7 @@ export function FilterDropdown({
                       const to = column.getFilterValue()?.to ?? "";
                       column.setFilterValue({ from: e.target.value, to });
                     }}
-                    className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white"
+                    className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] bg-white"
                     autoFocus
                   />
                 </div>
@@ -195,7 +195,7 @@ export function FilterDropdown({
                       const from = column.getFilterValue()?.from ?? "";
                       column.setFilterValue({ from, to: e.target.value });
                     }}
-                    className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white"
+                    className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] bg-white"
                   />
                 </div>
                 <button
@@ -216,7 +216,7 @@ export function FilterDropdown({
                       const to = column.getFilterValue()?.to ?? "";
                       column.setFilterValue({ from: e.target.value, to });
                     }}
-                    className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white"
+                    className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] bg-white"
                     autoFocus
                   />
                 </div>
@@ -229,7 +229,7 @@ export function FilterDropdown({
                       const from = column.getFilterValue()?.from ?? "";
                       column.setFilterValue({ from, to: e.target.value });
                     }}
-                    className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white"
+                    className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] bg-white"
                   />
                 </div>
                 <button
@@ -256,7 +256,7 @@ export function FilterDropdown({
                   }
                   autoFocus
                   placeholder={`Digite para filtrar...`}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] bg-white"
                 />
                 <button
                   onClick={() => column.setFilterValue(undefined)}

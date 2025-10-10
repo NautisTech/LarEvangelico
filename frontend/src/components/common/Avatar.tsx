@@ -9,11 +9,11 @@ interface AvatarProps {
   style?: React.CSSProperties;
 }
 
-export const Avatar: React.FC<AvatarProps> = ({ 
-  src, 
-  alt, 
-  name, 
-  size = 50, 
+export const Avatar: React.FC<AvatarProps> = ({
+  src,
+  alt,
+  name,
+  size = 50,
   className = '',
   style = {}
 }) => {
@@ -43,7 +43,7 @@ export const Avatar: React.FC<AvatarProps> = ({
       className={className}
       style={{
         ...avatarStyle,
-        backgroundColor: '#ef4444',
+        backgroundColor: 'var(--site-brown)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

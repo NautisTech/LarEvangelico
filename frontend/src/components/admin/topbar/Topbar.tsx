@@ -121,7 +121,7 @@ export function Topbar({ openChangePassword }: { openChangePassword?: (utilizado
                                 />
                             )}
                             {!imageUrl && (
-                                <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white font-medium text-sm border-2 border-zinc-500/50 shadow-lg object-cover">
+                                <div className="w-8 h-8 rounded-full bg-[var(--site-brown)] flex items-center justify-center text-white font-medium text-sm border-2 border-zinc-500/50 shadow-lg object-cover">
                                     {utilizador?.getNome().charAt(0)?.toUpperCase() || "U"}
                                 </div>
                             )}
@@ -146,12 +146,12 @@ export function Topbar({ openChangePassword }: { openChangePassword?: (utilizado
                                     key={tab.id}
                                     onClick={() => moduleTabsContext.setActiveTab(tab.id as any)}
                                     className={`px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors ${isActive
-                                        ? 'bg-red-100 text-red-700 border border-red-300!'
+                                        ? `bg-[var(--site-brown-100)] text-[var(--site-brown)] border border-[rgba(82,24,7,0.12)]`
                                         : 'text-white hover:bg-gray-600'
                                         }`}
                                     style={{ animationDelay: `${index * 0.1}s` }}
                                 >
-                                    <Icon className={`w-4 h-4 ${isActive ? 'text-red-700' : 'text-white'}`} />
+                                    <Icon className={`w-4 h-4 ${isActive ? 'text-[var(--site-brown)]' : 'text-white'}`} />
                                     <span>{tab.label}</span>
                                 </button>
                             );

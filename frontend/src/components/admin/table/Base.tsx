@@ -185,10 +185,10 @@ export function Base<T>({
       {/* Stats Bar - mostra informações sobre seleção */}
 
       {selectedIds.length > 0 && isFilterable && (
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+        <div className="bg-[var(--site-brown-100)] border border-[rgba(82,24,7,0.08)] rounded-lg p-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <span className="text-red-700 font-medium">
+              <span className="text-[var(--site-brown)] font-medium">
                 {selectedIds.length === 1
                   ? "1 item selecionado"
                   : `${selectedIds.length} items selecionados`
@@ -197,7 +197,7 @@ export function Base<T>({
             </div>
             <button
               onClick={() => setRowSelection({})}
-              className="text-red-600 hover:text-red-800 text-sm font-medium transition-colors duration-200"
+              className="text-[var(--site-brown)] hover:text-[var(--site-brown-dark)] text-sm font-medium transition-colors duration-200"
             >
               Limpar seleção
             </button>
@@ -251,7 +251,7 @@ export function Base<T>({
                       className={`
                         transition-all duration-200 group
                         ${row.getIsSelected()
-                          ? "bg-red-50 border-l-4 border-l-red-300 shadow-sm"
+                          ? "bg-[var(--site-brown-100)] border-l-4 border-l-[rgba(82,24,7,0.12)] shadow-sm"
                           : index % 2 === 0
                             ? "bg-white hover:bg-gray-50"
                             : "bg-gray-25 hover:bg-gray-50"

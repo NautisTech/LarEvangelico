@@ -7,8 +7,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { SeederService } from '@/scripts';
 import {
-  AuthModule, UtilizadorModule, ConteudoModule,
-  EtiquetaModule, AnexoModule
+  AuthModule, UtilizadorModule, ConteudoModule, AnexoModule
 } from '@/modules';
 
 import 'dotenv/config';
@@ -47,7 +46,6 @@ const parseBoolean = (v?: string) => v === 'true';
       // entities: [
       //   e.Anexo,
       //   e.Utilizador,
-      //   e.Etiqueta,
       //   e.Conteudo,
       // ],
 
@@ -74,7 +72,6 @@ const parseBoolean = (v?: string) => v === 'true';
 
     UtilizadorModule,
     AuthModule,
-    EtiquetaModule,
     ConteudoModule,
     AnexoModule,
   ],

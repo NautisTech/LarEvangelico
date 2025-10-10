@@ -39,6 +39,15 @@ export class Conteudo {
     @Column({ type: 'int', nullable: true })
     visualizacoes: number | null; // Número de visualizações
 
+    @Column({ type: 'int', nullable: true })
+    objetivo: number | null; // Número de visualizações
+
+    @Column({ type: 'int', nullable: true })
+    angariado: number | null; // Número de visualizações
+
+    @Column({ type: 'bit', default: false, nullable: true })
+    afixado: boolean;
+
     @ManyToOne(() => Utilizador)
     @JoinColumn({ name: 'criado_por_id' })
     criado_por: Utilizador; // Relacionamento com a tabela 'utilizadores' (criador)

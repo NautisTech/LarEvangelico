@@ -26,7 +26,7 @@ export function DropdownList({
         className={`
           px-3 py-2 rounded-lg flex items-center gap-2 text-sm font-medium transition-all duration-200
           ${open
-            ? "bg-red-50 text-red-700 border border-red-200 shadow-sm"
+            ? `bg-[var(--site-brown-100)] text-[var(--site-brown)] border border-[rgba(82,24,7,0.08)] shadow-sm`
             : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 hover:border-gray-400"
           }
         `}
@@ -46,7 +46,7 @@ export function DropdownList({
               {items.map((item, idx) => (
                 <li
                   key={item + idx}
-                  className="px-4 py-2.5 text-sm text-gray-700 hover:bg-red-50 hover:text-red-700 whitespace-nowrap transition-colors duration-150 cursor-default"
+                  className="px-4 py-2.5 text-sm text-gray-700 hover:bg-[var(--site-brown-100)] hover:text-[var(--site-brown)] whitespace-nowrap transition-colors duration-150 cursor-default"
                 >
                   {item}
                 </li>

@@ -1,3 +1,11 @@
+:root {
+    --site-brown: rgb(82, 24, 7); /* primary brown */
+    --site-brown-dark: rgb(60, 18, 5);
+    --site-brown-light: rgb(250, 245, 240);
+    --site-brown-100: #f7efe9; /* light tint for backgrounds */
+    --site-pink-100: #ffeaf0; /* keep pink alternative if needed */
+}
+
 /* Seccao */
 .section-title {
     font-size: 2.5rem;

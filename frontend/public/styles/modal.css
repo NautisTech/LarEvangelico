@@ -10,6 +10,13 @@
     color-scheme: light !important;
 }
 
+:root {
+    --site-brown: rgb(82, 24, 7);
+    --site-brown-dark: rgb(60, 18, 5);
+    --site-brown-light: rgb(250, 245, 240);
+    --site-brown-100: #f7efe9;
+}
+
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -165,8 +172,8 @@
 
 .form-input:focus {
     background-color: #ffffff;
-    border-color: #ef4444;
-    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+    border-color: var(--site-brown);
+    box-shadow: 0 0 0 3px rgba(82, 24, 7, 0.08);
 }
 
 .form-input:disabled {
@@ -190,8 +197,8 @@
 
 .form-textarea:focus {
     background-color: #ffffff;
-    border-color: #ef4444;
-    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+    border-color: var(--site-brown);
+    box-shadow: 0 0 0 3px rgba(82, 24, 7, 0.08);
 }
 
 /* Password Input Container */
@@ -255,7 +262,7 @@
     margin-top: 0.125rem;
     width: 1rem;
     height: 1rem;
-    color: #ef4444;
+    color: var(--site-brown);
     background-color: white;
     border: 2px solid #d1d5db;
     border-radius: 0.25rem;
@@ -419,9 +426,9 @@
 }
 
 .tab-button.active {
-    color: #ef4444;
-    border-color: #ef4444;
-    background-color: #fcdada !important;
+    color: var(--site-brown);
+    border-color: var(--site-brown);
+    background-color: var(--site-brown-100) !important;
 }
 
 .tab-button:disabled {
@@ -463,7 +470,7 @@
 .modal-section-icon {
     width: 1.25rem;
     height: 1.25rem;
-    color: #ef4444;
+    color: var(--site-brown);
 }
 
 .modal-section-description {
@@ -485,7 +492,7 @@
 
 .checkbox-item:hover {
     background-color: #ffffff;
-    border-color: #ef4444;
+    border-color: var(--site-brown-100);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -649,18 +656,18 @@
 
 /* Melhorias na aparência dos checkboxes */
 .checkbox-input:checked {
-    background-color: #ef4444;
-    border-color: #ef4444;
-    accent-color: #ef4444 !important;
+    background-color: var(--site-brown);
+    border-color: var(--site-brown);
+    accent-color: var(--site-brown) !important;
 }
 
 .checkbox-input:focus {
-    box-shadow: 0 0 0 2px #ef4444, 0 0 0 4px rgba(239, 68, 68, 0.5);
+    box-shadow: 0 0 0 2px var(--site-brown), 0 0 0 4px rgba(82, 24, 7, 0.45);
 }
 
 /* Estados hover mais suaves */
 .checkbox-item:hover .checkbox-primary-text {
-    color: #ef4444;
+    color: var(--site-brown);
 }
 
 /* Estilo para o indicador de contagem nas tabs */
@@ -703,7 +710,7 @@
 
 .progress-bar {
     height: 100%;
-    background: linear-gradient(90deg, #ef4444 0%, #ef4444 100%);
+    background: linear-gradient(90deg, var(--site-brown) 0%, var(--site-brown) 100%);
     transition: width 0.3s ease;
 }
 
@@ -728,9 +735,9 @@
 }
 
 .progress-group.current {
-    background: #ef4444;
+    background: var(--site-brown);
     color: white;
-    border-color: #ef4444;
+    border-color: var(--site-brown);
 }
 
 .progress-group.completed {
@@ -772,7 +779,7 @@
     position: absolute;
     top: -0.25rem;
     right: -0.25rem;
-    background-color: #ef4444;
+    background-color: var(--site-brown);
     color: white;
     border: none;
     border-radius: 50%;
@@ -787,7 +794,7 @@
 }
 
 .remove-image-btn:hover {
-    background-color: #dc2626;
+    background-color: var(--site-brown-dark);
 }
 
 .remove-image-btn:disabled {
@@ -813,8 +820,8 @@
 
 .file-upload-label:hover {
     background-color: #ffffff;
-    border-color: #ef4444;
-    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+    border-color: var(--site-brown);
+    box-shadow: 0 0 0 3px rgba(82, 24, 7, 0.08);
 }
 
 .file-upload-label:active {

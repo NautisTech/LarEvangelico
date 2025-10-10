@@ -9,5 +9,5 @@ export function RowCheckBox({ checked, check, onChange }: { checked: boolean; ch
             ref.current.indeterminate = Boolean(check);
         }
     }, [check]);
-    return <input className="accent-[#ef4444]!" type="checkbox" ref={ref} checked={checked} onChange={onChange} />;
+    return <input className="accent-[var(--site-brown)]!" type="checkbox" ref={ref} checked={checked} onChange={onChange} />;
 }

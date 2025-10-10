@@ -90,7 +90,7 @@ export function ContentEditor<T>({
             color: textStyleAttrs?.color || '#000000',
             highlightColor: highlightAttrs?.color || '#ffffff',
             isPurple: editor.isActive('textStyle', { color: '#958DF1' }),
-            isRed: editor.isActive('textStyle', { color: '#F98181' }),
+            isRed: editor.isActive('textStyle', { color: '#' }),
             isOrange: editor.isActive('textStyle', { color: '#FBBC88' }),
             isYellow: editor.isActive('textStyle', { color: '#FAF594' }),
             isBlue: editor.isActive('textStyle', { color: '#70CFF8' }),
@@ -471,7 +471,7 @@ export function ContentEditor<T>({
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
                             <div
-                                className="bg-red-500 h-2 rounded-full transition-all duration-300"
+                                className="bg-[var(--site-brown)] h-2 rounded-full transition-all duration-300"
                                 style={{ width: `${((currentContentIndex + 1) / conteudos.length) * 100}%` }}
                             ></div>
                         </div>
@@ -487,10 +487,10 @@ export function ContentEditor<T>({
                             <div className="border border-gray-300 rounded-lg">
                                 <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
                                     <div className="flex gap-2 flex-wrap mb-2">
-                                        <button onClick={() => tituloEditor?.chain().focus().toggleBold().run()} className={`p-2 rounded-md transition ${tituloEditor?.isActive('bold') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Bold size={16} /></button>
-                                        <button onClick={() => tituloEditor?.chain().focus().toggleItalic().run()} className={`p-2 rounded-md transition ${tituloEditor?.isActive('italic') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Italic size={16} /></button>
-                                        <button onClick={() => tituloEditor?.chain().focus().toggleUnderline().run()} className={`p-2 rounded-md transition ${tituloEditor?.isActive('underline') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Underline size={16} /></button>
-                                        <button onClick={() => tituloEditor?.chain().focus().toggleStrike().run()} className={`p-2 rounded-md transition ${tituloEditor?.isActive('strike') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Strikethrough size={16} /></button>
+                                        <button onClick={() => tituloEditor?.chain().focus().toggleBold().run()} className={`p-2 rounded-md transition ${tituloEditor?.isActive('bold') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Bold size={16} /></button>
+                                        <button onClick={() => tituloEditor?.chain().focus().toggleItalic().run()} className={`p-2 rounded-md transition ${tituloEditor?.isActive('italic') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Italic size={16} /></button>
+                                        <button onClick={() => tituloEditor?.chain().focus().toggleUnderline().run()} className={`p-2 rounded-md transition ${tituloEditor?.isActive('underline') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Underline size={16} /></button>
+                                        <button onClick={() => tituloEditor?.chain().focus().toggleStrike().run()} className={`p-2 rounded-md transition ${tituloEditor?.isActive('strike') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Strikethrough size={16} /></button>
                                         <div className="relative">
                                             <button onClick={() => setTituloShowEmoji(!tituloShowEmoji)} className="p-2 rounded-md bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 transition"><Smile size={16} /></button>
                                             {tituloShowEmoji && <div className="absolute top-full left-0 z-10 mt-1"><EmojiPicker onEmojiClick={(emojiData) => { tituloEditor?.chain().focus().insertContent(emojiData.emoji).run(); setTituloShowEmoji(false); }} /></div>}
@@ -557,10 +557,10 @@ export function ContentEditor<T>({
                                 <div className="border border-gray-300 rounded-lg">
                                     <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
                                         <div className="flex gap-2 flex-wrap mb-2">
-                                            <button onClick={() => subtituloEditor?.chain().focus().toggleBold().run()} className={`p-2 rounded-md transition ${subtituloEditor?.isActive('bold') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Bold size={16} /></button>
-                                            <button onClick={() => subtituloEditor?.chain().focus().toggleItalic().run()} className={`p-2 rounded-md transition ${subtituloEditor?.isActive('italic') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Italic size={16} /></button>
-                                            <button onClick={() => subtituloEditor?.chain().focus().toggleUnderline().run()} className={`p-2 rounded-md transition ${subtituloEditor?.isActive('underline') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Underline size={16} /></button>
-                                            <button onClick={() => subtituloEditor?.chain().focus().toggleStrike().run()} className={`p-2 rounded-md transition ${subtituloEditor?.isActive('strike') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Strikethrough size={16} /></button>
+                                            <button onClick={() => subtituloEditor?.chain().focus().toggleBold().run()} className={`p-2 rounded-md transition ${subtituloEditor?.isActive('bold') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Bold size={16} /></button>
+                                            <button onClick={() => subtituloEditor?.chain().focus().toggleItalic().run()} className={`p-2 rounded-md transition ${subtituloEditor?.isActive('italic') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Italic size={16} /></button>
+                                            <button onClick={() => subtituloEditor?.chain().focus().toggleUnderline().run()} className={`p-2 rounded-md transition ${subtituloEditor?.isActive('underline') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Underline size={16} /></button>
+                                            <button onClick={() => subtituloEditor?.chain().focus().toggleStrike().run()} className={`p-2 rounded-md transition ${subtituloEditor?.isActive('strike') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Strikethrough size={16} /></button>
                                             <div className="relative">
                                                 <button onClick={() => setSubtituloShowEmoji(!subtituloShowEmoji)} className="p-2 rounded-md bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 transition"><Smile size={16} /></button>
                                                 {subtituloShowEmoji && <div className="absolute top-full left-0 z-10 mt-1"><EmojiPicker onEmojiClick={(emojiData) => { subtituloEditor?.chain().focus().insertContent(emojiData.emoji).run(); setSubtituloShowEmoji(false); }} /></div>}
@@ -626,11 +626,11 @@ export function ContentEditor<T>({
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label htmlFor="data-inicio" className="block text-sm font-medium text-gray-700 mb-2">Data de Início</label>
-                                    <input type="date" id="data-inicio" name="data-inicio" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-500 focus:border-red-500 transition" />
+                                    <input type="date" id="data-inicio" name="data-inicio" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] transition" />
                                 </div>
                                 <div>
                                     <label htmlFor="data-fim" className="block text-sm font-medium text-gray-700 mb-2">Data de Fim</label>
-                                    <input type="date" id="data-fim" name="data-fim" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-500 focus:border-red-500 transition" />
+                                    <input type="date" id="data-fim" name="data-fim" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] transition" />
                                 </div>
                             </div>
                         )}
@@ -645,42 +645,42 @@ export function ContentEditor<T>({
                             <div className="bg-gray-50 px-4 py-3 border-b border-gray-200">
                                 <div className="flex gap-2 flex-wrap mb-2">
                                     {/* Formatação básica */}
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleBold().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('bold') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Bold size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleItalic().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('italic') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Italic size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleUnderline().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('underline') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Underline size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleStrike().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('strike') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Strikethrough size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleBold().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('bold') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Bold size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleItalic().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('italic') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Italic size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleUnderline().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('underline') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Underline size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleStrike().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('strike') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Strikethrough size={16} /></button>
 
                                     {/* Separador */}
                                     <div className="w-px h-8 bg-gray-300 mx-2"></div>
 
                                     {/* Cabeçalhos */}
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleHeading({ level: 1 }).run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('heading', { level: 1 }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Heading1 size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleHeading({ level: 2 }).run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('heading', { level: 2 }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Heading2 size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleHeading({ level: 3 }).run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('heading', { level: 3 }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Heading3 size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleHeading({ level: 4 }).run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('heading', { level: 4 }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Heading4 size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleHeading({ level: 1 }).run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('heading', { level: 1 }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Heading1 size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleHeading({ level: 2 }).run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('heading', { level: 2 }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Heading2 size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleHeading({ level: 3 }).run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('heading', { level: 3 }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Heading3 size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleHeading({ level: 4 }).run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('heading', { level: 4 }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Heading4 size={16} /></button>
 
                                     {/* Separador */}
                                     <div className="w-px h-8 bg-gray-300 mx-2"></div>
 
                                     {/* Alinhamento de texto */}
-                                    <button onClick={() => corpoEditor?.chain().focus().setTextAlign('left').run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive({ textAlign: 'left' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><AlignLeft size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().setTextAlign('center').run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive({ textAlign: 'center' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><AlignCenter size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().setTextAlign('right').run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive({ textAlign: 'right' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><AlignRight size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().setTextAlign('justify').run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive({ textAlign: 'justify' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Type size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setTextAlign('left').run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive({ textAlign: 'left' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><AlignLeft size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setTextAlign('center').run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive({ textAlign: 'center' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><AlignCenter size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setTextAlign('right').run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive({ textAlign: 'right' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><AlignRight size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setTextAlign('justify').run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive({ textAlign: 'justify' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Type size={16} /></button>
 
                                     {/* Separador */}
                                     <div className="w-px h-8 bg-gray-300 mx-2"></div>
 
                                     {/* Listas */}
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleBulletList().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('bulletList') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><List size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleOrderedList().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('orderedList') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><ListOrdered size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleBulletList().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('bulletList') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><List size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleOrderedList().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('orderedList') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><ListOrdered size={16} /></button>
 
                                     {/* Separador */}
                                     <div className="w-px h-8 bg-gray-300 mx-2"></div>
 
                                     {/* Citação e Código */}
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleBlockquote().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('blockquote') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Quote size={16} /></button>
-                                    <button onClick={() => corpoEditor?.chain().focus().toggleCodeBlock().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('codeBlock') ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Code size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleBlockquote().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('blockquote') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Quote size={16} /></button>
+                                    <button onClick={() => corpoEditor?.chain().focus().toggleCodeBlock().run()} className={`p-2 rounded-md transition ${corpoEditor?.isActive('codeBlock') ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}><Code size={16} /></button>
 
                                     {/* Separador */}
                                     <div className="w-px h-8 bg-gray-300 mx-2"></div>
@@ -742,12 +742,12 @@ export function ContentEditor<T>({
                                 {/* Terceira linha - Tamanhos de fonte */}
                                 <div className="flex gap-2 flex-wrap">
                                     <span className="text-xs text-gray-500 mr-2 self-center">Tamanho:</span>
-                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('12px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '12px' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>12px</button>
-                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('14px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '14px' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>14px</button>
-                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('16px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '16px' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>16px</button>
-                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('18px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '18px' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>18px</button>
-                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('20px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '20px' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>20px</button>
-                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('24px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '24px' }) ? 'bg-red-500 text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>24px</button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('12px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '12px' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>12px</button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('14px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '14px' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>14px</button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('16px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '16px' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>16px</button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('18px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '18px' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>18px</button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('20px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '20px' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>20px</button>
+                                    <button onClick={() => corpoEditor?.chain().focus().setFontSize('24px').run()} className={`p-1 rounded-md transition ${corpoEditor?.isActive('textStyle', { fontSize: '24px' }) ? 'bg-[var(--site-brown)] text-white' : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-300'}`}>24px</button>
                                     <button onClick={() => corpoEditor?.chain().focus().unsetFontSize().run()} className="p-1 rounded-md bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 transition" title="Remover tamanho de fonte">Auto</button>
                                 </div>
                             </div>
@@ -768,7 +768,7 @@ export function ContentEditor<T>({
                             <div className="flex gap-6">
                                 {/* Uploader sempre visível */}
                                 <div className="w-1/2">
-                                    <div {...getRootPropsPrincipal()} className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer h-48 flex flex-col justify-center hover:border-red-400 hover:bg-red-50 transition">
+                                    <div {...getRootPropsPrincipal()} className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer h-48 flex flex-col justify-center hover:border-[var(--site-brown)] hover:bg-[var(--site-brown-100)] transition">
                                         <input {...getInputPropsPrincipal()} />
                                         <Upload size={32} className="mx-auto text-gray-400 mb-3" />
                                         <p className="text-gray-600 text-sm font-medium mb-1">
@@ -866,7 +866,7 @@ export function ContentEditor<T>({
                                 )}
 
                                 {/* Upload de Novos Anexos */}
-                                <div {...getRootPropsAnexos()} className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-red-400 hover:bg-red-50 transition">
+                                <div {...getRootPropsAnexos()} className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-[var(--site-brown)] hover:bg-[var(--site-brown-100)] transition">
                                     <input {...getInputPropsAnexos()} />
                                     <ImageIcon size={32} className="mx-auto text-gray-400 mb-3" />
                                     <p className="text-gray-600 text-sm font-medium mb-1">
@@ -921,7 +921,7 @@ export function ContentEditor<T>({
                                     value={novaEtiqueta}
                                     onChange={(e) => setNovaEtiqueta(e.target.value)}
                                     onKeyDown={handleNovaEtiqueta}
-                                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
+                                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[var(--site-brown)] focus:border-[var(--site-brown)] transition"
                                     placeholder="Digite o nome da etiqueta e pressione Enter"
                                 />
                             </div>
@@ -936,7 +936,7 @@ export function ContentEditor<T>({
                                             onClick={() => adicionarEtiqueta(etiqueta)}
                                             disabled={etiquetasSelecionadas.includes(etiqueta)}
                                             className={`px-3 py-1 rounded-full text-sm font-medium transition ${etiquetasSelecionadas.includes(etiqueta)
-                                                ? 'bg-red-100 text-red-800 cursor-not-allowed'
+                                                ? 'bg-[var(--site-brown-100)] text-[var(--site-brown-dark)] cursor-not-allowed'
                                                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-gray-900'
                                                 }`}
                                         >
@@ -954,7 +954,7 @@ export function ContentEditor<T>({
                                         {etiquetasSelecionadas.map((etiqueta) => (
                                             <span
                                                 key={etiqueta}
-                                                className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800"
+                                                className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[var(--site-brown-100)] text-[var(--site-brown-dark)]"
                                             >
                                                 {etiqueta}
                                                 <button
