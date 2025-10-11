@@ -34,7 +34,7 @@ export function Customers() {
                                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                         "0px"
                                                 }} data-framer-background-image-wrapper="true">
-                                                    <img decoding="async" width="72" height="72" src="images/K43TZFa7F7rI33fyz5D85Yu2Ss.png?width=72&amp;height=72"
+                                                    <img decoding="async" width="72" height="72" src="/images/K43TZFa7F7rI33fyz5D85Yu2Ss.png?width=72&amp;height=72"
                                                         alt="avatar" style={{
                                                             "display": "block", "width": "100%", "height":
                                                                 "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -52,7 +52,7 @@ export function Customers() {
                                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                         "0px"
                                                 }} data-framer-background-image-wrapper="true">
-                                                    <img decoding="async" width="72" height="72" src="images/AxoHfilht68ES8kUYvd48WTxFOM.png?width=72&amp;height=72"
+                                                    <img decoding="async" width="72" height="72" src="/images/AxoHfilht68ES8kUYvd48WTxFOM.png?width=72&amp;height=72"
                                                         alt="avatar" style={{
                                                             "display": "block", "width": "100%", "height":
                                                                 "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -70,7 +70,7 @@ export function Customers() {
                                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                         "0px"
                                                 }} data-framer-background-image-wrapper="true">
-                                                    <img decoding="async" width="72" height="72" src="images/6Kt8jFGTIz7ZE20ZeWv3BGkCuK4.png?width=72&amp;height=72"
+                                                    <img decoding="async" width="72" height="72" src="/images/6Kt8jFGTIz7ZE20ZeWv3BGkCuK4.png?width=72&amp;height=72"
                                                         alt="avatar" style={{
                                                             "display": "block", "width": "100%", "height":
                                                                 "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -88,7 +88,7 @@ export function Customers() {
                                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                         "0px"
                                                 }} data-framer-background-image-wrapper="true">
-                                                    <img decoding="async" width="96" height="96" src="images/86GO7a2e2DgJFpU1afbX8Cp9LQ.png?width=96&amp;height=96"
+                                                    <img decoding="async" width="96" height="96" src="/images/86GO7a2e2DgJFpU1afbX8Cp9LQ.png?width=96&amp;height=96"
                                                         alt="avatar" style={{
                                                             "display": "block", "width": "100%", "height":
                                                                 "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -182,7 +182,7 @@ export function Customers() {
                                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                         "0px"
                                                 }} data-framer-background-image-wrapper="true">
-                                                    <img decoding="async" width="72" height="72" src="images/K43TZFa7F7rI33fyz5D85Yu2Ss-1.png?lossless=1&amp;width=72&amp;height=72"
+                                                    <img decoding="async" width="72" height="72" src="/images/K43TZFa7F7rI33fyz5D85Yu2Ss-1.png?lossless=1&amp;width=72&amp;height=72"
                                                         alt="avatar" style={{
                                                             "display": "block", "width": "100%", "height":
                                                                 "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -200,7 +200,7 @@ export function Customers() {
                                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                         "0px"
                                                 }} data-framer-background-image-wrapper="true">
-                                                    <img decoding="async" width="72" height="72" src="images/AxoHfilht68ES8kUYvd48WTxFOM-1.png?lossless=1&amp;width=72&amp;height=72"
+                                                    <img decoding="async" width="72" height="72" src="/images/AxoHfilht68ES8kUYvd48WTxFOM-1.png?lossless=1&amp;width=72&amp;height=72"
                                                         alt="avatar" style={{
                                                             "display": "block", "width": "100%", "height":
                                                                 "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -218,7 +218,7 @@ export function Customers() {
                                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                         "0px"
                                                 }} data-framer-background-image-wrapper="true">
-                                                    <img decoding="async" width="72" height="72" src="images/6Kt8jFGTIz7ZE20ZeWv3BGkCuK4-1.png?lossless=1&amp;width=72&amp;height=72"
+                                                    <img decoding="async" width="72" height="72" src="/images/6Kt8jFGTIz7ZE20ZeWv3BGkCuK4-1.png?lossless=1&amp;width=72&amp;height=72"
                                                         alt="avatar" style={{
                                                             "display": "block", "width": "100%", "height":
                                                                 "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -236,7 +236,7 @@ export function Customers() {
                                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                         "0px"
                                                 }} data-framer-background-image-wrapper="true">
-                                                    <img decoding="async" width="96" height="96" src="images/86GO7a2e2DgJFpU1afbX8Cp9LQ.png?width=96&amp;height=96"
+                                                    <img decoding="async" width="96" height="96" src="/images/86GO7a2e2DgJFpU1afbX8Cp9LQ.png?width=96&amp;height=96"
                                                         alt="avatar" style={{
                                                             "display": "block", "width": "100%", "height":
                                                                 "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -329,8 +329,8 @@ export function Customers() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="719" height="800" sizes="(min-width: 1200px) max(min(max(100vw - 80px, 1px), 1440px) / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(max(100vw - 50px, 1px), 1440px) - 40px) / 2, 1px)"
-                                                srcSet="images/oi9kyJm3NnszsvhrOQXguZdfvA.jpg 719w?width=719&amp;height=800 719w"
-                                                src="images/oi9kyJm3NnszsvhrOQXguZdfvA.jpg?width=719&amp;height=800" alt="cutomer-image-main"
+                                                srcSet="/images/oi9kyJm3NnszsvhrOQXguZdfvA.jpg 719w?width=719&amp;height=800 719w"
+                                                src="/images/oi9kyJm3NnszsvhrOQXguZdfvA.jpg?width=719&amp;height=800" alt="cutomer-image-main"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -350,8 +350,8 @@ export function Customers() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="719" height="800" sizes="(min-width: 1200px) max(min(max(100vw - 80px, 1px), 1440px) / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(max(100vw - 50px, 1px), 1440px) - 40px) / 2, 1px)"
-                                                srcSet="images/oi9kyJm3NnszsvhrOQXguZdfvA.jpg 719w?width=719&amp;height=800 719w"
-                                                src="images/oi9kyJm3NnszsvhrOQXguZdfvA.jpg?width=719&amp;height=800" alt="cutomer-image-main"
+                                                srcSet="/images/oi9kyJm3NnszsvhrOQXguZdfvA.jpg 719w?width=719&amp;height=800 719w"
+                                                src="/images/oi9kyJm3NnszsvhrOQXguZdfvA.jpg?width=719&amp;height=800" alt="cutomer-image-main"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -374,7 +374,7 @@ export function Customers() {
                                                 "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
-                                                <img decoding="async" width="365" height="237" src="images/Re23aIm0hJei9DBLojf65YzE8N8.jpg?width=365&amp;height=237"
+                                                <img decoding="async" width="365" height="237" src="/images/Re23aIm0hJei9DBLojf65YzE8N8.jpg?width=365&amp;height=237"
                                                     alt="cutomer-video-image" style={{
                                                         "display": "block", "width": "100%",
                                                         "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -428,8 +428,8 @@ export function Customers() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" width="719" height="800" sizes="(max-width: 809.98px) max(min(100vw - 50px, 1440px), 1px)"
-                                            srcSet="images/oi9kyJm3NnszsvhrOQXguZdfvA-1.jpg 719w?lossless=1&amp;width=719&amp;height=800 719w"
-                                            src="images/oi9kyJm3NnszsvhrOQXguZdfvA-1.jpg?lossless=1&amp;width=719&amp;height=800"
+                                            srcSet="/images/oi9kyJm3NnszsvhrOQXguZdfvA-1.jpg 719w?lossless=1&amp;width=719&amp;height=800 719w"
+                                            src="/images/oi9kyJm3NnszsvhrOQXguZdfvA-1.jpg?lossless=1&amp;width=719&amp;height=800"
                                             alt="cutomer-image-main" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -451,7 +451,7 @@ export function Customers() {
                                                 "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
-                                                <img decoding="async" width="365" height="237" src="images/Re23aIm0hJei9DBLojf65YzE8N8-1.jpg?lossless=1&amp;width=365&amp;height=237"
+                                                <img decoding="async" width="365" height="237" src="/images/Re23aIm0hJei9DBLojf65YzE8N8-1.jpg?lossless=1&amp;width=365&amp;height=237"
                                                     alt="cutomer-video-image" style={{
                                                         "display": "block", "width": "100%",
                                                         "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":

@@ -11,7 +11,7 @@ import { useConteudoHook } from "@/hooks";
 
 export default function Home() {
 
-  const { data: causas, isLoading, error } = useConteudoHook(TipoConteudo.Causa, true);
+  const { data: causas, isLoading: isLoadingCausas, error: errorCausas } = useConteudoHook(TipoConteudo.Causa, true);
 
   // Ordenar por data de publicação (mais recente primeiro)
   const causasOrdenadas = causas ? [...causas]
@@ -21,8 +21,20 @@ export default function Home() {
       return dataB - dataA;
     }) : [];
 
+  const causasTop = causasOrdenadas.length >= 3 ? causasOrdenadas.slice(0, 3) : causasOrdenadas;
+
+  const { data: noticias, isLoading: isLoadingNoticias, error: errorNoticias } = useConteudoHook(TipoConteudo.Noticia, true);
+
+  // Ordenar por data de publicação (mais recente primeiro)
+  const noticiasOrdenadas = noticias ? [...noticias]
+    .sort((a, b) => {
+      const dataA = a.publicado_em ? new Date(a.publicado_em).getTime() : 0;
+      const dataB = b.publicado_em ? new Date(b.publicado_em).getTime() : 0;
+      return dataB - dataA;
+    }) : [];
+
   // Primeira causa para o Main, resto para Insights
-  const causasTop = causasOrdenadas.length > 0 ? causasOrdenadas.slice(0, 3) : [];
+  const noticiasTop = noticiasOrdenadas.length >= 3 ? noticiasOrdenadas.slice(0, 3) : noticiasOrdenadas;
 
   return (
     <>
@@ -33,12 +45,12 @@ export default function Home() {
         <div className="framer-hq0l56" data-framer-name="Page Main">
           <MainBanner />
           <AboutSection />
-          <Causes causas={causasTop} isLoading={isLoading} />
+          <Causes causas={causasTop} isLoading={isLoadingCausas} />
           <Volunteers />
           <WhyChooseUs />
           <Customers />
           <OurProjects />
-          <BlogSection />
+          <BlogSection blogs={noticiasTop} isLoading={isLoadingNoticias} />
           <Donate />
           <Testimonial />
           <Newsletter />

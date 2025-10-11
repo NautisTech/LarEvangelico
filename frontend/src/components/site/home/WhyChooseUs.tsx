@@ -35,7 +35,7 @@ export function WhyChooseUs() {
                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
-                                        <img decoding="async" width="439" height="207" src="images/CBAk1CnzJaheNRv7yWQPMMSC6bI.png?width=439&amp;height=207"
+                                        <img decoding="async" width="439" height="207" src="/images/CBAk1CnzJaheNRv7yWQPMMSC6bI.png?width=439&amp;height=207"
                                             alt="why-choose-shape" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -56,8 +56,8 @@ export function WhyChooseUs() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" width="1920" height="684" sizes="(min-width: 1200px) max(100vw - 80px, 1px), (min-width: 810px) and (max-width: 1199.98px) max(100vw - 50px, 1px)"
-                                                    srcSet="images/UaXTDZsCagetKczEV7D76zYtiC8-2.jpg 512w?scale-down-to=512&amp;width=1920&amp;height=684 512w,images/UaXTDZsCagetKczEV7D76zYtiC8-3.jpg 1024w?scale-down-to=1024&amp;width=1920&amp;height=684 1024w,images/UaXTDZsCagetKczEV7D76zYtiC8.jpg 1920w?width=1920&amp;height=684 1920w"
-                                                    src="images/UaXTDZsCagetKczEV7D76zYtiC8.jpg?width=1920&amp;height=684"
+                                                    srcSet="/images/UaXTDZsCagetKczEV7D76zYtiC8-2.jpg 512w?scale-down-to=512&amp;width=1920&amp;height=684 512w,images/UaXTDZsCagetKczEV7D76zYtiC8-3.jpg 1024w?scale-down-to=1024&amp;width=1920&amp;height=684 1024w,images/UaXTDZsCagetKczEV7D76zYtiC8.jpg 1920w?width=1920&amp;height=684 1920w"
+                                                    src="/images/UaXTDZsCagetKczEV7D76zYtiC8.jpg?width=1920&amp;height=684"
                                                     alt="why-choose" style={{
                                                         "display": "block", "width": "100%", "height":
                                                             "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -79,8 +79,8 @@ export function WhyChooseUs() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" width="1920" height="684" sizes="(min-width: 1200px) max(100vw - 80px, 1px), (min-width: 810px) and (max-width: 1199.98px) max(100vw - 50px, 1px)"
-                                                    srcSet="images/UaXTDZsCagetKczEV7D76zYtiC8-2.jpg 512w?scale-down-to=512&amp;width=1920&amp;height=684 512w,images/UaXTDZsCagetKczEV7D76zYtiC8-3.jpg 1024w?scale-down-to=1024&amp;width=1920&amp;height=684 1024w,images/UaXTDZsCagetKczEV7D76zYtiC8.jpg 1920w?width=1920&amp;height=684 1920w"
-                                                    src="images/UaXTDZsCagetKczEV7D76zYtiC8.jpg?width=1920&amp;height=684"
+                                                    srcSet="/images/UaXTDZsCagetKczEV7D76zYtiC8-2.jpg 512w?scale-down-to=512&amp;width=1920&amp;height=684 512w,images/UaXTDZsCagetKczEV7D76zYtiC8-3.jpg 1024w?scale-down-to=1024&amp;width=1920&amp;height=684 1024w,images/UaXTDZsCagetKczEV7D76zYtiC8.jpg 1920w?width=1920&amp;height=684 1920w"
+                                                    src="/images/UaXTDZsCagetKczEV7D76zYtiC8.jpg?width=1920&amp;height=684"
                                                     alt="why-choose" style={{
                                                         "display": "block", "width": "100%", "height":
                                                             "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -106,7 +106,7 @@ export function WhyChooseUs() {
                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
-                                        <img decoding="async" width="439" height="207" src="images/CBAk1CnzJaheNRv7yWQPMMSC6bI.png?width=439&amp;height=207"
+                                        <img decoding="async" width="439" height="207" src="/images/CBAk1CnzJaheNRv7yWQPMMSC6bI.png?width=439&amp;height=207"
                                             alt="why-choose-shape" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -126,8 +126,8 @@ export function WhyChooseUs() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="1920" height="684" sizes="(max-width: 809.98px) max(100vw, 1px)"
-                                                srcSet="images/UaXTDZsCagetKczEV7D76zYtiC8-4.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=1920&amp;height=684 512w,images/UaXTDZsCagetKczEV7D76zYtiC8-5.jpg 1024w?scale-down-to=1024&amp;lossless=1&amp;width=1920&amp;height=684 1024w,images/UaXTDZsCagetKczEV7D76zYtiC8-1.jpg 1920w?lossless=1&amp;width=1920&amp;height=684 1920w"
-                                                src="images/UaXTDZsCagetKczEV7D76zYtiC8-1.jpg?lossless=1&amp;width=1920&amp;height=684"
+                                                srcSet="/images/UaXTDZsCagetKczEV7D76zYtiC8-4.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=1920&amp;height=684 512w,images/UaXTDZsCagetKczEV7D76zYtiC8-5.jpg 1024w?scale-down-to=1024&amp;lossless=1&amp;width=1920&amp;height=684 1024w,images/UaXTDZsCagetKczEV7D76zYtiC8-1.jpg 1920w?lossless=1&amp;width=1920&amp;height=684 1920w"
+                                                src="/images/UaXTDZsCagetKczEV7D76zYtiC8-1.jpg?lossless=1&amp;width=1920&amp;height=684"
                                                 alt="why-choose" style={{
                                                     "display": "block", "width": "100%", "height":
                                                         "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -184,7 +184,7 @@ export function WhyChooseUs() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="180" height="181" sizes="120px" src="images/c15gn4GpZtSwREp39Mv6ZgNwo.png?width=180&amp;height=181"
+                                                            <img decoding="async" width="180" height="181" sizes="120px" src="/images/c15gn4GpZtSwREp39Mv6ZgNwo.png?width=180&amp;height=181"
                                                                 alt="support" style={{
                                                                     "display": "block", "width": "100%", "height":
                                                                         "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -243,7 +243,7 @@ export function WhyChooseUs() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="180" height="181" sizes="120px" src="images/c15gn4GpZtSwREp39Mv6ZgNwo.png?width=180&amp;height=181"
+                                                            <img decoding="async" width="180" height="181" sizes="120px" src="/images/c15gn4GpZtSwREp39Mv6ZgNwo.png?width=180&amp;height=181"
                                                                 alt="support" style={{
                                                                     "display": "block", "width": "100%", "height":
                                                                         "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -302,7 +302,7 @@ export function WhyChooseUs() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="180" height="181" sizes="120px" src="images/Tx1M0uBJjX9bhV0w1uVRkRxpU.png?width=180&amp;height=181"
+                                                            <img decoding="async" width="180" height="181" sizes="120px" src="/images/Tx1M0uBJjX9bhV0w1uVRkRxpU.png?width=180&amp;height=181"
                                                                 alt="trust" style={{
                                                                     "display": "block", "width": "100%", "height":
                                                                         "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -361,7 +361,7 @@ export function WhyChooseUs() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="180" height="181" sizes="120px" src="images/Tx1M0uBJjX9bhV0w1uVRkRxpU.png?width=180&amp;height=181"
+                                                            <img decoding="async" width="180" height="181" sizes="120px" src="/images/Tx1M0uBJjX9bhV0w1uVRkRxpU.png?width=180&amp;height=181"
                                                                 alt="trust" style={{
                                                                     "display": "block", "width": "100%", "height":
                                                                         "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -420,7 +420,7 @@ export function WhyChooseUs() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="180" height="181" sizes="120px" src="images/Wkt9ioY1cbT5ELBbZBdTV81PTQ.png"
+                                                            <img decoding="async" width="180" height="181" sizes="120px" src="/images/Wkt9ioY1cbT5ELBbZBdTV81PTQ.png"
                                                                 alt="" style={{
                                                                     "display": "block", "width": "100%", "height": "100%",
                                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -479,7 +479,7 @@ export function WhyChooseUs() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="180" height="181" sizes="120px" src="images/Wkt9ioY1cbT5ELBbZBdTV81PTQ.png"
+                                                            <img decoding="async" width="180" height="181" sizes="120px" src="/images/Wkt9ioY1cbT5ELBbZBdTV81PTQ.png"
                                                                 alt="" style={{
                                                                     "display": "block", "width": "100%", "height": "100%",
                                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -545,7 +545,7 @@ export function WhyChooseUs() {
                                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                             "0px"
                                                     }} data-framer-background-image-wrapper="true">
-                                                        <img decoding="async" width="180" height="181" sizes="80px" src="images/c15gn4GpZtSwREp39Mv6ZgNwo-1.png?lossless=1&amp;width=180&amp;height=181"
+                                                        <img decoding="async" width="180" height="181" sizes="80px" src="/images/c15gn4GpZtSwREp39Mv6ZgNwo-1.png?lossless=1&amp;width=180&amp;height=181"
                                                             alt="" style={{
                                                                 "display": "block", "width": "100%", "height": "100%",
                                                                 "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -602,7 +602,7 @@ export function WhyChooseUs() {
                                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                             "0px"
                                                     }} data-framer-background-image-wrapper="true">
-                                                        <img decoding="async" width="180" height="181" sizes="80px" src="images/Tx1M0uBJjX9bhV0w1uVRkRxpU-1.png?lossless=1&amp;width=180&amp;height=181"
+                                                        <img decoding="async" width="180" height="181" sizes="80px" src="/images/Tx1M0uBJjX9bhV0w1uVRkRxpU-1.png?lossless=1&amp;width=180&amp;height=181"
                                                             alt="" style={{
                                                                 "display": "block", "width": "100%", "height": "100%",
                                                                 "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -659,7 +659,7 @@ export function WhyChooseUs() {
                                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                             "0px"
                                                     }} data-framer-background-image-wrapper="true">
-                                                        <img decoding="async" width="180" height="181" sizes="80px" src="images/Wkt9ioY1cbT5ELBbZBdTV81PTQ-1.png?lossless=1&amp;width=180&amp;height=181"
+                                                        <img decoding="async" width="180" height="181" sizes="80px" src="/images/Wkt9ioY1cbT5ELBbZBdTV81PTQ-1.png?lossless=1&amp;width=180&amp;height=181"
                                                             alt="" style={{
                                                                 "display": "block", "width": "100%", "height": "100%",
                                                                 "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",

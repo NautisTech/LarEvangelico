@@ -16,8 +16,8 @@ export function Difference() {
                                     "0px"
                             }} data-framer-background-image-wrapper="true">
                                 <img decoding="async" loading="lazy" width="1920" height="674" sizes="(min-width: 1200px) 100vw, (min-width: 810px) and (max-width: 1199.98px) 100vw"
-                                    srcSet="images/IxFtpFCsOshQ9GffJlELyVojJjg-2.jpg 512w?scale-down-to=512&amp;width=1920&amp;height=674 512w,images/IxFtpFCsOshQ9GffJlELyVojJjg-3.jpg 1024w?scale-down-to=1024&amp;width=1920&amp;height=674 1024w,images/IxFtpFCsOshQ9GffJlELyVojJjg.jpg 1920w?width=1920&amp;height=674 1920w"
-                                    src="images/IxFtpFCsOshQ9GffJlELyVojJjg.jpg?width=1920&amp;height=674"
+                                    srcSet="/images/IxFtpFCsOshQ9GffJlELyVojJjg-2.jpg 512w?scale-down-to=512&amp;width=1920&amp;height=674 512w,images/IxFtpFCsOshQ9GffJlELyVojJjg-3.jpg 1024w?scale-down-to=1024&amp;width=1920&amp;height=674 1024w,images/IxFtpFCsOshQ9GffJlELyVojJjg.jpg 1920w?width=1920&amp;height=674 1920w"
+                                    src="/images/IxFtpFCsOshQ9GffJlELyVojJjg.jpg?width=1920&amp;height=674"
                                     alt="difference-image" style={{
                                         "display": "block", "width": "100%",
                                         "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -43,8 +43,8 @@ export function Difference() {
                                     "0px"
                             }} data-framer-background-image-wrapper="true">
                                 <img decoding="async" width="1920" height="674" sizes="(max-width: 809.98px) 100vw"
-                                    srcSet="images/IxFtpFCsOshQ9GffJlELyVojJjg-4.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=1920&amp;height=674 512w,images/IxFtpFCsOshQ9GffJlELyVojJjg-5.jpg 1024w?scale-down-to=1024&amp;lossless=1&amp;width=1920&amp;height=674 1024w,images/IxFtpFCsOshQ9GffJlELyVojJjg-1.jpg 1920w?lossless=1&amp;width=1920&amp;height=674 1920w"
-                                    src="images/IxFtpFCsOshQ9GffJlELyVojJjg-1.jpg?lossless=1&amp;width=1920&amp;height=674"
+                                    srcSet="/images/IxFtpFCsOshQ9GffJlELyVojJjg-4.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=1920&amp;height=674 512w,images/IxFtpFCsOshQ9GffJlELyVojJjg-5.jpg 1024w?scale-down-to=1024&amp;lossless=1&amp;width=1920&amp;height=674 1024w,images/IxFtpFCsOshQ9GffJlELyVojJjg-1.jpg 1920w?lossless=1&amp;width=1920&amp;height=674 1920w"
+                                    src="/images/IxFtpFCsOshQ9GffJlELyVojJjg-1.jpg?lossless=1&amp;width=1920&amp;height=674"
                                     alt="difference-image" style={{
                                         "display": "block", "width": "100%",
                                         "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":

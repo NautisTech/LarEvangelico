@@ -40,8 +40,8 @@ export function Testimonial() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" width="715" height="715" sizes="(min-width: 1200px) 54px, (min-width: 810px) and (max-width: 1199.98px) 54px, (max-width: 809.98px) 54px"
-                                            srcSet="images/zZvw7cLGwW5ChEirjaZlOLk6otI-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/zZvw7cLGwW5ChEirjaZlOLk6otI-1.png 715w?width=715&amp;height=715 715w"
-                                            src="images/zZvw7cLGwW5ChEirjaZlOLk6otI-1.png?width=715&amp;height=715"
+                                            srcSet="/images/zZvw7cLGwW5ChEirjaZlOLk6otI-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/zZvw7cLGwW5ChEirjaZlOLk6otI-1.png 715w?width=715&amp;height=715 715w"
+                                            src="/images/zZvw7cLGwW5ChEirjaZlOLk6otI-1.png?width=715&amp;height=715"
                                             alt="" style={{
                                                 "display": "block", "width": "100%", "height": "100%",
                                                 "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -74,7 +74,7 @@ export function Testimonial() {
                                     </text>
                                 </svg></div>
                                 <div className="framer-1gmy2pl" data-framer-name="Logo r" style={{ "transform": "translate(-50%, -50%)" }}>
-                                    <div style={{ "position": "absolute", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }} data-framer-background-image-wrapper="true"><img decoding="async" width="715" height="715" sizes="(min-width: 1200px) 54px, (min-width: 810px) and (max-width: 1199.98px) 54px, (max-width: 809.98px) 54px" srcSet="images/zZvw7cLGwW5ChEirjaZlOLk6otI-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/zZvw7cLGwW5ChEirjaZlOLk6otI-1.png 715w?width=715&amp;height=715 715w" src="images/zZvw7cLGwW5ChEirjaZlOLk6otI-1.png?width=715&amp;height=715" alt="" style={{ "display": "block", "width": "100%", "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "objectPosition": "center center", "objectFit": "cover" }} data-framer-original-sizes="54px" /></div>
+                                    <div style={{ "position": "absolute", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }} data-framer-background-image-wrapper="true"><img decoding="async" width="715" height="715" sizes="(min-width: 1200px) 54px, (min-width: 810px) and (max-width: 1199.98px) 54px, (max-width: 809.98px) 54px" srcSet="/images/zZvw7cLGwW5ChEirjaZlOLk6otI-2.png 512w?scale-down-to=512&amp;width=715&amp;height=715 512w,images/zZvw7cLGwW5ChEirjaZlOLk6otI-1.png 715w?width=715&amp;height=715 715w" src="/images/zZvw7cLGwW5ChEirjaZlOLk6otI-1.png?width=715&amp;height=715" alt="" style={{ "display": "block", "width": "100%", "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius": "inherit", "objectPosition": "center center", "objectFit": "cover" }} data-framer-original-sizes="54px" /></div>
                                 </div>
                             </div>
                             <div className="framer-1123s25" data-framer-name="Content">
@@ -135,7 +135,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/Qqzc8WFYiunLX78J0qJbJrUMTI.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/Qqzc8WFYiunLX78J0qJbJrUMTI.jpg"
                                                                 alt="gallery-one" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -156,7 +156,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="289" src="images/LyNHl86IYx7ZxT3qwLugI8x8.jpg"
+                                                            <img decoding="async" width="300" height="289" src="/images/LyNHl86IYx7ZxT3qwLugI8x8.jpg"
                                                                 alt="gallery-two" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -177,7 +177,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/zPC199yhsqSpMwPi8Y6VHLwE.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/zPC199yhsqSpMwPi8Y6VHLwE.jpg"
                                                                 alt="gallery-three" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -198,7 +198,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="289" src="images/luuzVgT57qS4RojkbacwIy8Phvo.jpg"
+                                                            <img decoding="async" width="300" height="289" src="/images/luuzVgT57qS4RojkbacwIy8Phvo.jpg"
                                                                 alt="gallery-four" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -219,7 +219,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/AoJ6TKqMTEB0nQJGFbudPFiLkik.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/AoJ6TKqMTEB0nQJGFbudPFiLkik.jpg"
                                                                 alt="gallery-five" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -240,7 +240,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/9GfLbYUs6bXldSG0NhoaOnuUkg.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/9GfLbYUs6bXldSG0NhoaOnuUkg.jpg"
                                                                 alt="gallery-six" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -292,7 +292,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/Qqzc8WFYiunLX78J0qJbJrUMTI.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/Qqzc8WFYiunLX78J0qJbJrUMTI.jpg"
                                                                 alt="gallery-one" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -313,7 +313,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="289" src="images/LyNHl86IYx7ZxT3qwLugI8x8.jpg"
+                                                            <img decoding="async" width="300" height="289" src="/images/LyNHl86IYx7ZxT3qwLugI8x8.jpg"
                                                                 alt="gallery-two" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -334,7 +334,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/zPC199yhsqSpMwPi8Y6VHLwE.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/zPC199yhsqSpMwPi8Y6VHLwE.jpg"
                                                                 alt="gallery-three" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -355,7 +355,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="289" src="images/luuzVgT57qS4RojkbacwIy8Phvo.jpg"
+                                                            <img decoding="async" width="300" height="289" src="/images/luuzVgT57qS4RojkbacwIy8Phvo.jpg"
                                                                 alt="gallery-four" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -376,7 +376,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/AoJ6TKqMTEB0nQJGFbudPFiLkik.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/AoJ6TKqMTEB0nQJGFbudPFiLkik.jpg"
                                                                 alt="gallery-five" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -397,7 +397,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/9GfLbYUs6bXldSG0NhoaOnuUkg.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/9GfLbYUs6bXldSG0NhoaOnuUkg.jpg"
                                                                 alt="gallery-six" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -449,7 +449,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/Qqzc8WFYiunLX78J0qJbJrUMTI.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/Qqzc8WFYiunLX78J0qJbJrUMTI.jpg"
                                                                 alt="gallery-one" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -470,7 +470,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="289" src="images/LyNHl86IYx7ZxT3qwLugI8x8.jpg"
+                                                            <img decoding="async" width="300" height="289" src="/images/LyNHl86IYx7ZxT3qwLugI8x8.jpg"
                                                                 alt="gallery-two" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -491,7 +491,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/zPC199yhsqSpMwPi8Y6VHLwE.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/zPC199yhsqSpMwPi8Y6VHLwE.jpg"
                                                                 alt="gallery-three" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -512,7 +512,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="289" src="images/luuzVgT57qS4RojkbacwIy8Phvo.jpg"
+                                                            <img decoding="async" width="300" height="289" src="/images/luuzVgT57qS4RojkbacwIy8Phvo.jpg"
                                                                 alt="gallery-four" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -533,7 +533,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/AoJ6TKqMTEB0nQJGFbudPFiLkik.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/AoJ6TKqMTEB0nQJGFbudPFiLkik.jpg"
                                                                 alt="gallery-five" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -554,7 +554,7 @@ export function Testimonial() {
                                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                                 "0px"
                                                         }} data-framer-background-image-wrapper="true">
-                                                            <img decoding="async" width="300" height="349" src="images/9GfLbYUs6bXldSG0NhoaOnuUkg.jpg"
+                                                            <img decoding="async" width="300" height="349" src="/images/9GfLbYUs6bXldSG0NhoaOnuUkg.jpg"
                                                                 alt="gallery-six" style={{
                                                                     "display": "block", "width": "100%",
                                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":

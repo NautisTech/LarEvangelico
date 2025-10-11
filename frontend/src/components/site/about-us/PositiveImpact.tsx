@@ -29,7 +29,7 @@ export function PositiveImpact() {
                                 "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                     "0px"
                             }} data-framer-background-image-wrapper="true">
-                                <img decoding="async" loading="lazy" width="263" height="203" src="images/uZCck7kO61BbMCSNsS3pTI3ePg.png?width=263&amp;height=203"
+                                <img decoding="async" loading="lazy" width="263" height="203" src="/images/uZCck7kO61BbMCSNsS3pTI3ePg.png?width=263&amp;height=203"
                                     alt="stars" style={{
                                         "display": "block", "width": "100%", "height":
                                             "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -51,7 +51,7 @@ export function PositiveImpact() {
                                 "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                     "0px"
                             }} data-framer-background-image-wrapper="true">
-                                <img decoding="async" loading="lazy" width="263" height="203" src="images/uZCck7kO61BbMCSNsS3pTI3ePg.png?width=263&amp;height=203"
+                                <img decoding="async" loading="lazy" width="263" height="203" src="/images/uZCck7kO61BbMCSNsS3pTI3ePg.png?width=263&amp;height=203"
                                     alt="stars" style={{
                                         "display": "block", "width": "100%", "height":
                                             "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -106,8 +106,8 @@ export function PositiveImpact() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" loading="lazy" width="745" height="800" sizes="(min-width: 1200px) max((max(min(100vw - 80px, 1824px) * 0.81 - 205px, 1px) - 129px) / 1.8, 1px), (min-width: 810px) and (max-width: 1199.98px) max((max(min(100vw - 50px, 1824px) * 0.81 - 205px, 1px) - 40px) / 1.8, 1px)"
-                                                    srcSet="images/IZSZICF4K7nLKsmRawuR9SWA4.jpg 745w?width=745&amp;height=800 745w"
-                                                    src="images/IZSZICF4K7nLKsmRawuR9SWA4.jpg?width=745&amp;height=800" alt="Impact"
+                                                    srcSet="/images/IZSZICF4K7nLKsmRawuR9SWA4.jpg 745w?width=745&amp;height=800 745w"
+                                                    src="/images/IZSZICF4K7nLKsmRawuR9SWA4.jpg?width=745&amp;height=800" alt="Impact"
                                                     style={{
                                                         "display": "block", "width": "100%", "height": "100%",
                                                         "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -127,8 +127,8 @@ export function PositiveImpact() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" loading="lazy" width="745" height="800" sizes="(min-width: 1200px) max((max(min(100vw - 80px, 1824px) * 0.81 - 205px, 1px) - 129px) / 1.8, 1px), (min-width: 810px) and (max-width: 1199.98px) max((max(min(100vw - 50px, 1824px) * 0.81 - 205px, 1px) - 40px) / 1.8, 1px)"
-                                                    srcSet="images/IZSZICF4K7nLKsmRawuR9SWA4.jpg 745w?width=745&amp;height=800 745w"
-                                                    src="images/IZSZICF4K7nLKsmRawuR9SWA4.jpg?width=745&amp;height=800" alt="Impact"
+                                                    srcSet="/images/IZSZICF4K7nLKsmRawuR9SWA4.jpg 745w?width=745&amp;height=800 745w"
+                                                    src="/images/IZSZICF4K7nLKsmRawuR9SWA4.jpg?width=745&amp;height=800" alt="Impact"
                                                     style={{
                                                         "display": "block", "width": "100%", "height": "100%",
                                                         "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -153,8 +153,8 @@ export function PositiveImpact() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="745" height="800" sizes="(max-width: 809.98px) max(min(100vw - 50px, 1824px), 1px)"
-                                                srcSet="images/IZSZICF4K7nLKsmRawuR9SWA4-1.jpg 745w?lossless=1&amp;width=745&amp;height=800 745w"
-                                                src="images/IZSZICF4K7nLKsmRawuR9SWA4-1.jpg?lossless=1&amp;width=745&amp;height=800"
+                                                srcSet="/images/IZSZICF4K7nLKsmRawuR9SWA4-1.jpg 745w?lossless=1&amp;width=745&amp;height=800 745w"
+                                                src="/images/IZSZICF4K7nLKsmRawuR9SWA4-1.jpg?lossless=1&amp;width=745&amp;height=800"
                                                 alt="Impact" style={{
                                                     "display": "block", "width": "100%", "height":
                                                         "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -330,8 +330,8 @@ export function PositiveImpact() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" loading="lazy" width="531" height="405" sizes="(min-width: 1200px) max(min(100vw - 80px, 1824px) * 0.19, 1px), (max-width: 809.98px) max(min(100vw - 80px, 1824px) * 0.19, 1px), (min-width: 810px) and (max-width: 1199.98px) max(min(100vw - 50px, 1824px) * 0.19, 1px)"
-                                            srcSet="images/glaNEKMsPPERzntICb5XeNECfM-1.jpg 512w?scale-down-to=512&amp;width=531&amp;height=405 512w,images/glaNEKMsPPERzntICb5XeNECfM.jpg 531w?width=531&amp;height=405 531w"
-                                            src="images/glaNEKMsPPERzntICb5XeNECfM.jpg?width=531&amp;height=405" alt="Impact"
+                                            srcSet="/images/glaNEKMsPPERzntICb5XeNECfM-1.jpg 512w?scale-down-to=512&amp;width=531&amp;height=405 512w,images/glaNEKMsPPERzntICb5XeNECfM.jpg 531w?width=531&amp;height=405 531w"
+                                            src="/images/glaNEKMsPPERzntICb5XeNECfM.jpg?width=531&amp;height=405" alt="Impact"
                                             style={{
                                                 "display": "block", "width": "100%", "height": "100%",
                                                 "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -351,8 +351,8 @@ export function PositiveImpact() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" loading="lazy" width="531" height="405" sizes="(min-width: 1200px) max(min(100vw - 80px, 1824px) * 0.19, 1px), (max-width: 809.98px) max(min(100vw - 80px, 1824px) * 0.19, 1px), (min-width: 810px) and (max-width: 1199.98px) max(min(100vw - 50px, 1824px) * 0.19, 1px)"
-                                            srcSet="images/glaNEKMsPPERzntICb5XeNECfM-1.jpg 512w?scale-down-to=512&amp;width=531&amp;height=405 512w,images/glaNEKMsPPERzntICb5XeNECfM.jpg 531w?width=531&amp;height=405 531w"
-                                            src="images/glaNEKMsPPERzntICb5XeNECfM.jpg?width=531&amp;height=405" alt="Impact"
+                                            srcSet="/images/glaNEKMsPPERzntICb5XeNECfM-1.jpg 512w?scale-down-to=512&amp;width=531&amp;height=405 512w,images/glaNEKMsPPERzntICb5XeNECfM.jpg 531w?width=531&amp;height=405 531w"
+                                            src="/images/glaNEKMsPPERzntICb5XeNECfM.jpg?width=531&amp;height=405" alt="Impact"
                                             style={{
                                                 "display": "block", "width": "100%", "height": "100%",
                                                 "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",

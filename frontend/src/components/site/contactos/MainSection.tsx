@@ -36,8 +36,8 @@ export function MainSection() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="510" height="536" sizes="(min-width: 1200px) max((min(100vw - 80px, 1440px) - 152px) / 2.4, 1px), (min-width: 810px) and (max-width: 1199.98px) min(100vw - 50px, 1440px)"
-                                                srcSet="images/y0iQ1EawiJvlKtgSJ2WqwTHCvs.jpg 510w?width=510&amp;height=536 510w"
-                                                src="images/y0iQ1EawiJvlKtgSJ2WqwTHCvs.jpg?width=510&amp;height=536" alt="contact-image"
+                                                srcSet="/images/y0iQ1EawiJvlKtgSJ2WqwTHCvs.jpg 510w?width=510&amp;height=536 510w"
+                                                src="/images/y0iQ1EawiJvlKtgSJ2WqwTHCvs.jpg?width=510&amp;height=536" alt="contact-image"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -57,8 +57,8 @@ export function MainSection() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="510" height="536" sizes="(min-width: 1200px) max((min(100vw - 80px, 1440px) - 152px) / 2.4, 1px), (min-width: 810px) and (max-width: 1199.98px) min(100vw - 50px, 1440px)"
-                                                srcSet="images/y0iQ1EawiJvlKtgSJ2WqwTHCvs.jpg 510w?width=510&amp;height=536 510w"
-                                                src="images/y0iQ1EawiJvlKtgSJ2WqwTHCvs.jpg?width=510&amp;height=536" alt="contact-image"
+                                                srcSet="/images/y0iQ1EawiJvlKtgSJ2WqwTHCvs.jpg 510w?width=510&amp;height=536 510w"
+                                                src="/images/y0iQ1EawiJvlKtgSJ2WqwTHCvs.jpg?width=510&amp;height=536" alt="contact-image"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -222,8 +222,8 @@ export function MainSection() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" width="510" height="536" sizes="(max-width: 809.98px) min(100vw - 50px, 1440px)"
-                                            srcSet="images/y0iQ1EawiJvlKtgSJ2WqwTHCvs-1.jpg 510w?lossless=1&amp;width=510&amp;height=536 510w"
-                                            src="images/y0iQ1EawiJvlKtgSJ2WqwTHCvs-1.jpg?lossless=1&amp;width=510&amp;height=536"
+                                            srcSet="/images/y0iQ1EawiJvlKtgSJ2WqwTHCvs-1.jpg 510w?lossless=1&amp;width=510&amp;height=536 510w"
+                                            src="/images/y0iQ1EawiJvlKtgSJ2WqwTHCvs-1.jpg?lossless=1&amp;width=510&amp;height=536"
                                             alt="contact-image" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":

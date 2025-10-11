@@ -89,8 +89,8 @@ export function AboutSection() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="450" height="650" sizes="(min-width: 1200px) max(min(100vw - 80px, 1440px) / 3.2, 1px), (min-width: 810px) and (max-width: 1199.98px) max(min(100vw - 50px, 1440px) / 3.2, 1px)"
-                                                srcSet="images/sR1KCPkAAyV9t8Vz8DfnzFs3E.jpg 450w?width=450&amp;height=650 450w"
-                                                src="images/sR1KCPkAAyV9t8Vz8DfnzFs3E.jpg?width=450&amp;height=650" alt="about-img"
+                                                srcSet="/images/sR1KCPkAAyV9t8Vz8DfnzFs3E.jpg 450w?width=450&amp;height=650 450w"
+                                                src="/images/sR1KCPkAAyV9t8Vz8DfnzFs3E.jpg?width=450&amp;height=650" alt="about-img"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -110,8 +110,8 @@ export function AboutSection() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="450" height="650" sizes="(min-width: 1200px) max(min(100vw - 80px, 1440px) / 3.2, 1px), (min-width: 810px) and (max-width: 1199.98px) max(min(100vw - 50px, 1440px) / 3.2, 1px)"
-                                                srcSet="images/sR1KCPkAAyV9t8Vz8DfnzFs3E.jpg 450w?width=450&amp;height=650 450w"
-                                                src="images/sR1KCPkAAyV9t8Vz8DfnzFs3E.jpg?width=450&amp;height=650" alt="about-img"
+                                                srcSet="/images/sR1KCPkAAyV9t8Vz8DfnzFs3E.jpg 450w?width=450&amp;height=650 450w"
+                                                src="/images/sR1KCPkAAyV9t8Vz8DfnzFs3E.jpg?width=450&amp;height=650" alt="about-img"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -129,7 +129,7 @@ export function AboutSection() {
                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
-                                        <img decoding="async" width="113" height="111" src="images/KC3XgGjJl5Uwpb71fJe9sZN5E.svg?width=113&amp;height=111"
+                                        <img decoding="async" width="113" height="111" src="/images/KC3XgGjJl5Uwpb71fJe9sZN5E.svg?width=113&amp;height=111"
                                             alt="curve-shape" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -152,8 +152,8 @@ export function AboutSection() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" width="450" height="650" sizes="(max-width: 809.98px) max(min(100vw - 50px, 1440px), 1px)"
-                                            srcSet="images/8h67STcNSFwG8XPsCPbjmxeAy6o.jpg 450w?lossless=1&amp;width=450&amp;height=650 450w"
-                                            src="images/8h67STcNSFwG8XPsCPbjmxeAy6o.jpg?lossless=1&amp;width=450&amp;height=650"
+                                            srcSet="/images/8h67STcNSFwG8XPsCPbjmxeAy6o.jpg 450w?lossless=1&amp;width=450&amp;height=650 450w"
+                                            src="/images/8h67STcNSFwG8XPsCPbjmxeAy6o.jpg?lossless=1&amp;width=450&amp;height=650"
                                             alt="about-img" style={{
                                                 "display": "block", "width": "100%", "height":
                                                     "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -170,7 +170,7 @@ export function AboutSection() {
                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
-                                        <img decoding="async" width="113" height="111" src="images/KC3XgGjJl5Uwpb71fJe9sZN5E.svg?width=113&amp;height=111"
+                                        <img decoding="async" width="113" height="111" src="/images/KC3XgGjJl5Uwpb71fJe9sZN5E.svg?width=113&amp;height=111"
                                             alt="curve-shape" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":

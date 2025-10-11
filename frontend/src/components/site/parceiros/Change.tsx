@@ -147,7 +147,7 @@ export function Change() {
                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                         "0px"
                                 }} data-framer-background-image-wrapper="true">
-                                    <img decoding="async" loading="lazy" width="153" height="117" src="images/UXcaplXgPtq5sJgW6orvzto8uzM.png?width=153&amp;height=117"
+                                    <img decoding="async" loading="lazy" width="153" height="117" src="/images/UXcaplXgPtq5sJgW6orvzto8uzM.png?width=153&amp;height=117"
                                         alt="Design elements" style={{
                                             "display": "block", "width": "100%",
                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -166,8 +166,8 @@ export function Change() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" loading="lazy" width="966" height="975" sizes="(min-width: 1200px) max((min(100vw - 80px, 1440px) - 150px) / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 50px, 1440px) - 40px) / 2, 1px)"
-                                                srcSet="images/CLuD3cxEGB870pohSLxhCOLmtPA.jpg 966w?width=966&amp;height=975 966w"
-                                                src="images/CLuD3cxEGB870pohSLxhCOLmtPA.jpg?width=966&amp;height=975" alt="change-img"
+                                                srcSet="/images/CLuD3cxEGB870pohSLxhCOLmtPA.jpg 966w?width=966&amp;height=975 966w"
+                                                src="/images/CLuD3cxEGB870pohSLxhCOLmtPA.jpg?width=966&amp;height=975" alt="change-img"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -187,8 +187,8 @@ export function Change() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" loading="lazy" width="966" height="975" sizes="(min-width: 1200px) max((min(100vw - 80px, 1440px) - 150px) / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 50px, 1440px) - 40px) / 2, 1px)"
-                                                srcSet="images/CLuD3cxEGB870pohSLxhCOLmtPA.jpg 966w?width=966&amp;height=975 966w"
-                                                src="images/CLuD3cxEGB870pohSLxhCOLmtPA.jpg?width=966&amp;height=975" alt="change-img"
+                                                srcSet="/images/CLuD3cxEGB870pohSLxhCOLmtPA.jpg 966w?width=966&amp;height=975 966w"
+                                                src="/images/CLuD3cxEGB870pohSLxhCOLmtPA.jpg?width=966&amp;height=975" alt="change-img"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -224,7 +224,7 @@ export function Change() {
                                     "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                         "0px"
                                 }} data-framer-background-image-wrapper="true">
-                                    <img decoding="async" loading="lazy" width="153" height="117" src="images/UXcaplXgPtq5sJgW6orvzto8uzM.png?width=153&amp;height=117"
+                                    <img decoding="async" loading="lazy" width="153" height="117" src="/images/UXcaplXgPtq5sJgW6orvzto8uzM.png?width=153&amp;height=117"
                                         alt="Design elements" style={{
                                             "display": "block", "width": "100%",
                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -242,8 +242,8 @@ export function Change() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" loading="lazy" width="966" height="975" sizes="(max-width: 809.98px) max(min(100vw - 50px, 1440px), 1px)"
-                                            srcSet="images/CLuD3cxEGB870pohSLxhCOLmtPA-1.jpg 966w?lossless=1&amp;width=966&amp;height=975 966w"
-                                            src="images/CLuD3cxEGB870pohSLxhCOLmtPA-1.jpg?lossless=1&amp;width=966&amp;height=975"
+                                            srcSet="/images/CLuD3cxEGB870pohSLxhCOLmtPA-1.jpg 966w?lossless=1&amp;width=966&amp;height=975 966w"
+                                            src="/images/CLuD3cxEGB870pohSLxhCOLmtPA-1.jpg?lossless=1&amp;width=966&amp;height=975"
                                             alt="change-img" style={{
                                                 "display": "block", "width": "100%", "height":
                                                     "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",

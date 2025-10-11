@@ -25,8 +25,8 @@ export function MainBanner() {
                             "0px"
                     }} data-framer-background-image-wrapper="true">
                         <img decoding="async" width="1523" height="928" sizes="(min-width: 1200px) calc(100vw * 0.81), (min-width: 810px) and (max-width: 1199.98px) calc(100vw * 0.81), (max-width: 809.98px) calc(100vw * 0.81)"
-                            srcSet="images/hrhTapGuS4mgS65QvYaOZde4dLA-1.png 512w?scale-down-to=512&amp;width=1523&amp;height=928 512w,images/hrhTapGuS4mgS65QvYaOZde4dLA-2.png 1024w?scale-down-to=1024&amp;width=1523&amp;height=928 1024w,images/hrhTapGuS4mgS65QvYaOZde4dLA.png 1523w?width=1523&amp;height=928 1523w"
-                            src="images/hrhTapGuS4mgS65QvYaOZde4dLA.png?width=1523&amp;height=928"
+                            srcSet="/images/hrhTapGuS4mgS65QvYaOZde4dLA-1.png 512w?scale-down-to=512&amp;width=1523&amp;height=928 512w,images/hrhTapGuS4mgS65QvYaOZde4dLA-2.png 1024w?scale-down-to=1024&amp;width=1523&amp;height=928 1024w,images/hrhTapGuS4mgS65QvYaOZde4dLA.png 1523w?width=1523&amp;height=928 1523w"
+                            src="/images/hrhTapGuS4mgS65QvYaOZde4dLA.png?width=1523&amp;height=928"
                             alt="Background curve" style={{
                                 "display": "block", "width": "100%",
                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -151,8 +151,8 @@ export function MainBanner() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" width="568" height="520" sizes="(min-width: 1200px) calc(max((min(max(100vw - 80px, 1px), 1440px) - 112px) / 2.6, 1px) * 0.7397)"
-                                            srcSet="images/88L9qYTuUycsTgr56XHCoBqCxw-2.jpg 512w?scale-down-to=512&amp;width=568&amp;height=520 512w,images/88L9qYTuUycsTgr56XHCoBqCxw.jpg 568w?width=568&amp;height=520 568w"
-                                            src="images/88L9qYTuUycsTgr56XHCoBqCxw.jpg?width=568&amp;height=520" alt="home-banner-video"
+                                            srcSet="/images/88L9qYTuUycsTgr56XHCoBqCxw-2.jpg 512w?scale-down-to=512&amp;width=568&amp;height=520 512w,images/88L9qYTuUycsTgr56XHCoBqCxw.jpg 568w?width=568&amp;height=520 568w"
+                                            src="/images/88L9qYTuUycsTgr56XHCoBqCxw.jpg?width=568&amp;height=520" alt="home-banner-video"
                                             style={{
                                                 "display": "block", "width": "100%", "height": "100%",
                                                 "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -193,8 +193,8 @@ export function MainBanner() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" width="568" height="520" sizes="(min-width: 810px) and (max-width: 1199.98px) calc(min(max(100vw - 50px, 1px), 1440px) * 0.4), (max-width: 809.98px) calc(min(100vw - 50px, 1440px) * 0.4)"
-                                            srcSet="images/88L9qYTuUycsTgr56XHCoBqCxw-3.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=568&amp;height=520 512w,images/88L9qYTuUycsTgr56XHCoBqCxw-1.jpg 568w?lossless=1&amp;width=568&amp;height=520 568w"
-                                            src="images/88L9qYTuUycsTgr56XHCoBqCxw-1.jpg?lossless=1&amp;width=568&amp;height=520"
+                                            srcSet="/images/88L9qYTuUycsTgr56XHCoBqCxw-3.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=568&amp;height=520 512w,images/88L9qYTuUycsTgr56XHCoBqCxw-1.jpg 568w?lossless=1&amp;width=568&amp;height=520 568w"
+                                            src="/images/88L9qYTuUycsTgr56XHCoBqCxw-1.jpg?lossless=1&amp;width=568&amp;height=520"
                                             alt="home-banner-video" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -235,7 +235,7 @@ export function MainBanner() {
                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
-                                        <img decoding="async" width="115" height="106" src="images/mmCzqWqzkhg2pdmqYfnPVkZAxIQ.png?width=115&amp;height=106"
+                                        <img decoding="async" width="115" height="106" src="/images/mmCzqWqzkhg2pdmqYfnPVkZAxIQ.png?width=115&amp;height=106"
                                             alt="shine-shape" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -254,8 +254,8 @@ export function MainBanner() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="768" height="975" sizes="(min-width: 1200px) max((min(max(100vw - 80px, 1px), 1440px) - 112px) / 2.6, 1px), (min-width: 810px) and (max-width: 1199.98px) calc(min(max(100vw - 50px, 1px), 1440px) * 0.55)"
-                                                srcSet="images/8V218xbriPZK5bYQY2v8G2qE.jpg 768w?width=768&amp;height=975 768w"
-                                                src="images/8V218xbriPZK5bYQY2v8G2qE.jpg?width=768&amp;height=975" alt="home-banner"
+                                                srcSet="/images/8V218xbriPZK5bYQY2v8G2qE.jpg 768w?width=768&amp;height=975 768w"
+                                                src="/images/8V218xbriPZK5bYQY2v8G2qE.jpg?width=768&amp;height=975" alt="home-banner"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -275,8 +275,8 @@ export function MainBanner() {
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
                                             <img decoding="async" width="768" height="975" sizes="(min-width: 1200px) max((min(max(100vw - 80px, 1px), 1440px) - 112px) / 2.6, 1px), (min-width: 810px) and (max-width: 1199.98px) calc(min(max(100vw - 50px, 1px), 1440px) * 0.55)"
-                                                srcSet="images/8V218xbriPZK5bYQY2v8G2qE.jpg 768w?width=768&amp;height=975 768w"
-                                                src="images/8V218xbriPZK5bYQY2v8G2qE.jpg?width=768&amp;height=975" alt="home-banner"
+                                                srcSet="/images/8V218xbriPZK5bYQY2v8G2qE.jpg 768w?width=768&amp;height=975 768w"
+                                                src="/images/8V218xbriPZK5bYQY2v8G2qE.jpg?width=768&amp;height=975" alt="home-banner"
                                                 style={{
                                                     "display": "block", "width": "100%", "height": "100%",
                                                     "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -399,8 +399,8 @@ export function MainBanner() {
                                         "0px"
                                 }} data-framer-background-image-wrapper="true">
                                     <img decoding="async" width="568" height="520" sizes="(min-width: 810px) and (max-width: 1199.98px) calc(min(max(100vw - 50px, 1px), 1440px) * 0.4), (max-width: 809.98px) calc(min(100vw - 50px, 1440px) * 0.4)"
-                                        srcSet="images/88L9qYTuUycsTgr56XHCoBqCxw-3.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=568&amp;height=520 512w,images/88L9qYTuUycsTgr56XHCoBqCxw-1.jpg 568w?lossless=1&amp;width=568&amp;height=520 568w"
-                                        src="images/88L9qYTuUycsTgr56XHCoBqCxw-1.jpg?lossless=1&amp;width=568&amp;height=520"
+                                        srcSet="/images/88L9qYTuUycsTgr56XHCoBqCxw-3.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=568&amp;height=520 512w,images/88L9qYTuUycsTgr56XHCoBqCxw-1.jpg 568w?lossless=1&amp;width=568&amp;height=520 568w"
+                                        src="/images/88L9qYTuUycsTgr56XHCoBqCxw-1.jpg?lossless=1&amp;width=568&amp;height=520"
                                         alt="home-banner-video" style={{
                                             "display": "block", "width": "100%",
                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -439,7 +439,7 @@ export function MainBanner() {
                                         "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
-                                        <img decoding="async" width="115" height="106" src="images/mmCzqWqzkhg2pdmqYfnPVkZAxIQ.png?width=115&amp;height=106"
+                                        <img decoding="async" width="115" height="106" src="/images/mmCzqWqzkhg2pdmqYfnPVkZAxIQ.png?width=115&amp;height=106"
                                             alt="shine-shape" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -457,8 +457,8 @@ export function MainBanner() {
                                             "0px"
                                     }} data-framer-background-image-wrapper="true">
                                         <img decoding="async" width="768" height="975" sizes="(max-width: 809.98px) calc(min(100vw - 50px, 1440px) * 0.55)"
-                                            srcSet="images/8V218xbriPZK5bYQY2v8G2qE-1.jpg 768w?lossless=1&amp;width=768&amp;height=975 768w"
-                                            src="images/8V218xbriPZK5bYQY2v8G2qE-1.jpg?lossless=1&amp;width=768&amp;height=975"
+                                            srcSet="/images/8V218xbriPZK5bYQY2v8G2qE-1.jpg 768w?lossless=1&amp;width=768&amp;height=975 768w"
+                                            src="/images/8V218xbriPZK5bYQY2v8G2qE-1.jpg?lossless=1&amp;width=768&amp;height=975"
                                             alt="home-banner" style={{
                                                 "display": "block", "width": "100%",
                                                 "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":

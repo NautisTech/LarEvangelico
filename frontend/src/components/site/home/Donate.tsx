@@ -12,8 +12,8 @@ export function Donate() {
                                     "0px"
                             }} data-framer-background-image-wrapper="true">
                                 <img decoding="async" width="960" height="848" sizes="(min-width: 1200px) max(100vw / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max(100vw / 2, 1px)"
-                                    srcSet="images/okfy4aUJS652UdlDSm4ycYIWKvk-2.jpg 512w?scale-down-to=512&amp;width=960&amp;height=848 512w,images/okfy4aUJS652UdlDSm4ycYIWKvk.jpg 960w?width=960&amp;height=848 960w"
-                                    src="images/okfy4aUJS652UdlDSm4ycYIWKvk.jpg?width=960&amp;height=848" alt="donate-image"
+                                    srcSet="/images/okfy4aUJS652UdlDSm4ycYIWKvk-2.jpg 512w?scale-down-to=512&amp;width=960&amp;height=848 512w,images/okfy4aUJS652UdlDSm4ycYIWKvk.jpg 960w?width=960&amp;height=848 960w"
+                                    src="/images/okfy4aUJS652UdlDSm4ycYIWKvk.jpg?width=960&amp;height=848" alt="donate-image"
                                     style={{
                                         "display": "block", "width": "100%", "height": "100%",
                                         "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -34,8 +34,8 @@ export function Donate() {
                                     "0px"
                             }} data-framer-background-image-wrapper="true">
                                 <img decoding="async" width="960" height="848" sizes="(max-width: 809.98px) 100vw"
-                                    srcSet="images/okfy4aUJS652UdlDSm4ycYIWKvk-3.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=960&amp;height=848 512w,images/okfy4aUJS652UdlDSm4ycYIWKvk-1.jpg 960w?lossless=1&amp;width=960&amp;height=848 960w"
-                                    src="images/okfy4aUJS652UdlDSm4ycYIWKvk-1.jpg?lossless=1&amp;width=960&amp;height=848"
+                                    srcSet="/images/okfy4aUJS652UdlDSm4ycYIWKvk-3.jpg 512w?scale-down-to=512&amp;lossless=1&amp;width=960&amp;height=848 512w,images/okfy4aUJS652UdlDSm4ycYIWKvk-1.jpg 960w?lossless=1&amp;width=960&amp;height=848 960w"
+                                    src="/images/okfy4aUJS652UdlDSm4ycYIWKvk-1.jpg?lossless=1&amp;width=960&amp;height=848"
                                     alt="donate-image" style={{
                                         "display": "block", "width": "100%",
                                         "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":

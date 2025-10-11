@@ -48,8 +48,8 @@ export function OurProjects() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" width="768" height="455" sizes="(min-width: 1200px) max((min(100vw - 80px, 1440px) - 36px) / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 50px, 1440px) - 25px) / 2, 50px)"
-                                                    srcSet="images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 512w?scale-down-to=512&amp;width=768&amp;height=455 512w,images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 768w?width=768&amp;height=455 768w"
-                                                    src="images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png?width=768&amp;height=455" alt=""
+                                                    srcSet="/images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 512w?scale-down-to=512&amp;width=768&amp;height=455 512w,images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 768w?width=768&amp;height=455 768w"
+                                                    src="/images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png?width=768&amp;height=455" alt=""
                                                     style={{
                                                         "display": "block", "width": "100%", "height": "100%",
                                                         "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -126,8 +126,8 @@ export function OurProjects() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" width="684" height="762" sizes="(max-width: 809.98px) min(100vw - 50px, 1440px)"
-                                                    srcSet="images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 684w?lossless=1&amp;width=684&amp;height=762 684w"
-                                                    src="images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png?lossless=1&amp;width=684&amp;height=762"
+                                                    srcSet="/images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 684w?lossless=1&amp;width=684&amp;height=762 684w"
+                                                    src="/images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png?lossless=1&amp;width=684&amp;height=762"
                                                     alt="Emily Johnson" style={{
                                                         "display": "block", "width": "100%",
                                                         "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -202,8 +202,8 @@ export function OurProjects() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" width="768" height="455" sizes="(min-width: 1200px) max((min(100vw - 80px, 1440px) - 36px) / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 50px, 1440px) - 25px) / 2, 50px)"
-                                                    srcSet="images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 512w?scale-down-to=512&amp;width=768&amp;height=455 512w,images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 768w?width=768&amp;height=455 768w"
-                                                    src="images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png?width=768&amp;height=455" alt=""
+                                                    srcSet="/images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 512w?scale-down-to=512&amp;width=768&amp;height=455 512w,images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png 768w?width=768&amp;height=455 768w"
+                                                    src="/images/20251005_1651_Grupo de Estudo_remix_01k6th0h0kfwhvam5knhzcq0n3.png?width=768&amp;height=455" alt=""
                                                     style={{
                                                         "display": "block", "width": "100%", "height": "100%",
                                                         "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -278,8 +278,8 @@ export function OurProjects() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" width="684" height="710" sizes="(min-width: 1200px) max((min(100vw - 80px, 1440px) - 36px) / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 50px, 1440px) - 25px) / 2, 50px)"
-                                                    srcSet="images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png 684w?width=684&amp;height=710 684w"
-                                                    src="images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png?width=684&amp;height=710" alt="Michael Lee"
+                                                    srcSet="/images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png 684w?width=684&amp;height=710 684w"
+                                                    src="/images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png?width=684&amp;height=710" alt="Michael Lee"
                                                     style={{
                                                         "display": "block", "width": "100%", "height": "100%",
                                                         "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -355,8 +355,8 @@ export function OurProjects() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" width="684" height="710" sizes="(max-width: 809.98px) min(100vw - 50px, 1440px)"
-                                                    srcSet="images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png 684w?lossless=1&amp;width=684&amp;height=710 684w"
-                                                    src="images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png?lossless=1&amp;width=684&amp;height=710"
+                                                    srcSet="/images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png 684w?lossless=1&amp;width=684&amp;height=710 684w"
+                                                    src="/images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png?lossless=1&amp;width=684&amp;height=710"
                                                     alt="Michael Lee" style={{
                                                         "display": "block", "width": "100%",
                                                         "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -431,8 +431,8 @@ export function OurProjects() {
                                                     "0px"
                                             }} data-framer-background-image-wrapper="true">
                                                 <img decoding="async" width="684" height="710" sizes="(min-width: 1200px) max((min(100vw - 80px, 1440px) - 36px) / 2, 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 50px, 1440px) - 25px) / 2, 50px)"
-                                                    srcSet="images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png?width=684&amp;height=710 684w"
-                                                    src="images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png?width=684&amp;height=710" alt="Michael Lee"
+                                                    srcSet="/images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png?width=684&amp;height=710 684w"
+                                                    src="/images/20251005_1644_Senhores no Banco_remix_01k6tgmnqceeht7k57wg4881ns.png?width=684&amp;height=710" alt="Michael Lee"
                                                     style={{
                                                         "display": "block", "width": "100%", "height": "100%",
                                                         "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",

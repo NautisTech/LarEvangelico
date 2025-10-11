@@ -26,7 +26,8 @@ export default function CausaEspecifica() {
         return shuffled;
     };
 
-    const causasRelated = shuffle(causas?.filter(c => c.id !== causa?.id) || []).slice(0, 3);
+    let causasRelated = shuffle(causas?.filter(c => c.id !== causa?.id) || []);
+    causasRelated = causasRelated.length >= 3 ? causasRelated.slice(0, 3) : causasRelated;
 
     if (isLoading) {
         return (

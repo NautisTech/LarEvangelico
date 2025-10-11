@@ -14,7 +14,7 @@ export function Main({ causa }: MainProps) {
     // Buscar a imagem principal dos anexos
     const imagemPrincipal = causa?.anexos?.find(anexo => anexo.principal)?.valor
         || causa?.anexos?.[0]?.valor
-        || "images/6HJpGnWZNHmb6dTcAtnneDOlw.jpg";
+        || "/images/6HJpGnWZNHmb6dTcAtnneDOlw.jpg";
 
     const titulo = causa?.titulo || "Solidariedade";
     const descricao = causa?.subtitulo || "Promovemos o bem-estar e a formação integral de crianças, jovens e idosos, inspirados pelos valores da fé, amor e serviço ao próximo.";
@@ -178,7 +178,7 @@ export function Main({ causa }: MainProps) {
                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
-                                            <img decoding="async" width="115" height="106" src="images/mmCzqWqzkhg2pdmqYfnPVkZAxIQ.png?width=115&amp;height=106"
+                                            <img decoding="async" width="115" height="106" src="/images/mmCzqWqzkhg2pdmqYfnPVkZAxIQ.png?width=115&amp;height=106"
                                                 alt="shine-shape" style={{
                                                     "display": "block", "width": "100%",
                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
@@ -241,7 +241,7 @@ export function Main({ causa }: MainProps) {
                                             "borderBottomLeftRadius": "inherit", "top": "0px", "right": "0px", "bottom": "0px", "left":
                                                 "0px"
                                         }} data-framer-background-image-wrapper="true">
-                                            <img decoding="async" width="115" height="106" src="images/mmCzqWqzkhg2pdmqYfnPVkZAxIQ.png?width=115&amp;height=106"
+                                            <img decoding="async" width="115" height="106" src="/images/mmCzqWqzkhg2pdmqYfnPVkZAxIQ.png?width=115&amp;height=106"
                                                 alt="shine-shape" style={{
                                                     "display": "block", "width": "100%",
                                                     "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":

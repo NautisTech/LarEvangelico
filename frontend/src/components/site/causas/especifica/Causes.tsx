@@ -114,7 +114,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
                                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw">{causa.subtitulo}</p>
                                                                     </div>
                                                                 </div>
-                                                                <div className="framer-71cqzm-container">
+                                                                <div className="framer-71cqzm-container" style={{ marginTop: "20px" }}>
                                                                     <div
                                                                         className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-ifgymi framer-57amc9"
                                                                         data-border="true" data-framer-name="Bordered" data-highlight="true"
@@ -213,7 +213,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
                                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw">{causa.subtitulo}</p>
                                                                     </div>
                                                                 </div>
-                                                                <div className="framer-71cqzm-container"><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-ifgymi framer-57amc9"
+                                                                <div className="framer-71cqzm-container" style={{ marginTop: "20px" }}><a className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-ifgymi framer-57amc9"
                                                                     data-border="true" data-framer-name="Bordered" data-highlight="true" onClick={() => handleCausaClick(causa.id!)}
                                                                     data-framer-page-link-current="true" tabIndex={0} style={{
                                                                         borderBottomWidth: "1px", borderColor:

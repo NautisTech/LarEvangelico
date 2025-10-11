@@ -22,10 +22,14 @@ const refreshInterval = 1000 * 60 * 45; // 45 minutos
 
 export const useConteudoHook = (tipo: TipoConteudo, isPublic: boolean = false) => {
     return useQuery<Conteudo[]>({
-        queryKey: ["conteudos", tipo],
+        queryKey: ["conteudos", tipo, isPublic ? 'public' : 'private'],
         queryFn: () => fetchConteudos(tipo, isPublic || false),
         staleTime: refreshInterval,
+        gcTime: refreshInterval * 2, // Manter em cache por 90 minutos
         retry: 1,
+        refetchOnWindowFocus: false,
+        refetchOnMount: false,
+        refetchOnReconnect: false,
     });
 };
 
@@ -34,17 +38,25 @@ export const useConteudoGeralHook = () => {
         queryKey: ["conteudos"],
         queryFn: () => fetchAllConteudos(),
         staleTime: refreshInterval,
+        gcTime: refreshInterval * 2,
         retry: 1,
+        refetchOnWindowFocus: false,
+        refetchOnMount: false,
+        refetchOnReconnect: false,
     });
 };
 
 export const useConteudoByIdHook = (id: string, isPublic: boolean = false) => {
     return useQuery<Conteudo>({
-        queryKey: ["conteudo", id],
+        queryKey: ["conteudo", id, isPublic ? 'public' : 'private'],
         queryFn: () => fetchConteudoById(id, isPublic),
         enabled: !!id,
-        staleTime: 0, // Sempre considerar stale para garantir dados frescos
+        staleTime: refreshInterval,
+        gcTime: refreshInterval * 2,
         retry: 1,
+        refetchOnWindowFocus: false,
+        refetchOnMount: false,
+        refetchOnReconnect: false,
     });
 };
 

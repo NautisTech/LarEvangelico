@@ -50,10 +50,10 @@ export function Insights({ causas }: InsightsProps) {
                         {causas.map((causa, index) => {
                             const imagemPrincipal = causa.anexos?.find(anexo => anexo.principal)?.valor
                                 || causa.anexos?.[0]?.valor
-                                || "images/OCUj9MbhJ73rmpYYrHnLgb7sc.jpg";
+                                || "/images/OCUj9MbhJ73rmpYYrHnLgb7sc.jpg";
 
                             return (
-                                <>
+                                <div key={causa.id || index}>
                                     <div className="ssr-variant hidden-s0rxjy">
                                         <div className="framer-poj5s1" style={{
                                             "willChange": "transform",
@@ -330,7 +330,7 @@ export function Insights({ causas }: InsightsProps) {
                                             </div>
                                         </div>
                                     </div>
-                                </>
+                                </div>
                             )
                         })
                         }
