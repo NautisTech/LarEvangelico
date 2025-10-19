@@ -1,0 +1,107 @@
+{
+	"banner": {
+		"title_part1": "Empower",
+		"title_part2": "change, one",
+		"title_animated": "act of kindness",
+		"title_part3": "at a time",
+		"button": "Join the Cause"
+	},
+	"about": {
+		"title_part1": "Every initiative,",
+		"title_part2": "every donation, and every volunteer effort",
+		"title_part3": "creates a lasting impact that fuels our mission of hope and change.",
+		"description_p1": "With faith, dedication, and teamwork, we transform lives every day.",
+		"description_p2": "Through the commitment of our staff, volunteers, and friends, we provide care, education, and support to children, youth, and the elderly.",
+		"description_p3": "Every contribution — whether time, resources, or prayer — helps us build a future with more dignity and compassion.",
+		"stats": {
+			"years": "years of action",
+			"volunteers": "volunteers",
+			"responses": "social responses"
+		},
+		"button": "About Us"
+	},
+	"causes": {
+		"title": "Our Causes",
+		"goal": "Goal:",
+		"button": "Learn More",
+		"view_all": "View All Causes",
+		"loading": "Loading causes..."
+	},
+	"volunteers": {
+		"title_part1": "Become a",
+		"title_part2": "Volunteer",
+		"description": "Being a volunteer means dedicating time and talent to transform lives. At Lar Evangélico Português, every gesture counts  we help children, youth, and the elderly with love, faith, and solidarity. Join us and be part of this mission of hope and change.",
+		"button": "Become a Volunteer"
+	},
+	"why_choose_us": {
+		"title": "Why Join Us?",
+		"reasons": {
+			"purpose": {
+				"title": "Serving with Purpose",
+				"description": "We promote the well-being and holistic development of children, youth, and the elderly, guided by faith and love for others."
+			},
+			"excellence": {
+				"title": "Excellence with Impact",
+				"description": "We strive to be a reference institution, recognized for quality and contribution to social development."
+			},
+			"values": {
+				"title": "Values that Inspire",
+				"description": "Respect, solidarity, ethics, and sustainability guide every action and every service we provide."
+			}
+		}
+	},
+	"customers": {
+		"headline": "Uncountable lives transformed",
+		"title": "Creating Lasting Impact",
+		"description": "We bring hope and care to those in need, transforming lives through faith and service to others.",
+		"help_button": "Help Someone",
+		"causes": "Causes"
+	},
+	"images": {
+		"avatar_alt": "avatar",
+		"customer_image_alt": "customer image"
+	},
+	"projects": {
+		"title": "Our Projects",
+		"children": {
+			"title_part1": "Rehabilitation of the Reception Home",
+			"title_part2": "(Children and Youth Home)",
+			"description": "A social response provided in a facility intended to shelter children and youth at risk."
+		},
+		"elderly": {
+			"title_part1": "Residential Facility for the Elderly",
+			"title_part2": "(Elderly Home)",
+			"description": "A social response provided as collective accommodation, temporary or permanent, for elderly people."
+		}
+	},
+	"blog": {
+		"title": "Stories and News",
+		"loading": "Loading news..."
+	},
+	"donate": {
+		"title_line1": "Talk to Us!",
+		"title_line2": "Help Others.",
+		"form": {
+			"name": "Name*",
+			"name_placeholder": "John Smith",
+			"email": "Email*",
+			"email_placeholder": "john.smith@example.com",
+			"subject": "Subject*",
+			"subject_placeholder": "Social Contribution",
+			"message": "Message*",
+			"message_placeholder": "I am interested in becoming a volunteer",
+			"submit": "Send"
+		}
+	},
+	"testimonial": {
+		"rotating_text": "Share and Hope  ·  Live Love   ·  Make a Difference .",
+		"quote": "Lar Evangélico Português Foundation has been transforming lives with dedication, faith, and love. Seeing the impact of work with children, youth, and the elderly is deeply inspiring. It is a privilege to be part of this mission of hope and service to others.",
+		"author": "— Maria Silva, Foundation Volunteer"
+	},
+	"newsletter": {
+		"title": "Stay Updated with the Latest News",
+		"description": "Subscribe to our newsletter and instantly receive news and initiatives from Lar Evangélico Português.",
+		"email_placeholder": "john.smith@example.com",
+		"button": "Subscribe"
+	}
+}

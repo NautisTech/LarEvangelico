@@ -1,0 +1,34 @@
+{
+	"main_section": {
+		"title": "Entra em contacto",
+		"description": "Tens dúvidas ou queres envolver-te? Estamos aqui para ajudar. Entra em contacto connosco e faz parte da mudança.",
+		"form_title": "Conecta-te ao Lar Evangélico",
+		"form_description": "Entre em contacto para mais informações, tornar-se um voluntário, tornar-se um parceiro ou outras questões relacionadas com a instituição",
+		"form": {
+			"name": "Nome*",
+			"name_placeholder": "João Soares",
+			"email": "Email*",
+			"email_placeholder": "joao.soares@example.com",
+			"subject": "Assunto*",
+			"message": "Mensagem*",
+			"message_placeholder": "Tenho interesse em tornar-me voluntário",
+			"submit": "Enviar"
+		}
+	},
+	"maps_title": "Visita-nos",
+	"donation_modal": {
+		"title": "Apoie a Nossa Causa",
+		"subtitle": "Cada contribuição faz a diferença",
+		"close": "Fechar",
+		"thank_you": "Muito obrigado pelo seu apoio!",
+		"welcome_text": "Qualquer ajuda é muito bem-vinda e permite-nos continuar a servir com compaixão e dedicação.",
+		"tax_deductible": "A Fundação não tem fins lucrativos e, por ser uma IPSS, as contribuições podem ser deduzidas, nos termos da legislação aplicável, em sede de impostos.",
+		"transfer_info": "Informação para Transferência",
+		"bank": "Banco",
+		"iban": "IBAN",
+		"bic": "BIC/SWIFT",
+		"qr_code": "QR Code",
+		"send_receipt": "Por favor envie-nos um comprovativo da sua doação para:",
+		"receipt_details": "Indique no email o seu nome, NIF e morada para emissão de recibo."
+	}
+}

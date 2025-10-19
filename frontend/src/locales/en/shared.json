@@ -1,0 +1,44 @@
+{
+	"greetings": {
+		"welcome": "Welcome",
+		"hello": "Hello",
+		"good_morning": "Good Morning",
+		"good_afternoon": "Good Afternoon",
+		"good_evening": "Good Evening"
+	},
+	"language": {
+		"select": "Select Language",
+		"loading": "Loading languages...",
+		"error": "Error loading",
+		"none": "No languages"
+	},
+	"modules": {
+		"dashboard": "Dashboard",
+		"utilizadores": "Users",
+		"entidades": "Entities",
+		"grupos": "Groups",
+		"permissoes": "Permissions",
+		"configuracoes": "Configs",
+		"exames": "Exams",
+		"comentarios": "Comments",
+		"suporte": "Support",
+		"faqs": "FAQs",
+		"reports": "Report",
+		"projetos": "Projects",
+		"eventos": "Events",
+		"banners": "Banners",
+		"manuais": "Manuals"
+	},
+	"accessDenied": {
+		"title": "Access Denied",
+		"message": "You don't have permission to access the {{modulo}} module.",
+		"backToHome": "Back to Home"
+	},
+	"copy_right": "Copyright {{year}}, All Rights Reserved",
+	"loading": "Loading...",
+	"error_404": {
+		"title": "Sorry! The page isn't found here",
+		"description": "Fortunately, since it is mainly a client-side issue, it is relatively easy for website owners to fix the 404 error. This article will explain the possible causes of error 404 and show four effective methods to resolve it.Fortunately, since it is mainly a client-side issue, it is relatively easy for website owners to fix the 404 error.",
+		"button": "Back To Home"
+	}
+}

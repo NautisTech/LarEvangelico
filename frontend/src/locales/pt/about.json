@@ -1,0 +1,75 @@
+{
+	"top_section": {
+		"title": "A criar um Amanhã Melhor",
+		"history_title": "A Nossa História e Missão.",
+		"history_p1": "A Fundação Lar Evangélico Português nasceu do sonho e da fé do Pastor Joaquim Eduardo Machado, da sua esposa Isménia Fontes Machado e da Terceira Igreja Evangélica Baptista do Porto.",
+		"history_p2": "Desde 1948, temos acolhido crianças, jovens e idosos, promovendo o amor, a dignidade e a esperança em cada vida.",
+		"history_p3": "O nosso compromisso é servir com compaixão, inspirados pelo amor de Deus, construindo um futuro melhor para todos.",
+		"stats": {
+			"years": "anos de serviço",
+			"actions": "ações sociais",
+			"lives": "Incontáveis",
+			"lives_label": "vidas transformadas"
+		},
+		"button": "Sobre Nós"
+	},
+	"mission": {
+		"title": "A nossa missão é cuidar com amor e transformar vidas em todas as fases da vida.",
+		"items": {
+			"casa_acolhimento": {
+				"number": "01",
+				"description": "A Casa de Acolhimento acolhe crianças e jovens em situação de perigo, oferecendo proteção, estabilidade e afeto num ambiente familiar. Promove o bem-estar, o desenvolvimento e a autonomia, preparando cada criança para um futuro seguro e feliz."
+			},
+			"erpi": {
+				"number": "02",
+				"description": "A ERPI é um espaço de cuidado e dignidade para pessoas idosas que necessitam de apoio diário. Garante conforto, acompanhamento clínico e social, promovendo o envelhecimento ativo e uma vida plena em família."
+			}
+		}
+	},
+	"difference": {
+		"title": "Junta-te a nós para fazer a diferença",
+		"description": "O voluntariado é uma expressão de cidadania e solidariedade.\nNa Fundação Lar Evangélico Português, os voluntários partilham tempo, talento e amor com crianças, jovens e idosos, contribuindo para o seu bem-estar e crescimento integral.",
+		"button": "Quero Ser Voluntário"
+	},
+	"positive_impact": {
+		"title": "As formas significativas como criamos impacto positivo duradouro",
+		"section_title": "Criando Mudança com Amor e Esperança",
+		"description": "A Fundação Lar Evangélico Português atua nas áreas da infância, juventude e terceira idade, acolhendo e cuidando de quem mais precisa.\nAtravés das nossas respostas sociais — Casa de Acolhimento (CA) e Estrutura Residencial para Pessoas Idosas (ERPI) — promovemos bem-estar, formação integral e dignidade, segundo os princípios da fé cristã evangélica.",
+		"button": "Doar Agora"
+	},
+	"volunteers": {
+		"title": "Os Nossos Membros",
+		"members": [
+			{
+				"name": "Emily Johnson",
+				"role": "Coordenadora de Ação Comunitária",
+				"description": "Emily constrói relações sólidas com parceiros regionais, promovendo a colaboração para apoiar a nossa missão comum e amplificar as vozes da comunidade"
+			},
+			{
+				"name": "Michael Lee",
+				"role": "Gestor do Programa de Voluntariado",
+				"description": "Michael lidera esforços para conectar com as comunidades locais, assegurando que os nossos programas respondam às suas necessidades e produzam impacto duradouro."
+			},
+			{
+				"name": "Sarah Williams",
+				"role": "Especialista em Angariação de Fundos",
+				"description": "Sarah desenvolve iniciativas que capacitam os jovens através da educação, mentoria e oportunidades de desenvolvimento de liderança"
+			},
+			{
+				"name": "David Martinez",
+				"role": "Líder de Desenvolvimento de Projetos",
+				"description": "David conduz campanhas de sustentabilidade e projetos de conservação, ajudando as comunidades a adotar práticas ecológicas para um futuro mais verde."
+			},
+			{
+				"name": "Olivia Carter",
+				"role": "Coordenadora de Envolvimento Juvenil",
+				"description": "Olivia gere os processos de integração e formação dos voluntários, garantindo que todos os novos membros estejam preparados e apoiados para fazer a diferença"
+			},
+			{
+				"name": "Sophia Patel",
+				"role": "Promotora de Saúde e Bem-Estar",
+				"description": "Sophia organiza workshops de bem-estar e rastreios de saúde para promover o bem-estar físico e mental nas áreas que servimos"
+			}
+		]
+	}
+}

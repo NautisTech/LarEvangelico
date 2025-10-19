@@ -1,0 +1,61 @@
+{
+	"main": {
+		"title": "Our Partners",
+		"description": "Our partners and volunteers are the heart of our mission. Together, we work to bring hope, love, and change to those who need it most."
+	},
+	"change": {
+		"title": "Be part of the change",
+		"button": "Join Us",
+		"description": "Join our community of volunteers and become a force for good. Whether big or small, every act of kindness helps build a brighter future for those in need."
+	},
+	"volunteers": {
+		"title": "Together for a Greater Cause",
+		"partners_list": {
+			"igreja_batista": {
+				"name": "3rd Baptist Church of Porto",
+				"type": "Spiritual and community support",
+				"description": "Supports Lar Evangélico with pastoral care, charitable initiatives, and moments of sharing and faith."
+			},
+			"acampamento": {
+				"name": "Baptist Camp",
+				"type": "Youth training and integration",
+				"description": "Baptist Camp promotes educational and recreational activities for children and youth."
+			},
+			"apav": {
+				"name": "APAV",
+				"type": "Partnership in victim support",
+				"description": "Together we work to support families and individuals in vulnerable situations."
+			},
+			"ebm": {
+				"name": "EBM International",
+				"type": "Missionary cooperation",
+				"description": "Together, we support humanitarian aid and community development actions."
+			},
+			"iebc": {
+				"name": "IEBC",
+				"type": "Community involvement",
+				"description": "IEBC is an active partner in the social and spiritual initiatives of Lar."
+			},
+			"seguranca_social": {
+				"name": "Social Security",
+				"type": "Social inclusion and empowerment",
+				"description": "Supports and supervises our social services, ensuring quality, rigor, and support for the most vulnerable populations."
+			},
+			"camara_municipal": {
+				"name": "City Council",
+				"type": "Institutional support",
+				"description": "Maia City Council supports Lar Evangélico in various social initiatives."
+			},
+			"junta_freguesia": {
+				"name": "Parish Council",
+				"type": "Collaboration on social projects",
+				"description": "Collaborates on projects that promote solidarity and support for the most vulnerable."
+			},
+			"lions_clube": {
+				"name": "Lions Club Maia",
+				"type": "Solidarity and support for social causes",
+				"description": "Together we carry out actions that improve lives and strengthen the spirit of service to others."
+			}
+		}
+	}
+}

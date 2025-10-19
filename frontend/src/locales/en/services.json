@@ -1,0 +1,99 @@
+{
+	"pre_title": "Our Services",
+	"title": "We Offer Expert Digital Solutions",
+	"button": "See All Services",
+	"items": [
+		{
+			"title": "Web Development",
+			"des": "We build modern, fast, and fully responsive websites tailored to your brand’s goals. Each project is developed with a strong focus on performance, SEO, and user experience — ensuring long-lasting results and a powerful digital presence."
+		},
+		{
+			"title": "UI/UX Design",
+			"des": "We create intuitive interfaces and user-centered digital experiences. Through research, prototyping, and usability testing, we design solutions that balance aesthetics, functionality, and clarity."
+		},
+		{
+			"title": "E-commerce & ERP Integration",
+			"des": "We connect your online store with your business management systems (ERP) to ensure automated workflows, real-time inventory tracking, and seamless data synchronization."
+		},
+		{
+			"title": "Social Media & Website Management",
+			"des": "We manage your brand’s online presence strategically and consistently, from content creation and publishing to website updates and analytics."
+		},
+		{
+			"title": "Hosting & Technical Maintenance",
+			"des": "We provide secure, high-performance, and scalable hosting solutions with ongoing maintenance and support."
+		},
+		{
+			"title": "Digital Strategy & Consulting",
+			"des": "We help businesses define and execute effective digital strategies that drive measurable, sustainable growth."
+		}
+	],
+	"hero": {
+		"title": "Transform Your Online Presence with Our Digital Agency Services"
+	},
+	"details": {
+		"title": "Digital Product Design",
+		"description": "Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence.",
+		"features": [
+			"Design: research-driven creative direction",
+			"Development: modern, performant implementations",
+			"Implementation: reliable launches and integrations",
+			"Launch: ongoing growth and support"
+		]
+	},
+	"team": {
+		"title": "Skill & Specialist",
+		"items": [
+			{
+				"id": 1,
+				"count": 99,
+				"title": "Research & Analyze",
+				"des": "Welcome to our digital agency We specialize in helping your business most"
+			},
+			{
+				"id": 2,
+				"count": 85,
+				"title": "Wireframing",
+				"des": "Welcome to our digital agency We specialize in helping your business most"
+			},
+			{
+				"id": 3,
+				"count": 80,
+				"title": "UI Design",
+				"des": "Welcome to our digital agency We specialize in helping your business most"
+			},
+			{
+				"id": 4,
+				"count": 99,
+				"title": "Problem Solving",
+				"des": "Welcome to our digital agency We specialize in helping your business most"
+			}
+		]
+	},
+	"process": {
+		"title": "Specialization & Working Process",
+		"description": "Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence.",
+		"items": [
+			{
+				"id": "one",
+				"title": "Understand",
+				"description": "We begin by deeply understanding your business goals, target audience, and project requirements through comprehensive discovery sessions."
+			},
+			{
+				"id": "Two",
+				"title": "Design",
+				"description": "Our design team creates intuitive, visually compelling interfaces that align with your brand identity and user needs."
+			},
+			{
+				"id": "Three",
+				"title": "Development",
+				"description": "We build robust, scalable solutions using modern technologies and best practices to ensure optimal performance."
+			},
+			{
+				"id": "Four",
+				"title": "Testing",
+				"description": "Rigorous quality assurance and testing across devices and browsers guarantee a flawless user experience."
+			}
+		]
+	}
+}

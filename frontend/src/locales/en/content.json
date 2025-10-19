@@ -1,0 +1,44 @@
+{
+	"causas": {
+		"main": {
+			"button": "Learn More"
+		},
+		"insights": {
+			"title": "Our Causes",
+			"goal_label": "Goal:",
+			"button": "Learn More"
+		},
+		"loading": "Loading causes...",
+		"error": "Error loading causes."
+	},
+	"causas_specific": {
+		"other_title": "Other causes",
+		"goal_label": "Goal:",
+		"help_title": "Help the cause!",
+		"donate_button": "Donate Now",
+		"join_button": "Join us Today",
+		"sections": {
+			"introduction": "Introduction",
+			"challenge": "Challenge",
+			"problem": "Problem",
+			"solution": "Solution"
+		},
+		"button": "Learn More"
+	},
+	"blog": {
+		"insights": {
+			"title": "Stories and News"
+		},
+		"related_title": "Related News",
+		"main_quote": "Helping people every day",
+		"date_locale": "en-GB",
+		"date_options": {
+			"weekday": "long",
+			"year": "numeric",
+			"month": "long",
+			"day": "numeric"
+		},
+		"loading": "Loading news...",
+		"error": "Error loading news."
+	}
+}

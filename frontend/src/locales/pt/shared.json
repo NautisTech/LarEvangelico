@@ -1,0 +1,44 @@
+{
+	"greetings": {
+		"welcome": "Bem-vindo(a)",
+		"hello": "Olá",
+		"good_morning": "Bom dia",
+		"good_afternoon": "Boa tarde",
+		"good_evening": "Boa noite"
+	},
+	"language": {
+		"select": "Selecionar Idioma",
+		"loading": "A carregar idiomas...",
+		"error": "Erro ao carregar",
+		"none": "Nenhum idioma"
+	},
+	"modules": {
+		"dashboard": "Dashboard",
+		"utilizadores": "Utilizadores",
+		"entidades": "Entidades",
+		"grupos": "Grupos",
+		"permissoes": "Permissões",
+		"configuracoes": "Configurações",
+		"exames": "Exames",
+		"comentarios": "Comentários",
+		"suporte": "Suporte",
+		"faqs": "FAQs",
+		"reports": "Reportar",
+		"projetos": "Projetos",
+		"eventos": "Eventos",
+		"banners": "Banners",
+		"manuais": "Manuais"
+	},
+	"accessDenied": {
+		"title": "Acesso Negado",
+		"message": "Você não tem permissão para acessar o módulo {{modulo}}.",
+		"backToHome": "Voltar para o Início"
+	},
+	"copy_right": "Copyright {{year}}, Todos os Direitos Reservados",
+	"loading": "A carregar...",
+	"error_404": {
+		"title": "Desculpe! A página não foi encontrada aqui",
+		"description": "Felizmente, sendo principalmente um problema do lado do cliente, é relativamente fácil para os proprietários de sites corrigir o erro 404. Este artigo explicará as possíveis causas do erro 404 e mostrará quatro métodos eficazes para resolvê-lo. Felizmente, sendo principalmente um problema do lado do cliente, é relativamente fácil para os proprietários de sites corrigir o erro 404.",
+		"button": "Voltar para o Início"
+	}
+}

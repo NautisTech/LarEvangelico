@@ -1,0 +1,107 @@
+{
+	"banner": {
+		"title_part1": "Empodera a",
+		"title_part2": "mudança, um",
+		"title_animated": "ato de bondade",
+		"title_part3": "de cada vez",
+		"button": "Junta-te à causa"
+	},
+	"about": {
+		"title_part1": "Cada iniciativa,",
+		"title_part2": "cada doação, e cada esforço voluntário",
+		"title_part3": "criam um impacto duradouro que impulsiona a nossa missão de esperança e mudança.",
+		"description_p1": "Com fé, dedicação e trabalho em equipa, transformamos vidas todos os dias.",
+		"description_p2": "Através do empenho dos nossos colaboradores, voluntários e amigos, oferecemos cuidados, educação e apoio a crianças, jovens e idosos.",
+		"description_p3": "Cada contributo — seja tempo, recursos ou oração — ajuda-nos a construir um futuro com mais dignidade e compaixão.",
+		"stats": {
+			"years": "anos de ação",
+			"volunteers": "voluntários",
+			"responses": "respostas sociais"
+		},
+		"button": "Sobre Nós"
+	},
+	"causes": {
+		"title": "As nossas Causas",
+		"goal": "Objetivo:",
+		"button": "Saber mais",
+		"view_all": "Consultar Causas",
+		"loading": "A carregar causas..."
+	},
+	"volunteers": {
+		"title_part1": "Torna-te",
+		"title_part2": "Voluntário",
+		"description": "Ser voluntário é dedicar tempo e talento para transformar vidas. No Lar Evangélico Português, cada gesto conta — ajudamos crianças, jovens e idosos com amor, fé e solidariedade. Junta-te a nós e faz parte desta missão de esperança e mudança.",
+		"button": "Torna-te Voluntário"
+	},
+	"why_choose_us": {
+		"title": "Porque se juntar a nós?",
+		"reasons": {
+			"purpose": {
+				"title": "Servir com propósito",
+				"description": "Promovemos o bem-estar e o desenvolvimento integral de crianças, jovens e idosos, guiados pela fé e amor ao próximo."
+			},
+			"excellence": {
+				"title": "Excelência com impacto",
+				"description": "Buscamos ser uma instituição de referência, reconhecida pela qualidade e pelo contributo ao desenvolvimento social."
+			},
+			"values": {
+				"title": "Valores que inspiram",
+				"description": "Respeito, solidariedade, ética e sustentabilidade guiam cada ação e cada serviço que prestamos."
+			}
+		}
+	},
+	"customers": {
+		"headline": "Incontáveis vidas transformadas",
+		"title": "A Criar Impacto Duradouro",
+		"description": "Levamos esperança e cuidado a quem mais precisa, transformando vidas através da fé e do serviço ao próximo.",
+		"help_button": "Ajudar Alguém",
+		"causes": "Causas"
+	},
+	"images": {
+		"avatar_alt": "avatar",
+		"customer_image_alt": "imagem do cliente"
+	},
+	"projects": {
+		"title": "Os Nossos Projetos",
+		"children": {
+			"title_part1": "Reabilitação da Casa de Acolhimento",
+			"title_part2": "(Lar de Crianças e Jovens)",
+			"description": "Uma resposta social desenvolvida em equipamento destinado ao acolhimento de crianças e jovens em situação de perigo"
+		},
+		"elderly": {
+			"title_part1": "Estrutura Residêncial para Pessoas Idosas",
+			"title_part2": "(Lar de Idosos)",
+			"description": "Constitui uma resposta social desenvolvida em alojamento coletivo, temporário ou permanente, para idosos."
+		}
+	},
+	"blog": {
+		"title": "Histórias e Notícias",
+		"loading": "A carregar notícias..."
+	},
+	"donate": {
+		"title_line1": "Fala connosco!",
+		"title_line2": "Ajuda o próximo.",
+		"form": {
+			"name": "Nome*",
+			"name_placeholder": "João Soares",
+			"email": "Email*",
+			"email_placeholder": "joao.soares@exemplo.com",
+			"subject": "Assunto*",
+			"subject_placeholder": "Contribuição Social",
+			"message": "Mensagem*",
+			"message_placeholder": "Tenho interesse em tornar-me voluntário",
+			"submit": "Enviar"
+		}
+	},
+	"testimonial": {
+		"rotating_text": "Partilha Esperança · Vive o Amor · Faz Diferença .",
+		"quote": "A Fundação Lar Evangélico Português tem transformado vidas com dedicação, fé e amor. Ver o impacto do trabalho com crianças, jovens e idosos é profundamente inspirador. É um privilégio fazer parte desta missão de esperança e serviço ao próximo.",
+		"author": "— Maria Silva, Voluntária da Fundação"
+	},
+	"newsletter": {
+		"title": "Mantém-te a par das novidades",
+		"description": "Subscreve a nossa newsletter e recebe de imediato as notícias e iniciativas do Lar Evangélico Português.",
+		"email_placeholder": "joao.soares@exemplo.com",
+		"button": "Subscrever"
+	}
+}

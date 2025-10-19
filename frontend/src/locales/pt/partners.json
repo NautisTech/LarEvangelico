@@ -1,0 +1,61 @@
+{
+	"main": {
+		"title": "Os nossos Parceiros",
+		"description": "Os nossos parceiros e voluntários são o coração da nossa missão. Juntos, trabalhamos para levar esperança, amor e mudança a quem mais precisa."
+	},
+	"change": {
+		"title": "Faz parte da mudança",
+		"button": "Junta-te a Nós",
+		"description": "Junta-te à nossa comunidade de voluntários e torna-te uma força do bem. Seja grande ou pequeno, cada gesto de bondade ajuda a construir um futuro mais luminoso para quem mais precisa."
+	},
+	"volunteers": {
+		"title": "Juntos por uma Causa Maior",
+		"partners_list": {
+			"igreja_batista": {
+				"name": "3ª Igreja Batista do Porto",
+				"type": "Apoio espiritual e comunitário",
+				"description": "Apoia o Lar Evangélico com acompanhamento pastoral, iniciativas solidárias e momentos de partilha e fé."
+			},
+			"acampamento": {
+				"name": "Acampamento Batista",
+				"type": "Formação e integração juvenil",
+				"description": "O Acampamento Batista promove atividades educativas e de lazer para crianças e jovens."
+			},
+			"apav": {
+				"name": "APAV",
+				"type": "Parceria no apoio a vítimas",
+				"description": "Juntos trabalhamos para apoiar famílias e indivíduos em situações de vulnerabilidade."
+			},
+			"ebm": {
+				"name": "EBM International",
+				"type": "Cooperação missionária",
+				"description": "Em conjunto, apoiamos ações de ajuda humanitária e desenvolvimento comunitário."
+			},
+			"iebc": {
+				"name": "IEBC",
+				"type": "Envolvimento comunitário",
+				"description": "A IEBC é parceira ativa nas iniciativas sociais e espirituais do Lar."
+			},
+			"seguranca_social": {
+				"name": "Segurança Social",
+				"type": "Inclusão social e capacitação",
+				"description": "Apoia e supervisiona as nossas respostas sociais, garantindo a qualidade, o rigor e o apoio às populações mais vulneráveis."
+			},
+			"camara_municipal": {
+				"name": "Câmara Municipal",
+				"type": "Apoio institucional",
+				"description": "A Câmara Municipal da Maia apoia o Lar Evangélico em diversas iniciativas sociais."
+			},
+			"junta_freguesia": {
+				"name": "Junta de Freguesia",
+				"type": "Colaboração em projetos sociais",
+				"description": "Colabora em projetos que promovem a solidariedade e o apoio aos mais vulneráveis."
+			},
+			"lions_clube": {
+				"name": "Lions Clube Maia",
+				"type": "Solidariedade e apoio a causas sociais",
+				"description": "Juntos realizamos ações que melhoram vidas e fortalecem o espírito de serviço ao próximo."
+			}
+		}
+	}
+}

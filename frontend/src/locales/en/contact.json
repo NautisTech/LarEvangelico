@@ -1,0 +1,34 @@
+{
+	"main_section": {
+		"title": "Get in touch with us",
+		"description": "Have questions or want to get involved? We're here to help. Reach out today and be part of the change.",
+		"form_title": "Connect with Lar Evangélico",
+		"form_description": "Reach out to us for support, inquiries, collaborations, or to learn more about how you can help",
+		"form": {
+			"name": "Name*",
+			"name_placeholder": "John Smith",
+			"email": "Email*",
+			"email_placeholder": "john.smith@example.com",
+			"subject": "Subject*",
+			"message": "Message*",
+			"message_placeholder": "I am interested in becoming a volunteer",
+			"submit": "Send"
+		}
+	},
+	"maps_title": "Visit Us",
+	"donation_modal": {
+		"title": "Support Our Cause",
+		"subtitle": "Every contribution makes a difference",
+		"close": "Close",
+		"thank_you": "Thank you very much for your support!",
+		"welcome_text": "Any help is very welcome and allows us to continue serving with compassion and dedication.",
+		"tax_deductible": "The Foundation is non-profit and, being an IPSS, contributions can be deducted, under the applicable legislation, in terms of taxes.",
+		"transfer_info": "Transfer Information",
+		"bank": "Bank",
+		"iban": "IBAN",
+		"bic": "BIC/SWIFT",
+		"qr_code": "QR Code",
+		"send_receipt": "Please send us proof of your donation to:",
+		"receipt_details": "Indicate in the email your name, tax number and address for receipt issuance."
+	}
+}

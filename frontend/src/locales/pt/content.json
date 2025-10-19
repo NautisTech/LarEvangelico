@@ -1,0 +1,44 @@
+{
+	"causas": {
+		"main": {
+			"button": "Saber Mais"
+		},
+		"insights": {
+			"title": "As nossas Causas",
+			"goal_label": "Objetivo:",
+			"button": "Saber Mais"
+		},
+		"loading": "A carregar causas...",
+		"error": "Erro ao carregar causas."
+	},
+	"causas_specific": {
+		"other_title": "Outras causas",
+		"goal_label": "Objetivo:",
+		"help_title": "Apoia a causa!",
+		"donate_button": "Doar Agora",
+		"join_button": "Junta-te a nós",
+		"sections": {
+			"introduction": "Introdução",
+			"challenge": "Desafio",
+			"problem": "Problema",
+			"solution": "Solução"
+		},
+		"button": "Saber Mais"
+	},
+	"blog": {
+		"insights": {
+			"title": "Histórias e Notícias"
+		},
+		"related_title": "Notícias Relacionadas",
+		"main_quote": "A ajudar pessoas todos os dias",
+		"date_locale": "pt-PT",
+		"date_options": {
+			"weekday": "long",
+			"year": "numeric",
+			"month": "long",
+			"day": "numeric"
+		},
+		"loading": "A carregar notícias...",
+		"error": "Erro ao carregar notícias."
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"top_section": {
+		"title": "Creating a Better Tomorrow",
+		"history_title": "Our History and Mission.",
+		"history_p1": "Lar Evangélico Português Foundation was born from the dream and faith of Pastor Joaquim Eduardo Machado, his wife Ismânia Fontes Machado, and the Third Evangelical Baptist Church of Porto.",
+		"history_p2": "Since 1948, we have welcomed children, youth, and the elderly, promoting love, dignity, and hope in every life.",
+		"history_p3": "Our commitment is to serve with compassion, inspired by the love of God, building a better future for all.",
+		"stats": {
+			"years": "years of service",
+			"actions": "social actions",
+			"lives": "Countless",
+			"lives_label": "lives transformed"
+		},
+		"button": "About Us"
+	},
+	"mission": {
+		"title": "Our mission is to care with love and transform lives at all stages of life.",
+		"items": {
+			"casa_acolhimento": {
+				"number": "01",
+				"description": "The Care Home welcomes children and young people in danger, offering protection, stability, and affection in a family environment. It promotes well-being, development, and autonomy, preparing each child for a safe and happy future."
+			},
+			"erpi": {
+				"number": "02",
+				"description": "ERPI is a space of care and dignity for elderly people who need daily support. It ensures comfort, clinical and social support, promoting active aging and a full life in family."
+			}
+		}
+	},
+	"difference": {
+		"title": "Join us to make a difference",
+		"description": "Volunteering is an expression of citizenship and solidarity.\nAt Lar Evangélico Português Foundation, volunteers share time, talent, and love with children, youth, and the elderly, contributing to their well-being and holistic growth.",
+		"button": "I Want to Be a Volunteer"
+	},
+	"positive_impact": {
+		"title": "The meaningful ways we create lasting positive impact",
+		"section_title": "Creating Change with Love and Hope",
+		"description": "Lar Evangélico Português Foundation works in the areas of childhood, youth, and the elderly, welcoming and caring for those who need it most.\nThrough our social responses  Care Home (CA) and Residential Structure for the Elderly (ERPI)  we promote well-being, integral formation, and dignity, according to the principles of the evangelical Christian faith.",
+		"button": "Donate Now"
+	},
+	"volunteers": {
+		"title": "Our Members",
+		"members": [
+			{
+				"name": "Emily Johnson",
+				"role": "Community Outreach Coordinator",
+				"description": "Emily builds strong relationships with regional partners, fostering collaboration to support our shared mission and amplify community voices"
+			},
+			{
+				"name": "Michael Lee",
+				"role": "Volunteer Program Manager",
+				"description": "Michael leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
+			},
+			{
+				"name": "Sarah Williams",
+				"role": "Fundraising Specialist",
+				"description": "Sarah develops initiatives that empower young people through education, mentorship, and leadership development opportunities"
+			},
+			{
+				"name": "David Martinez",
+				"role": "Project Development Lead",
+				"description": "David drives sustainability campaigns and conservation projects, helping communities embrace eco-friendly practices for a greener future."
+			},
+			{
+				"name": "Olivia Carter",
+				"role": "Youth Engagement Coordinator",
+				"description": "Olivia manages our volunteer onboarding and training efforts, ensuring all new members are prepared and supported to make an impact"
+			},
+			{
+				"name": "Sophia Patel",
+				"role": "Health & Wellness Advocate",
+				"description": "Sophia organizes wellness workshops and health screenings to promote physical and mental well-being across our service areas"
+			}
+		]
+	}
+}

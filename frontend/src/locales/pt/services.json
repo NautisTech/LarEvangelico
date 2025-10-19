@@ -1,0 +1,99 @@
+{
+	"pre_title": "Nossos Serviços",
+	"title": "Oferecemos Soluções Digitais Especializadas",
+	"button": "Ver Todos os Serviços",
+	"items": [
+		{
+			"title": "Desenvolvimento Web",
+			"des": "Construímos sites modernos, rápidos e totalmente responsivos, adaptados aos objetivos da sua marca. Cada projeto é desenvolvido com foco em performance, SEO e experiência do utilizador."
+		},
+		{
+			"title": "UI/UX Design",
+			"des": "Criamos interfaces intuitivas e experiências digitais centradas no utilizador. Através de pesquisa, prototipagem e testes de usabilidade, desenhamos soluções equilibradas entre estética e funcionalidade."
+		},
+		{
+			"title": "Integração E-commerce & ERP",
+			"des": "Conectamos a sua loja online com os seus sistemas de gestão (ERP) para fluxos de trabalho automatizados, inventário em tempo real e sincronização de dados."
+		},
+		{
+			"title": "Gestão de Redes Sociais & Site",
+			"des": "Gerimos a presença online da sua marca de forma estratégica e consistente, desde a criação de conteúdo até atualizações de site e análises."
+		},
+		{
+			"title": "Alojamento & Manutenção Técnica",
+			"des": "Oferecemos soluções de alojamento seguras e de alto desempenho, com manutenção contínua e suporte especializado."
+		},
+		{
+			"title": "Estratégia Digital & Consultoria",
+			"des": "Ajudamos empresas a definir e executar estratégias digitais eficazes que promovem crescimento sustentável e mensurável."
+		}
+	],
+	"hero": {
+		"title": "Transforme a Sua Presença Online com os Nossos Serviços Digitais"
+	},
+	"details": {
+		"title": "Design de Produto Digital",
+		"description": "Bem-vindo à nossa agência digital! Especializamo-nos em ajudar empresas a ter sucesso online. Desde o design e desenvolvimento de sites até marketing digital, temos as ferramentas e experiência para elevar a sua presença online.",
+		"features": [
+			"Design: direção criativa baseada em pesquisa",
+			"Desenvolvimento: implementações modernas e performantes",
+			"Implementação: lançamentos e integrações confiáveis",
+			"Lançamento: suporte contínuo e crescimento"
+		]
+	},
+	"team": {
+		"title": "Skill & Specialist",
+		"items": [
+			{
+				"id": 1,
+				"count": 99,
+				"title": "Research & Analyze",
+				"des": "Welcome to our digital agency We specialize in helping your business most"
+			},
+			{
+				"id": 2,
+				"count": 85,
+				"title": "Wireframing",
+				"des": "Welcome to our digital agency We specialize in helping your business most"
+			},
+			{
+				"id": 3,
+				"count": 80,
+				"title": "UI Design",
+				"des": "Welcome to our digital agency We specialize in helping your business most"
+			},
+			{
+				"id": 4,
+				"count": 99,
+				"title": "Problem Solving",
+				"des": "Welcome to our digital agency We specialize in helping your business most"
+			}
+		]
+	},
+	"process": {
+		"title": "Especialização & Processo de Trabalho",
+		"description": "Bem-vindo à nossa agência digital! Especializamo-nos em ajudar empresas como a sua a ter sucesso online. Desde o design e desenvolvimento de sites até marketing digital e publicidade, temos as ferramentas e a experiência para elevar a sua presença online.",
+		"items": [
+			{
+				"id": "one",
+				"title": "Compreender",
+				"description": "Começamos por compreender profundamente os objetivos do seu negócio, público-alvo e requisitos do projeto através de sessões de descoberta abrangentes."
+			},
+			{
+				"id": "Two",
+				"title": "Design",
+				"description": "A nossa equipa de design cria interfaces intuitivas e visualmente atraentes que se alinham com a identidade da sua marca e necessidades dos utilizadores."
+			},
+			{
+				"id": "Three",
+				"title": "Desenvolvimento",
+				"description": "Construímos soluções robustas e escaláveis usando tecnologias modernas e melhores práticas para garantir desempenho ótimo."
+			},
+			{
+				"id": "Four",
+				"title": "Testes",
+				"description": "Garantia de qualidade rigorosa e testes em vários dispositivos e navegadores garantem uma experiência de utilizador impecável."
+			}
+		]
+	}
+}
