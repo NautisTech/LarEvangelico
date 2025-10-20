@@ -2,6 +2,7 @@
 
 // @ts-nocheck
 import "./Causes.module.css";
+import React from "react";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { Conteudo } from "@/models";
@@ -367,12 +368,20 @@ export function Causes({
 							data-framer-name="Causes Lists"
 						>
 							{causas.map((causa, index) => (
-								<div
-									className="ssr-variant hidden-mqny1y"
-									key={causa.id}
-								>
-									{renderCauseCard(causa, index)}
-								</div>
+								<>
+									<div
+										className="ssr-variant hidden-mqny1y"
+										key={causa.id}
+									>
+										{renderCauseCard(causa, index)}
+									</div>
+									<div
+										className="ssr-variant hidden-181rvcf hidden-72rtr7"
+										key={`${causa.id}-tablet`}
+									>
+										{renderCauseCard(causa, index)}
+									</div>
+								</>
 							))}
 						</div>
 						<div className="ssr-variant hidden-181rvcf">

@@ -24,7 +24,7 @@ export function MainContent({ causa }: MainContentProps) {
 		<>
 			<section className="framer-elxz8b" data-framer-name="Main Content">
 				<div className="framer-5426tg" data-framer-name="Container">
-					<div className="ssr-variant hidden-d9yx5v">
+					<div className="ssr-variant">
 						<div
 							className="framer-1fes57"
 							data-framer-name="Left"

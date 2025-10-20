@@ -10,15 +10,32 @@ const Navbar: React.FC = () => {
 	const router = useRouter();
 
 	const [isModalOpen, setModalOpen] = React.useState(false);
+	const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+
 	const handleModalOpen = () => {
 		setModalOpen(true);
+		setMobileMenuOpen(false);
 	};
 	const handleModalClose = () => {
 		setModalOpen(false);
 	};
+	const toggleMobileMenu = () => {
+		console.log("Toggle menu clicked! Current state:", isMobileMenuOpen);
+		setMobileMenuOpen(!isMobileMenuOpen);
+	};
+
+	const handleNavigate = (path: string) => {
+		router.push(path);
+		setMobileMenuOpen(false);
+	};
 
 	return (
 		<>
+			<style jsx>{`
+				.hidden-nav {
+					display: none !important;
+				}
+			`}</style>
 			<div>
 				<div className="ssr-variant hidden-zd6a81 hidden-11f5tl6">
 					<header
@@ -180,7 +197,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/sobre-nos")
+											handleNavigate("/sobre-nos")
 										}
 										tabIndex={0}
 									>
@@ -245,7 +262,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/parceiros")
+											handleNavigate("/parceiros")
 										}
 										tabIndex={0}
 									>
@@ -309,7 +326,9 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/causas")}
+										onClick={() =>
+											handleNavigate("/causas")
+										}
 										tabIndex={0}
 									>
 										<div
@@ -372,7 +391,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/blog")}
+										onClick={() => handleNavigate("/blog")}
 										tabIndex={0}
 									>
 										<div
@@ -436,7 +455,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/contactos")
+											handleNavigate("/contactos")
 										}
 										tabIndex={0}
 									>
@@ -500,7 +519,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/admin")}
+										onClick={() => handleNavigate("/admin")}
 										tabIndex={0}
 									>
 										<div
@@ -631,7 +650,7 @@ const Navbar: React.FC = () => {
 							<a
 								className="framer-tobys2 framer-xku9a4"
 								data-framer-name="Logo"
-								onClick={() => router.push("/")}
+								onClick={() => handleNavigate("/")}
 								data-framer-page-link-current="true"
 							>
 								<div
@@ -696,12 +715,34 @@ const Navbar: React.FC = () => {
 							</a>
 
 							<nav
-								className="framer-1njmcb7"
+								className={`framer-1njmcb7 ${
+									!isMobileMenuOpen ? "hidden-nav" : ""
+								}`}
 								data-framer-name="Navigation"
 								style={{
 									backgroundColor:
 										"var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))",
-									opacity: "0",
+									opacity: isMobileMenuOpen ? 1 : 0,
+									pointerEvents: isMobileMenuOpen
+										? "auto"
+										: "none",
+									transition:
+										"opacity 0.3s ease, height 0.3s ease",
+									visibility: isMobileMenuOpen
+										? "visible"
+										: "hidden",
+									display: isMobileMenuOpen ? "flex" : "none",
+									position: "absolute" as const,
+									zIndex: 999,
+									top: "100%",
+									left: 0,
+									right: 0,
+									width: "100%",
+									height: isMobileMenuOpen ? "auto" : 0,
+									maxHeight: isMobileMenuOpen ? "100vh" : 0,
+									overflow: isMobileMenuOpen
+										? ("visible" as const)
+										: ("hidden" as const),
 								}}
 							>
 								<div className="framer-1ybkjth-container">
@@ -709,7 +750,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/")}
+										onClick={() => handleNavigate("/")}
 										data-framer-page-link-current="true"
 										tabIndex={0}
 									>
@@ -774,7 +815,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/sobre-nos")
+											handleNavigate("/sobre-nos")
 										}
 										tabIndex={0}
 									>
@@ -839,7 +880,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/parceiros")
+											handleNavigate("/parceiros")
 										}
 										tabIndex={0}
 									>
@@ -903,7 +944,9 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/causas")}
+										onClick={() =>
+											handleNavigate("/causas")
+										}
 										tabIndex={0}
 									>
 										<div
@@ -966,7 +1009,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/blog")}
+										onClick={() => handleNavigate("/blog")}
 										tabIndex={0}
 									>
 										<div
@@ -1030,7 +1073,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/contactos")
+											handleNavigate("/contactos")
 										}
 										tabIndex={0}
 									>
@@ -1094,7 +1137,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/admin")}
+										onClick={() => handleNavigate("/admin")}
 										tabIndex={0}
 									>
 										<div
@@ -1209,6 +1252,14 @@ const Navbar: React.FC = () => {
 									data-framer-name="Primary"
 									data-highlight="true"
 									tabIndex={0}
+									onClick={toggleMobileMenu}
+									style={
+										{
+											cursor: "pointer",
+											zIndex: 1000,
+											position: "relative",
+										} as React.CSSProperties
+									}
 								>
 									<div
 										className="framer-e1ysir"
@@ -1261,7 +1312,7 @@ const Navbar: React.FC = () => {
 							<a
 								className="framer-tobys2 framer-xku9a4"
 								data-framer-name="Logo"
-								onClick={() => router.push("/")}
+								onClick={() => handleNavigate("/")}
 								data-framer-page-link-current="true"
 							>
 								<div
@@ -1326,12 +1377,34 @@ const Navbar: React.FC = () => {
 							</a>
 
 							<nav
-								className="framer-1njmcb7"
+								className={`framer-1njmcb7 ${
+									!isMobileMenuOpen ? "hidden-nav" : ""
+								}`}
 								data-framer-name="Navigation"
 								style={{
 									backgroundColor:
 										"var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))",
-									opacity: "0",
+									opacity: isMobileMenuOpen ? 1 : 0,
+									pointerEvents: isMobileMenuOpen
+										? "auto"
+										: "none",
+									transition:
+										"opacity 0.3s ease, height 0.3s ease",
+									visibility: isMobileMenuOpen
+										? "visible"
+										: "hidden",
+									display: isMobileMenuOpen ? "flex" : "none",
+									position: "absolute" as const,
+									zIndex: 999,
+									top: "100%",
+									left: 0,
+									right: 0,
+									width: "100%",
+									height: isMobileMenuOpen ? "auto" : 0,
+									maxHeight: isMobileMenuOpen ? "100vh" : 0,
+									overflow: isMobileMenuOpen
+										? ("visible" as const)
+										: ("hidden" as const),
 								}}
 							>
 								<div className="framer-1ybkjth-container">
@@ -1339,7 +1412,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/")}
+										onClick={() => handleNavigate("/")}
 										data-framer-page-link-current="true"
 										tabIndex={0}
 									>
@@ -1404,7 +1477,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/sobre-nos")
+											handleNavigate("/sobre-nos")
 										}
 										tabIndex={0}
 									>
@@ -1469,7 +1542,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/parceiros")
+											handleNavigate("/parceiros")
 										}
 										tabIndex={0}
 									>
@@ -1533,7 +1606,9 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/causas")}
+										onClick={() =>
+											handleNavigate("/causas")
+										}
 										tabIndex={0}
 									>
 										<div
@@ -1596,7 +1671,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/blog")}
+										onClick={() => handleNavigate("/blog")}
 										tabIndex={0}
 									>
 										<div
@@ -1660,7 +1735,7 @@ const Navbar: React.FC = () => {
 										data-framer-name="Primary"
 										data-highlight="true"
 										onClick={() =>
-											router.push("/contactos")
+											handleNavigate("/contactos")
 										}
 										tabIndex={0}
 									>
@@ -1724,7 +1799,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => router.push("/admin")}
+										onClick={() => handleNavigate("/admin")}
 										tabIndex={0}
 									>
 										<div
@@ -1782,68 +1857,7 @@ const Navbar: React.FC = () => {
 										</div>
 									</a>
 								</div>
-								<div className="framer-154dfs5-container">
-									<a
-										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
-										data-framer-name="Primary"
-										data-highlight="true"
-										tabIndex={0}
-									>
-										<div
-											className="framer-xuhs7p"
-											data-framer-name="Text"
-										>
-											<div
-												className="framer-fbp6jx"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{
-													transform:
-														"translate(-50%, -50%)",
-												}}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													404
-												</p>
-											</div>
-											<div
-												className="framer-nljtjc"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{ transform: "none" }}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													404
-												</p>
-											</div>
-											<div
-												className="framer-jt3kas"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{
-													opacity: "0",
-													transform: "none",
-												}}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													404
-												</p>
-											</div>
-										</div>
-									</a>
-								</div>
+
 								<div
 									className="framer-1xsf7pd-container"
 									onClick={handleModalOpen}
@@ -1907,6 +1921,14 @@ const Navbar: React.FC = () => {
 									data-framer-name="Primary"
 									data-highlight="true"
 									tabIndex={0}
+									onClick={toggleMobileMenu}
+									style={
+										{
+											cursor: "pointer",
+											zIndex: 1000,
+											position: "relative",
+										} as React.CSSProperties
+									}
 								>
 									<div
 										className="framer-e1ysir"

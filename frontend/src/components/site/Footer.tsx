@@ -975,7 +975,19 @@ const Footer: React.FC = () => {
 																	color: "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))",
 																}}
 															>
-																{t("partners")}
+																<a
+																	className="framer-text framer-styles-preset-n2slvd"
+																	data-styles-preset="K2SfgM11V"
+																	onClick={() =>
+																		router.push(
+																			"/parceiros"
+																		)
+																	}
+																>
+																	{t(
+																		"partners"
+																	)}
+																</a>
 															</p>
 														</div>
 													</div>
@@ -1055,7 +1067,19 @@ const Footer: React.FC = () => {
 																	color: "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))",
 																}}
 															>
-																{t("contact")}
+																<a
+																	className="framer-text framer-styles-preset-n2slvd"
+																	data-styles-preset="K2SfgM11V"
+																	onClick={() =>
+																		router.push(
+																			"/contactos"
+																		)
+																	}
+																>
+																	{t(
+																		"contact"
+																	)}
+																</a>
 															</p>
 														</div>
 													</div>
@@ -1624,7 +1648,19 @@ const Footer: React.FC = () => {
 																	color: "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))",
 																}}
 															>
-																{t("partners")}
+																<a
+																	className="framer-text framer-styles-preset-n2slvd"
+																	data-styles-preset="K2SfgM11V"
+																	onClick={() =>
+																		router.push(
+																			"/parceiros"
+																		)
+																	}
+																>
+																	{t(
+																		"partners"
+																	)}
+																</a>
 															</p>
 														</div>
 													</div>
@@ -1704,7 +1740,19 @@ const Footer: React.FC = () => {
 																	color: "var(--extracted-r6o4lv, var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255)))",
 																}}
 															>
-																{t("contact")}
+																<a
+																	className="framer-text framer-styles-preset-n2slvd"
+																	data-styles-preset="K2SfgM11V"
+																	onClick={() =>
+																		router.push(
+																			"/contactos"
+																		)
+																	}
+																>
+																	{t(
+																		"contact"
+																	)}
+																</a>
 															</p>
 														</div>
 													</div>

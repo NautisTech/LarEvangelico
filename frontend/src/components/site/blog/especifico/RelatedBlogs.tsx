@@ -74,7 +74,7 @@ export function RelatedBlogs({ noticias }: { noticias: Conteudo[] }) {
 								data-styles-preset="Pm0hsra8F"
 								style={{ textAlign: "center" }}
 							>
-								Notícias Relacionadas
+								{t("blog.related_title")}
 							</h3>
 						</div>
 					</div>
@@ -87,8 +87,11 @@ export function RelatedBlogs({ noticias }: { noticias: Conteudo[] }) {
 								"../images/27Tiaf1q57EwhHjAhksDD2Mmnc.jpg";
 
 							return (
-								<div key={noticia.id || index}>
-									<div className="ssr-variant hidden-14qsnbp">
+								<>
+									<div
+										className="ssr-variant hidden-14qsnbp"
+										key={noticia.id || index}
+									>
 										<div
 											className="framer-1ol05s7"
 											style={{
@@ -403,7 +406,10 @@ export function RelatedBlogs({ noticias }: { noticias: Conteudo[] }) {
 											</div>
 										</div>
 									</div>
-									<div className="ssr-variant hidden-ywbeel hidden-td2yua">
+									<div
+										className="ssr-variant hidden-ywbeel hidden-td2yua"
+										key={noticia.id || index}
+									>
 										<div
 											className="framer-1ol05s7"
 											style={{
@@ -563,7 +569,7 @@ export function RelatedBlogs({ noticias }: { noticias: Conteudo[] }) {
 											</div>
 										</div>
 									</div>
-								</div>
+								</>
 							);
 						})}
 					</div>
