@@ -3,7 +3,7 @@
 import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 import { TopSection, MainSection, RelatedBlogs } from "@/components/site/blog/especifico";
-import { useConteudos, useConteudoBySlug } from "@/lib/api/conteudos-public";
+import { useConteudos, useConteudoBySlug, useConteudosDestaque } from "@/lib/api/conteudos-public";
 import { useParams } from "next/navigation";
 
 // @ts-ignore
@@ -25,8 +25,7 @@ export default function NoticiaEspecifica() {
         return shuffled;
     };
 
-    let noticiasRelated = shuffle(noticias?.data.filter(c => c.id !== noticia?.id) || []);
-    noticiasRelated = noticiasRelated.length >= 3 ? noticiasRelated.slice(0, 3) : noticiasRelated;
+    const { data: noticiasRelated, isLoading: isLoadingDestaque, error: errorDestaque } = useConteudosDestaque(3, 16);
 
     if (isLoading || isLoadingNoticias) {
         return (
@@ -59,7 +58,7 @@ export default function NoticiaEspecifica() {
                 style={{ minHeight: "100vh", width: "auto", display: "contents" }}>
                 <TopSection noticia={noticia} />
                 <MainSection noticia={noticia} />
-                <RelatedBlogs noticias={noticiasRelated} />
+                <RelatedBlogs noticias={noticiasRelated!} />
             </div>
             <Footer />
         </>

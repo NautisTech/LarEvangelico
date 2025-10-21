@@ -519,7 +519,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("/admin")}
+										onClick={() => handleNavigate("https://admin-larevangelico.gestao.avfeirense.pt/")}
 										tabIndex={0}
 									>
 										<div
@@ -715,9 +715,8 @@ const Navbar: React.FC = () => {
 							</a>
 
 							<nav
-								className={`framer-1njmcb7 ${
-									!isMobileMenuOpen ? "hidden-nav" : ""
-								}`}
+								className={`framer-1njmcb7 ${!isMobileMenuOpen ? "hidden-nav" : ""
+									}`}
 								data-framer-name="Navigation"
 								style={{
 									backgroundColor:
@@ -1137,7 +1136,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("/admin")}
+										onClick={() => handleNavigate("https://admin-larevangelico.gestao.avfeirense.pt/")}
 										tabIndex={0}
 									>
 										<div
@@ -1377,9 +1376,8 @@ const Navbar: React.FC = () => {
 							</a>
 
 							<nav
-								className={`framer-1njmcb7 ${
-									!isMobileMenuOpen ? "hidden-nav" : ""
-								}`}
+								className={`framer-1njmcb7 ${!isMobileMenuOpen ? "hidden-nav" : ""
+									}`}
 								data-framer-name="Navigation"
 								style={{
 									backgroundColor:
@@ -1799,7 +1797,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("/admin")}
+										onClick={() => handleNavigate("https://admin-larevangelico.gestao.avfeirense.pt/")}
 										tabIndex={0}
 									>
 										<div

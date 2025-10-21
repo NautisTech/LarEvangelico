@@ -9,8 +9,8 @@ export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 	const router = useRouter();
 	const { t, i18n } = useTranslation("content");
 
-	const handleNoticiaClick = (id: number) => {
-		router.push(`/blog/${id}`);
+	const handleNoticiaClick = (slug: string) => {
+		router.push(`/blog/${slug}`);
 	};
 
 	const formatarData = (data: Date | string) => {
@@ -83,7 +83,7 @@ export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 
 							return (
 								<div
-									key={noticia.id || index}
+									key={noticia.slug || index}
 									style={{ width: "100%" }}
 								>
 									<div className="ssr-variant hidden-1mqri84">
@@ -110,7 +110,7 @@ export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 															data-framer-name="Figure"
 															onClick={() =>
 																handleNoticiaClick(
-																	noticia.id!
+																	noticia.slug!
 																)
 															}
 															style={{
@@ -227,7 +227,7 @@ export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 																		data-styles-preset="PGCP_hdlP"
 																		onClick={() =>
 																			handleNoticiaClick(
-																				noticia.id!
+																				noticia.slug!
 																			)
 																		}
 																	>
@@ -256,7 +256,7 @@ export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 															data-framer-name="Figure"
 															onClick={() =>
 																handleNoticiaClick(
-																	noticia.id!
+																	noticia.slug!
 																)
 															}
 															style={{
@@ -373,7 +373,7 @@ export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 																		data-styles-preset="PGCP_hdlP"
 																		onClick={() =>
 																			handleNoticiaClick(
-																				noticia.id!
+																				noticia.slug!
 																			)
 																		}
 																	>
@@ -411,7 +411,7 @@ export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 														data-framer-name="Figure"
 														onClick={() =>
 															handleNoticiaClick(
-																noticia.id!
+																noticia.slug!
 															)
 														}
 														style={{
@@ -528,7 +528,7 @@ export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 																	data-styles-preset="PGCP_hdlP"
 																	onClick={() =>
 																		handleNoticiaClick(
-																			noticia.id!
+																			noticia.slug!
 																		)
 																	}
 																>

@@ -4,7 +4,7 @@ import "./Causes.module.css";
 import React from "react";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import { ConteudoResumo, useCamposPersonalizados } from "@/lib/api/conteudos-public";
+import { ConteudoResumo, createCamposHelper } from "@/lib/api/conteudos-public";
 
 export function Causes({
 	causas,
@@ -28,15 +28,18 @@ export function Causes({
 		);
 	};
 
-
+	// Helper function to get objetivo from causa (não usa hook)
+	const getObjetivo = (causa: ConteudoResumo) => {
+		const campos = createCamposHelper(causa.campos_personalizados);
+		return campos.getTexto('objetivo', '');
+	};
 
 	const renderCauseCard = (causa: ConteudoResumo, index: number) => {
-		const campos = useCamposPersonalizados(causa.campos_personalizados);
-		const objetivo = campos.getTexto('objetivo')
+		const objetivo = getObjetivo(causa)
 
 		return (
 			<div
-				key={causa.id}
+				key={causa.slug}
 				className="framer-qns2ns"
 				style={{
 					willChange: "transform",
@@ -72,7 +75,7 @@ export function Causes({
 							<a
 								className="framer-nah7t3 framer-yk3d88"
 								data-framer-name="Figure"
-								onClick={() => router.push(`/causas/${causa.id}`)}
+								onClick={() => router.push(`/causas/${causa.slug}`)}
 								style={{
 									borderBottomLeftRadius: "12px",
 									borderBottomRightRadius: "12px",
@@ -198,7 +201,7 @@ export function Causes({
 												data-styles-preset="PGCP_hdlP"
 												onClick={() =>
 													router.push(
-														`/causas/${causa.id}`
+														`/causas/${causa.slug}`
 													)
 												}
 												style={{ cursor: "pointer" }}
@@ -229,7 +232,7 @@ export function Causes({
 										data-framer-name="Bordered"
 										data-highlight="true"
 										onClick={() =>
-											router.push(`/causas/${causa.id}`)
+											router.push(`/causas/${causa.slug}`)
 										}
 										tabIndex={0}
 										style={{
@@ -377,13 +380,13 @@ export function Causes({
 								<>
 									<div
 										className="ssr-variant hidden-mqny1y"
-										key={causa.id}
+										key={causa.slug}
 									>
 										{renderCauseCard(causa, index)}
 									</div>
 									<div
 										className="ssr-variant hidden-181rvcf hidden-72rtr7"
-										key={`${causa.id}-tablet`}
+										key={`${causa.slug}-tablet`}
 									>
 										{renderCauseCard(causa, index)}
 									</div>

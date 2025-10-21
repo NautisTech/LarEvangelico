@@ -38,7 +38,7 @@ export function BlogSection({
 
 	const renderNoticiaCard = (noticia: ConteudoResumo) => (
 		<div
-			key={noticia.id}
+			key={noticia.slug}
 			className="framer-hpeeo6"
 			style={{
 				willChange: "transform",
@@ -56,7 +56,7 @@ export function BlogSection({
 						<a
 							className="framer-1mowlqu framer-1qlj46u"
 							data-framer-name="Figure"
-							onClick={() => router.push(`/blog/${noticia.id}`)}
+							onClick={() => router.push(`/blog/${noticia.slug}`)}
 							style={{
 								borderBottomLeftRadius: "12px",
 								borderBottomRightRadius: "12px",
@@ -139,7 +139,7 @@ export function BlogSection({
 										className="framer-text framer-styles-preset-ixgrlg"
 										data-styles-preset="PGCP_hdlP"
 										onClick={() =>
-											router.push(`/blog/${noticia.id}`)
+											router.push(`/blog/${noticia.slug}`)
 										}
 										style={{ cursor: "pointer" }}
 									>
@@ -161,7 +161,7 @@ export function BlogSection({
 						<a
 							className="framer-1mowlqu framer-1qlj46u"
 							data-framer-name="Figure"
-							onClick={() => router.push(`/blog/${noticia.id}`)}
+							onClick={() => router.push(`/blog/${noticia.slug}`)}
 							style={{
 								borderBottomLeftRadius: "12px",
 								borderBottomRightRadius: "12px",
@@ -244,7 +244,7 @@ export function BlogSection({
 										className="framer-text framer-styles-preset-ixgrlg"
 										data-styles-preset="PGCP_hdlP"
 										onClick={() =>
-											router.push(`/blog/${noticia.id}`)
+											router.push(`/blog/${noticia.slug}`)
 										}
 										style={{ cursor: "pointer" }}
 									>
@@ -266,7 +266,7 @@ export function BlogSection({
 						<a
 							className="framer-1mowlqu framer-1qlj46u"
 							data-framer-name="Figure"
-							onClick={() => router.push(`/blog/${noticia.id}`)}
+							onClick={() => router.push(`/blog/${noticia.slug}`)}
 							style={{
 								borderBottomLeftRadius: "12px",
 								borderBottomRightRadius: "12px",
@@ -349,7 +349,7 @@ export function BlogSection({
 										className="framer-text framer-styles-preset-ixgrlg"
 										data-styles-preset="PGCP_hdlP"
 										onClick={() =>
-											router.push(`/blog/${noticia.id}`)
+											router.push(`/blog/${noticia.slug}`)
 										}
 										style={{ cursor: "pointer" }}
 									>
@@ -427,7 +427,7 @@ export function BlogSection({
 					<div className="framer-1mdr160">
 						{blogs.map(noticia => (
 							<div
-								key={noticia.id}
+								key={noticia.slug}
 								className="ssr-variant hidden-181rvcf"
 							>
 								{renderNoticiaCard(noticia)}
@@ -435,7 +435,7 @@ export function BlogSection({
 						))}
 						{blogs.map(noticia => (
 							<div
-								key={`mobile-${noticia.id}`}
+								key={`mobile-${noticia.slug}`}
 								className="ssr-variant hidden-mqny1y hidden-72rtr7"
 							>
 								{renderNoticiaCard(noticia)}

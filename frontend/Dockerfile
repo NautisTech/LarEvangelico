@@ -35,8 +35,8 @@ ENV ESLINT_NO_DEV_ERRORS=true
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV NEXT_TELEMETRY_DISABLED=1
-ENV API_URL=http://srv-captain--api-larevangelico:9833/api
-ENV NEXT_PUBLIC_API_URL=http://srv-captain--api-larevangelico:9833/api
+ENV API_URL=https://api-larevangelico.gestao.avfeirense.pt
+ENV NEXT_PUBLIC_API_URL=https://api-larevangelico.gestao.avfeirense.pt
 ENV TENANT_ID=1002
 ENV NEXT_PUBLIC_TENANT_ID=1002
 

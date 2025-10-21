@@ -1,4 +1,4 @@
-import { ConteudoResumo, ValorCampoPersonalizado, useCamposPersonalizados } from "@/lib/api/conteudos-public";
+import { ConteudoResumo, ValorCampoPersonalizado, createCamposHelper } from "@/lib/api/conteudos-public";
 import { useRouter } from "next/navigation";
 
 import { useTranslation } from "react-i18next";
@@ -79,8 +79,8 @@ export function Causes({ causas }: { causas: ConteudoResumo[] }) {
 									causa.anexos?.[0]?.caminho ||
 									"../images/Bte6guHqFv0lXXuFa5GHNuEI0Mg.jpg";
 
-								const campos: any = useCamposPersonalizados(causa.campos_personalizados);
-								const objetivo = campos?.getTexto('objetivo')
+								const campos = createCamposHelper(causa.campos_personalizados);
+								const objetivo = campos.getTexto('objetivo')
 
 								return (
 									<>

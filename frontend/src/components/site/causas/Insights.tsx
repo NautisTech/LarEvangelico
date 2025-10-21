@@ -1,7 +1,7 @@
 // @ts-nocheck
 "use client";
 
-import { ConteudoResumo, useCamposPersonalizados } from "@/lib/api/conteudos-public";
+import { ConteudoResumo, createCamposHelper } from "@/lib/api/conteudos-public";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
@@ -73,7 +73,7 @@ export function Insights({ causas }: InsightsProps) {
 						data-framer-name="Causes Lists"
 					>
 						{causas.map((causa, index) => {
-							const campos = useCamposPersonalizados(causa.campos_personalizados);
+							const campos = createCamposHelper(causa.campos_personalizados);
 							const imagemPrincipal = causa.imagem_destaque ||
 								causa.anexos?.[0]?.caminho ||
 								"/images/OCUj9MbhJ73rmpYYrHnLgb7sc.jpg";

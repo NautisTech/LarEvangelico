@@ -9,8 +9,8 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 	const router = useRouter();
 	const { t, i18n } = useTranslation("content");
 
-	const handleNoticiaClick = (id: number) => {
-		router.push(`/blog/${id}`);
+	const handleNoticiaClick = (slug: string) => {
+		router.push(`/blog/${slug}`);
 	};
 
 	const formatarData = (data: Date | string) => {
@@ -88,7 +88,7 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 								<>
 									<div
 										className="ssr-variant hidden-14qsnbp"
-										key={noticia.id || index}
+										key={noticia.slug || index}
 									>
 										<div
 											className="framer-1ol05s7"
@@ -113,7 +113,7 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 															data-framer-name="Figure"
 															onClick={() =>
 																handleNoticiaClick(
-																	noticia.id!
+																	noticia.slug!
 																)
 															}
 															data-framer-page-link-current="true"
@@ -232,7 +232,7 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 																		data-styles-preset="PGCP_hdlP"
 																		onClick={() =>
 																			handleNoticiaClick(
-																				noticia.id!
+																				noticia.slug!
 																			)
 																		}
 																		data-framer-page-link-current="true"
@@ -265,7 +265,7 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 															data-framer-name="Figure"
 															onClick={() =>
 																handleNoticiaClick(
-																	noticia.id!
+																	noticia.slug!
 																)
 															}
 															data-framer-page-link-current="true"
@@ -384,7 +384,7 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 																		data-styles-preset="PGCP_hdlP"
 																		onClick={() =>
 																			handleNoticiaClick(
-																				noticia.id!
+																				noticia.slug!
 																			)
 																		}
 																		data-framer-page-link-current="true"
@@ -406,7 +406,7 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 									</div>
 									<div
 										className="ssr-variant hidden-ywbeel hidden-td2yua"
-										key={noticia.id || index}
+										key={noticia.slug || index}
 									>
 										<div
 											className="framer-1ol05s7"
@@ -429,7 +429,7 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 														data-framer-name="Figure"
 														onClick={() =>
 															handleNoticiaClick(
-																noticia.id!
+																noticia.slug!
 															)
 														}
 														data-framer-page-link-current="true"
@@ -548,7 +548,7 @@ export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 																	data-styles-preset="PGCP_hdlP"
 																	onClick={() =>
 																		handleNoticiaClick(
-																			noticia.id!
+																			noticia.slug!
 																		)
 																	}
 																	data-framer-page-link-current="true"

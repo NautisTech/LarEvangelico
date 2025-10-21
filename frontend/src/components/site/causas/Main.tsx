@@ -94,7 +94,7 @@ export function Main({ causa }: MainProps) {
 														data-highlight="true"
 														onClick={() =>
 															router.push(
-																`/causas/${causa?.id!}`
+																`/causas/${causa?.slug!}`
 															)
 														}
 														tabIndex={0}
@@ -190,7 +190,7 @@ export function Main({ causa }: MainProps) {
 														data-highlight="true"
 														onClick={() =>
 															router.push(
-																`/causas/${causa?.id!}`
+																`/causas/${causa?.slug!}`
 															)
 														}
 														tabIndex={0}
@@ -339,7 +339,7 @@ export function Main({ causa }: MainProps) {
 														data-highlight="true"
 														onClick={() =>
 															router.push(
-																`/causas/${causa?.id!}`
+																`/causas/${causa?.slug!}`
 															)
 														}
 														tabIndex={0}
@@ -435,7 +435,7 @@ export function Main({ causa }: MainProps) {
 														data-highlight="true"
 														onClick={() =>
 															router.push(
-																`/causas/${causa?.id!}`
+																`/causas/${causa?.slug!}`
 															)
 														}
 														tabIndex={0}
@@ -582,7 +582,7 @@ export function Main({ causa }: MainProps) {
 													data-highlight="true"
 													onClick={() =>
 														router.push(
-															`/causas/${causa?.id!}`
+															`/causas/${causa?.slug!}`
 														)
 													}
 													tabIndex={0}
