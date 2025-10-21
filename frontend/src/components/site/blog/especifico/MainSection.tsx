@@ -1,7 +1,7 @@
-import { Conteudo } from "@/models";
+import { ConteudoCompleto } from "@/lib/api/conteudos-public";
 import { useTranslation } from "react-i18next";
 
-export function MainSection({ noticia }: { noticia: Conteudo }) {
+export function MainSection({ noticia }: { noticia: ConteudoCompleto }) {
 	const { t } = useTranslation("content");
 	return (
 		<>
@@ -23,7 +23,7 @@ export function MainSection({ noticia }: { noticia: Conteudo }) {
 							</h5>
 
 							<p className="framer-text framer-styles-preset-18rceng">
-								{noticia.corpo}
+								{noticia.conteudo}
 							</p>
 						</div>
 					</div>
@@ -39,7 +39,7 @@ export function MainSection({ noticia }: { noticia: Conteudo }) {
 							</h5>
 
 							<p className="framer-text framer-styles-preset-18rceng">
-								{noticia.corpo}
+								{noticia.conteudo}
 							</p>
 						</div>
 					</div>
@@ -157,7 +157,7 @@ export function MainSection({ noticia }: { noticia: Conteudo }) {
 										data-styles-preset="Xx3p8Pbb_"
 										style={{ textAlign: "center" }}
 									>
-										A ajudar pessoas todos os dias
+										{t("blog.main_quote")}
 									</h5>
 								</div>
 							</div>

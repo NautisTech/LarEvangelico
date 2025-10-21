@@ -2,9 +2,7 @@
 
 import React from "react";
 import {
-	AuthProvider,
 	ToastProvider,
-	ConfirmProvider,
 	LanguageProvider,
 } from ".";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -30,10 +28,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({
 	return (
 		<LanguageProvider>
 			<QueryClientProvider client={queryClient}>
-				<AuthProvider>
-					<ConfirmProvider>{children}</ConfirmProvider>
-					<ToastProvider />
-				</AuthProvider>
+				{children}
+				<ToastProvider />
 			</QueryClientProvider>
 		</LanguageProvider>
 	);

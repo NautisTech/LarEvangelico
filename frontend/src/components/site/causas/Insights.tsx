@@ -1,20 +1,20 @@
 // @ts-nocheck
 "use client";
 
-import { Conteudo } from "@/models";
+import { ConteudoResumo, useCamposPersonalizados } from "@/lib/api/conteudos-public";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
 interface InsightsProps {
-	causas: Conteudo[];
+	causas: ConteudoResumo[];
 }
 
 export function Insights({ causas }: InsightsProps) {
 	const { t } = useTranslation("content");
 	const router = useRouter();
 
-	const handleCausaClick = (id: number) => {
-		router.push(`/causas/${id}`);
+	const handleCausaClick = (slug: string) => {
+		router.push(`/causas/${slug}`);
 	};
 
 	const formatCurrency = (value: number | null) => {
@@ -73,17 +73,16 @@ export function Insights({ causas }: InsightsProps) {
 						data-framer-name="Causes Lists"
 					>
 						{causas.map((causa, index) => {
-							const imagemPrincipal =
-								causa.anexos?.find(anexo => anexo.principal)
-									?.valor ||
-								causa.anexos?.[0]?.valor ||
+							const campos = useCamposPersonalizados(causa.campos_personalizados);
+							const imagemPrincipal = causa.imagem_destaque ||
+								causa.anexos?.[0]?.caminho ||
 								"/images/OCUj9MbhJ73rmpYYrHnLgb7sc.jpg";
 
 							return (
 								<>
 									<div
 										className="ssr-variant hidden-s0rxjy hidden-44iexs"
-										key={`${causa.id || index}-desktop`}
+										key={`${causa.slug || index}-desktop`}
 									>
 										<div
 											className="framer-poj5s1"
@@ -135,7 +134,7 @@ export function Insights({ causas }: InsightsProps) {
 																data-framer-name="Figure"
 																onClick={() =>
 																	handleCausaClick(
-																		causa.id!
+																		causa.slug!
 																	)
 																}
 																style={{
@@ -216,7 +215,7 @@ export function Insights({ causas }: InsightsProps) {
 																		/>
 																	</div>
 																</figure>
-																{causa.objetivo && (
+																{campos.getTexto('objetivo', '0') && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -266,7 +265,7 @@ export function Insights({ causas }: InsightsProps) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						causa.objetivo
+																						Number(campos.getTexto('objetivo', '0'))
 																					)}
 																				</p>
 																			</div>
@@ -304,7 +303,7 @@ export function Insights({ causas }: InsightsProps) {
 																				data-styles-preset="PGCP_hdlP"
 																				onClick={() =>
 																					handleCausaClick(
-																						causa.id!
+																						causa.slug!
 																					)
 																				}
 																				style={{
@@ -344,7 +343,7 @@ export function Insights({ causas }: InsightsProps) {
 																		data-highlight="true"
 																		onClick={() =>
 																			handleCausaClick(
-																				causa.id!
+																				causa.slug!
 																			)
 																		}
 																		tabIndex={
@@ -480,7 +479,7 @@ export function Insights({ causas }: InsightsProps) {
 																data-framer-name="Figure"
 																onClick={() =>
 																	handleCausaClick(
-																		causa.id!
+																		causa.slug!
 																	)
 																}
 																style={{
@@ -561,7 +560,7 @@ export function Insights({ causas }: InsightsProps) {
 																		/>
 																	</div>
 																</figure>
-																{causa.objetivo && (
+																{campos.getTexto('objetivo', '0') && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -611,7 +610,7 @@ export function Insights({ causas }: InsightsProps) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						causa.objetivo
+																						Number(campos.getTexto('objetivo', '0'))
 																					)}
 																				</p>
 																			</div>
@@ -649,7 +648,7 @@ export function Insights({ causas }: InsightsProps) {
 																				data-styles-preset="PGCP_hdlP"
 																				onClick={() =>
 																					handleCausaClick(
-																						causa.id!
+																						causa.slug!
 																					)
 																				}
 																				style={{
@@ -689,7 +688,7 @@ export function Insights({ causas }: InsightsProps) {
 																		data-highlight="true"
 																		onClick={() =>
 																			handleCausaClick(
-																				causa.id!
+																				causa.slug!
 																			)
 																		}
 																		tabIndex={
@@ -787,7 +786,7 @@ export function Insights({ causas }: InsightsProps) {
 									</div>
 									<div
 										className="ssr-variant hidden-s0rxjy hidden-i8u7wv"
-										key={`${causa.id || index}-tablet`}
+										key={`${causa.slug || index}-tablet`}
 									>
 										<div
 											className="framer-poj5s1"
@@ -839,7 +838,7 @@ export function Insights({ causas }: InsightsProps) {
 																data-framer-name="Figure"
 																onClick={() =>
 																	handleCausaClick(
-																		causa.id!
+																		causa.slug!
 																	)
 																}
 																style={{
@@ -920,7 +919,7 @@ export function Insights({ causas }: InsightsProps) {
 																		/>
 																	</div>
 																</figure>
-																{causa.objetivo && (
+																{campos.getTexto('objetivo', '0') && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -970,7 +969,7 @@ export function Insights({ causas }: InsightsProps) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						causa.objetivo
+																						Number(campos.getTexto('objetivo', '0'))
 																					)}
 																				</p>
 																			</div>
@@ -1008,7 +1007,7 @@ export function Insights({ causas }: InsightsProps) {
 																				data-styles-preset="PGCP_hdlP"
 																				onClick={() =>
 																					handleCausaClick(
-																						causa.id!
+																						causa.slug!
 																					)
 																				}
 																				style={{
@@ -1048,7 +1047,7 @@ export function Insights({ causas }: InsightsProps) {
 																		data-highlight="true"
 																		onClick={() =>
 																			handleCausaClick(
-																				causa.id!
+																				causa.slug!
 																			)
 																		}
 																		tabIndex={
@@ -1184,7 +1183,7 @@ export function Insights({ causas }: InsightsProps) {
 																data-framer-name="Figure"
 																onClick={() =>
 																	handleCausaClick(
-																		causa.id!
+																		causa.slug!
 																	)
 																}
 																style={{
@@ -1265,7 +1264,7 @@ export function Insights({ causas }: InsightsProps) {
 																		/>
 																	</div>
 																</figure>
-																{causa.objetivo && (
+																{campos.getTexto('objetivo', '0') && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -1315,7 +1314,7 @@ export function Insights({ causas }: InsightsProps) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						causa.objetivo
+																						Number(campos.getTexto('objetivo', '0'))
 																					)}
 																				</p>
 																			</div>
@@ -1353,7 +1352,7 @@ export function Insights({ causas }: InsightsProps) {
 																				data-styles-preset="PGCP_hdlP"
 																				onClick={() =>
 																					handleCausaClick(
-																						causa.id!
+																						causa.slug!
 																					)
 																				}
 																				style={{
@@ -1393,7 +1392,7 @@ export function Insights({ causas }: InsightsProps) {
 																		data-highlight="true"
 																		onClick={() =>
 																			handleCausaClick(
-																				causa.id!
+																				causa.slug!
 																			)
 																		}
 																		tabIndex={
@@ -1491,7 +1490,7 @@ export function Insights({ causas }: InsightsProps) {
 									</div>
 									<div
 										className="ssr-variant hidden-44iexs hidden-i8u7wv"
-										key={`${causa.id || index}-mobile`}
+										key={`${causa.slug || index}-mobile`}
 									>
 										<div
 											className="framer-poj5s1"
@@ -1537,7 +1536,7 @@ export function Insights({ causas }: InsightsProps) {
 															data-framer-name="Figure"
 															onClick={() =>
 																handleCausaClick(
-																	causa.id!
+																	causa.slug!
 																)
 															}
 															style={{
@@ -1618,7 +1617,7 @@ export function Insights({ causas }: InsightsProps) {
 																	/>
 																</div>
 															</figure>
-															{causa.objetivo && (
+															{campos.getTexto('objetivo', '0') && (
 																<div className="framer-1lcshmx-container">
 																	<div
 																		className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -1668,7 +1667,7 @@ export function Insights({ causas }: InsightsProps) {
 																				data-styles-preset="efNb1Kccw"
 																			>
 																				{formatCurrency(
-																					causa.objetivo
+																					Number(campos.getTexto('objetivo', '0'))
 																				)}
 																			</p>
 																		</div>
@@ -1706,7 +1705,7 @@ export function Insights({ causas }: InsightsProps) {
 																			data-styles-preset="PGCP_hdlP"
 																			onClick={() =>
 																				handleCausaClick(
-																					causa.id!
+																					causa.slug!
 																				)
 																			}
 																			style={{
@@ -1746,7 +1745,7 @@ export function Insights({ causas }: InsightsProps) {
 																	data-highlight="true"
 																	onClick={() =>
 																		handleCausaClick(
-																			causa.id!
+																			causa.slug!
 																		)
 																	}
 																	tabIndex={0}

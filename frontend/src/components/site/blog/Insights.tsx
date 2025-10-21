@@ -1,11 +1,11 @@
 // @ts-nocheck
 "use client";
 
-import { Conteudo } from "@/models";
+import { ConteudoResumo } from "@/lib/api/conteudos-public";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
-export function Insights({ noticias }: { noticias: Conteudo[] }) {
+export function Insights({ noticias }: { noticias: ConteudoResumo[] }) {
 	const router = useRouter();
 	const { t, i18n } = useTranslation("content");
 
@@ -77,9 +77,8 @@ export function Insights({ noticias }: { noticias: Conteudo[] }) {
 					<div className="framer-1qvc0fm">
 						{noticias.map((noticia, index) => {
 							const imagemPrincipal =
-								noticia.anexos?.find(anexo => anexo.principal)
-									?.valor ||
-								noticia.anexos?.[0]?.valor ||
+								noticia.imagem_destaque ||
+								noticia.anexos?.[0]?.caminho ||
 								"/images/OCUj9MbhJ73rmpYYrHnLgb7sc.jpg";
 
 							return (

@@ -1,15 +1,15 @@
 "use client";
 
+import { ConteudoCompleto } from "@/lib/api/conteudos-public/types";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import { Conteudo } from "@/models";
 
-export function TopSection({ noticia }: { noticia: Conteudo }) {
+export function TopSection({ noticia }: { noticia: ConteudoCompleto }) {
 	const router = useRouter();
 	const { t, i18n } = useTranslation("content");
 
-	const handleNoticiaClick = (id: number) => {
-		router.push(`/blog/${id}`);
+	const handleNoticiaClick = (slug: string) => {
+		router.push(`/blog/${slug}`);
 	};
 
 	const formatarData = (data: Date | string) => {
@@ -31,8 +31,8 @@ export function TopSection({ noticia }: { noticia: Conteudo }) {
 	};
 
 	const imagemPrincipal =
-		noticia.anexos?.find(anexo => anexo.principal)?.valor ||
-		noticia.anexos?.[0]?.valor ||
+		noticia.imagem_destaque ||
+		noticia.anexos?.[0]?.caminho ||
 		"/images/OCUj9MbhJ73rmpYYrHnLgb7sc.jpg";
 
 	return (

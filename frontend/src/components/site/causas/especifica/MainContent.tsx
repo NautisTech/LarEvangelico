@@ -3,13 +3,15 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import DonationModal from "../../DonationModal";
-import { Conteudo } from "@/models";
+import { ConteudoCompleto, useCamposPersonalizados } from "@/lib/api/conteudos-public";
 
 interface MainContentProps {
-	causa: Conteudo;
+	causa: ConteudoCompleto;
 }
 
 export function MainContent({ causa }: MainContentProps) {
+	const campos = useCamposPersonalizados(causa.campos_personalizados);
+
 	const [isModalOpen, setModalOpen] = React.useState(false);
 	const handleModalOpen = () => {
 		setModalOpen(true);
@@ -45,7 +47,7 @@ export function MainContent({ causa }: MainContentProps) {
 								</h5>
 
 								<p className="framer-text framer-styles-preset-18rceng">
-									{causa.introducao}.
+									{campos.getTexto('introducao')}.
 								</p>
 
 								<h5 className="framer-text framer-styles-preset-1js54ic">
@@ -53,7 +55,7 @@ export function MainContent({ causa }: MainContentProps) {
 								</h5>
 
 								<p className="framer-text framer-styles-preset-18rceng">
-									{causa.desafio}.
+									{campos.getTexto('desafio')}.
 								</p>
 							</div>
 							<div
@@ -67,7 +69,7 @@ export function MainContent({ causa }: MainContentProps) {
 								</h5>
 
 								<p className="framer-text framer-styles-preset-18rceng">
-									{causa.problema}.
+									{campos.getTexto('problema')}.
 								</p>
 
 								<h5 className="framer-text framer-styles-preset-1js54ic">
@@ -75,7 +77,7 @@ export function MainContent({ causa }: MainContentProps) {
 								</h5>
 
 								<p className="framer-text framer-styles-preset-18rceng">
-									{causa.solucao}.
+									{campos.getTexto('solucao')}.
 								</p>
 							</div>
 						</div>

@@ -3,33 +3,31 @@
 
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import { Conteudo } from "@/models";
-import { TipoAnexo } from "../../../utils/TipoAnexo";
-import { TipoConteudo } from "@/utils";
+import { ConteudoResumo } from "@/lib/api/conteudos-public";
 
 export function BlogSection({
 	blogs,
 	isLoading,
 }: {
-	blogs: Conteudo[];
+	blogs: ConteudoResumo[];
 	isLoading: boolean;
 }) {
 	const { t } = useTranslation("home");
 	const router = useRouter();
 
-	const getImagemPrincipal = (noticia: Conteudo) => {
+	const getImagemPrincipal = (noticia: ConteudoResumo) => {
 		if (!noticia.anexos || noticia.anexos.length === 0) {
 			return "/images/placeholder.jpg";
 		}
-		const imagemPrincipal = noticia.anexos.find(anexo => anexo.principal);
+		const imagemPrincipal = noticia.imagem_destaque;
 		return (
-			imagemPrincipal?.valor ||
-			noticia.anexos[0]?.valor ||
+			imagemPrincipal ||
+			noticia.anexos[0]?.caminho ||
 			"/images/placeholder.jpg"
 		);
 	};
 
-	const formatarData = (data: Date) => {
+	const formatarData = (data: string) => {
 		return new Intl.DateTimeFormat("pt-PT", {
 			weekday: "long",
 			year: "numeric",
@@ -38,7 +36,7 @@ export function BlogSection({
 		}).format(new Date(data));
 	};
 
-	const renderNoticiaCard = (noticia: Conteudo) => (
+	const renderNoticiaCard = (noticia: ConteudoResumo) => (
 		<div
 			key={noticia.id}
 			className="framer-hpeeo6"

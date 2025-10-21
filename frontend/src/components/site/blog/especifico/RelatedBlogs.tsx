@@ -2,10 +2,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Conteudo } from "@/models";
+import { ConteudoResumo } from "@/lib/api/conteudos-public";
 import { useTranslation } from "react-i18next";
 
-export function RelatedBlogs({ noticias }: { noticias: Conteudo[] }) {
+export function RelatedBlogs({ noticias }: { noticias: ConteudoResumo[] }) {
 	const router = useRouter();
 	const { t, i18n } = useTranslation("content");
 
@@ -80,10 +80,8 @@ export function RelatedBlogs({ noticias }: { noticias: Conteudo[] }) {
 					</div>
 					<div className="framer-1j6pwy7">
 						{noticias.map((noticia, index) => {
-							const imagemPrincipal =
-								noticia.anexos?.find(anexo => anexo.principal)
-									?.valor ||
-								noticia.anexos?.[0]?.valor ||
+							const imagemPrincipal = noticia?.imagem_destaque ||
+								noticia?.anexos?.[0]?.caminho ||
 								"../images/27Tiaf1q57EwhHjAhksDD2Mmnc.jpg";
 
 							return (

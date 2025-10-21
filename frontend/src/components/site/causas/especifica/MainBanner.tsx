@@ -1,17 +1,14 @@
-import { Conteudo } from "@/models";
+import { ConteudoCompleto, useCamposPersonalizados } from "@/lib/api/conteudos-public";
 import { useTranslation } from "react-i18next";
 
 interface MainBannerProps {
-	causa: Conteudo;
+	causa: ConteudoCompleto;
 }
 
 export function MainBanner({ causa }: MainBannerProps) {
-	const imagemPrincipal =
-		causa.anexos?.find(anexo => anexo.principal)?.valor ||
-		causa.anexos?.[0]?.valor ||
-		"../images/Bte6guHqFv0lXXuFa5GHNuEI0Mg.jpg";
-
+	const imagemPrincipal = causa.imagem_destaque;
 	const { t } = useTranslation("content");
+	const campos = useCamposPersonalizados(causa.campos_personalizados);
 
 	const formatCurrency = (value: number) => {
 		return new Intl.NumberFormat("pt-PT", {
@@ -181,7 +178,7 @@ export function MainBanner({ causa }: MainBannerProps) {
 							className="framer-1t49gtd"
 							data-framer-name="Badge Wrap"
 						>
-							{causa.objetivo && (
+							{Number(campos.getTexto('objetivo')) && (
 								<div className="framer-qarhod-container">
 									<div
 										className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -220,7 +217,7 @@ export function MainBanner({ causa }: MainBannerProps) {
 												className="framer-text framer-styles-preset-18rceng"
 												data-styles-preset="efNb1Kccw"
 											>
-												{formatCurrency(causa.objetivo)}
+												{formatCurrency(Number(campos.getTexto('objetivo')))}
 											</p>
 										</div>
 									</div>
@@ -265,7 +262,7 @@ export function MainBanner({ causa }: MainBannerProps) {
 							className="framer-1t49gtd"
 							data-framer-name="Badge Wrap"
 						>
-							{causa.objetivo && (
+							{campos.getTexto('objetivo', '0') && (
 								<div className="framer-qarhod-container">
 									<div
 										className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -304,7 +301,7 @@ export function MainBanner({ causa }: MainBannerProps) {
 												className="framer-text framer-styles-preset-18rceng"
 												data-styles-preset="efNb1Kccw"
 											>
-												{formatCurrency(causa.objetivo)}
+												{formatCurrency(Number(campos.getTexto('objetivo')))}
 											</p>
 										</div>
 									</div>

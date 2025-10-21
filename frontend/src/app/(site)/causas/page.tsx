@@ -3,17 +3,16 @@
 import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 import { Main, Insights } from "@/components/site/causas";
-import { useConteudoHook } from "@/hooks";
-import { TipoConteudo } from "@/utils";
+import { useConteudos } from "@/lib/api/conteudos-public";
 
 // @ts-ignore
 import './page.css'
 
 export default function Causas() {
-    const { data: causas, isLoading, error } = useConteudoHook(TipoConteudo.Causa, true);
+    const { data: causas, isLoading, error } = useConteudos({ tipoConteudoId: 17 });
 
     // Ordenar por data de publicação (mais recente primeiro)
-    const causasOrdenadas = causas ? [...causas]
+    const causasOrdenadas = causas ? [...causas.data]
         .sort((a, b) => {
             const dataA = a.publicado_em ? new Date(a.publicado_em).getTime() : 0;
             const dataB = b.publicado_em ? new Date(b.publicado_em).getTime() : 0;

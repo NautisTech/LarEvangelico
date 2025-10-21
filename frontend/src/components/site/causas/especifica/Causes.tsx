@@ -1,11 +1,9 @@
-// @ts-nocheck
-
-import { Conteudo } from "@/models";
+import { ConteudoResumo, ValorCampoPersonalizado, useCamposPersonalizados } from "@/lib/api/conteudos-public";
 import { useRouter } from "next/navigation";
 
 import { useTranslation } from "react-i18next";
 
-export function Causes({ causas }: { causas: Conteudo[] }) {
+export function Causes({ causas }: { causas: ConteudoResumo[] }) {
 	const router = useRouter();
 	const { t } = useTranslation("content");
 
@@ -18,12 +16,16 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 		}).format(value);
 	};
 
-	const handleCausaClick = (id: string) => {
-		router.push(`/causas/${id}`);
+	const handleCausaClick = (slug: string) => {
+		router.push(`/causas/${slug}`);
 	};
 
 	if (!causas || causas.length === 0) {
 		return null;
+	}
+
+	function useCamposPersonalizados(campos_personalizados: ValorCampoPersonalizado[] | undefined) {
+		throw new Error("Function not implemented.");
 	}
 
 	return (
@@ -73,10 +75,12 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 						<div className="ssr-variant">
 							{causas.map((causa, index) => {
 								const imagemPrincipal =
-									causa.anexos?.find(anexo => anexo.principal)
-										?.valor ||
-									causa.anexos?.[0]?.valor ||
+									causa.imagem_destaque ||
+									causa.anexos?.[0]?.caminho ||
 									"../images/Bte6guHqFv0lXXuFa5GHNuEI0Mg.jpg";
+
+								const campos: any = useCamposPersonalizados(causa.campos_personalizados);
+								const objetivo = campos?.getTexto('objetivo')
 
 								return (
 									<>
@@ -130,7 +134,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																data-framer-name="Figure"
 																onClick={() =>
 																	handleCausaClick(
-																		causa.id!
+																		causa.slug!
 																	)
 																}
 																data-framer-page-link-current="true"
@@ -209,7 +213,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																		/>
 																	</div>
 																</figure>
-																{causa.objetivo && (
+																{objetivo && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -259,7 +263,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						causa.objetivo
+																						objetivo
 																					)}
 																				</p>
 																			</div>
@@ -298,7 +302,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																				data-styles-preset="PGCP_hdlP"
 																				onClick={() =>
 																					handleCausaClick(
-																						causa.id!
+																						causa.slug!
 																					)
 																				}
 																				data-framer-page-link-current="true"
@@ -342,7 +346,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																		data-highlight="true"
 																		onClick={() =>
 																			handleCausaClick(
-																				causa.id!
+																				causa.slug!
 																			)
 																		}
 																		tabIndex={
@@ -488,7 +492,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																data-framer-name="Figure"
 																onClick={() =>
 																	handleCausaClick(
-																		causa.id!
+																		causa.slug!
 																	)
 																}
 																data-framer-page-link-current="true"
@@ -567,7 +571,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																		/>
 																	</div>
 																</figure>
-																{causa.objetivo && (
+																{objetivo && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -617,7 +621,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						causa.objetivo
+																						objetivo
 																					)}
 																				</p>
 																			</div>
@@ -656,7 +660,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																				data-styles-preset="PGCP_hdlP"
 																				onClick={() =>
 																					handleCausaClick(
-																						causa.id!
+																						causa.slug!
 																					)
 																				}
 																				data-framer-page-link-current="true"
@@ -700,7 +704,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																		data-highlight="true"
 																		onClick={() =>
 																			handleCausaClick(
-																				causa.id!
+																				causa.slug!
 																			)
 																		}
 																		tabIndex={
@@ -845,7 +849,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																data-framer-name="Figure"
 																onClick={() =>
 																	handleCausaClick(
-																		causa.id!
+																		causa.slug!
 																	)
 																}
 																data-framer-page-link-current="true"
@@ -975,7 +979,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																				data-styles-preset="efNb1Kccw"
 																			>
 																				{
-																					causa.objetivo
+																					objetivo
 																				}
 																			</p>
 																		</div>
@@ -1013,7 +1017,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																				data-styles-preset="PGCP_hdlP"
 																				onClick={() =>
 																					handleCausaClick(
-																						causa.id!
+																						causa.slug!
 																					)
 																				}
 																				data-framer-page-link-current="true"
@@ -1057,7 +1061,7 @@ export function Causes({ causas }: { causas: Conteudo[] }) {
 																		data-highlight="true"
 																		onClick={() =>
 																			handleCausaClick(
-																				causa.id!
+																				causa.slug!
 																			)
 																		}
 																		data-framer-page-link-current="true"

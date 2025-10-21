@@ -1,12 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Conteudo } from "@/models";
+import { ConteudoResumo } from "@/lib/api/conteudos-public";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
 interface MainProps {
-	causa: Conteudo | null;
+	causa: ConteudoResumo | null;
 }
 
 export function Main({ causa }: MainProps) {
@@ -14,10 +14,9 @@ export function Main({ causa }: MainProps) {
 	const router = useRouter();
 
 	// Buscar a imagem principal dos anexos
-	const imagemPrincipal =
-		causa?.anexos?.find(anexo => anexo.principal)?.valor ||
-		causa?.anexos?.[0]?.valor ||
-		"/images/6HJpGnWZNHmb6dTcAtnneDOlw.jpg";
+	const imagemPrincipal = causa?.imagem_destaque ||
+		causa?.anexos?.[0]?.caminho ||
+		"/images/OCUj9MbhJ73rmpYYrHnLgb7sc.jpg";
 
 	const titulo = causa?.titulo || "Solidariedade";
 	const descricao =

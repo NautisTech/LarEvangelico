@@ -1,307 +1,313 @@
 "use client";
 
-// @ts-nocheck
 import "./Causes.module.css";
 import React from "react";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import { Conteudo } from "@/models";
+import { ConteudoResumo, useCamposPersonalizados } from "@/lib/api/conteudos-public";
 
 export function Causes({
 	causas,
 	isLoading,
 }: {
-	causas: Conteudo[];
+	causas: ConteudoResumo[];
 	isLoading: boolean;
 }) {
 	const { t } = useTranslation("home");
 	const router = useRouter();
 
-	const getImagemPrincipal = (causa: Conteudo) => {
+	const getImagemPrincipal = (causa: ConteudoResumo) => {
 		if (!causa.anexos || causa.anexos.length === 0) {
 			return "/images/placeholder.jpg";
 		}
-		const imagemPrincipal = causa.anexos.find(anexo => anexo.principal);
+		const imagemPrincipal = causa.imagem_destaque;
 		return (
-			imagemPrincipal?.valor ||
-			causa.anexos[0]?.valor ||
+			imagemPrincipal ||
+			causa.anexos[0]?.caminho ||
 			"/images/placeholder.jpg"
 		);
 	};
 
-	const renderCauseCard = (causa: Conteudo, index: number) => (
-		<div
-			key={causa.id}
-			className="framer-qns2ns"
-			style={{
-				willChange: "transform",
-				opacity: "1",
-				transform: "none",
-			}}
-		>
-			<div className="framer-1x357vu-container">
-				<div
-					className="framer-d7En5 framer-RcNjK framer-Yo47e framer-jRQOc framer-1ex0le0 framer-v-1ex0le0"
-					data-border="true"
-					data-framer-name="Primary"
-					style={{
-						// @ts-ignore
-						"--1an90bp": "36px",
-						borderBottomWidth: "1px",
-						borderColor:
-							"var(--token-4e132b7a-8408-4224-bc97-7e71f267842c, rgb(215, 201, 183))",
-						borderLeftWidth: "1px",
-						borderRightWidth: "1px",
-						borderStyle: "solid",
-						borderTopWidth: "1px",
-						backgroundColor:
-							"var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))",
-						borderBottomLeftRadius: "12px",
-						borderBottomRightRadius: "12px",
-						borderTopLeftRadius: "12px",
-						borderTopRightRadius: "12px",
-						width: "100%",
-					}}
-				>
-					<div className="framer-fjc7qo" data-framer-name="Content">
-						<a
-							className="framer-nah7t3 framer-yk3d88"
-							data-framer-name="Figure"
-							onClick={() => router.push(`/causas/${causa.id}`)}
-							style={{
-								borderBottomLeftRadius: "12px",
-								borderBottomRightRadius: "12px",
-								borderTopLeftRadius: "12px",
-								borderTopRightRadius: "12px",
-								cursor: "pointer",
-							}}
-						>
-							<div
-								className="framer-wk3qfq"
-								data-framer-name="overlay"
+
+
+	const renderCauseCard = (causa: ConteudoResumo, index: number) => {
+		const campos = useCamposPersonalizados(causa.campos_personalizados);
+		const objetivo = campos.getTexto('objetivo')
+
+		return (
+			<div
+				key={causa.id}
+				className="framer-qns2ns"
+				style={{
+					willChange: "transform",
+					opacity: "1",
+					transform: "none",
+				}}
+			>
+				<div className="framer-1x357vu-container">
+					<div
+						className="framer-d7En5 framer-RcNjK framer-Yo47e framer-jRQOc framer-1ex0le0 framer-v-1ex0le0"
+						data-border="true"
+						data-framer-name="Primary"
+						style={{
+							// @ts-ignore
+							"--1an90bp": "36px",
+							borderBottomWidth: "1px",
+							borderColor:
+								"var(--token-4e132b7a-8408-4224-bc97-7e71f267842c, rgb(215, 201, 183))",
+							borderLeftWidth: "1px",
+							borderRightWidth: "1px",
+							borderStyle: "solid",
+							borderTopWidth: "1px",
+							backgroundColor:
+								"var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))",
+							borderBottomLeftRadius: "12px",
+							borderBottomRightRadius: "12px",
+							borderTopLeftRadius: "12px",
+							borderTopRightRadius: "12px",
+							width: "100%",
+						}}
+					>
+						<div className="framer-fjc7qo" data-framer-name="Content">
+							<a
+								className="framer-nah7t3 framer-yk3d88"
+								data-framer-name="Figure"
+								onClick={() => router.push(`/causas/${causa.id}`)}
 								style={{
-									backgroundColor:
-										"var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))",
-									opacity: "0.2",
+									borderBottomLeftRadius: "12px",
+									borderBottomRightRadius: "12px",
+									borderTopLeftRadius: "12px",
+									borderTopRightRadius: "12px",
+									cursor: "pointer",
 								}}
-							></div>
-							<figure
-								className="framer-1rewzo1"
-								data-framer-name="Image"
 							>
 								<div
-									style={{
-										position: "absolute",
-										borderTopLeftRadius: "inherit",
-										borderTopRightRadius: "inherit",
-										borderBottomRightRadius: "inherit",
-										borderBottomLeftRadius: "inherit",
-										top: "0px",
-										right: "0px",
-										bottom: "0px",
-										left: "0px",
-									}}
-									data-framer-background-image-wrapper="true"
-								>
-									<img
-										decoding="async"
-										src={getImagemPrincipal(causa)}
-										alt={causa.titulo}
-										style={{
-											display: "block",
-											width: "100%",
-											height: "100%",
-											borderTopLeftRadius: "inherit",
-											borderTopRightRadius: "inherit",
-											borderBottomRightRadius: "inherit",
-											borderBottomLeftRadius: "inherit",
-											objectPosition: "center center",
-											objectFit: "cover",
-										}}
-									/>
-								</div>
-							</figure>
-							<div className="framer-1lcshmx-container">
-								<div
-									className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
-									data-framer-name="Primary"
+									className="framer-wk3qfq"
+									data-framer-name="overlay"
 									style={{
 										backgroundColor:
-											"var(--token-065bffec-4ac7-4625-aced-acd0f0a75d90, rgb(254, 206, 102))",
-										borderBottomLeftRadius: "4px",
-										borderBottomRightRadius: "4px",
-										borderTopLeftRadius: "4px",
-										borderTopRightRadius: "4px",
+											"var(--token-39994faa-240b-446c-8aa7-a268b7374093, rgb(82, 24, 7))",
+										opacity: "0.2",
 									}}
+								></div>
+								<figure
+									className="framer-1rewzo1"
+									data-framer-name="Image"
 								>
 									<div
-										className="framer-1xva6ob"
-										data-framer-name="Goal:"
-										data-framer-component-type="RichTextContainer"
-										style={{ transform: "none" }}
-									>
-										<p
-											className="framer-text framer-styles-preset-myx315"
-											data-styles-preset="SArK0nEOS"
-										>
-											{t("causes.goal")}
-										</p>
-									</div>
-									<div
-										className="framer-1y22eeh"
-										data-framer-name="$114,000"
-										data-framer-component-type="RichTextContainer"
-										style={{ transform: "none" }}
-									>
-										<p
-											className="framer-text framer-styles-preset-18rceng"
-											data-styles-preset="efNb1Kccw"
-										>
-											{causa.objetivo}
-										</p>
-									</div>
-								</div>
-							</div>
-						</a>
-
-						<div
-							className="framer-1jip428"
-							data-framer-name="Main Content"
-							style={{}}
-						>
-							<div
-								className="framer-cs2fea"
-								data-framer-name="Title Content"
-								style={{ marginBottom: "20px" }}
-							>
-								<div
-									className="framer-t0iiul"
-									data-framer-name="Feeding the Hungry"
-									data-framer-component-type="RichTextContainer"
-									style={{
-										transform: "none",
-										marginBottom: "8px",
-									}}
-								>
-									<h5
-										className="framer-text framer-styles-preset-1js54ic"
-										data-styles-preset="YoG87oFzq"
-										style={{ margin: 0 }}
-									>
-										<a
-											className="framer-text framer-styles-preset-ixgrlg"
-											data-styles-preset="PGCP_hdlP"
-											onClick={() =>
-												router.push(
-													`/causas/${causa.id}`
-												)
-											}
-											style={{ cursor: "pointer" }}
-										>
-											{causa.titulo}
-										</a>
-									</h5>
-								</div>
-								<div
-									className="framer-1cl0vg4"
-									data-framer-name="We provide nutritious meals to fight hunger and bring hope to struggling communities."
-									data-framer-component-type="RichTextContainer"
-									style={{ transform: "none" }}
-								>
-									<p
-										className="framer-text framer-styles-preset-18rceng"
-										data-styles-preset="efNb1Kccw"
-										style={{ margin: 0 }}
-									>
-										{causa.subtitulo}
-									</p>
-								</div>
-							</div>
-							<div className="framer-71cqzm-container">
-								<a
-									className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-ifgymi framer-57amc9"
-									data-border="true"
-									data-framer-name="Bordered"
-									data-highlight="true"
-									onClick={() =>
-										router.push(`/causas/${causa.id}`)
-									}
-									tabIndex={0}
-									style={{
-										borderBottomWidth: "1px",
-										borderColor:
-											"var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))",
-										borderLeftWidth: "1px",
-										borderRightWidth: "1px",
-										borderStyle: "solid",
-										borderTopWidth: "1px",
-										borderBottomLeftRadius: "4px",
-										borderBottomRightRadius: "4px",
-										borderTopLeftRadius: "4px",
-										borderTopRightRadius: "4px",
-										cursor: "pointer",
-									}}
-								>
-									<div
-										className="framer-ptdzar"
-										data-framer-name="Background"
 										style={{
-											backgroundColor: "white",
-											opacity: "1",
-											borderBottomLeftRadius: "inherit",
-											borderBottomRightRadius: "inherit",
+											position: "absolute",
 											borderTopLeftRadius: "inherit",
 											borderTopRightRadius: "inherit",
+											borderBottomRightRadius: "inherit",
+											borderBottomLeftRadius: "inherit",
+											top: "0px",
+											right: "0px",
+											bottom: "0px",
+											left: "0px",
 										}}
-									></div>
+										data-framer-background-image-wrapper="true"
+									>
+										<img
+											decoding="async"
+											src={getImagemPrincipal(causa)}
+											alt={causa.titulo}
+											style={{
+												display: "block",
+												width: "100%",
+												height: "100%",
+												borderTopLeftRadius: "inherit",
+												borderTopRightRadius: "inherit",
+												borderBottomRightRadius: "inherit",
+												borderBottomLeftRadius: "inherit",
+												objectPosition: "center center",
+												objectFit: "cover",
+											}}
+										/>
+									</div>
+								</figure>
+								<div className="framer-1lcshmx-container">
 									<div
-										className="framer-uhgsoe"
-										data-framer-name="Join us Today"
+										className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
+										data-framer-name="Primary"
+										style={{
+											backgroundColor:
+												"var(--token-065bffec-4ac7-4625-aced-acd0f0a75d90, rgb(254, 206, 102))",
+											borderBottomLeftRadius: "4px",
+											borderBottomRightRadius: "4px",
+											borderTopLeftRadius: "4px",
+											borderTopRightRadius: "4px",
+										}}
+									>
+										<div
+											className="framer-1xva6ob"
+											data-framer-name="Goal:"
+											data-framer-component-type="RichTextContainer"
+											style={{ transform: "none" }}
+										>
+											<p
+												className="framer-text framer-styles-preset-myx315"
+												data-styles-preset="SArK0nEOS"
+											>
+												{t("causes.goal")}
+											</p>
+										</div>
+										<div
+											className="framer-1y22eeh"
+											data-framer-name="$114,000"
+											data-framer-component-type="RichTextContainer"
+											style={{ transform: "none" }}
+										>
+											<p
+												className="framer-text framer-styles-preset-18rceng"
+												data-styles-preset="efNb1Kccw"
+											>
+												{objetivo}
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+
+							<div
+								className="framer-1jip428"
+								data-framer-name="Main Content"
+								style={{}}
+							>
+								<div
+									className="framer-cs2fea"
+									data-framer-name="Title Content"
+									style={{ marginBottom: "20px" }}
+								>
+									<div
+										className="framer-t0iiul"
+										data-framer-name="Feeding the Hungry"
+										data-framer-component-type="RichTextContainer"
+										style={{
+											transform: "none",
+											marginBottom: "8px",
+										}}
+									>
+										<h5
+											className="framer-text framer-styles-preset-1js54ic"
+											data-styles-preset="YoG87oFzq"
+											style={{ margin: 0 }}
+										>
+											<a
+												className="framer-text framer-styles-preset-ixgrlg"
+												data-styles-preset="PGCP_hdlP"
+												onClick={() =>
+													router.push(
+														`/causas/${causa.id}`
+													)
+												}
+												style={{ cursor: "pointer" }}
+											>
+												{causa.titulo}
+											</a>
+										</h5>
+									</div>
+									<div
+										className="framer-1cl0vg4"
+										data-framer-name="We provide nutritious meals to fight hunger and bring hope to struggling communities."
 										data-framer-component-type="RichTextContainer"
 										style={{ transform: "none" }}
 									>
 										<p
 											className="framer-text framer-styles-preset-18rceng"
 											data-styles-preset="efNb1Kccw"
-											style={{
-												color: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))",
-											}}
+											style={{ margin: 0 }}
 										>
-											{t("causes.button")}
+											{causa.subtitulo}
 										</p>
 									</div>
-									<div
-										className="framer-mzpyxu"
-										data-framer-name="Icon"
+								</div>
+								<div className="framer-71cqzm-container">
+									<a
+										className="framer-DB2m2 framer-jRQOc framer-hozlb9 framer-v-ifgymi framer-57amc9"
+										data-border="true"
+										data-framer-name="Bordered"
+										data-highlight="true"
+										onClick={() =>
+											router.push(`/causas/${causa.id}`)
+										}
+										tabIndex={0}
+										style={{
+											borderBottomWidth: "1px",
+											borderColor:
+												"var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2))",
+											borderLeftWidth: "1px",
+											borderRightWidth: "1px",
+											borderStyle: "solid",
+											borderTopWidth: "1px",
+											borderBottomLeftRadius: "4px",
+											borderBottomRightRadius: "4px",
+											borderTopLeftRadius: "4px",
+											borderTopRightRadius: "4px",
+											cursor: "pointer",
+										}}
 									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 256 256"
-											focusable="false"
-											color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))"
+										<div
+											className="framer-ptdzar"
+											data-framer-name="Background"
 											style={{
-												userSelect: "none",
-												width: "100%",
-												height: "100%",
-												display: "inline-block",
-												fill: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))",
-												color: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))",
-												flexShrink: "0",
+												backgroundColor: "white",
+												opacity: "1",
+												borderBottomLeftRadius: "inherit",
+												borderBottomRightRadius: "inherit",
+												borderTopLeftRadius: "inherit",
+												borderTopRightRadius: "inherit",
 											}}
+										></div>
+										<div
+											className="framer-uhgsoe"
+											data-framer-name="Join us Today"
+											data-framer-component-type="RichTextContainer"
+											style={{ transform: "none" }}
 										>
-											<g color="var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))">
-												<path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
-											</g>
-										</svg>
-									</div>
-								</a>
+											<p
+												className="framer-text framer-styles-preset-18rceng"
+												data-styles-preset="efNb1Kccw"
+												style={{
+													color: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))",
+												}}
+											>
+												{t("causes.button")}
+											</p>
+										</div>
+										<div
+											className="framer-mzpyxu"
+											data-framer-name="Icon"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 256 256"
+												focusable="false"
+												color="var(--token-3a43d70e-9044-4fcc-943f-bb35b36ef731, rgb(255, 255, 255))"
+												style={{
+													userSelect: "none",
+													width: "100%",
+													height: "100%",
+													display: "inline-block",
+													fill: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))",
+													color: "var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))",
+													flexShrink: "0",
+												}}
+											>
+												<g color="var(--extracted-r6o4lv, var(--token-76b9cbad-4dc8-4bc3-a43b-d42a9da69ee1, rgb(29, 15, 2)))">
+													<path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+												</g>
+											</svg>
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	);
+		);
+	}
 
 	if (isLoading) {
 		return (

@@ -6,15 +6,14 @@ import { AboutSection, BlogSection, Causes, Customers, Donate, MainBanner, Newsl
 
 // @ts-ignore
 import './page.css'
-import { TipoConteudo } from "@/utils";
-import { useConteudoHook } from "@/hooks";
+import { useConteudos } from "@/lib/api/conteudos-public";
 
 export default function Home() {
 
-  const { data: causas, isLoading: isLoadingCausas, error: errorCausas } = useConteudoHook(TipoConteudo.Causa, true);
+  const { data: causas, isLoading: isLoadingCausas, error: errorCausas } = useConteudos({ tipoConteudoId: 17 });
 
   // Ordenar por data de publicação (mais recente primeiro)
-  const causasOrdenadas = causas ? [...causas]
+  const causasOrdenadas = causas ? [...causas.data]
     .sort((a, b) => {
       const dataA = a.publicado_em ? new Date(a.publicado_em).getTime() : 0;
       const dataB = b.publicado_em ? new Date(b.publicado_em).getTime() : 0;
@@ -23,10 +22,10 @@ export default function Home() {
 
   const causasTop = causasOrdenadas.length >= 3 ? causasOrdenadas.slice(0, 3) : causasOrdenadas;
 
-  const { data: noticias, isLoading: isLoadingNoticias, error: errorNoticias } = useConteudoHook(TipoConteudo.Noticia, true);
+  const { data: noticias, isLoading: isLoadingNoticias, error: errorNoticias } = useConteudos({ tipoConteudoId: 16 });
 
   // Ordenar por data de publicação (mais recente primeiro)
-  const noticiasOrdenadas = noticias ? [...noticias]
+  const noticiasOrdenadas = noticias ? [...noticias.data]
     .sort((a, b) => {
       const dataA = a.publicado_em ? new Date(a.publicado_em).getTime() : 0;
       const dataB = b.publicado_em ? new Date(b.publicado_em).getTime() : 0;
