@@ -1,4 +1,7 @@
-import { ConteudoCompleto, useCamposPersonalizados } from "@/lib/api/conteudos-public";
+import {
+	ConteudoCompleto,
+	useCamposPersonalizados,
+} from "@/lib/api/conteudos-public";
 import { useTranslation } from "react-i18next";
 
 interface MainBannerProps {
@@ -178,7 +181,7 @@ export function MainBanner({ causa }: MainBannerProps) {
 							className="framer-1t49gtd"
 							data-framer-name="Badge Wrap"
 						>
-							{Number(campos.getTexto('objetivo')) && (
+							{Number(campos.getNumero("objetivo")) && (
 								<div className="framer-qarhod-container">
 									<div
 										className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -217,7 +220,13 @@ export function MainBanner({ causa }: MainBannerProps) {
 												className="framer-text framer-styles-preset-18rceng"
 												data-styles-preset="efNb1Kccw"
 											>
-												{formatCurrency(Number(campos.getTexto('objetivo')))}
+												{formatCurrency(
+													Number(
+														campos.getNumero(
+															"objetivo"
+														)
+													)
+												)}
 											</p>
 										</div>
 									</div>
@@ -262,7 +271,7 @@ export function MainBanner({ causa }: MainBannerProps) {
 							className="framer-1t49gtd"
 							data-framer-name="Badge Wrap"
 						>
-							{campos.getTexto('objetivo', '0') && (
+							{campos.getNumero("objetivo", "0") && (
 								<div className="framer-qarhod-container">
 									<div
 										className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -301,7 +310,13 @@ export function MainBanner({ causa }: MainBannerProps) {
 												className="framer-text framer-styles-preset-18rceng"
 												data-styles-preset="efNb1Kccw"
 											>
-												{formatCurrency(Number(campos.getTexto('objetivo')))}
+												{formatCurrency(
+													Number(
+														campos.getNumero(
+															"objetivo"
+														)
+													)
+												)}
 											</p>
 										</div>
 									</div>

@@ -31,11 +31,11 @@ export function Causes({
 	// Helper function to get objetivo from causa (não usa hook)
 	const getObjetivo = (causa: ConteudoResumo) => {
 		const campos = createCamposHelper(causa.campos_personalizados);
-		return campos.getTexto('objetivo', '');
+		return campos.getNumero("objetivo", "");
 	};
 
 	const renderCauseCard = (causa: ConteudoResumo, index: number) => {
-		const objetivo = getObjetivo(causa)
+		const objetivo = getObjetivo(causa);
 
 		return (
 			<div
@@ -71,11 +71,16 @@ export function Causes({
 							width: "100%",
 						}}
 					>
-						<div className="framer-fjc7qo" data-framer-name="Content">
+						<div
+							className="framer-fjc7qo"
+							data-framer-name="Content"
+						>
 							<a
 								className="framer-nah7t3 framer-yk3d88"
 								data-framer-name="Figure"
-								onClick={() => router.push(`/causas/${causa.slug}`)}
+								onClick={() =>
+									router.push(`/causas/${causa.slug}`)
+								}
 								style={{
 									borderBottomLeftRadius: "12px",
 									borderBottomRightRadius: "12px",
@@ -121,8 +126,10 @@ export function Causes({
 												height: "100%",
 												borderTopLeftRadius: "inherit",
 												borderTopRightRadius: "inherit",
-												borderBottomRightRadius: "inherit",
-												borderBottomLeftRadius: "inherit",
+												borderBottomRightRadius:
+													"inherit",
+												borderBottomLeftRadius:
+													"inherit",
 												objectPosition: "center center",
 												objectFit: "cover",
 											}}
@@ -256,8 +263,10 @@ export function Causes({
 											style={{
 												backgroundColor: "white",
 												opacity: "1",
-												borderBottomLeftRadius: "inherit",
-												borderBottomRightRadius: "inherit",
+												borderBottomLeftRadius:
+													"inherit",
+												borderBottomRightRadius:
+													"inherit",
 												borderTopLeftRadius: "inherit",
 												borderTopRightRadius: "inherit",
 											}}
@@ -310,7 +319,7 @@ export function Causes({
 				</div>
 			</div>
 		);
-	}
+	};
 
 	if (isLoading) {
 		return (

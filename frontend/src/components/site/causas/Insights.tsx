@@ -73,8 +73,11 @@ export function Insights({ causas }: InsightsProps) {
 						data-framer-name="Causes Lists"
 					>
 						{causas.map((causa, index) => {
-							const campos = createCamposHelper(causa.campos_personalizados);
-							const imagemPrincipal = causa.imagem_destaque ||
+							const campos = createCamposHelper(
+								causa.campos_personalizados
+							);
+							const imagemPrincipal =
+								causa.imagem_destaque ||
 								causa.anexos?.[0]?.caminho ||
 								"/images/OCUj9MbhJ73rmpYYrHnLgb7sc.jpg";
 
@@ -215,7 +218,10 @@ export function Insights({ causas }: InsightsProps) {
 																		/>
 																	</div>
 																</figure>
-																{campos.getTexto('objetivo', '0') && (
+																{campos.getNumero(
+																	"objetivo",
+																	"0"
+																) && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -265,7 +271,12 @@ export function Insights({ causas }: InsightsProps) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						Number(campos.getTexto('objetivo', '0'))
+																						Number(
+																							campos.getNumero(
+																								"objetivo",
+																								"0"
+																							)
+																						)
 																					)}
 																				</p>
 																			</div>
@@ -560,7 +571,10 @@ export function Insights({ causas }: InsightsProps) {
 																		/>
 																	</div>
 																</figure>
-																{campos.getTexto('objetivo', '0') && (
+																{campos.getNumero(
+																	"objetivo",
+																	"0"
+																) && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -610,7 +624,12 @@ export function Insights({ causas }: InsightsProps) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						Number(campos.getTexto('objetivo', '0'))
+																						Number(
+																							campos.getNumero(
+																								"objetivo",
+																								"0"
+																							)
+																						)
 																					)}
 																				</p>
 																			</div>
@@ -919,7 +938,10 @@ export function Insights({ causas }: InsightsProps) {
 																		/>
 																	</div>
 																</figure>
-																{campos.getTexto('objetivo', '0') && (
+																{campos.getNumero(
+																	"objetivo",
+																	"0"
+																) && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -969,7 +991,12 @@ export function Insights({ causas }: InsightsProps) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						Number(campos.getTexto('objetivo', '0'))
+																						Number(
+																							campos.getNumero(
+																								"objetivo",
+																								"0"
+																							)
+																						)
 																					)}
 																				</p>
 																			</div>
@@ -1264,7 +1291,10 @@ export function Insights({ causas }: InsightsProps) {
 																		/>
 																	</div>
 																</figure>
-																{campos.getTexto('objetivo', '0') && (
+																{campos.getNumero(
+																	"objetivo",
+																	"0"
+																) && (
 																	<div className="framer-1lcshmx-container">
 																		<div
 																			className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -1314,7 +1344,12 @@ export function Insights({ causas }: InsightsProps) {
 																					data-styles-preset="efNb1Kccw"
 																				>
 																					{formatCurrency(
-																						Number(campos.getTexto('objetivo', '0'))
+																						Number(
+																							campos.getNumero(
+																								"objetivo",
+																								"0"
+																							)
+																						)
 																					)}
 																				</p>
 																			</div>
@@ -1617,7 +1652,10 @@ export function Insights({ causas }: InsightsProps) {
 																	/>
 																</div>
 															</figure>
-															{campos.getTexto('objetivo', '0') && (
+															{campos.getNumero(
+																"objetivo",
+																"0"
+															) && (
 																<div className="framer-1lcshmx-container">
 																	<div
 																		className="framer-aE08l framer-2Vypl framer-jRQOc framer-1bdcnzx framer-v-1bdcnzx"
@@ -1667,7 +1705,12 @@ export function Insights({ causas }: InsightsProps) {
 																				data-styles-preset="efNb1Kccw"
 																			>
 																				{formatCurrency(
-																					Number(campos.getTexto('objetivo', '0'))
+																					Number(
+																						campos.getNumero(
+																							"objetivo",
+																							"0"
+																						)
+																					)
 																				)}
 																			</p>
 																		</div>
