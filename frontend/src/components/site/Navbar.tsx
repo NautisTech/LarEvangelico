@@ -519,7 +519,11 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("https://admin-larevangelico.sites.microlopes.pt/")}
+										onClick={() =>
+											handleNavigate(
+												"https://admin-larevangelico.sites.microlopes.pt/"
+											)
+										}
 										tabIndex={0}
 									>
 										<div
@@ -527,10 +531,13 @@ const Navbar: React.FC = () => {
 											data-framer-name="Text"
 										>
 											<div
-												className="framer-nljtjc"
+												className="framer-fbp6jx"
 												data-framer-name="Home"
 												data-framer-component-type="RichTextContainer"
-												style={{ transform: "none" }}
+												style={{
+													transform:
+														"translate(-50%, -50%)",
+												}}
 											>
 												<p
 													className="framer-text framer-styles-preset-1ub8ls7"
@@ -681,8 +688,9 @@ const Navbar: React.FC = () => {
 							</a>
 
 							<nav
-								className={`framer-1njmcb7 ${!isMobileMenuOpen ? "hidden-nav" : ""
-									}`}
+								className={`framer-1njmcb7 ${
+									!isMobileMenuOpen ? "hidden-nav" : ""
+								}`}
 								data-framer-name="Navigation"
 								style={{
 									backgroundColor:
@@ -1102,7 +1110,11 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("https://admin-larevangelico.sites.microlopes.pt/")}
+										onClick={() =>
+											handleNavigate(
+												"https://admin-larevangelico.sites.microlopes.pt/"
+											)
+										}
 										tabIndex={0}
 									>
 										<div
@@ -1110,10 +1122,13 @@ const Navbar: React.FC = () => {
 											data-framer-name="Text"
 										>
 											<div
-												className="framer-nljtjc"
+												className="framer-fbp6jx"
 												data-framer-name="Home"
 												data-framer-component-type="RichTextContainer"
-												style={{ transform: "none" }}
+												style={{
+													transform:
+														"translate(-50%, -50%)",
+												}}
 											>
 												<p
 													className="framer-text framer-styles-preset-1ub8ls7"
@@ -1308,8 +1323,9 @@ const Navbar: React.FC = () => {
 							</a>
 
 							<nav
-								className={`framer-1njmcb7 ${!isMobileMenuOpen ? "hidden-nav" : ""
-									}`}
+								className={`framer-1njmcb7 ${
+									!isMobileMenuOpen ? "hidden-nav" : ""
+								}`}
 								data-framer-name="Navigation"
 								style={{
 									backgroundColor:
@@ -1729,7 +1745,11 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("https://admin-larevangelico.sites.microlopes.pt/")}
+										onClick={() =>
+											handleNavigate(
+												"https://admin-larevangelico.sites.microlopes.pt/"
+											)
+										}
 										tabIndex={0}
 									>
 										<div
@@ -1737,10 +1757,13 @@ const Navbar: React.FC = () => {
 											data-framer-name="Text"
 										>
 											<div
-												className="framer-nljtjc"
+												className="framer-fbp6jx"
 												data-framer-name="Home"
 												data-framer-component-type="RichTextContainer"
-												style={{ transform: "none" }}
+												style={{
+													transform:
+														"translate(-50%, -50%)",
+												}}
 											>
 												<p
 													className="framer-text framer-styles-preset-1ub8ls7"
