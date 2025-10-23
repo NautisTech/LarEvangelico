@@ -215,34 +215,6 @@ export function Volunteers() {
 													</div>
 												</div>
 											</div>
-											<div
-												className="framer-1l2dmvv"
-												data-framer-name="Bottom"
-												style={{
-													opacity: "1",
-												}}
-											>
-												<div
-													className="framer-19el9nk"
-													data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-													data-framer-component-type="RichTextContainer"
-													style={{
-														transform: "none",
-													}}
-												>
-													<p
-														className="framer-text framer-styles-preset-18rceng"
-														data-styles-preset="efNb1Kccw"
-														style={{
-															textAlign: "center",
-														}}
-													>
-														{t(
-															"volunteers.partners_list.igreja_batista.description"
-														)}
-													</p>
-												</div>
-											</div>
 										</div>
 									</div>
 								</div>
@@ -790,34 +762,6 @@ export function Volunteers() {
 															)}
 														</p>
 													</div>
-												</div>
-											</div>
-											<div
-												className="framer-1l2dmvv"
-												data-framer-name="Bottom"
-												style={{
-													opacity: "1",
-												}}
-											>
-												<div
-													className="framer-19el9nk"
-													data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-													data-framer-component-type="RichTextContainer"
-													style={{
-														transform: "none",
-													}}
-												>
-													<p
-														className="framer-text framer-styles-preset-18rceng"
-														data-styles-preset="efNb1Kccw"
-														style={{
-															textAlign: "center",
-														}}
-													>
-														{t(
-															"volunteers.partners_list.acampamento.description"
-														)}
-													</p>
 												</div>
 											</div>
 										</div>
@@ -1369,34 +1313,6 @@ export function Volunteers() {
 													</div>
 												</div>
 											</div>
-											<div
-												className="framer-1l2dmvv"
-												data-framer-name="Bottom"
-												style={{
-													opacity: "1",
-												}}
-											>
-												<div
-													className="framer-19el9nk"
-													data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-													data-framer-component-type="RichTextContainer"
-													style={{
-														transform: "none",
-													}}
-												>
-													<p
-														className="framer-text framer-styles-preset-18rceng"
-														data-styles-preset="efNb1Kccw"
-														style={{
-															textAlign: "center",
-														}}
-													>
-														{t(
-															"volunteers.partners_list.apav.description"
-														)}
-													</p>
-												</div>
-											</div>
 										</div>
 									</div>
 								</div>
@@ -1945,34 +1861,6 @@ export function Volunteers() {
 															)}
 														</p>
 													</div>
-												</div>
-											</div>
-											<div
-												className="framer-1l2dmvv"
-												data-framer-name="Bottom"
-												style={{
-													opacity: "1",
-												}}
-											>
-												<div
-													className="framer-19el9nk"
-													data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-													data-framer-component-type="RichTextContainer"
-													style={{
-														transform: "none",
-													}}
-												>
-													<p
-														className="framer-text framer-styles-preset-18rceng"
-														data-styles-preset="efNb1Kccw"
-														style={{
-															textAlign: "center",
-														}}
-													>
-														{t(
-															"volunteers.partners_list.ebm.description"
-														)}
-													</p>
 												</div>
 											</div>
 										</div>
@@ -2525,34 +2413,6 @@ export function Volunteers() {
 													</div>
 												</div>
 											</div>
-											<div
-												className="framer-1l2dmvv"
-												data-framer-name="Bottom"
-												style={{
-													opacity: "1",
-												}}
-											>
-												<div
-													className="framer-19el9nk"
-													data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-													data-framer-component-type="RichTextContainer"
-													style={{
-														transform: "none",
-													}}
-												>
-													<p
-														className="framer-text framer-styles-preset-18rceng"
-														data-styles-preset="efNb1Kccw"
-														style={{
-															textAlign: "center",
-														}}
-													>
-														{t(
-															"volunteers.partners_list.iebc.description"
-														)}
-													</p>
-												</div>
-											</div>
 										</div>
 									</div>
 								</div>
@@ -3101,34 +2961,6 @@ export function Volunteers() {
 															)}
 														</p>
 													</div>
-												</div>
-											</div>
-											<div
-												className="framer-1l2dmvv"
-												data-framer-name="Bottom"
-												style={{
-													opacity: "1",
-												}}
-											>
-												<div
-													className="framer-19el9nk"
-													data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-													data-framer-component-type="RichTextContainer"
-													style={{
-														transform: "none",
-													}}
-												>
-													<p
-														className="framer-text framer-styles-preset-18rceng"
-														data-styles-preset="efNb1Kccw"
-														style={{
-															textAlign: "center",
-														}}
-													>
-														{t(
-															"volunteers.partners_list.seguranca_social.description"
-														)}
-													</p>
 												</div>
 											</div>
 										</div>
