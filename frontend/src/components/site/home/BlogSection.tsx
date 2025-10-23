@@ -16,9 +16,6 @@ export function BlogSection({
 	const router = useRouter();
 
 	const getImagemPrincipal = (noticia: ConteudoResumo) => {
-		if (!noticia.anexos || noticia.anexos.length === 0) {
-			return "/images/placeholder.jpg";
-		}
 		const imagemPrincipal = noticia.imagem_destaque;
 		return (
 			imagemPrincipal ||

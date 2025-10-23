@@ -38,9 +38,12 @@ export function MainSection({ noticia }: { noticia: ConteudoCompleto }) {
 								{noticia.subtitulo}
 							</h5>
 
-							<p className="framer-text framer-styles-preset-18rceng">
-								{noticia.conteudo}
-							</p>
+							<p
+								className="framer-text framer-styles-preset-18rceng"
+								dangerouslySetInnerHTML={{
+									__html: noticia.conteudo || "",
+								}}
+							/>
 						</div>
 					</div>
 					<div className="ssr-variant hidden-14qsnbp">

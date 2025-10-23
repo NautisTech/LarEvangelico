@@ -17,21 +17,14 @@ export function Causes({
 	const router = useRouter();
 
 	const getImagemPrincipal = (causa: ConteudoResumo) => {
-		if (!causa.anexos || causa.anexos.length === 0) {
-			return "/images/placeholder.jpg";
-		}
 		const imagemPrincipal = causa.imagem_destaque;
-		return (
-			imagemPrincipal ||
-			causa.anexos[0]?.caminho ||
-			"/images/placeholder.jpg"
-		);
+		return imagemPrincipal || "/images/placeholder.jpg";
 	};
 
 	// Helper function to get objetivo from causa (não usa hook)
 	const getObjetivo = (causa: ConteudoResumo) => {
 		const campos = createCamposHelper(causa.campos_personalizados);
-		return campos.getNumero("objetivo", "");
+		return campos.getNumero("objetivo", 0);
 	};
 
 	const renderCauseCard = (causa: ConteudoResumo, index: number) => {
