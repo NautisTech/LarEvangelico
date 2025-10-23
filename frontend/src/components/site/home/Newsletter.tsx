@@ -1,7 +1,16 @@
+"use client";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
 
 export function Newsletter() {
 	const { t } = useTranslation("home");
+	const [email, setEmail] = useState("");
+
+	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+	}
+
 	return (
 		<>
 			<section
@@ -63,7 +72,7 @@ export function Newsletter() {
 									</p>
 								</div>
 							</div>
-							<form className="framer-ll3l5n">
+							<form className="framer-ll3l5n" onSubmit={handleSubmit}>
 								<label className="framer-8apjf4">
 									<div className="framer-form-text-input framer-form-input-wrapper framer-132ccd">
 										<input
@@ -73,6 +82,7 @@ export function Newsletter() {
 												"newsletter.email_placeholder"
 											)}
 											className="framer-form-input framer-form-input-empty"
+											onChange={(e) => setEmail(e.target.value)}
 										/>
 									</div>
 								</label>

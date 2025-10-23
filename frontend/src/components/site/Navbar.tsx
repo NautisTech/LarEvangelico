@@ -519,7 +519,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("https://admin-larevangelico.gestao.avfeirense.pt/")}
+										onClick={() => handleNavigate("https://admin-larevangelico.sites.microlopes.pt/")}
 										tabIndex={0}
 									>
 										<div
@@ -527,44 +527,10 @@ const Navbar: React.FC = () => {
 											data-framer-name="Text"
 										>
 											<div
-												className="framer-fbp6jx"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{
-													transform:
-														"translate(-50%, -50%)",
-												}}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													{t("reserved_area")}
-												</p>
-											</div>
-											<div
 												className="framer-nljtjc"
 												data-framer-name="Home"
 												data-framer-component-type="RichTextContainer"
 												style={{ transform: "none" }}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													{t("reserved_area")}
-												</p>
-											</div>
-											<div
-												className="framer-jt3kas"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{
-													opacity: "0",
-													transform: "none",
-												}}
 											>
 												<p
 													className="framer-text framer-styles-preset-1ub8ls7"
@@ -1136,7 +1102,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("https://admin-larevangelico.gestao.avfeirense.pt/")}
+										onClick={() => handleNavigate("https://admin-larevangelico.sites.microlopes.pt/")}
 										tabIndex={0}
 									>
 										<div
@@ -1144,44 +1110,10 @@ const Navbar: React.FC = () => {
 											data-framer-name="Text"
 										>
 											<div
-												className="framer-fbp6jx"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{
-													transform:
-														"translate(-50%, -50%)",
-												}}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													{t("reserved_area")}
-												</p>
-											</div>
-											<div
 												className="framer-nljtjc"
 												data-framer-name="Home"
 												data-framer-component-type="RichTextContainer"
 												style={{ transform: "none" }}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													{t("reserved_area")}
-												</p>
-											</div>
-											<div
-												className="framer-jt3kas"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{
-													opacity: "0",
-													transform: "none",
-												}}
 											>
 												<p
 													className="framer-text framer-styles-preset-1ub8ls7"
@@ -1797,7 +1729,7 @@ const Navbar: React.FC = () => {
 										className="framer-lSJgT framer-5JmXW framer-aze2zb framer-v-aze2zb framer-16ueoun"
 										data-framer-name="Primary"
 										data-highlight="true"
-										onClick={() => handleNavigate("https://admin-larevangelico.gestao.avfeirense.pt/")}
+										onClick={() => handleNavigate("https://admin-larevangelico.sites.microlopes.pt/")}
 										tabIndex={0}
 									>
 										<div
@@ -1805,44 +1737,10 @@ const Navbar: React.FC = () => {
 											data-framer-name="Text"
 										>
 											<div
-												className="framer-fbp6jx"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{
-													transform:
-														"translate(-50%, -50%)",
-												}}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													{t("reserved_area")}
-												</p>
-											</div>
-											<div
 												className="framer-nljtjc"
 												data-framer-name="Home"
 												data-framer-component-type="RichTextContainer"
 												style={{ transform: "none" }}
-											>
-												<p
-													className="framer-text framer-styles-preset-1ub8ls7"
-													data-styles-preset="W0NKkqQDf"
-													style={{ color: "white" }}
-												>
-													{t("reserved_area")}
-												</p>
-											</div>
-											<div
-												className="framer-jt3kas"
-												data-framer-name="Home"
-												data-framer-component-type="RichTextContainer"
-												style={{
-													opacity: "0",
-													transform: "none",
-												}}
 											>
 												<p
 													className="framer-text framer-styles-preset-1ub8ls7"

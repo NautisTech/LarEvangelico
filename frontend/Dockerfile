@@ -33,10 +33,10 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV ESLINT_NO_DEV_ERRORS=true
 ENV NODE_ENV=production
-ENV PORT=3000
+ENV PORT=1001
 ENV NEXT_TELEMETRY_DISABLED=1
-ENV API_URL=https://api-larevangelico.gestao.avfeirense.pt
-ENV NEXT_PUBLIC_API_URL=https://api-larevangelico.gestao.avfeirense.pt
+ENV API_URL=https://api-larevangelico.sites.microlopes.pt
+ENV NEXT_PUBLIC_API_URL=https://api-larevangelico.sites.microlopes.pt
 ENV TENANT_ID=1002
 ENV NEXT_PUBLIC_TENANT_ID=1002
 
@@ -73,8 +73,8 @@ RUN mkdir -p /app/.next/cache && \
 
 # Define variáveis de ambiente
 
-# Expõe porta (Caprover usa 3000 internamente)
-EXPOSE 3000
+# Expõe porta (Caprover usa 1001 internamente)
+EXPOSE 1001
 
 # Muda para user não-root
 USER nodeuser
@@ -83,4 +83,4 @@ USER nodeuser
 ENTRYPOINT ["dumb-init", "--"]
 
 # Comando para iniciar a aplicação
-CMD ["node_modules/.bin/next", "start", "-p", "3000"]
+CMD ["node_modules/.bin/next", "start", "-p", "1001"]

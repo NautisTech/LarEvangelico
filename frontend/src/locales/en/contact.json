@@ -10,6 +10,7 @@
 			"email": "Email*",
 			"email_placeholder": "john.smith@example.com",
 			"subject": "Subject*",
+			"subject_placeholder": "Volunteer Opportunities",
 			"message": "Message*",
 			"message_placeholder": "I am interested in becoming a volunteer",
 			"submit": "Send"

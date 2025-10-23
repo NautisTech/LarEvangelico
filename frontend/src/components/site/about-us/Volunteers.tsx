@@ -1,4 +1,12 @@
+"use client";
+
+import React from "react";
+import { useTranslation } from "react-i18next";
+
 export function Volunteers() {
+    const { t } = useTranslation("about");
+    const members = t("volunteers.members", { returnObjects: true }) as Array<{ name?: string; role?: string; description?: string }>;
+
     return (
         <>
             <section className="framer-14g44ew" data-framer-name="Volunteers">
@@ -31,7 +39,7 @@ export function Volunteers() {
                                         "transform", "opacity": "1", "transform": "none"
                                 }}>
                                 <h2 className="framer-text framer-styles-preset-s0nzzz" data-styles-preset="N1eiVmsrJ"
-                                    style={{ textAlign: "center" }}>Os nossos Membros</h2>
+                                    style={{ textAlign: "center" }}>{t("volunteers.title")}</h2>
 
                             </div>
                         </div>
@@ -42,7 +50,7 @@ export function Volunteers() {
                                     "transform": "none"
                                 }}>
                                 <h2 className="framer-text framer-styles-preset-s0nzzz" data-styles-preset="N1eiVmsrJ"
-                                    style={{ textAlign: "center" }}>Os nossos Membros</h2>
+                                    style={{ textAlign: "center" }}>{t("volunteers.title")}</h2>
 
                             </div>
                         </div>
@@ -72,7 +80,7 @@ export function Volunteers() {
                                                     <img decoding="async" loading="lazy" width="684" height="762" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/VddRFXFFsrfF5fxOVpbCTOv01o8-1.jpg 684w?width=684&amp;height=762 684w"
                                                         src="/images/VddRFXFFsrfF5fxOVpbCTOv01o8-1.jpg?width=684&amp;height=762"
-                                                        alt="Emily Johnson" style={{
+                                                        alt={members[0]?.name ?? "Emily Johnson"} style={{
                                                             "display": "block", "width": "100%",
                                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
                                                                 "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius":
@@ -96,7 +104,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Emily Johnson</h6>
+                                                                style={{ textAlign: "center" }}>{members[0]?.name ?? "Emily Johnson"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -104,20 +112,8 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Community Outreach Coordinator</p>
+                                                                style={{ textAlign: "center" }}>{members[0]?.role ?? "Community Outreach Coordinator"}</p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div className="framer-1l2dmvv" data-framer-name="Bottom" style={{
-                                                    "opacity": "1"
-                                                }}>
-                                                    <div className="framer-19el9nk" data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-                                                        data-framer-component-type="RichTextContainer" style={{
-                                                            "transform": "none"
-                                                        }}>
-                                                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Emily builds strong relationships with regional partners, fostering collaboration
-                                                            to support our shared mission and amplify community voices</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -150,7 +146,7 @@ export function Volunteers() {
                                                     <img decoding="async" loading="lazy" width="684" height="762" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/VddRFXFFsrfF5fxOVpbCTOv01o8-1.jpg 684w?width=684&amp;height=762 684w"
                                                         src="/images/VddRFXFFsrfF5fxOVpbCTOv01o8-1.jpg?width=684&amp;height=762"
-                                                        alt="Emily Johnson" style={{
+                                                        alt={members[0]?.name ?? "Emily Johnson"} style={{
                                                             "display": "block", "width": "100%",
                                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
                                                                 "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius":
@@ -174,7 +170,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Emily Johnson</h6>
+                                                                style={{ textAlign: "center" }}>{members[0]?.name ?? "Emily Johnson"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -182,7 +178,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Community Outreach Coordinator</p>
+                                                                style={{ textAlign: "center" }}>{members[0]?.role ?? "Community Outreach Coordinator"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -194,8 +190,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Emily builds strong relationships with regional partners, fostering collaboration
-                                                            to support our shared mission and amplify community voices</p>
+                                                            style={{ textAlign: "center" }}>{members[0]?.description ?? "Emily builds strong relationships with regional partners, fostering collaboration to support our shared mission and amplify community voices"}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,7 +223,7 @@ export function Volunteers() {
                                                     <img decoding="async" width="684" height="762" sizes="(max-width: 809.98px) min(100vw - 100px, 1440px)"
                                                         srcSet="/images/VddRFXFFsrfF5fxOVpbCTOv01o8.jpg 684w?lossless=1&amp;width=684&amp;height=762 684w"
                                                         src="/images/VddRFXFFsrfF5fxOVpbCTOv01o8.jpg?lossless=1&amp;width=684&amp;height=762"
-                                                        alt="Emily Johnson" style={{
+                                                        alt={members[0]?.name ?? "Emily Johnson"} style={{
                                                             "display": "block", "width": "100%",
                                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
                                                                 "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius":
@@ -252,7 +247,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Emily Johnson</h6>
+                                                                style={{ textAlign: "center" }}>{members[0]?.name ?? "Emily Johnson"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -260,7 +255,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Community Outreach Coordinator</p>
+                                                                style={{ textAlign: "center" }}>{members[0]?.role ?? "Community Outreach Coordinator"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -272,8 +267,8 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Emily builds strong relationships with regional partners, fostering collaboration
-                                                            to support our shared mission and amplify community voices</p>
+                                                            style={{ textAlign: "center" }}>{members[0]?.description ?? "Emily builds strong relationships with regional partners, fostering collaboration to support our shared mission and amplify community voices"}
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -305,7 +300,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="710" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/oqu8npQ4gtLhrjJCDp2basShEVM.jpg 684w?width=684&amp;height=710 684w"
-                                                        src="/images/oqu8npQ4gtLhrjJCDp2basShEVM.jpg?width=684&amp;height=710" alt="Michael Lee"
+                                                        src="/images/oqu8npQ4gtLhrjJCDp2basShEVM.jpg?width=684&amp;height=710" alt={members[1]?.name ?? "Michael Lee"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -330,7 +325,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Michael Lee</h6>
+                                                                style={{ textAlign: "center" }}>{members[1]?.name ?? "Michael Lee"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -338,20 +333,8 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Volunteer Program Manager</p>
+                                                                style={{ textAlign: "center" }}>{members[1]?.role ?? "Volunteer Program Manager"}</p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div className="framer-1l2dmvv" data-framer-name="Bottom" style={{
-                                                    "opacity": "1"
-                                                }}>
-                                                    <div className="framer-19el9nk" data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-                                                        data-framer-component-type="RichTextContainer" style={{
-                                                            "transform": "none"
-                                                        }}>
-                                                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Michael leads efforts to connect with local communities, ensuring our
-                                                            programs meet their needs and provide lasting impact.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -383,7 +366,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="710" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/oqu8npQ4gtLhrjJCDp2basShEVM.jpg 684w?width=684&amp;height=710 684w"
-                                                        src="/images/oqu8npQ4gtLhrjJCDp2basShEVM.jpg?width=684&amp;height=710" alt="Michael Lee"
+                                                        src="/images/oqu8npQ4gtLhrjJCDp2basShEVM.jpg?width=684&amp;height=710" alt={members[1]?.name ?? "Michael Lee"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -408,7 +391,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Michael Lee</h6>
+                                                                style={{ textAlign: "center" }}>{members[1]?.name ?? "Michael Lee"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -416,7 +399,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Volunteer Program Manager</p>
+                                                                style={{ textAlign: "center" }}>{members[1]?.role ?? "Volunteer Program Manager"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -428,8 +411,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Michael leads efforts to connect with local communities, ensuring our
-                                                            programs meet their needs and provide lasting impact.</p>
+                                                            style={{ textAlign: "center" }}>{members[1]?.description ?? "Michael leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -462,7 +444,7 @@ export function Volunteers() {
                                                     <img decoding="async" width="684" height="710" sizes="(max-width: 809.98px) min(100vw - 100px, 1440px)"
                                                         srcSet="/images/oqu8npQ4gtLhrjJCDp2basShEVM-1.jpg 684w?lossless=1&amp;width=684&amp;height=710 684w"
                                                         src="/images/oqu8npQ4gtLhrjJCDp2basShEVM-1.jpg?lossless=1&amp;width=684&amp;height=710"
-                                                        alt="Michael Lee" style={{
+                                                        alt={members[1]?.name ?? "Michael Lee"} style={{
                                                             "display": "block", "width": "100%",
                                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
                                                                 "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius":
@@ -486,7 +468,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Michael Lee</h6>
+                                                                style={{ textAlign: "center" }}>{members[1]?.name ?? "Michael Lee"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -494,7 +476,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Volunteer Program Manager</p>
+                                                                style={{ textAlign: "center" }}>{members[1]?.role ?? "Volunteer Program Manager"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -506,8 +488,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Michael leads efforts to connect with local communities, ensuring our
-                                                            programs meet their needs and provide lasting impact.</p>
+                                                            style={{ textAlign: "center" }}>{members[1]?.description ?? "Michael leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -539,7 +520,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="699" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/0GgPNewzcvWSgOrzOOuR4A7nGg.jpg 684w?width=684&amp;height=699 684w"
-                                                        src="/images/0GgPNewzcvWSgOrzOOuR4A7nGg.jpg?width=684&amp;height=699" alt="Sarah Williams"
+                                                        src="/images/0GgPNewzcvWSgOrzOOuR4A7nGg.jpg?width=684&amp;height=699" alt={members[2]?.name ?? "Sarah Williams"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -564,7 +545,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Sarah Williams</h6>
+                                                                style={{ textAlign: "center" }}>{members[2]?.name ?? "Sarah Williams"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -572,20 +553,8 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Fundraising Specialist</p>
+                                                                style={{ textAlign: "center" }}>{members[2]?.role ?? "Fundraising Specialist"}</p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div className="framer-1l2dmvv" data-framer-name="Bottom" style={{
-                                                    "opacity": "1"
-                                                }}>
-                                                    <div className="framer-19el9nk" data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-                                                        data-framer-component-type="RichTextContainer" style={{
-                                                            "transform": "none"
-                                                        }}>
-                                                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Sarah develops initiatives that empower young people through education,
-                                                            mentorship, and leadership development opportunities</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -617,7 +586,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="699" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/0GgPNewzcvWSgOrzOOuR4A7nGg.jpg 684w?width=684&amp;height=699 684w"
-                                                        src="/images/0GgPNewzcvWSgOrzOOuR4A7nGg.jpg?width=684&amp;height=699" alt="Sarah Williams"
+                                                        src="/images/0GgPNewzcvWSgOrzOOuR4A7nGg.jpg?width=684&amp;height=699" alt={members[2]?.name ?? "Sarah Williams"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -642,7 +611,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Sarah Williams</h6>
+                                                                style={{ textAlign: "center" }}>{members[2]?.name ?? "Sarah Williams"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -650,7 +619,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Fundraising Specialist</p>
+                                                                style={{ textAlign: "center" }}>{members[2]?.role ?? "Fundraising Specialist"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -662,8 +631,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Sarah develops initiatives that empower young people through education,
-                                                            mentorship, and leadership development opportunities</p>
+                                                            style={{ textAlign: "center" }}>{members[2]?.description ?? "Sarah develops initiatives that empower young people through education, mentorship, and leadership development opportunities"}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -696,7 +664,7 @@ export function Volunteers() {
                                                     <img decoding="async" width="684" height="699" sizes="(max-width: 809.98px) min(100vw - 100px, 1440px)"
                                                         srcSet="/images/0GgPNewzcvWSgOrzOOuR4A7nGg-1.jpg 684w?lossless=1&amp;width=684&amp;height=699 684w"
                                                         src="/images/0GgPNewzcvWSgOrzOOuR4A7nGg-1.jpg?lossless=1&amp;width=684&amp;height=699"
-                                                        alt="Sarah Williams" style={{
+                                                        alt={members[2]?.name ?? "Sarah Williams"} style={{
                                                             "display": "block", "width": "100%",
                                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
                                                                 "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius":
@@ -720,7 +688,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Sarah Williams</h6>
+                                                                style={{ textAlign: "center" }}>{members[2]?.name ?? "Sarah Williams"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -728,7 +696,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Fundraising Specialist</p>
+                                                                style={{ textAlign: "center" }}>{members[2]?.role ?? "Fundraising Specialist"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -740,8 +708,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Sarah develops initiatives that empower young people through education,
-                                                            mentorship, and leadership development opportunities</p>
+                                                            style={{ textAlign: "center" }}>{members[2]?.description ?? "Sarah develops initiatives that empower young people through education, mentorship, and leadership development opportunities"}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -773,7 +740,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="711" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/MvUzGi297QRPrfh8gNFJrlZYw.jpg 684w?width=684&amp;height=711 684w"
-                                                        src="/images/MvUzGi297QRPrfh8gNFJrlZYw.jpg?width=684&amp;height=711" alt="David Martinez"
+                                                        src="/images/MvUzGi297QRPrfh8gNFJrlZYw.jpg?width=684&amp;height=711" alt={members[3]?.name ?? "David Martinez"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -798,7 +765,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>David Martinez</h6>
+                                                                style={{ textAlign: "center" }}>{members[3]?.name ?? "David Martinez"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -806,20 +773,8 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Project Development Lead</p>
+                                                                style={{ textAlign: "center" }}>{members[3]?.role ?? "Project Development Lead"}</p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div className="framer-1l2dmvv" data-framer-name="Bottom" style={{
-                                                    "opacity": "1"
-                                                }}>
-                                                    <div className="framer-19el9nk" data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-                                                        data-framer-component-type="RichTextContainer" style={{
-                                                            "transform": "none"
-                                                        }}>
-                                                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>David drives sustainability campaigns and conservation projects, helping
-                                                            communities embrace eco-friendly practices htmlFor a greener future.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -851,7 +806,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="711" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/MvUzGi297QRPrfh8gNFJrlZYw.jpg 684w?width=684&amp;height=711 684w"
-                                                        src="/images/MvUzGi297QRPrfh8gNFJrlZYw.jpg?width=684&amp;height=711" alt="David Martinez"
+                                                        src="/images/MvUzGi297QRPrfh8gNFJrlZYw.jpg?width=684&amp;height=711" alt={members[3]?.name ?? "David Martinez"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -876,7 +831,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>David Martinez</h6>
+                                                                style={{ textAlign: "center" }}>{members[3]?.name ?? "David Martinez"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -884,7 +839,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Project Development Lead</p>
+                                                                style={{ textAlign: "center" }}>{members[3]?.role ?? "Project Development Lead"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -896,8 +851,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>David drives sustainability campaigns and conservation projects, helping
-                                                            communities embrace eco-friendly practices htmlFor a greener future.</p>
+                                                            style={{ textAlign: "center" }}>{members[3]?.description ?? "David drives sustainability campaigns and conservation projects, helping communities embrace eco-friendly practices for a greener future."}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -930,7 +884,7 @@ export function Volunteers() {
                                                     <img decoding="async" width="684" height="711" sizes="(max-width: 809.98px) min(100vw - 100px, 1440px)"
                                                         srcSet="/images/MvUzGi297QRPrfh8gNFJrlZYw-1.jpg 684w?lossless=1&amp;width=684&amp;height=711 684w"
                                                         src="/images/MvUzGi297QRPrfh8gNFJrlZYw-1.jpg?lossless=1&amp;width=684&amp;height=711"
-                                                        alt="David Martinez" style={{
+                                                        alt={members[3]?.name ?? "David Martinez"} style={{
                                                             "display": "block", "width": "100%",
                                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
                                                                 "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius":
@@ -954,7 +908,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>David Martinez</h6>
+                                                                style={{ textAlign: "center" }}>{members[3]?.name ?? "David Martinez"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -962,7 +916,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Project Development Lead</p>
+                                                                style={{ textAlign: "center" }}>{members[3]?.role ?? "Project Development Lead"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -974,8 +928,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>David drives sustainability campaigns and conservation projects, helping
-                                                            communities embrace eco-friendly practices htmlFor a greener future.</p>
+                                                            style={{ textAlign: "center" }}>{members[3]?.description ?? "David drives sustainability campaigns and conservation projects, helping communities embrace eco-friendly practices for a greener future."}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1007,7 +960,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="711" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/See9i6ntGrXr1Ad4htE7yMy5Qk.jpg 684w?width=684&amp;height=711 684w"
-                                                        src="/images/See9i6ntGrXr1Ad4htE7yMy5Qk.jpg?width=684&amp;height=711" alt="Olivia Carter"
+                                                        src="/images/See9i6ntGrXr1Ad4htE7yMy5Qk.jpg?width=684&amp;height=711" alt={members[4]?.name ?? "Olivia Carter"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -1032,7 +985,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Olivia Carter</h6>
+                                                                style={{ textAlign: "center" }}>{members[4]?.name ?? "Olivia Carter"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -1040,20 +993,8 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Youth Engagement Coordinator</p>
+                                                                style={{ textAlign: "center" }}>{members[4]?.role ?? "Youth Engagement Coordinator"}</p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div className="framer-1l2dmvv" data-framer-name="Bottom" style={{
-                                                    "opacity": "1"
-                                                }}>
-                                                    <div className="framer-19el9nk" data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-                                                        data-framer-component-type="RichTextContainer" style={{
-                                                            "transform": "none"
-                                                        }}>
-                                                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Olivia manages our volunteer onboarding and training efforts, ensuring
-                                                            all new members are prepared and supported to make an impact</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1085,7 +1026,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="711" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/See9i6ntGrXr1Ad4htE7yMy5Qk.jpg 684w?width=684&amp;height=711 684w"
-                                                        src="/images/See9i6ntGrXr1Ad4htE7yMy5Qk.jpg?width=684&amp;height=711" alt="Olivia Carter"
+                                                        src="/images/See9i6ntGrXr1Ad4htE7yMy5Qk.jpg?width=684&amp;height=711" alt={members[4]?.name ?? "Olivia Carter"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -1110,7 +1051,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Olivia Carter</h6>
+                                                                style={{ textAlign: "center" }}>{members[4]?.name ?? "Olivia Carter"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -1118,7 +1059,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Youth Engagement Coordinator</p>
+                                                                style={{ textAlign: "center" }}>{members[4]?.role ?? "Youth Engagement Coordinator"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1130,8 +1071,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Olivia manages our volunteer onboarding and training efforts, ensuring
-                                                            all new members are prepared and supported to make an impact</p>
+                                                            style={{ textAlign: "center" }}>{members[4]?.description ?? "Olivia manages our volunteer onboarding and training efforts, ensuring all new members are prepared and supported to make an impact"}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1164,7 +1104,7 @@ export function Volunteers() {
                                                     <img decoding="async" width="684" height="711" sizes="(max-width: 809.98px) min(100vw - 100px, 1440px)"
                                                         srcSet="/images/See9i6ntGrXr1Ad4htE7yMy5Qk-1.jpg 684w?lossless=1&amp;width=684&amp;height=711 684w"
                                                         src="/images/See9i6ntGrXr1Ad4htE7yMy5Qk-1.jpg?lossless=1&amp;width=684&amp;height=711"
-                                                        alt="Olivia Carter" style={{
+                                                        alt={members[4]?.name ?? "Olivia Carter"} style={{
                                                             "display": "block", "width": "100%",
                                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
                                                                 "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius":
@@ -1188,7 +1128,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Olivia Carter</h6>
+                                                                style={{ textAlign: "center" }}>{members[4]?.name ?? "Olivia Carter"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -1196,7 +1136,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Youth Engagement Coordinator</p>
+                                                                style={{ textAlign: "center" }}>{members[4]?.role ?? "Youth Engagement Coordinator"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1208,8 +1148,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Olivia manages our volunteer onboarding and training efforts, ensuring
-                                                            all new members are prepared and supported to make an impact</p>
+                                                            style={{ textAlign: "center" }}>{members[4]?.description ?? "Olivia manages our volunteer onboarding and training efforts, ensuring all new members are prepared and supported to make an impact"}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1241,7 +1180,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="711" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/BQAknvnKil3oWaBAoTpkRqMZqL0.jpg 684w?width=684&amp;height=711 684w"
-                                                        src="/images/BQAknvnKil3oWaBAoTpkRqMZqL0.jpg?width=684&amp;height=711" alt="Sophia Patel"
+                                                        src="/images/BQAknvnKil3oWaBAoTpkRqMZqL0.jpg?width=684&amp;height=711" alt={members[5]?.name ?? "Sophia Patel"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -1266,7 +1205,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Sophia Patel</h6>
+                                                                style={{ textAlign: "center" }}>{members[5]?.name ?? "Sophia Patel"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -1274,20 +1213,8 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Health &amp; Wellness Advocate</p>
+                                                                style={{ textAlign: "center" }}>{members[5]?.role ?? "Health & Wellness Advocate"}</p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div className="framer-1l2dmvv" data-framer-name="Bottom" style={{
-                                                    "opacity": "1"
-                                                }}>
-                                                    <div className="framer-19el9nk" data-framer-name="Emily leads efforts to connect with local communities, ensuring our programs meet their needs and provide lasting impact."
-                                                        data-framer-component-type="RichTextContainer" style={{
-                                                            "transform": "none"
-                                                        }}>
-                                                        <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Sophia organizes wellness workshops and health screenings to promote physical
-                                                            and mental well-being across our service areas</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1319,7 +1246,7 @@ export function Volunteers() {
                                                 }} data-framer-background-image-wrapper="true">
                                                     <img decoding="async" loading="lazy" width="684" height="711" sizes="(min-width: 1200px) max((min(100vw - 160px, 1440px) - 72px) / 3, 50px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 100px, 1440px) - 25px) / 2, 50px)"
                                                         srcSet="/images/BQAknvnKil3oWaBAoTpkRqMZqL0.jpg 684w?width=684&amp;height=711 684w"
-                                                        src="/images/BQAknvnKil3oWaBAoTpkRqMZqL0.jpg?width=684&amp;height=711" alt="Sophia Patel"
+                                                        src="/images/BQAknvnKil3oWaBAoTpkRqMZqL0.jpg?width=684&amp;height=711" alt={members[5]?.name ?? "Sophia Patel"}
                                                         style={{
                                                             "display": "block", "width": "100%", "height": "100%",
                                                             "borderTopLeftRadius": "inherit", "borderTopRightRadius": "inherit",
@@ -1344,7 +1271,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Sophia Patel</h6>
+                                                                style={{ textAlign: "center" }}>{members[5]?.name ?? "Sophia Patel"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -1352,7 +1279,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Health &amp; Wellness Advocate</p>
+                                                                style={{ textAlign: "center" }}>{members[5]?.role ?? "Health & Wellness Advocate"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1364,8 +1291,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Sophia organizes wellness workshops and health screenings to promote physical
-                                                            and mental well-being across our service areas</p>
+                                                            style={{ textAlign: "center" }}>{members[5]?.description ?? "Sophia organizes wellness workshops and health screenings to promote physical and mental well-being across our service areas"}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1398,7 +1324,7 @@ export function Volunteers() {
                                                     <img decoding="async" width="684" height="711" sizes="(max-width: 809.98px) min(100vw - 100px, 1440px)"
                                                         srcSet="/images/BQAknvnKil3oWaBAoTpkRqMZqL0-1.jpg 684w?lossless=1&amp;width=684&amp;height=711 684w"
                                                         src="/images/BQAknvnKil3oWaBAoTpkRqMZqL0-1.jpg?lossless=1&amp;width=684&amp;height=711"
-                                                        alt="Sophia Patel" style={{
+                                                        alt={members[5]?.name ?? "Sophia Patel"} style={{
                                                             "display": "block", "width": "100%",
                                                             "height": "100%", "borderTopLeftRadius": "inherit", "borderTopRightRadius":
                                                                 "inherit", "borderBottomRightRadius": "inherit", "borderBottomLeftRadius":
@@ -1422,7 +1348,7 @@ export function Volunteers() {
                                                         <div className="framer-19u0f6p" data-framer-name="Michael Lee" data-framer-component-type="RichTextContainer"
                                                             style={{ "transform": "none" }}>
                                                             <h6 className="framer-text framer-styles-preset-9i5qw2" data-styles-preset="OXZ7pDCA2"
-                                                                style={{ textAlign: "center" }}>Sophia Patel</h6>
+                                                                style={{ textAlign: "center" }}>{members[5]?.name ?? "Sophia Patel"}</h6>
 
                                                         </div>
                                                         <div className="framer-7em9ca" data-framer-name="Volunteer Program Manager"
@@ -1430,7 +1356,7 @@ export function Volunteers() {
                                                                 "transform": "none"
                                                             }}>
                                                             <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                                style={{ textAlign: "center" }}>Health &amp; Wellness Advocate</p>
+                                                                style={{ textAlign: "center" }}>{members[5]?.role ?? "Health & Wellness Advocate"}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1442,8 +1368,7 @@ export function Volunteers() {
                                                             "transform": "none"
                                                         }}>
                                                         <p className="framer-text framer-styles-preset-18rceng" data-styles-preset="efNb1Kccw"
-                                                            style={{ textAlign: "center" }}>Sophia organizes wellness workshops and health screenings to promote physical
-                                                            and mental well-being across our service areas</p>
+                                                            style={{ textAlign: "center" }}>{members[5]?.description ?? "Sophia organizes wellness workshops and health screenings to promote physical and mental well-being across our service areas"}</p>
                                                     </div>
                                                 </div>
                                             </div>

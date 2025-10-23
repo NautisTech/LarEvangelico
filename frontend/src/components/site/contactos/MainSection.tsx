@@ -1,9 +1,23 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { mailerAPI } from "@/lib/api/mailer";
+import { toast } from "react-toastify";
 
 export function MainSection() {
 	const { t } = useTranslation("contact");
+	const [formData, setFormData] = useState<{ to: string; subject: string; text: string }>({ to: "", subject: "", text: "" });
+	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
+		const result = await mailerAPI.enviarEmail(formData);
+		if (result && result.status === 200) {
+			toast.success("Email sent successfully!");
+		} else {
+			toast.error("Failed to send email. Please try again later.");
+		}
+	}
+
 	return (
 		<>
 			<div className="framer-tabdp9" data-framer-name="Main Section">
@@ -698,7 +712,7 @@ export function MainSection() {
 											</p>
 										</div>
 									</div>
-									<form className="framer-1xok70p">
+									<form className="framer-1xok70p" onSubmit={handleSubmit}>
 										<label className="framer-1atz261">
 											<div
 												className="framer-fic2oh"
@@ -752,6 +766,8 @@ export function MainSection() {
 													placeholder={t(
 														"main_section.form.email_placeholder"
 													)}
+													value={formData.to}
+													onChange={(e) => setFormData(prev => ({ ...prev, to: e.target.value }))}
 													className="framer-form-input framer-form-input-empty"
 												/>
 											</div>
@@ -775,11 +791,17 @@ export function MainSection() {
 												</p>
 											</div>
 											<div className="framer-form-input-wrapper framer-form-select-wrapper framer-fns3qe">
-												<select
-													name="Location"
+												<input
+													type="text"
 													required
-													className="framer-form-input"
-												></select>
+													name="Subject"
+													placeholder={t(
+														"main_section.form.subject_placeholder"
+													)}
+													value={formData.subject}
+													onChange={(e) => setFormData(prev => ({ ...prev, subject: e.target.value }))}
+													className="framer-form-input framer-form-input-empty"
+												/>
 											</div>
 										</label>
 										<label className="framer-oxz3vh">
@@ -807,6 +829,8 @@ export function MainSection() {
 													placeholder={t(
 														"main_section.form.message_placeholder"
 													)}
+													value={formData.text}
+													onChange={(e) => setFormData(prev => ({ ...prev, text: e.target.value }))}
 													className="framer-form-input"
 												></textarea>
 											</div>
@@ -1055,7 +1079,7 @@ export function MainSection() {
 											</p>
 										</div>
 									</div>
-									<form className="framer-1xok70p">
+									<form className="framer-1xok70p" onSubmit={handleSubmit}>
 										<label className="framer-1atz261">
 											<div
 												className="framer-fic2oh"
@@ -1109,6 +1133,8 @@ export function MainSection() {
 													placeholder={t(
 														"main_section.form.email_placeholder"
 													)}
+													value={formData.to}
+													onChange={(e) => setFormData(prev => ({ ...prev, to: e.target.value }))}
 													className="framer-form-input framer-form-input-empty"
 												/>
 											</div>
@@ -1132,11 +1158,17 @@ export function MainSection() {
 												</p>
 											</div>
 											<div className="framer-form-input-wrapper framer-form-select-wrapper framer-fns3qe">
-												<select
-													name="Location"
+												<input
+													type="text"
 													required
-													className="framer-form-input"
-												></select>
+													name="Subject"
+													placeholder={t(
+														"main_section.form.subject_placeholder"
+													)}
+													value={formData.subject}
+													onChange={(e) => setFormData(prev => ({ ...prev, subject: e.target.value }))}
+													className="framer-form-input framer-form-input-empty"
+												/>
 											</div>
 										</label>
 										<label className="framer-oxz3vh">
@@ -1164,6 +1196,8 @@ export function MainSection() {
 													placeholder={t(
 														"main_section.form.message_placeholder"
 													)}
+													value={formData.text}
+													onChange={(e) => setFormData(prev => ({ ...prev, text: e.target.value }))}
 													className="framer-form-input"
 												></textarea>
 											</div>
