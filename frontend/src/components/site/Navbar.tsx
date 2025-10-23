@@ -547,6 +547,23 @@ const Navbar: React.FC = () => {
 													{t("reserved_area")}
 												</p>
 											</div>
+											<div
+												className="framer-jt3kas"
+												data-framer-name="Home"
+												data-framer-component-type="RichTextContainer"
+												style={{
+													opacity: "0",
+													transform: "none",
+												}}
+											>
+												<p
+													className="framer-text framer-styles-preset-1ub8ls7"
+													data-styles-preset="W0NKkqQDf"
+													style={{ color: "white" }}
+												>
+													{t("reserved_area")}
+												</p>
+											</div>
 										</div>
 									</a>
 								</div>
@@ -1128,6 +1145,23 @@ const Navbar: React.FC = () => {
 												style={{
 													transform:
 														"translate(-50%, -50%)",
+												}}
+											>
+												<p
+													className="framer-text framer-styles-preset-1ub8ls7"
+													data-styles-preset="W0NKkqQDf"
+													style={{ color: "white" }}
+												>
+													{t("reserved_area")}
+												</p>
+											</div>
+											<div
+												className="framer-jt3kas"
+												data-framer-name="Home"
+												data-framer-component-type="RichTextContainer"
+												style={{
+													opacity: "0",
+													transform: "none",
 												}}
 											>
 												<p
@@ -1763,6 +1797,23 @@ const Navbar: React.FC = () => {
 												style={{
 													transform:
 														"translate(-50%, -50%)",
+												}}
+											>
+												<p
+													className="framer-text framer-styles-preset-1ub8ls7"
+													data-styles-preset="W0NKkqQDf"
+													style={{ color: "white" }}
+												>
+													{t("reserved_area")}
+												</p>
+											</div>
+											<div
+												className="framer-jt3kas"
+												data-framer-name="Home"
+												data-framer-component-type="RichTextContainer"
+												style={{
+													opacity: "0",
+													transform: "none",
 												}}
 											>
 												<p
