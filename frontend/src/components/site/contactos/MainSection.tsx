@@ -33,8 +33,6 @@ export function MainSection() {
 					text: "",
 					from: "",
 				}));
-			} else {
-				toast.error("Failed to send email. Please try again later.");
 			}
 		} catch (error) {
 			console.error(error);
