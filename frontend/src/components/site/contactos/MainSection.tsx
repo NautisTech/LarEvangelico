@@ -12,14 +12,15 @@ export function MainSection() {
 		subject: string;
 		text: string;
 		from: string;
-	}>({ to: "geral@nautis.pt", subject: "", text: "", from: "" });
+		name: string;
+	}>({ to: "geral@nautis.pt", subject: "", text: "", from: "", name: "" });
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
 		const payload: { to: string; subject: string; text: string } = {
 			to: formData.to,
 			subject: formData.subject,
-			text: `${formData.text}\n\nEmail de: ${formData.from}`,
+			text: `${formData.text}\n\nEmail de: ${formData.name}, ${formData.from}`,
 		};
 
 		try {
@@ -762,6 +763,14 @@ export function MainSection() {
 													placeholder={t(
 														"main_section.form.name_placeholder"
 													)}
+													value={formData.name}
+													onChange={e =>
+														setFormData(prev => ({
+															...prev,
+															name: e.target
+																.value,
+														}))
+													}
 													className="framer-form-input framer-form-input-empty"
 												/>
 											</div>
@@ -1150,6 +1159,14 @@ export function MainSection() {
 													placeholder={t(
 														"main_section.form.name_placeholder"
 													)}
+													value={formData.name}
+													onChange={e =>
+														setFormData(prev => ({
+															...prev,
+															name: e.target
+																.value,
+														}))
+													}
 													className="framer-form-input framer-form-input-empty"
 												/>
 											</div>
