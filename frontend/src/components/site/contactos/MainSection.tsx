@@ -7,16 +7,39 @@ import { toast } from "react-toastify";
 
 export function MainSection() {
 	const { t } = useTranslation("contact");
-	const [formData, setFormData] = useState<{ to: string; subject: string; text: string }>({ to: "", subject: "", text: "" });
+	const [formData, setFormData] = useState<{
+		to: string;
+		subject: string;
+		text: string;
+		from: string;
+	}>({ to: "geral@nautis.pt", subject: "", text: "", from: "" });
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
-		const result = await mailerAPI.enviarEmail(formData);
-		if (result && result.status === 200) {
-			toast.success("Email sent successfully!");
-		} else {
+
+		const payload: { to: string; subject: string; text: string } = {
+			to: formData.to,
+			subject: formData.subject,
+			text: `${formData.text}\n\nEmail de: ${formData.from}`,
+		};
+
+		try {
+			const result = await mailerAPI.enviarEmail(payload);
+			if (result && result.status === 200) {
+				toast.success("Email sent successfully!");
+				setFormData(prev => ({
+					...prev,
+					subject: "",
+					text: "",
+					from: "",
+				}));
+			} else {
+				toast.error("Failed to send email. Please try again later.");
+			}
+		} catch (error) {
+			console.error(error);
 			toast.error("Failed to send email. Please try again later.");
 		}
-	}
+	};
 
 	return (
 		<>
@@ -712,7 +735,10 @@ export function MainSection() {
 											</p>
 										</div>
 									</div>
-									<form className="framer-1xok70p" onSubmit={handleSubmit}>
+									<form
+										className="framer-1xok70p"
+										onSubmit={handleSubmit}
+									>
 										<label className="framer-1atz261">
 											<div
 												className="framer-fic2oh"
@@ -766,8 +792,14 @@ export function MainSection() {
 													placeholder={t(
 														"main_section.form.email_placeholder"
 													)}
-													value={formData.to}
-													onChange={(e) => setFormData(prev => ({ ...prev, to: e.target.value }))}
+													value={formData.from}
+													onChange={e =>
+														setFormData(prev => ({
+															...prev,
+															from: e.target
+																.value,
+														}))
+													}
 													className="framer-form-input framer-form-input-empty"
 												/>
 											</div>
@@ -799,7 +831,13 @@ export function MainSection() {
 														"main_section.form.subject_placeholder"
 													)}
 													value={formData.subject}
-													onChange={(e) => setFormData(prev => ({ ...prev, subject: e.target.value }))}
+													onChange={e =>
+														setFormData(prev => ({
+															...prev,
+															subject:
+																e.target.value,
+														}))
+													}
 													className="framer-form-input framer-form-input-empty"
 												/>
 											</div>
@@ -830,7 +868,13 @@ export function MainSection() {
 														"main_section.form.message_placeholder"
 													)}
 													value={formData.text}
-													onChange={(e) => setFormData(prev => ({ ...prev, text: e.target.value }))}
+													onChange={e =>
+														setFormData(prev => ({
+															...prev,
+															text: e.target
+																.value,
+														}))
+													}
 													className="framer-form-input"
 												></textarea>
 											</div>
@@ -1079,7 +1123,10 @@ export function MainSection() {
 											</p>
 										</div>
 									</div>
-									<form className="framer-1xok70p" onSubmit={handleSubmit}>
+									<form
+										className="framer-1xok70p"
+										onSubmit={handleSubmit}
+									>
 										<label className="framer-1atz261">
 											<div
 												className="framer-fic2oh"
@@ -1133,8 +1180,14 @@ export function MainSection() {
 													placeholder={t(
 														"main_section.form.email_placeholder"
 													)}
-													value={formData.to}
-													onChange={(e) => setFormData(prev => ({ ...prev, to: e.target.value }))}
+													value={formData.from}
+													onChange={e =>
+														setFormData(prev => ({
+															...prev,
+															from: e.target
+																.value,
+														}))
+													}
 													className="framer-form-input framer-form-input-empty"
 												/>
 											</div>
@@ -1166,7 +1219,13 @@ export function MainSection() {
 														"main_section.form.subject_placeholder"
 													)}
 													value={formData.subject}
-													onChange={(e) => setFormData(prev => ({ ...prev, subject: e.target.value }))}
+													onChange={e =>
+														setFormData(prev => ({
+															...prev,
+															subject:
+																e.target.value,
+														}))
+													}
 													className="framer-form-input framer-form-input-empty"
 												/>
 											</div>
@@ -1197,7 +1256,13 @@ export function MainSection() {
 														"main_section.form.message_placeholder"
 													)}
 													value={formData.text}
-													onChange={(e) => setFormData(prev => ({ ...prev, text: e.target.value }))}
+													onChange={e =>
+														setFormData(prev => ({
+															...prev,
+															text: e.target
+																.value,
+														}))
+													}
 													className="framer-form-input"
 												></textarea>
 											</div>
